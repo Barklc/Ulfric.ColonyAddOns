@@ -41,11 +41,6 @@ namespace Ulfric.ColonyAddOns.Research
             ScienceManager.RegisterResearchable(research);
         }
 
-        public static void Research_ResearchComplete(object sender, ResearchCompleteEventArgs e)
-        {
-            throw new NotImplementedException();
-        }
-
         public static void AdvancedAgriculture_ResearchComplete(object sender, ResearchCompleteEventArgs e)
         {
 

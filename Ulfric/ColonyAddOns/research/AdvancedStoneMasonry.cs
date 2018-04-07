@@ -39,11 +39,6 @@ namespace Ulfric.ColonyAddOns.Research
             ScienceManager.RegisterResearchable(research);
         }
 
-        public static void Research_ResearchComplete(object sender, ResearchCompleteEventArgs e)
-        {
-            throw new NotImplementedException();
-        }
-
         public static void AdvancedStoneMasonry_ResearchComplete(object sender, ResearchCompleteEventArgs e)
         {
 

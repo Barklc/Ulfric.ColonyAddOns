@@ -36,11 +36,6 @@ namespace Ulfric.ColonyAddOns.Research
             ScienceManager.RegisterResearchable(research);
         }
 
-        public static void Research_ResearchComplete(object sender, ResearchCompleteEventArgs e)
-        {
-            throw new NotImplementedException();
-        }
-
         public static void Herald_ResearchComplete(object sender, ResearchCompleteEventArgs e)
         {
 
