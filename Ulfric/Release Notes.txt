@@ -1,0 +1,62 @@
+1.1.0.0 (Very special thanks to Pardosa)
+125 New blocks
+5 New Workbenches
+    Fletchery
+    AdvancedCarpentry
+    AdvancedStoneMasonary
+    AdvancedAgriculture
+    Herald
+3 New Crates
+5 New Jobs
+    Fletchery - Allows production of arrows and bolts
+    AdvancedCarpentry - Production of the new wood blocks added by mod
+    AdvancedStoneMasonary - Production of the new stone blocks added by mod
+    AdvancedAgriculture - Production of fertilizer and decoration blocks with plants 
+    Herald - Trumpets at sunrise and sunset
+New recipes for new blocks and workbench added to existing and new workbenches
+New Marble ore added to world generation (requires a new world creation with mod installed)
+5 New Research
+    Advanced Agriculure - Unlocks workbench and fertilizer recipes (5 Levels)
+    Advanced Merchant - Unlocks new recipes to be purchased in store (5 Levels)
+    Advanced Stone Masonary - Unlocks workbench and new stone recipes (5 Levels)
+    Carpentry - Unlocks workbench and new work recipes (5 Levels)
+    Fletchery - Unlocks workbench (1 Level)
+New Chat command
+    /Ulfric <item> <number> - Puts the specifed number of item from this mod in stockpile 
+    /ulfric all - Puts one of every item from this mod in stockpile  
+    
+1.1.1.0
+1 New Block
+    WaterSource
+1 New Research
+    Herald - Unlocks stand (1 Level)
+Added the Colonists need to consume water.  Not enough water will cause damage to the colonists that do not get water.
+Added Configuration file to control features of the mod
+	WaterHydrationValue defaults to 10.0f
+	AllowDehydration defaults to true
+	HydrationValuePerColonists defaults to 5.0f
+
+    AllowHandPickingBerryBushes defaults to true
+    NumberOfBerriesPerPick defaults to 2;
+    ChanceOfBerriesPerPick defaults to .50f
+
+    HeraldWarningDistance defaults to 20;
+    EnableHeraldAnnouncingSunrise defaults to true
+    EnableHeraldAnnouncingSunset defaults to true
+    EnableHeraldWarning defaults to true
+
+	EnableStatisticCollection defaults to true
+
+	EndableTrades defaults to true (thanks to JBurlison/ColonyCommandsMod forked from Scarabol/ColonyCommandsMod)
+
+Added new textures for Temperate Logs and Leaves and Taiga Logs and Leaves
+Added hand picking berry bushes (thanks to JBurlison/ColonySettlers)
+Added 10 Water Buckets in players stockpile on initial login
+Collect NPC Crafting numbers per player
+	/stats reset - Resets the numbers
+	/stats all <page number> - Display a list of all items cratfted and how many since the last "/stats reset" or server reset
+	/stats <item> - Displays the number of given item crafted since the last "/stats reset" or server reset
+New Chat Command /roster
+	/roster all - Display all jobs in the colony and how many colonists are doing them
+	/roster <job> - Display the job and the number of colonists doing it
+	/roster jobs - Display all the jobs types in the colony

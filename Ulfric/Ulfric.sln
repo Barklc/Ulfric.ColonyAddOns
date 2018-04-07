@@ -1,0 +1,35 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27428.2005
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{43EFC9BB-419F-496B-AC06-E256DE3C1C88}"
+	ProjectSection(SolutionItems) = preProject
+		APIProvider.dll = APIProvider.dll
+		Assembly-CSharp.dll = Assembly-CSharp.dll
+		modinfo.json = modinfo.json
+		Release Notes.txt = Release Notes.txt
+		UnityEngine.dll = UnityEngine.dll
+		UnityEngine.UI.dll = UnityEngine.UI.dll
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ColonyAddOns", "ColonyAddOns\ColonyAddOns.csproj", "{B0D971D6-F06A-4F61-8BF7-1985E5DE1DF5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B0D971D6-F06A-4F61-8BF7-1985E5DE1DF5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B0D971D6-F06A-4F61-8BF7-1985E5DE1DF5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B0D971D6-F06A-4F61-8BF7-1985E5DE1DF5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B0D971D6-F06A-4F61-8BF7-1985E5DE1DF5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B269DB5A-89BE-4CF0-85FC-9F4F50E2A44A}
+	EndGlobalSection
+EndGlobal

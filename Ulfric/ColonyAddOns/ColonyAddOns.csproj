@@ -1,0 +1,175 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B0D971D6-F06A-4F61-8BF7-1985E5DE1DF5}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Ulfric.ColonyAddOns</RootNamespace>
+    <AssemblyName>ColonyAddOns</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="APIProvider">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\SteamApps\common\Colony Survival\gamedata\mods\Pipliz\APIProvider\APIProvider.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Assembly-CSharp">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\SteamApps\common\Colony Survival\colonyserver_Data\Managed\Assembly-CSharp.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="BaseGame">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\SteamApps\common\Colony Survival\gamedata\mods\Pipliz\BaseGame\BaseGame.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="UnityEngine">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\SteamApps\common\Colony Survival\colonyserver_Data\Managed\UnityEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UI">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\SteamApps\common\Colony Survival\colonyserver_Data\Managed\UnityEngine.UI.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Blocks.cs" />
+    <Compile Include="Chat.cs" />
+    <Compile Include="chatcommands\Command.cs" />
+    <Compile Include="chatcommands\RosterChatCommand.cs" />
+    <Compile Include="chatcommands\TradeChatCommand.cs" />
+    <Compile Include="Configuration.cs" />
+    <Compile Include="Hydration.cs" />
+    <Compile Include="Stats.cs" />
+    <Compile Include="Fertilizer.cs" />
+    <Compile Include="GameLoader.cs" />
+    <Compile Include="Jobs\AdvancedAgriculture.cs" />
+    <Compile Include="Jobs\AdvancedStoneMasonry.cs" />
+    <Compile Include="Jobs\Herald.cs" />
+    <Compile Include="Jobs\Fletchery.cs" />
+    <Compile Include="Jobs\Carpentry.cs" />
+    <Compile Include="Logger.cs" />
+    <Compile Include="Player.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="research\AdvancedMerchant.cs" />
+    <Compile Include="research\AdvancedStoneMasonry.cs" />
+    <Compile Include="research\AdvancedAgriculture.cs" />
+    <Compile Include="research\Herald.cs" />
+    <Compile Include="research\Fletchery.cs" />
+    <Compile Include="research\Carpentry.cs" />
+    <Compile Include="research\Research.cs" />
+    <Compile Include="chatcommands\StatisticsChatCommand.cs" />
+    <Compile Include="UpdateTypes.cs" />
+    <Compile Include="chatcommands\UlfricAllChatCommand.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="textures\emissive\" />
+    <Folder Include="textures\height\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Debug.txt" />
+    <Content Include="icons\AshySandstone.png" />
+    <Content Include="icons\CarpentryWorkbench.png" />
+    <Content Include="icons\DarkHardwoodFloor.png" />
+    <Content Include="icons\FineSoil.png" />
+    <Content Include="icons\FloorTile.png" />
+    <Content Include="icons\Gravel.png" />
+    <Content Include="icons\HardenedLava.png" />
+    <Content Include="icons\LightPaneling.png" />
+    <Content Include="icons\Magma.png" />
+    <Content Include="icons\Marble.png" />
+    <Content Include="icons\MarbleTiles.png" />
+    <Content Include="icons\TrinsicHouseFloor.png" />
+    <Content Include="icons\TrinsicStoneFloor.png" />
+    <Content Include="icons\WaterBucket.png" />
+    <Content Include="icons\WoodParquetFloor.png" />
+    <Content Include="Issues.txt" />
+    <Content Include="textures\albedo\AshySandstone.png" />
+    <Content Include="textures\albedo\Capentry.png" />
+    <Content Include="textures\albedo\CarpentryWorkbench.png" />
+    <Content Include="textures\albedo\DarkHardwoodFloor.png" />
+    <Content Include="textures\albedo\FineSoil.png" />
+    <Content Include="textures\albedo\FloorTile.png" />
+    <Content Include="textures\albedo\Gravel.png" />
+    <Content Include="textures\albedo\HardenedLava.png" />
+    <Content Include="textures\albedo\LightPaneling.png" />
+    <Content Include="textures\albedo\Magma.png" />
+    <Content Include="textures\albedo\Marble.png" />
+    <Content Include="textures\albedo\MarbleTiles.png" />
+    <Content Include="textures\albedo\TrinsicHouseFloor.png" />
+    <Content Include="textures\albedo\TrinsicStoneFloor.png" />
+    <Content Include="textures\albedo\WaterBucket.png" />
+    <Content Include="textures\albedo\WoodParquetFloor.png" />
+    <Content Include="textures\normal\CarpentryWorkbench.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="audio\Reveille.ogg" />
+    <None Include="audio\Taps.ogg" />
+    <None Include="configs\AdvancedStoneMasonryWorkbench.json" />
+    <None Include="configs\AdvancedStoneMasonry.json" />
+    <None Include="configs\AdvancedAgriculture.json" />
+    <None Include="configs\AdvancedAgricultureWorkbench.json" />
+    <None Include="configs\FletcheryWorkbench.json" />
+    <None Include="configs\Fletchery.json" />
+    <None Include="configs\Carpenter.json" />
+    <None Include="configs\CarpentryWorkbench.json" />
+    <None Include="configs\shopping.json" />
+    <None Include="configs\smelting.json" />
+    <None Include="configs\stonemasonry.json" />
+    <None Include="configs\texturemapping.json" />
+    <None Include="configs\types.json" />
+    <None Include="configs\crafting.json" />
+    <None Include="configs\UpdateTextures.json" />
+    <None Include="configs\UpdateTypes.json" />
+    <None Include="localization\en-US\translation.json" />
+    <None Include="UpdateServer.Bat" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>mkdir Ulfric
+mkdir Ulfric\ColonyAddOns
+copy *.* Ulfric\ColonyAddOns /y
+del *.* /q
+copy ..\..\..\modinfo.json  Ulfric/y
+cd Ulfric\ColonyAddOns
+mkdir icons
+copy ..\..\..\..\icons\*.* icons /y
+mkdir configs
+copy ..\..\..\..\configs\*.* configs /y
+mkdir textures
+xcopy ..\..\..\..\textures\*.* textures /e /y
+mkdir localization
+xcopy ..\..\..\..\localization\*.* localization /e /y
+mkdir audio
+xcopy ..\..\..\..\audio\*.* audio /e /y
+</PostBuildEvent>
+  </PropertyGroup>
+  <PropertyGroup>
+    <PreBuildEvent>rmdir Ulfric /s /q</PreBuildEvent>
+  </PropertyGroup>
+</Project>
