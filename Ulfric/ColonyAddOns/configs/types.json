@@ -1,0 +1,1095 @@
+{
+    "FloorTile": {
+        "icon": "FloorTile.png",
+        "onPlaceAudio": "vanilla.woodPlace",
+        "onRemoveAudio": "vanilla.woodDeleteLight",
+        "sideall": "SELF",
+        "maxStackSize": 600
+    },
+    "FloorDarkHardwood": {
+        "icon": "FloorDarkHardwood.png",
+        "onPlaceAudio": "vanilla.woodPlace",
+        "onRemoveAudio": "vanilla.woodDeleteLight",
+        "sideall": "SELF",
+        "maxStackSize": 600
+    },
+    "FloorTrinsicHouse": {
+        "icon": "FloorTrinsicHouse.png",
+        "onPlaceAudio": "vanilla.woodPlace",
+        "onRemoveAudio": "vanilla.woodDeleteLight",
+        "sideall": "SELF",
+        "maxStackSize": 600
+    },
+    "FloorWoodParquet": {
+        "icon": "FloorWoodParquet.png",
+        "onPlaceAudio": "vanilla.woodPlace",
+        "onRemoveAudio": "vanilla.woodDeleteLight",
+        "sideall": "SELF",
+        "maxStackSize": 600
+    },
+    "Gravel": {
+        "icon": "Gravel.png",
+        "onPlaceAudio": "vanilla.stonePlace",
+        "onRemoveAudio": "vanilla.stoneDelete",
+        "sideall": "SELF",
+        "maxStackSize": 600,
+        "destructionTime": 600
+    },
+    "AshySandstone": {
+        "icon": "AshySandstone.png",
+        "onPlaceAudio": "vanilla.stonePlace",
+        "onRemoveAudio": "vanilla.stoneDelete",
+        "sideall": "SELF",
+        "maxStackSize": 600,
+        "destructionTime": 600
+    },
+    "FineSoil": {
+        "icon": "FineSoil.png",
+        "onPlaceAudio": "vanilla.dirtPlace",
+        "onRemoveAudio": "vanilla.grassDelete",
+        "sideall": "SELF",
+        "isFertile": true,
+        "maxStackSize": 600
+    },
+    "HardenedLava": {
+        "icon": "HardenedLava.png",
+        "onPlaceAudio": "vanilla.stonePlace",
+        "onRemoveAudio": "vanilla.stoneDelete",
+        "sideall": "SELF",
+        "maxStackSize": 600,
+        "destructionTime": 600
+    },
+    "LightPaneling": {
+        "icon": "LightPaneling.png",
+        "onPlaceAudio": "vanilla.woodPlace",
+        "onRemoveAudio": "vanilla.woodDeleteLight",
+        "sideall": "SELF",
+        "maxStackSize": 600
+    },
+    "MarbleTiles": {
+        "icon": "MarbleTiles.png",
+        "onPlaceAudio": "vanilla.stonePlace",
+        "onRemoveAudio": "vanilla.stoneDelete",
+        "sideall": "SELF",
+        "maxStackSize": 600,
+        "destructionTime": 600
+    },
+    "FloorTrinsicStone": {
+        "icon": "FloorTrinsicStone.png",
+        "onPlaceAudio": "vanilla.stonePlace",
+        "onRemoveAudio": "vanilla.stoneDelete",
+        "sideall": "SELF",
+        "maxStackSize": 600,
+        "destructionTime": 600
+    },
+    "Marble": {
+        "sideall": "SELF",
+        "maxStackSize": 600,
+        "icon": "marble.png",
+        "onPlaceAudio": "vanilla.stonePlace",
+        "onRemoveAudio": "vanilla.stoneDelete",
+        "destructionTime": 600
+    },
+	"rawMarble": {
+		"categories" : [
+			"ingredient",
+			"raw"
+		],
+        "icon": "rawMarble.png",
+		"isPlaceable" : false
+	},
+	"infiniteMarble" : {
+		"customData" : {
+			"minerIsMineable" : true,
+			"minerMiningTime" : 10
+		},
+		"destructionTime" : 1250,
+		"onRemoveAudio" : "vanilla.stoneDelete",
+		"onRemoveType" : "rawMarble",
+		"sideall" : "SELF"
+	},
+    "Magma": {
+        "icon": "Magma.png",
+        "maxStackSize": 600,
+        "isPlaceable": false
+    },
+	"infiniteWaterSource" : {
+		"customData" : {
+			"minerIsMineable" : true,
+			"minerMiningTime" : 3
+		},
+		"destructionTime" : 600,
+		"onRemoveAudio" : "vanilla.stoneDelete",
+		"onRemoveType" : "WaterBucket",
+		"sideall" : "SELF"
+	},
+    "WaterBucket": {
+		"categories" : [
+			"ingredient",
+			"raw"
+		],
+        "icon": "WaterBucket.png",
+        "isPlaceable": false
+    },
+    "CarpentryWorkbench": {
+        "icon": "CarpentryWorkbench.png",
+        "onPlaceAudio": "vanilla.woodPlace",
+        "onRemoveAudio": "vanilla.woodDeleteLight",
+        "sideall": "LightPaneling",
+        "sidey+": "CarpentryWorkbench"
+    },
+    "FletcheryWorkbench": {
+        "icon": "FletcheryWorkbench.png",
+        "onPlaceAudio": "vanilla.woodPlace",
+        "onRemoveAudio": "vanilla.woodDeleteLight",
+        "sideall": "vanilla.planks",
+        "sidey+": "FletcheryWorkbench"
+    },
+    "AdvancedStoneMasonryWorkbench": {
+        "icon": "AdvancedStoneMasonryWorkbench.png",
+        "onPlaceAudio": "vanilla.woodPlace",
+        "onRemoveAudio": "vanilla.woodDeleteLight",
+        "sideall": "BrickWhite",
+        "sidey+": "AdvancedStoneMasonryWorkbench"
+    },
+    "AdvancedAgricultureWorkbench": {
+        "icon": "AdvancedAgricultureWorkbench.png",
+        "onPlaceAudio": "vanilla.woodPlace",
+        "onRemoveAudio": "vanilla.woodDeleteLight",
+        "sideall": "AdvancedAgricultureWorkbenchSides",
+        "sidey+": "AdvancedAgricultureWorkbenchTop"
+    },
+	"HeraldStand": {
+        "icon": "HeraldStand.png",
+        "onPlaceAudio": "vanilla.woodPlace",
+        "onRemoveAudio": "vanilla.woodDeleteLight",
+        "sideall": "HeraldStand"
+		},
+	"BlackDirtGrungyMetal": {
+        "icon": "BlackDirtGrungyMetal.png",
+        "sideall": "SELF",
+        "maxStackSize": 600,
+        "onPlaceAudio": "vanilla.stonePlace",
+        "onRemoveAudio": "vanilla.stoneDelete"
+    },
+    "BlackRottenWood": {
+        "icon": "BlackRottenWood.png",
+        "sideall": "SELF",
+        "maxStackSize": 600,
+        "onPlaceAudio": "vanilla.woodPlace",
+        "onRemoveAudio": "vanilla.woodDeleteLight"
+    },
+    "BrownishGreenWoodPanel": {
+        "icon": "BrownishGreenWoodPanel.png",
+        "sideall": "SELF",
+        "maxStackSize": 600,
+        "onPlaceAudio": "vanilla.woodPlace",
+        "onRemoveAudio": "vanilla.woodDeleteLight"
+    },
+    "BrownPlaster": {
+        "icon": "BrownPlaster.png",
+        "sideall": "SELF",
+        "maxStackSize": 600,
+        "onPlaceAudio": "vanilla.dirtPlace",
+        "onRemoveAudio": "vanilla.grassDelete",
+        "destructionTime": 600
+    },
+    "ChiseledBlackStone": {
+        "icon": "ChiseledBlackStone.png",
+        "sideall": "SELF",
+        "maxStackSize": 600,
+        "onPlaceAudio": "vanilla.stonePlace",
+        "onRemoveAudio": "vanilla.stoneDelete",
+        "destructionTime": 600
+    },
+    "CobbleStoneWall": {
+        "icon": "CobbleStoneWall.png",
+        "sideall": "SELF",
+        "maxStackSize": 600,
+        "onPlaceAudio": "vanilla.woodPlace",
+        "onRemoveAudio": "vanilla.woodDeleteLight",
+        "destructionTime": 600
+    },
+    "ConcreteBrickTiles": {
+        "icon": "ConcreteBrickTiles.png",
+        "sideall": "SELF",
+        "maxStackSize": 600,
+        "onPlaceAudio": "vanilla.stonePlace",
+        "onRemoveAudio": "vanilla.stoneDelete",
+        "destructionTime": 600
+    },
+    "DarkWoodFrameTopAndBottom": {
+        "icon": "DarkWoodFrameTopAndBottom.png",
+        "sideall": "SELF",
+        "maxStackSize": 600,
+        "onPlaceAudio": "vanilla.woodPlace",
+        "onRemoveAudio": "vanilla.woodDeleteLight"
+    },
+    "GreyWoodPanelWithPins": {
+        "icon": "GreyWoodPanelWithPins.png",
+        "sideall": "SELF",
+        "maxStackSize": 600,
+        "onPlaceAudio": "vanilla.woodPlace",
+        "onRemoveAudio": "vanilla.woodDeleteLight"
+    },
+    "DarkWoodStrapped": {
+        "icon": "DarkWoodStrapped.png",
+        "sideall": "SELF",
+        "maxStackSize": 600,
+        "onPlaceAudio": "vanilla.woodPlace",
+        "onRemoveAudio": "vanilla.woodDeleteLight"
+    },
+    "DirtyLargeBlocksWall": {
+        "icon": "DirtyLargeBlocksWall.png",
+        "sideall": "SELF",
+        "maxStackSize": 600,
+        "onPlaceAudio": "vanilla.stonePlace",
+        "onRemoveAudio": "vanilla.stoneDelete",
+        "destructionTime": 600
+    },
+    "DustyGreyStone": {
+        "icon": "DustyGreyStone.png",
+        "sideall": "SELF",
+        "maxStackSize": 600,
+        "onPlaceAudio": "vanilla.stonePlace",
+        "onRemoveAudio": "vanilla.stoneDelete",
+        "destructionTime": 600
+    },
+    "FancyChiseledBlackStone": {
+        "icon": "DustyGreyStone.png",
+        "sideall": "SELF",
+        "maxStackSize": 600,
+        "onPlaceAudio": "vanilla.stonePlace",
+        "onRemoveAudio": "vanilla.stoneDelete",
+        "destructionTime": 600
+    },
+    "FancyCobblestoneWall": {
+        "icon": "FancyCobblestoneWall.png",
+        "sideall": "SELF",
+        "maxStackSize": 600,
+        "onPlaceAudio": "vanilla.stonePlace",
+        "onRemoveAudio": "vanilla.stoneDelete",
+        "destructionTime": 600
+    },
+    "FancyGreyBrick": {
+        "icon": "FancyGreyBrick.png",
+        "sideall": "SELF",
+        "maxStackSize": 600,
+        "onPlaceAudio": "vanilla.stonePlace",
+        "onRemoveAudio": "vanilla.stoneDelete",
+        "destructionTime": 600
+    },
+    "FancyPavingSlabs": {
+        "icon": "FancyPavingSlabs.png",
+        "sideall": "SELF",
+        "maxStackSize": 600,
+        "onPlaceAudio": "vanilla.stonePlace",
+        "onRemoveAudio": "vanilla.stoneDelete",
+        "destructionTime": 600
+    },
+    "GreyStone": {
+        "icon": "GreyStone.png",
+        "sideall": "SELF",
+        "maxStackSize": 600,
+        "onPlaceAudio": "vanilla.stonePlace",
+        "onRemoveAudio": "vanilla.stoneDelete",
+        "destructionTime": 600
+    },
+    "GreyStoneConcreteWall": {
+        "icon": "GreyStoneConcreteWall.png",
+        "sideall": "SELF",
+        "maxStackSize": 600,
+        "onPlaceAudio": "vanilla.stonePlace",
+        "onRemoveAudio": "vanilla.stoneDelete",
+        "destructionTime": 600
+    },
+    "MetalReenforcedDarkWood": {
+        "icon": "MetalReenforcedDarkWood.png",
+        "sideall": "SELF",
+        "maxStackSize": 600,
+        "onPlaceAudio": "vanilla.woodPlace",
+        "onRemoveAudio": "vanilla.woodDeleteLight"
+    },
+    "OrangeMarble": {
+        "icon": "OrangeMarble.png",
+        "sideall": "SELF",
+        "maxStackSize": 600,
+        "onPlaceAudio": "vanilla.stonePlace",
+        "onRemoveAudio": "vanilla.stoneDelete",
+        "destructionTime": 600
+    },
+    "RockWall": {
+        "icon": "RockWall.png",
+        "sideall": "SELF",
+        "maxStackSize": 600,
+        "onPlaceAudio": "vanilla.stonePlace",
+        "onRemoveAudio": "vanilla.stoneDelete",
+        "destructionTime": 600
+    },
+    "RoughBrownStone": {
+        "icon": "RoughBrownStone.png",
+        "sideall": "SELF",
+        "maxStackSize": 600,
+        "onPlaceAudio": "vanilla.stonePlace",
+        "onRemoveAudio": "vanilla.stoneDelete",
+        "destructionTime": 600
+    },
+    "TanRoughStone": {
+        "icon": "TanRoughStone.png",
+        "sideall": "SELF",
+        "maxStackSize": 600,
+        "onPlaceAudio": "vanilla.stonePlace",
+        "onRemoveAudio": "vanilla.stoneDelete",
+        "destructionTime": 600
+    },
+    "BrickworkWornBrown": {
+        "icon": "BrickworkWornBrown.png",
+        "sideall": "SELF",
+        "maxStackSize": 600,
+        "onPlaceAudio": "vanilla.stonePlace",
+        "onRemoveAudio": "vanilla.stoneDelete",
+        "destructionTime": 600
+    },
+    "BrickWhite": {
+        "icon": "BrickWhite.png",
+        "sideall": "SELF",
+        "maxStackSize": 600,
+        "onPlaceAudio": "vanilla.stonePlace",
+        "onRemoveAudio": "vanilla.stoneDelete",
+        "destructionTime": 600
+    },
+    "BambooWall": {
+        "icon": "BambooWall.png",
+        "onPlaceAudio": "vanilla.woodPlace",
+        "onRemoveAudio": "vanilla.woodDeleteLight",
+        "sideall": "SELF",
+        "maxStackSize": 600
+    },
+    "Basket": {
+        "icon": "Basket.png",
+        "onPlaceAudio": "vanilla.woodPlace",
+        "onRemoveAudio": "vanilla.woodDeleteLight",
+        "sideall": "SELF",
+        "maxStackSize": 600
+    },
+    "BrickAlternatingMud": {
+        "icon": "BrickAlternatingMud.png",
+        "onPlaceAudio": "vanilla.stonePlace",
+        "onRemoveAudio": "vanilla.stoneDelete",
+        "sideall": "SELF",
+        "maxStackSize": 600,
+        "destructionTime": 600
+    },
+    "BrickBlackRough": {
+        "icon": "BrickBlackRough.png",
+        "onPlaceAudio": "vanilla.stonePlace",
+        "onRemoveAudio": "vanilla.stoneDelete",
+        "sideall": "SELF",
+        "maxStackSize": 600,
+        "destructionTime": 600
+    },
+    "BrickBurlywood": {
+        "icon": "BrickBurlywood.png",
+        "onPlaceAudio": "vanilla.stonePlace",
+        "onRemoveAudio": "vanilla.stoneDelete",
+        "sideall": "SELF",
+        "maxStackSize": 600,
+        "destructionTime": 600
+    },
+    "BrickGreenChipped": {
+        "icon": "BrickGreenChipped.png",
+        "onPlaceAudio": "vanilla.stonePlace",
+        "onRemoveAudio": "vanilla.stoneDelete",
+        "sideall": "SELF",
+        "maxStackSize": 600,
+        "destructionTime": 600
+    },
+    "BrickLight": {
+        "icon": "BrickLight.png",
+        "onPlaceAudio": "vanilla.stonePlace",
+        "onRemoveAudio": "vanilla.stoneDelete",
+        "sideall": "SELF",
+        "maxStackSize": 600,
+        "destructionTime": 600
+    },
+    "BrickRedBasketweave": {
+        "icon": "BrickRedBasketweave.png",
+        "onPlaceAudio": "vanilla.stonePlace",
+        "onRemoveAudio": "vanilla.stoneDelete",
+        "sideall": "SELF",
+        "maxStackSize": 600,
+        "destructionTime": 600
+    },
+    "BricksBubbly": {
+        "icon": "BricksBubbly.png",
+        "onPlaceAudio": "vanilla.woodPlace",
+        "onRemoveAudio": "vanilla.woodDeleteLight",
+        "sideall": "SELF",
+        "maxStackSize": 600,
+        "destructionTime": 600
+    },
+    "CementLargeBlockWall": {
+        "icon": "CementLargeBlockWall.png",
+        "onPlaceAudio": "vanilla.stonePlace",
+        "onRemoveAudio": "vanilla.stoneDelete",
+        "sideall": "SELF",
+        "maxStackSize": 600,
+        "destructionTime": 600
+    },
+    "CorrodedTechnoTiles": {
+        "icon": "CorrodedTechnoTiles.png",
+        "onPlaceAudio": "vanilla.stonePlace",
+        "onRemoveAudio": "vanilla.stoneDelete",
+        "sideall": "SELF",
+        "maxStackSize": 600,
+        "destructionTime": 600
+    },
+    "FloorBeigeWood": {
+        "icon": "FloorBeigeWood.png",
+        "onPlaceAudio": "vanilla.woodPlace",
+        "onRemoveAudio": "vanilla.woodDeleteLight",
+        "sideall": "SELF",
+        "maxStackSize": 600
+    },
+    "FloorBlueStainedBasketweave": {
+        "icon": "FloorBlueStainedBasketweave.png",
+        "onPlaceAudio": "vanilla.woodPlace",
+        "onRemoveAudio": "vanilla.woodDeleteLight",
+        "sideall": "SELF",
+        "maxStackSize": 600
+    },
+    "FloorChippedBricks": {
+        "icon": "FloorChippedBricks.png",
+        "onPlaceAudio": "vanilla.stonePlace",
+        "onRemoveAudio": "vanilla.stoneDelete",
+        "sideall": "SELF",
+        "maxStackSize": 600,
+        "destructionTime": 600
+    },
+    "FloorConcrete": {
+        "icon": "FloorConcrete.png",
+        "onPlaceAudio": "vanilla.woodPlace",
+        "onRemoveAudio": "vanilla.woodDeleteLight",
+        "sideall": "SELF",
+        "maxStackSize": 600,
+        "destructionTime": 600
+    },
+    "FloorDarkWood": {
+        "icon": "FloorDarkWood.png",
+        "onPlaceAudio": "vanilla.woodPlace",
+        "onRemoveAudio": "vanilla.woodDeleteLight",
+        "sideall": "SELF",
+        "maxStackSize": 600
+    },
+    "FloorFadedBasketweave": {
+        "icon": "FloorFadedBasketweave.png",
+        "onPlaceAudio": "vanilla.woodPlace",
+        "onRemoveAudio": "vanilla.woodDeleteLight",
+        "sideall": "SELF",
+        "maxStackSize": 600
+    },
+    "FloorGougedBasketweave": {
+        "icon": "FloorGougedBasketweave.png",
+        "onPlaceAudio": "vanilla.woodPlace",
+        "onRemoveAudio": "vanilla.woodDeleteLight",
+        "sideall": "SELF",
+        "maxStackSize": 600
+    },
+    "FloorGrittyLongBoards": {
+        "icon": "FloorGrittyLongBoards.png",
+        "onPlaceAudio": "vanilla.woodPlace",
+        "onRemoveAudio": "vanilla.woodDeleteLight",
+        "sideall": "SELF",
+        "maxStackSize": 600
+    },
+    "FloorLightBasketweave": {
+        "icon": "FloorLightBasketweave.png",
+        "onPlaceAudio": "vanilla.woodPlace",
+        "onRemoveAudio": "vanilla.woodDeleteLight",
+        "sideall": "SELF",
+        "maxStackSize": 600
+    },
+    "FloorPinkBasketweave": {
+        "icon": "FloorPinkBasketweave.png",
+        "onPlaceAudio": "vanilla.woodPlace",
+        "onRemoveAudio": "vanilla.woodDeleteLight",
+        "sideall": "SELF",
+        "maxStackSize": 600
+    },
+    "FloorWrinkledBasketweave": {
+        "icon": "FloorWrinkledBasketweave.png",
+        "onPlaceAudio": "vanilla.woodPlace",
+        "onRemoveAudio": "vanilla.woodDeleteLight",
+        "sideall": "SELF",
+        "maxStackSize": 600
+    },
+    "FloorDarkHerringbone": {
+        "icon": "FloorDarkHerringbone.png",
+        "onPlaceAudio": "vanilla.woodPlace",
+        "onRemoveAudio": "vanilla.woodDeleteLight",
+        "sideall": "SELF",
+        "maxStackSize": 600
+    },
+    "GraniteTechno": {
+        "icon": "GraniteTechno.png",
+        "onPlaceAudio": "vanilla.stonePlace",
+        "onRemoveAudio": "vanilla.stoneDelete",
+        "sideall": "SELF",
+        "maxStackSize": 600,
+        "destructionTime": 600
+    },
+    "GraniteWall": {
+        "icon": "GraniteWall.png",
+        "onPlaceAudio": "vanilla.stonePlace",
+        "onRemoveAudio": "vanilla.stoneDelete",
+        "sideall": "SELF",
+        "maxStackSize": 600,
+        "destructionTime": 600
+    },
+    "Gravel2": {
+        "icon": "Gravel2.png",
+        "onPlaceAudio": "vanilla.stonePlace",
+        "onRemoveAudio": "vanilla.stoneDelete",
+        "sideall": "SELF",
+        "maxStackSize": 600,
+        "destructionTime": 600
+    },
+    "Gravel3": {
+        "icon": "Gravel3.png",
+        "onPlaceAudio": "vanilla.stonePlace",
+        "onRemoveAudio": "vanilla.stoneDelete",
+        "sideall": "SELF",
+        "maxStackSize": 600,
+        "destructionTime": 600
+    },
+    "Gravel4": {
+        "icon": "Gravel4.png",
+        "onPlaceAudio": "vanilla.stonePlace",
+        "onRemoveAudio": "vanilla.stoneDelete",
+        "sideall": "SELF",
+        "maxStackSize": 600,
+        "destructionTime": 600
+    },
+    "GreenGraniteWalkway": {
+        "icon": "GreenGraniteWalkway.png",
+        "onPlaceAudio": "vanilla.stonePlace",
+        "onRemoveAudio": "vanilla.stoneDelete",
+        "sideall": "SELF",
+        "maxStackSize": 600,
+        "destructionTime": 600
+    },
+    "GreenSiding": {
+        "icon": "GreenSiding.png",
+        "onPlaceAudio": "vanilla.woodPlace",
+        "onRemoveAudio": "vanilla.woodDeleteLight",
+        "sideall": "SELF",
+        "maxStackSize": 600
+    },
+    "GreyWoodFrameTopAndBottom": {
+        "icon": "GreyWoodFrameTopAndBottom.png",
+        "onPlaceAudio": "vanilla.woodPlace",
+        "onRemoveAudio": "vanilla.woodDeleteLight",
+        "sideall": "SELF",
+        "maxStackSize": 600
+    },
+    "Hedge": {
+        "icon": "Hedge.png",
+        "onPlaceAudio": "vanilla.dirtPlace",
+        "onRemoveAudio": "vanilla.grassDelete",
+        "sideall": "SELF",
+        "maxStackSize": 600
+    },
+    "LightBoards": {
+        "icon": "LightBoards.png",
+        "onPlaceAudio": "vanilla.woodPlace",
+        "onRemoveAudio": "vanilla.woodDeleteLight",
+        "sideall": "SELF",
+        "maxStackSize": 600
+    },
+    "MahoganyBoards": {
+        "icon": "MahoganyBoards.png",
+        "onPlaceAudio": "vanilla.woodPlace",
+        "onRemoveAudio": "vanilla.woodDeleteLight",
+        "sideall": "SELF",
+        "maxStackSize": 600
+    },
+    "MapleSiding": {
+        "icon": "MapleSiding.png",
+        "onPlaceAudio": "vanilla.woodPlace",
+        "onRemoveAudio": "vanilla.woodDeleteLight",
+        "sideall": "SELF",
+        "maxStackSize": 600,
+        "destructionTime": 600
+    },
+    "MarbleBlack": {
+        "icon": "MarbleBlack.png",
+        "onPlaceAudio": "vanilla.stonePlace",
+        "onRemoveAudio": "vanilla.stoneDelete",
+        "sideall": "SELF",
+        "maxStackSize": 600,
+        "destructionTime": 600
+    },
+    "MarbleBlood": {
+        "icon": "MarbleBlood.png",
+        "onPlaceAudio": "vanilla.stonePlace",
+        "onRemoveAudio": "vanilla.stoneDelete",
+        "sideall": "SELF",
+        "maxStackSize": 600,
+        "destructionTime": 600
+    },
+    "MarbleBlue": {
+        "icon": "MarbleBlue.png",
+        "onPlaceAudio": "vanilla.stonePlace",
+        "onRemoveAudio": "vanilla.stoneDelete",
+        "sideall": "SELF",
+        "maxStackSize": 600,
+        "destructionTime": 600
+    },
+    "MarbleBlueCrack": {
+        "icon": "MarbleBlueCrack.png",
+        "onPlaceAudio": "vanilla.stonePlace",
+        "onRemoveAudio": "vanilla.stoneDelete",
+        "sideall": "SELF",
+        "maxStackSize": 600,
+        "destructionTime": 600
+    },
+    "MarbleBrightPurple": {
+        "icon": "MarbleBrightPurple.png",
+        "onPlaceAudio": "vanilla.stonePlace",
+        "onRemoveAudio": "vanilla.stoneDelete",
+        "sideall": "SELF",
+        "maxStackSize": 600,
+        "destructionTime": 600
+    },
+    "MarbleBrownSwirl": {
+        "icon": "MarbleBrownSwirl.png",
+        "onPlaceAudio": "vanilla.stonePlace",
+        "onRemoveAudio": "vanilla.stoneDelete",
+        "sideall": "SELF",
+        "maxStackSize": 600,
+        "destructionTime": 600
+    },
+    "MarbleButterscotchFeldspar": {
+        "icon": "MarbleButterscotchFeldspar.png",
+        "onPlaceAudio": "vanilla.stonePlace",
+        "onRemoveAudio": "vanilla.stoneDelete",
+        "sideall": "SELF",
+        "maxStackSize": 600,
+        "destructionTime": 600
+    },
+    "MarbleDarkGray": {
+        "icon": "MarbleDarkGray.png",
+        "onPlaceAudio": "vanilla.stonePlace",
+        "onRemoveAudio": "vanilla.stoneDelete",
+        "sideall": "SELF",
+        "maxStackSize": 600,
+        "destructionTime": 600
+    },
+    "MarbleDarkGreen": {
+        "icon": "MarbleDarkGreen.png",
+        "onPlaceAudio": "vanilla.stonePlace",
+        "onRemoveAudio": "vanilla.stoneDelete",
+        "sideall": "SELF",
+        "maxStackSize": 600,
+        "destructionTime": 600
+    },
+    "MarbleEgyptian": {
+        "icon": "MarbleEgyptian.png",
+        "onPlaceAudio": "vanilla.stonePlace",
+        "onRemoveAudio": "vanilla.stoneDelete",
+        "sideall": "SELF",
+        "maxStackSize": 600,
+        "destructionTime": 600
+    },
+    "MarbleEmerald": {
+        "icon": "MarbleEmerald.png",
+        "onPlaceAudio": "vanilla.stonePlace",
+        "onRemoveAudio": "vanilla.stoneDelete",
+        "sideall": "SELF",
+        "maxStackSize": 600,
+        "destructionTime": 600
+    },
+    "MarbleGlassyMarine": {
+        "icon": "MarbleGlassyMarine.png",
+        "onPlaceAudio": "vanilla.stonePlace",
+        "onRemoveAudio": "vanilla.stoneDelete",
+        "sideall": "SELF",
+        "maxStackSize": 600,
+        "destructionTime": 600
+    },
+    "MarbleGlassyOrange": {
+        "icon": "MarbleGlassyOrange.png",
+        "onPlaceAudio": "vanilla.stonePlace",
+        "onRemoveAudio": "vanilla.stoneDelete",
+        "sideall": "SELF",
+        "maxStackSize": 600,
+        "destructionTime": 600
+    },
+    "MarbleGlassyPink": {
+        "icon": "MarbleGlassyPink.png",
+        "onPlaceAudio": "vanilla.stonePlace",
+        "onRemoveAudio": "vanilla.stoneDelete",
+        "sideall": "SELF",
+        "maxStackSize": 600,
+        "destructionTime": 600
+    },
+    "MarbleGlassyRed": {
+        "icon": "MarbleGlassyRed.png",
+        "onPlaceAudio": "vanilla.stonePlace",
+        "onRemoveAudio": "vanilla.stoneDelete",
+        "sideall": "SELF",
+        "maxStackSize": 600,
+        "destructionTime": 600
+    },
+    "MarbleGray": {
+        "icon": "MarbleGray.png",
+        "onPlaceAudio": "vanilla.stonePlace",
+        "onRemoveAudio": "vanilla.stoneDelete",
+        "sideall": "SELF",
+        "maxStackSize": 600,
+        "destructionTime": 600
+    },
+    "MarbleGreen": {
+        "icon": "MarbleGreen.png",
+        "onPlaceAudio": "vanilla.stonePlace",
+        "onRemoveAudio": "vanilla.stoneDelete",
+        "sideall": "SELF",
+        "maxStackSize": 600,
+        "destructionTime": 600
+    },
+    "MarbleLight": {
+        "icon": "MarbleLight.png",
+        "onPlaceAudio": "vanilla.stonePlace",
+        "onRemoveAudio": "vanilla.stoneDelete",
+        "sideall": "SELF",
+        "maxStackSize": 600,
+        "destructionTime": 600
+    },
+    "MarbleLightGreen": {
+        "icon": "MarbleLightGreen.png",
+        "onPlaceAudio": "vanilla.stonePlace",
+        "onRemoveAudio": "vanilla.stoneDelete",
+        "sideall": "SELF",
+        "maxStackSize": 600,
+        "destructionTime": 600
+    },
+    "MarbleOnixPina": {
+        "icon": "MarbleOnixPina.png",
+        "onPlaceAudio": "vanilla.stonePlace",
+        "onRemoveAudio": "vanilla.stoneDelete",
+        "sideall": "SELF",
+        "maxStackSize": 600,
+        "destructionTime": 600
+    },
+    "MarblePurple": {
+        "icon": "MarblePurple.png",
+        "onPlaceAudio": "vanilla.stonePlace",
+        "onRemoveAudio": "vanilla.stoneDelete",
+        "sideall": "SELF",
+        "maxStackSize": 600,
+        "destructionTime": 600
+    },
+    "MarbleRough": {
+        "icon": "MarbleRough.png",
+        "onPlaceAudio": "vanilla.stonePlace",
+        "onRemoveAudio": "vanilla.stoneDelete",
+        "sideall": "SELF",
+        "maxStackSize": 600,
+        "destructionTime": 600
+    },
+    "MarbleRoughPink": {
+        "icon": "MarbleRoughPink.png",
+        "onPlaceAudio": "vanilla.stonePlace",
+        "onRemoveAudio": "vanilla.stoneDelete",
+        "sideall": "SELF",
+        "maxStackSize": 600,
+        "destructionTime": 600
+    },
+    "MarbleSeaGreen": {
+        "icon": "MarbleSeaGreen.png",
+        "onPlaceAudio": "vanilla.stonePlace",
+        "onRemoveAudio": "vanilla.stoneDelete",
+        "sideall": "SELF",
+        "maxStackSize": 600,
+        "destructionTime": 600
+    },
+    "MarbleSmashedGray": {
+        "icon": "MarbleSmashedGray.png",
+        "onPlaceAudio": "vanilla.stonePlace",
+        "onRemoveAudio": "vanilla.stoneDelete",
+        "sideall": "SELF",
+        "maxStackSize": 600,
+        "destructionTime": 600
+    },
+    "MarbleTepeacaGris": {
+        "icon": "MarbleTepeacaGris.png",
+        "onPlaceAudio": "vanilla.stonePlace",
+        "onRemoveAudio": "vanilla.stoneDelete",
+        "sideall": "SELF",
+        "maxStackSize": 600,
+        "destructionTime": 600
+    },
+    "MarbleTile1": {
+        "icon": "MarbleTile1.png",
+        "onPlaceAudio": "vanilla.stonePlace",
+        "onRemoveAudio": "vanilla.stoneDelete",
+        "sideall": "SELF",
+        "maxStackSize": 600,
+        "destructionTime": 600
+    },
+    "NewShingles": {
+        "icon": "NewShingles.png",
+        "onPlaceAudio": "vanilla.woodPlace",
+        "onRemoveAudio": "vanilla.woodDeleteLight",
+        "sideall": "SELF",
+        "maxStackSize": 600
+    },
+    "OldShingles": {
+        "icon": "OldShingles.png",
+        "onPlaceAudio": "vanilla.woodPlace",
+        "onRemoveAudio": "vanilla.woodDeleteLight",
+        "sideall": "SELF",
+        "maxStackSize": 600
+    },
+    "OldWeatheredBoards": {
+        "icon": "OldWeatheredBoards.png",
+        "onPlaceAudio": "vanilla.woodPlace",
+        "onRemoveAudio": "vanilla.woodDeleteLight",
+        "sideall": "SELF",
+        "maxStackSize": 600
+    },
+    "OvergrownFence": {
+        "icon": "OvergrownFence.png",
+        "onPlaceAudio": "vanilla.dirtPlace",
+        "onRemoveAudio": "vanilla.grassDelete",
+        "sideall": "SELF",
+        "maxStackSize": 600
+    },
+    "PurpleSlate": {
+        "icon": "PurpleSlate.png",
+        "onPlaceAudio": "vanilla.stonePlace",
+        "onRemoveAudio": "vanilla.stoneDelete",
+        "sideall": "SELF",
+        "maxStackSize": 600,
+        "destructionTime": 600
+    },
+    "ScratchedLightBoards": {
+        "icon": "ScratchedLightBoards.png",
+        "onPlaceAudio": "vanilla.woodPlace",
+        "onRemoveAudio": "vanilla.woodDeleteLight",
+        "sideall": "SELF",
+        "maxStackSize": 600
+    },
+    "ShrubCover": {
+        "icon": "ShrubCover.png",
+        "onPlaceAudio": "vanilla.dirtPlace",
+        "onRemoveAudio": "vanilla.grassDelete",
+        "sideall": "SELF",
+        "maxStackSize": 600
+    },
+    "StoneBlockDarkWall": {
+        "icon": "StoneBlockDarkWall.png",
+        "onPlaceAudio": "vanilla.stonePlace",
+        "onRemoveAudio": "vanilla.stoneDelete",
+        "sideall": "SELF",
+        "maxStackSize": 600,
+        "destructionTime": 600
+    },
+    "StoneBlockRoughWall": {
+        "icon": "StoneBlockRoughWall.png",
+        "onPlaceAudio": "vanilla.stonePlace",
+        "onRemoveAudio": "vanilla.stoneDelete",
+        "sideall": "SELF",
+        "maxStackSize": 600,
+        "destructionTime": 600
+    },
+    "StoneBlocksWoodEdged": {
+        "icon": "StoneBlocksWoodEdged.png",
+        "onPlaceAudio": "vanilla.stonePlace",
+        "onRemoveAudio": "vanilla.stoneDelete",
+        "sideall": "SELF",
+        "maxStackSize": 600,
+        "destructionTime": 600
+    },
+    "StoneBrickWall": {
+        "icon": "StoneBrickWall.png",
+        "onPlaceAudio": "vanilla.stonePlace",
+        "onRemoveAudio": "vanilla.stoneDelete",
+        "sideall": "SELF",
+        "maxStackSize": 600,
+        "destructionTime": 600
+    },
+    "StoneMidnight": {
+        "icon": "StoneMidnight.png",
+        "onPlaceAudio": "vanilla.stonePlace",
+        "onRemoveAudio": "vanilla.stoneDelete",
+        "sideall": "SELF",
+        "maxStackSize": 600,
+        "destructionTime": 600
+    },
+    "StonePath": {
+        "icon": "StonePath.png",
+        "onPlaceAudio": "vanilla.stonePlace",
+        "onRemoveAudio": "vanilla.stoneDelete",
+        "sideall": "SELF",
+        "maxStackSize": 600,
+        "destructionTime": 600
+    },
+    "StoneWall1": {
+        "icon": "StoneWall1.png",
+        "onPlaceAudio": "vanilla.stonePlace",
+        "onRemoveAudio": "vanilla.stoneDelete",
+        "sideall": "SELF",
+        "maxStackSize": 600,
+        "destructionTime": 600
+    },
+    "StoneWall2": {
+        "icon": "StoneWall2.png",
+        "onPlaceAudio": "vanilla.stonePlace",
+        "onRemoveAudio": "vanilla.stoneDelete",
+        "sideall": "SELF",
+        "maxStackSize": 600,
+        "destructionTime": 600
+    },
+    "StoneWall3": {
+        "icon": "StoneWall3.png",
+        "onPlaceAudio": "vanilla.stonePlace",
+        "onRemoveAudio": "vanilla.stoneDelete",
+        "sideall": "SELF",
+        "maxStackSize": 600,
+        "destructionTime": 600
+    },
+    "StoneWall4": {
+        "icon": "StoneWall4.png",
+        "onPlaceAudio": "vanilla.stonePlace",
+        "onRemoveAudio": "vanilla.stoneDelete",
+        "sideall": "SELF",
+        "maxStackSize": 600,
+        "destructionTime": 600
+    },
+    "StoneWall5": {
+        "icon": "StoneWall5.png",
+        "onPlaceAudio": "vanilla.stonePlace",
+        "onRemoveAudio": "vanilla.stoneDelete",
+        "sideall": "SELF",
+        "maxStackSize": 600,
+        "destructionTime": 600
+    },
+    "StoneWall6": {
+        "icon": "StoneWall6.png",
+        "onPlaceAudio": "vanilla.stonePlace",
+        "onRemoveAudio": "vanilla.stoneDelete",
+        "sideall": "SELF",
+        "maxStackSize": 600,
+        "destructionTime": 600
+    },
+	"WoodLogEnds": {
+        "icon": "WoodLogEnds.png",
+        "onPlaceAudio": "vanilla.woodPlace",
+        "onRemoveAudio": "vanilla.woodDeleteLight",
+        "maxStackSize": 600,
+        "sideall": "SELF",
+		"isPlaceable" : false
+    },
+	"BirchLogsVert": {
+        "icon": "BirchLogs.png",
+        "onPlaceAudio": "vanilla.woodPlace",
+        "onRemoveAudio": "vanilla.woodDeleteLight",
+        "maxStackSize": 600,
+        "sideall": "SELF",
+		"isPlaceable" : false
+    },
+	"BirchLogsHorz": {
+        "icon": "BirchLogsHorz.png",
+        "onPlaceAudio": "vanilla.woodPlace",
+        "onRemoveAudio": "vanilla.woodDeleteLight",
+        "maxStackSize": 600,
+        "sideall": "SELF",
+		"isPlaceable" : false
+    },
+	"BirchLogFence": {
+        "icon": "BirchLogs.png",
+        "onPlaceAudio": "vanilla.woodPlace",
+        "onRemoveAudio": "vanilla.woodDeleteLight",
+        "maxStackSize": 600,
+        "sideall": "SELF",
+        "sidex+": "BirchLogsVert", , 
+        "sidex-": "BirchLogsVert", 
+        "sidey+": "WoodLogEnds", 
+        "sidey-": "WoodLogEnds", 
+        "sidez+": "BirchLogsVert", 
+        "sidez-": "BirchLogsVert"
+    },
+	 "WoodPile": {
+        "icon": "WoodLogEnds.png",
+        "onPlaceAudio": "vanilla.woodPlace",
+        "onRemoveAudio": "vanilla.woodDeleteLight",
+        "maxStackSize": 600,
+        "isRotatable" : true,
+        "needsBase" : true,
+        "rotatablex+": "WoodPilex+",
+        "rotatablex-": "WoodPilex-",
+        "rotatablez+": "WoodPilez+",
+        "rotatablez-": "WoodPilez-"
+    },
+    "WoodPilex+": {
+        "parentType": "WoodPile",
+        "sidex+": "WoodLogEnds",
+        "sidex-": "WoodLogEnds",
+        "sidey+": "BirchLogsHorz",
+        "sidey-": "BirchLogsHorz",
+        "sidez+": "BirchLogsHorz",
+        "sidez-": "BirchLogsHorz"
+    },
+    "WoodPilex-": {
+        "parentType": "WoodPile",
+        "sidex+": "WoodLogEnds",
+        "sidex-": "WoodLogEnds",
+        "sidey+": "BirchLogsHorz",
+        "sidey-": "BirchLogsHorz",
+        "sidez+": "BirchLogsHorz",
+        "sidez-": "BirchLogsHorz"
+    },
+    "WoodPilez+": {
+        "parentType": "WoodPile",
+        "sidex+": "BirchLogsHorz",
+        "sidex-": "BirchLogsHorz",
+        "sidey+": "BirchLogsVert",
+        "sidey-": "BirchLogsVert",
+        "sidez+": "WoodLogEnds",
+        "sidez-": "WoodLogEnds"
+    },
+    "WoodPilez-": {
+        "parentType": "WoodPile",
+        "sidex+": "BirchLogsHorz",
+        "sidex-": "BirchLogsHorz",
+        "sidey+": "BirchLogsVert",
+        "sidey-": "BirchLogsVert",
+        "sidez+": "WoodLogEnds",
+        "sidez-": "WoodLogEnds"
+    },
+    "CrateDarkWood": {
+        "icon": "CrateDarkWood.png",
+        "onPlaceAudio": "vanilla.woodPlace",
+        "onRemoveAudio": "vanilla.woodDeleteLight",
+        "sideall": "SELF",
+        "maxStackSize": 600,
+        "isCrate": true
+    },
+	  "CrateMetalReenforcedDarkWood": {
+        "icon": "CrateMetalReenforcedDarkWood.png",
+        "sideall": "SELF",
+        "maxStackSize": 600,
+        "onPlaceAudio": "vanilla.woodPlace",
+        "onRemoveAudio": "vanilla.woodDeleteLight",
+		    "isCrate": true
+    },
+	  "CrateMetalBlack": {
+        "icon": "CrateMetalBlack.png",
+        "sideall": "SELF",
+        "maxStackSize": 600,
+        "onPlaceAudio": "vanilla.woodPlace",
+        "onRemoveAudio": "vanilla.woodDeleteLight",
+		    "isCrate": true
+    }
+}

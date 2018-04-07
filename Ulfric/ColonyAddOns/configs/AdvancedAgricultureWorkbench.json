@@ -1,0 +1,44 @@
+﻿[
+  {
+    "name": "WoodPile",
+    "results": [{"type":"WoodPile","amount": 2}],
+    "requires": [{"type":"vanilla.planks","amount": 2}],
+    "defaultLimit": 0,
+    "defaultPriority": -100   
+  },
+  {
+    "name": "ShrubCover",
+    "results": [{"type":"ShrubCover","amount": 1}],
+    "requires": [{"type":"vanilla.leavestaiga","amount": 2}],
+    "defaultLimit": 0,
+    "defaultPriority": -100   
+  },
+  {
+    "name": "OvergrownFence",
+    "results": [{"type":"OvergrownFence","amount": 2}],
+    "requires": [{"type":"vanilla.planks","amount": 1},{"type":"vanilla.leavestemperate","amount": 2}],
+    "defaultLimit": 0,
+    "defaultPriority": -100   
+  },
+  {
+    "name": "Hedge",
+    "results": [{"type":"Hedge","amount": 1}],
+    "requires": [{"type":"vanilla.leavestemperate","amount": 2}],
+    "defaultLimit": 0,
+    "defaultPriority": -100    
+  },
+  {
+    "name": "BambooWall",
+    "results": [{"type":"BambooWall","amount": 1}],
+    "requires": [{"type":"vanilla.planks","amount": 1}],
+    "defaultLimit": 0,
+    "defaultPriority": -100    
+  },
+  {
+    "name": "FineSoil",
+    "results": [{"type":"FineSoil","amount": 2}],
+    "requires": [{"type":"vanilla.dirt","amount": 5},{"type":"vanilla.straw","amount": 5},{"type":"vanilla.leavestemperate","amount": 5}],
+    "defaultLimit": 0,
+    "defaultPriority": -100
+  }
+]

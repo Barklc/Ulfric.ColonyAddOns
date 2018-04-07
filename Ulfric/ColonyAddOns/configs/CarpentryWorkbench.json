@@ -1,0 +1,235 @@
+﻿[
+  {
+    "name": "FloorBeigeWood",
+    "results": [{"type":"FloorBeigeWood","amount": 1}],
+    "requires": [{"type":"vanilla.planks","amount": 1}],
+    "defaultLimit": 0,
+    "defaultPriority": -100    
+  },
+  {
+    "name": "ScratchedLightBoards",
+    "results": [{"type":"ScratchedLightBoards","amount": 1}],
+    "requires": [{"type":"vanilla.planks","amount": 1}],
+    "defaultLimit": 0,
+    "defaultPriority": -100   
+
+  },
+  {
+    "name": "CrateDarkWood",
+    "results": [{"type":"CrateDarkWood","amount": 1}],
+    "requires": [{"type":"vanilla.planks","amount": 1},{"type":"vanilla.coppernails","amount": 1}],
+    "defaultLimit": 0,
+    "defaultPriority": -100   
+  },
+  {
+    "name": "CrateMetalReenforcedDarkWood",
+    "results": [{"type":"CrateMetalReenforcedDarkWood","amount": 1}],
+    "requires": [{"type":"vanilla.planks","amount": 1},{"type":"vanilla.coppernails","amount": 1}],
+    "defaultLimit": 0,
+    "defaultPriority": -100   
+  },
+  {
+    "name": "NewShingles",
+    "results": [{"type":"NewShingles","amount": 1}],
+    "requires": [{"type":"vanilla.planks","amount": 1}],
+    "defaultLimit": 0,
+    "defaultPriority": -100   
+  },
+  {
+    "name": "OldShingles",
+    "results": [{"type":"OldShingles","amount": 1}],
+    "requires": [{"type":"vanilla.planks","amount": 1}],
+    "defaultLimit": 0,
+    "defaultPriority": -100   
+  },
+  {
+    "name": "OldWeatheredBoards",
+    "results": [{"type":"OldWeatheredBoards","amount": 1}],
+    "requires": [{"type":"vanilla.planks","amount": 1}],
+    "defaultLimit": 0,
+    "defaultPriority": -100   
+  },
+  {
+    "name": "FloorDarkHerringbone",
+    "results": [{"type":"FloorDarkHerringbone","amount": 1}],
+    "requires": [{"type":"vanilla.planks","amount": 2}],
+    "defaultLimit": 0,
+    "defaultPriority": -100    
+  },
+  {
+    "name": "GreenSiding",
+    "results": [{"type":"GreenSiding","amount": 1}],
+    "requires": [{"type":"vanilla.planks","amount": 2}],
+    "defaultLimit": 0,
+    "defaultPriority": -100    
+  },
+  {
+    "name": "GreyWoodFrameTopAndBottom",
+    "results": [{"type":"GreyWoodFrameTopAndBottom","amount": 1}],
+    "requires": [{"type":"vanilla.planks","amount": 2}],
+    "defaultLimit": 0,
+    "defaultPriority": -100    
+  },
+  {
+    "name": "LightBoards",
+    "results": [{"type":"LightBoards","amount": 1}],
+    "requires": [{"type":"vanilla.planks","amount": 2}],
+    "defaultLimit": 0,
+    "defaultPriority": -100    
+  },
+  {
+    "name": "MahoganyBoards",
+    "results": [{"type":"MahoganyBoards","amount": 1}],
+    "requires": [{"type":"vanilla.planks","amount": 2}],
+    "defaultLimit": 0,
+    "defaultPriority": -100    
+  },
+  {
+    "name": "MapleSiding",
+    "results": [{"type":"MapleSiding","amount": 1}],
+    "requires": [{"type":"vanilla.planks","amount": 2}],
+    "defaultLimit": 0,
+    "defaultPriority": -100    
+  },
+  {
+    "name": "FloorFadedBasketweave",
+    "results": [{"type":"FloorFadedBasketweave","amount": 1}],
+    "requires": [{"type":"vanilla.planks","amount": 2}],
+    "defaultLimit": 0,
+    "defaultPriority": -100    
+  },
+  {
+    "name": "FloorGougedBasketweave",
+    "results": [{"type":"FloorGougedBasketweave","amount": 1}],
+    "requires": [{"type":"vanilla.planks","amount": 2}],
+    "defaultLimit": 0,
+    "defaultPriority": -100    
+  },
+  {
+    "name": "FloorGrittyLongBoards",
+    "results": [{"type":"FloorGrittyLongBoards","amount": 1}],
+    "requires": [{"type":"vanilla.planks","amount": 2}],
+    "defaultLimit": 0,
+    "defaultPriority": -100    
+  },
+  {
+    "name": "FloorLightBasketweave",
+    "results": [{"type":"FloorLightBasketweave","amount": 1}],
+    "requires": [{"type":"vanilla.planks","amount": 2}],
+    "defaultLimit": 0,
+    "defaultPriority": -100    
+  },
+  {
+    "name": "FloorPinkBasketweave",
+    "results": [{"type":"FloorPinkBasketweave","amount": 1}],
+    "requires": [{"type":"vanilla.planks","amount": 2}],
+    "defaultLimit": 0,
+    "defaultPriority": -100    
+  },
+  {
+    "name": "FloorWrinkledBasketweave",
+    "results": [{"type":"FloorWrinkledBasketweave","amount": 1}],
+    "requires": [{"type":"vanilla.planks","amount": 2}],
+    "defaultLimit": 0,
+    "defaultPriority": -100    
+  },
+  {
+    "name": "FloorDarkWood",
+    "results": [{"type":"FloorDarkWood","amount": 1}],
+    "requires": [{"type":"vanilla.planks","amount": 2}],
+    "defaultLimit": 0,
+    "defaultPriority": -100    
+  },
+  {
+    "name": "FloorTile",
+    "results": [{"type":"FloorTile","amount": 1}],
+    "requires": [{"type":"vanilla.planks","amount": 1}],
+    "defaultPriority": -100,
+    "defaultLimit": 0
+  },
+  {
+    "name": "FloorDarkHardwood",
+    "results": [{"type":"FloorDarkHardwood","amount": 2}],
+    "requires": [{"type":"vanilla.coatedplanks","amount": 1},{"type":"vanilla.planks","amount":1}],
+    "defaultLimit": 0,
+    "defaultPriority": -100
+  },
+  {
+    "name": "FloorTrinsichouse",
+    "results": [{"type":"FloorTrinsicHouse","amount": 1}],
+    "requires": [{"type":"vanilla.blackplanks","amount": 1}],
+    "defaultLimit": 0,
+    "defaultPriority": -100
+  },
+  {
+    "name": "FloorWoodParquet",
+    "results": [{"type":"FloorWoodParquet","amount": 1}],
+    "requires": [{"type":"vanilla.planks","amount": 1}],
+    "defaultLimit": 0,
+    "defaultPriority": -100
+  },
+  {
+    "name": "LightPaneling",
+    "results": [{"type":"LightPaneling","amount": 1}],
+    "requires": [{"type":"vanilla.planks","amount": 1}],
+    "defaultLimit": 0,
+    "defaultPriority": -100
+  },
+  {
+	"name" : "coatedplanks",
+	"results":[{"type":"vanilla.coatedplanks","amount":3}],
+	"requires":[{"type":"vanilla.linseedoil","amount":3},{"type":"vanilla.planks","amount":3}],
+    "defaultLimit" : 3,
+	"defaultPriority" : -100,
+	"isOptional" : true
+  },
+  {
+    "name": "DarkWoodFrameTopAndBottom",
+    "results": [{"type":"DarkWoodFrameTopAndBottom","amount": 1}],
+    "requires": [{"type":"vanilla.planks","amount": 1}],
+    "defaultPriority": -100,
+    "defaultLimit": 0
+  },
+  {
+    "name": "GreyWoodPanelWithPins",
+    "results": [{"type":"GreyWoodPanelWithPins","amount": 1}],
+    "requires": [{"type":"vanilla.planks","amount": 1}],
+    "defaultPriority": -100,
+    "defaultLimit": 0
+  },
+  {
+    "name": "DarkWoodStrapped",
+    "results": [{"type":"DarkWoodStrapped","amount": 1}],
+    "requires": [{"type":"vanilla.planks","amount": 1}],
+    "defaultPriority": -100,
+    "defaultLimit": 0
+  },
+  {
+    "name": "MetalReenforcedDarkWood",
+    "results": [{"type":"MetalReenforcedDarkWood","amount": 1}],
+    "requires": [{"type":"vanilla.planks","amount": 1}],
+    "defaultPriority": -100,
+    "defaultLimit": 0
+  },
+  {
+    "name": "BlackDirtGrungyMetal",
+    "results": [{"type":"BlackDirtGrungyMetal","amount": 1}],
+    "requires": [{"type":"vanilla.planks","amount": 1}],
+    "defaultPriority": -100,
+    "defaultLimit": 0
+   },
+   {
+    "name": "BlackRottenWood",
+    "results": [{"type":"BlackRottenWood","amount": 1}],
+    "requires": [{"type":"vanilla.planks","amount": 1}],
+    "defaultPriority": -100,
+    "defaultLimit": 0
+  },
+  {
+    "name": "BrownishGreenWoodPanel",
+    "results": [{"type":"BrownishGreenWoodPanel","amount": 1}],
+    "requires": [{"type":"vanilla.planks","amount": 1}],
+    "defaultPriority": -100,
+    "defaultLimit": 0
+  }
+]

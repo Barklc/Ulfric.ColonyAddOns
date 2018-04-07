@@ -1,0 +1,16 @@
+﻿[
+	{
+		"name" : "bronzearrow",
+		"results":[{"type":"vanilla.bronzearrow","amount":5}],
+		"requires":[{"type":"vanilla.bronzeingot"},{"type":"vanilla.planks"}],
+		"defaultLimit" : 60,
+		"defaultPriority" : 100
+	},
+	{
+		"name" : "crossbowbolt",
+		"results":[{"type":"vanilla.crossbowbolt","amount":5}],
+		"requires":[{"type":"vanilla.ironwrought"},{"type":"vanilla.ironrivet","amount":5}],
+		"defaultLimit" : 10,
+		"defaultPriority" : 100
+	}
+]

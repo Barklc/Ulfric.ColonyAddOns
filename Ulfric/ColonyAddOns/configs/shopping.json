@@ -1,0 +1,18 @@
+[
+  {
+    "name": "Basket",
+    "results": [{"type":"Basket","amount": 1}],
+    "requires": [{"type":"vanilla.goldcoin","amount": 2}],
+    "defaultLimit": 0,
+    "defaultPriority": -100,
+	  "isOptional": true
+  },
+  {
+    "name": "CrateMetalBlack",
+    "results": [{"type":"CrateMetalBlack","amount": 1}],
+    "requires": [{"type":"vanilla.goldcoin","amount": 2}],
+    "defaultLimit": 0,
+    "defaultPriority": -100,
+	  "isOptional": true   
+  }
+]

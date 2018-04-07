@@ -1,0 +1,556 @@
+[
+  {
+    "name": "StoneBlockDarkWall",
+    "results": [{"type":"StoneBlockDarkWall","amount": 1}],
+    "requires": [{"type":"vanilla.stonebricks","amount": 1},{"type":"vanilla.charcoal","amount": 1}],
+    "defaultLimit": 0,
+    "defaultPriority": -100   
+  },
+  {
+    "name": "StoneBlockRoughWall",
+    "results": [{"type":"StoneBlockRoughWall","amount": 1}],
+    "requires": [{"type":"vanilla.stonebricks","amount": 2}],
+    "defaultLimit": 0,
+    "defaultPriority": -100   
+  },
+  {
+    "name": "StoneBlocksWoodEdged",
+    "results": [{"type":"StoneBlocksWoodEdged","amount": 1}],
+    "requires": [{"type":"vanilla.stonebricks","amount": 1},{"type":"vanilla.planks","amount": 1}],
+    "defaultLimit": 0,
+    "defaultPriority": -100   
+  },
+  {
+    "name": "StoneBrickWall",
+    "results": [{"type":"StoneBrickWall","amount": 1}],
+    "requires": [{"type":"vanilla.stonebricks","amount": 2}],
+    "defaultLimit": 0,
+    "defaultPriority": -100   
+  },
+  {
+    "name": "StoneMidnight",
+    "results": [{"type":"StoneMidnight","amount": 1}],
+    "requires": [{"type":"vanilla.stonebricks","amount": 1},{"type":"vanilla.planks","amount": 1}],
+    "defaultLimit": 0,
+    "defaultPriority": -100   
+  },
+  {
+    "name": "StonePath",
+    "results": [{"type":"StonePath","amount": 1}],
+    "requires": [{"type":"vanilla.stonebricks","amount": 2}],
+    "defaultLimit": 0,
+    "defaultPriority": -100   
+  },
+  {
+    "name": "StoneWall1",
+    "results": [{"type":"StoneWall1","amount": 1}],
+    "requires": [{"type":"vanilla.stonebricks","amount": 2}],
+    "defaultLimit": 0,
+    "defaultPriority": -100   
+  },
+  {
+    "name": "StoneWall2",
+    "results": [{"type":"StoneWall2","amount": 1}],
+    "requires": [{"type":"vanilla.stonebricks","amount": 2}],
+    "defaultLimit": 0,
+    "defaultPriority": -100   
+  },
+  {
+    "name": "StoneWall3",
+    "results": [{"type":"StoneWall3","amount": 1}],
+    "requires": [{"type":"vanilla.stonebricks","amount": 2}],
+    "defaultLimit": 0,
+    "defaultPriority": -100   
+  },
+  {
+    "name": "StoneWall4",
+    "results": [{"type":"StoneWall4","amount": 1}],
+    "requires": [{"type":"vanilla.stonebricks","amount": 2}],
+    "defaultLimit": 0,
+    "defaultPriority": -100   
+  },
+  {
+    "name": "StoneWall5",
+    "results": [{"type":"StoneWall5","amount": 1}],
+    "requires": [{"type":"vanilla.stonebricks","amount": 2}],
+    "defaultLimit": 0,
+    "defaultPriority": -100   
+  },
+  {
+    "name": "StoneWall6",
+    "results": [{"type":"StoneWall6","amount": 1}],
+    "requires": [{"type":"vanilla.stonebricks","amount": 2}],
+    "defaultLimit": 0,
+    "defaultPriority": -100   
+  },
+  {
+    "name": "GraniteTechno",
+    "results": [{"type":"GraniteTechno","amount": 1}],
+    "requires": [{"type":"vanilla.stonebricks","amount": 2}],
+    "defaultLimit": 0,
+    "defaultPriority": -100    
+  },
+  {
+    "name": "GraniteWall",
+    "results": [{"type":"GraniteWall","amount": 1}],
+    "requires": [{"type":"vanilla.stonebricks","amount": 2}],
+    "defaultLimit": 0,
+    "defaultPriority": -100    
+  },
+  {
+    "name": "Gravel2",
+    "results": [{"type":"Gravel2","amount": 1}],
+    "requires": [{"type":"vanilla.stonebricks","amount": 1}],
+    "defaultLimit": 0,
+    "defaultPriority": -100    
+  },
+  {
+    "name": "Gravel3",
+    "results": [{"type":"Gravel3","amount": 1}],
+    "requires": [{"type":"vanilla.stonebricks","amount": 1}],
+    "defaultLimit": 0,
+    "defaultPriority": -100    
+  },
+  {
+    "name": "Gravel4",
+    "results": [{"type":"Gravel4","amount": 1}],
+    "requires": [{"type":"vanilla.stonebricks","amount": 1}],
+    "defaultLimit": 0,
+    "defaultPriority": -100    
+  },
+  {
+    "name": "GreenGraniteWalkway",
+    "results": [{"type":"GreenGraniteWalkway","amount": 1}],
+    "requires": [{"type":"vanilla.stonebricks","amount": 1}],
+    "defaultLimit": 0,
+    "defaultPriority": -100    
+  },
+  {
+    "name": "CobbleStoneWall",
+    "results": [{"type":"CobbleStoneWall","amount": 1}],
+    "requires": [{"type":"vanilla.stonebricks","amount": 1}],
+    "defaultPriority": -100,
+    "defaultLimit": 0
+  },
+  {
+    "name": "RockWall",
+    "results": [{"type":"RockWall","amount": 1}],
+    "requires": [{"type":"vanilla.stonebricks","amount": 1}],
+    "defaultPriority": -100,
+    "defaultLimit": 0
+  },
+   {
+    "name": "FancyCobblestoneWall",
+    "results": [{"type":"FancyCobblestoneWall","amount": 1}],
+    "requires": [{"type":"vanilla.stonebricks","amount": 1}],
+    "defaultPriority": -100,
+    "defaultLimit": 0
+   },
+   {
+    "name": "BrickAlternatingMud",
+    "results": [{"type":"BrickAlternatingMud","amount": 1}],
+    "requires": [{"type":"vanilla.dirt","amount": 1},{"type":"waterBucket","amount": 1}],
+    "defaultLimit": 0,
+    "defaultPriority": -100   
+  }, 
+  {
+    "name": "BrickBlackRough",
+    "results": [{"type":"BrickBlackRough","amount": 1}],
+    "requires": [{"type":"vanilla.bricksred","amount": 1},{"type":"waterBucket","amount": 1}],
+    "defaultLimit": 0,
+    "defaultPriority": -100    
+  },
+  {
+    "name": "BrickBurlywood",
+    "results": [{"type":"BrickBurlywood","amount": 1}],
+    "requires": [{"type":"vanilla.bricksred","amount": 1}],
+    "defaultLimit": 0,
+    "defaultPriority": -100    
+  },
+  {
+    "name": "BrickGreenChipped",
+    "results": [{"type":"BrickGreenChipped","amount": 1}],
+    "requires": [{"type":"vanilla.bricksred","amount": 1}],
+    "defaultLimit": 0,
+    "defaultPriority": -100 
+  },
+  {
+    "name": "BrickLight",
+    "results": [{"type":"BrickLight","amount": 1}],
+    "requires": [{"type":"vanilla.bricksred","amount": 1}],
+    "defaultLimit": 0,
+    "defaultPriority": -100  
+  },
+  {
+    "name": "BrickRedBasketweave",
+    "results": [{"type":"BrickRedBasketweave","amount": 1}],
+    "requires": [{"type":"vanilla.bricksred","amount": 1}],
+    "defaultLimit": 0,
+    "defaultPriority": -100    
+  },
+  {
+    "name": "BrickworkWornBrown",
+    "results": [{"type":"BrickworkWornBrown","amount": 1}],
+    "requires": [{"type":"vanilla.bricksred","amount": 1}],
+    "defaultPriority": -100,
+    "defaultLimit": 0,
+  }
+  {
+    "name": "BricksBubbly",
+    "results": [{"type":"BricksBubbly","amount": 1}],
+    "requires": [{"type":"vanilla.bricksred","amount": 2}],
+    "defaultLimit": 0,
+    "defaultPriority": -100 
+  },
+  {
+    "name": "CementLargeBlockWall",
+    "results": [{"type":"CementLargeBlockWall","amount": 1}],
+    "requires": [{"type":"vanilla.stonebricks","amount": 2}],
+    "defaultLimit": 0,
+    "defaultPriority": -100  
+  },
+  {
+    "name": "CorrodedTechnoTiles",
+    "results": [{"type":"CorrodedTechnoTiles","amount": 1}],
+    "requires": [{"type":"vanilla.stonebricks","amount": 2}],
+    "defaultLimit": 0,
+    "defaultPriority": -100    
+  },
+  {
+    "name": "FloorBlueStainedBasketweave",
+    "results": [{"type":"FloorBlueStainedBasketweave","amount": 1}],
+    "requires": [{"type":"vanilla.bricksred","amount": 2}],
+    "defaultLimit": 0,
+    "defaultPriority": -100    
+  },
+  {
+    "name": "FloorChippedBricks",
+    "results": [{"type":"FloorChippedBricks","amount": 1}],
+    "requires": [{"type":"vanilla.bricksred","amount": 2}],
+    "defaultLimit": 0,
+    "defaultPriority": -100    
+  },
+  {
+    "name": "FloorConcrete",
+    "results": [{"type":"FloorConcrete","amount": 1}],
+    "requires": [{"type":"vanilla.stonebricks","amount": 2}],
+    "defaultLimit": 0,
+    "defaultPriority": -100    
+  },{
+    "name": "AshySandstone",
+    "results": [{"type":"AshySandstone","amount": 1}],
+    "requires": [{"type":"vanilla.stonebricks","amount": 1},{"type":"vanilla.sand", "amount": 1}],
+    "defaultLimit": 0,
+    "defaultPriority": -100
+  },
+  {
+    "name": "HardenedLava",
+    "results": [{"type":"HardenedLava","amount": 1}],
+    "requires": [{"type":"Magma","amount": 1},{"type":"WaterBucket","amount": 1}],
+    "defaultLimit": 0,
+    "defaultPriority": -100
+  },
+  {
+    "name": "MarbleTiles",
+    "results": [{"type":"MarbleTiles","amount": 1}],
+    "requires": [{"type":"vanilla.stonebricks","amount": 1}],
+    "defaultLimit": 0,
+    "defaultPriority": -100
+  },
+  {
+    "name": "FloorTrinsicStone",
+    "results": [{"type":"FloorTrinsicStone","amount": 1}],
+    "requires": [{"type":"vanilla.stonebricks","amount": 1}],
+    "defaultLimit": 0,
+    "defaultPriority": -100
+  },
+  {
+    "name": "Marble",
+    "results": [{"type":"Marble","amount": 1}],
+    "requires": [{"type":"rawMarble","amount": 1}],
+    "defaultLimit": 0,
+    "defaultPriority": -100
+   },
+   {
+    "name": "ChiseledBlackStone",
+    "results": [{"type":"ChiseledBlackStone","amount": 1}],
+    "requires": [{"type":"vanilla.stonebricks","amount": 1}],
+    "defaultPriority": -100,
+    "defaultLimit": 0
+   },
+   {
+    "name": "ConcreteBrickTiles",
+    "results": [{"type":"ConcreteBrickTiles","amount": 1}],
+    "requires": [{"type":"vanilla.stonebricks","amount": 1}],
+    "defaultPriority": -100,
+    "defaultLimit": 0
+   },
+   {
+    "name": "DirtyLargeBlocksWall",
+    "results": [{"type":"DirtyLargeBlocksWall","amount": 1}],
+    "requires": [{"type":"vanilla.stonebricks","amount": 1}],
+    "defaultPriority": -100,
+    "isOptional": true,
+    "defaultLimit": 0
+   },
+   {
+    "name": "DustyGreyStone",
+    "results": [{"type":"DustyGreyStone","amount": 1}],
+    "requires": [{"type":"vanilla.stonebricks","amount": 1}],
+    "defaultPriority": -100,
+    "defaultLimit": 0
+   },
+   {
+    "name": "FancyChiseledBlackStone",
+    "results": [{"type":"FancyChiseledBlackStone","amount": 1}],
+    "requires": [{"type":"vanilla.stonebricks","amount": 1}],
+    "defaultPriority": -100,
+    "defaultLimit": 0
+   },
+   {
+    "name": "FancyGreyBrick",
+    "results": [{"type":"FancyGreyBrick","amount": 1}],
+    "requires": [{"type":"vanilla.bricksred","amount": 1}],
+    "defaultPriority": -100,
+    "defaultLimit": 0
+   },
+   {
+    "name": "FancyPavingSlabs",
+    "results": [{"type":"FancyPavingSlabs","amount": 1}],
+    "requires": [{"type":"vanilla.stonebricks","amount": 1}],
+    "defaultPriority": -100,
+    "defaultLimit": 0
+   },
+   {
+    "name": "GreyStone",
+    "results": [{"type":"GreyStone","amount": 1}],
+    "requires": [{"type":"vanilla.stonebricks","amount": 1}],
+    "defaultPriority": -100,
+    "defaultLimit": 0
+   },
+   {
+    "name": "GreyStoneConcreteWall",
+    "results": [{"type":"GreyStoneConcreteWall","amount": 1}],
+    "requires": [{"type":"vanilla.stonebricks","amount": 1}],
+    "defaultPriority": -100,
+    "defaultLimit": 0
+   },
+   {
+    "name": "OrangeMarble",
+    "results": [{"type":"OrangeMarble","amount": 1}],
+    "requires": [{"type":"rawMarble","amount": 1}],
+    "defaultPriority": -100,
+    "defaultLimit": 0
+   },
+   {
+    "name": "RoughBrownStone",
+    "results": [{"type":"RoughBrownStone","amount": 1}],
+    "requires": [{"type":"vanilla.stonebricks","amount": 1}],
+    "defaultPriority": -100,
+    "defaultLimit": 0
+   },
+   {
+    "name": "TanRoughStone",
+    "results": [{"type":"TanRoughStone","amount": 1}],
+    "requires": [{"type":"vanilla.stonebricks","amount": 1}],
+    "defaultPriority": -100,
+    "defaultLimit": 0
+  },
+    {
+    "name": "MarbleBlack",
+    "results": [{"type":"MarbleBlack","amount": 1}],
+    "requires": [{"type":"rawMarble","amount": 2}],
+    "defaultLimit": 0,
+    "defaultPriority": -100
+  },
+  {
+    "name": "MarbleBlood",
+    "results": [{"type":"MarbleBlood","amount": 1}],
+    "requires": [{"type":"rawMarble","amount": 2}],
+    "defaultLimit": 0,
+    "defaultPriority": -100
+  },
+  {
+    "name": "MarbleBlue",
+    "results": [{"type":"MarbleBlue","amount": 1}],
+    "requires": [{"type":"rawMarble","amount": 2}],
+    "defaultLimit": 0,
+    "defaultPriority": -100,
+	"isOptional": true    
+  },
+  {
+    "name": "MarbleBlueCrack",
+    "results": [{"type":"MarbleBlueCrack","amount": 1}],
+    "requires": [{"type":"rawMarble","amount": 2}],
+    "defaultLimit": 0,
+    "defaultPriority": -100
+  },
+  {
+    "name": "MarbleBrightPurple",
+    "results": [{"type":"MarbleBrightPurple","amount": 1}],
+    "requires": [{"type":"rawMarble","amount": 2}],
+    "defaultLimit": 0,
+    "defaultPriority": -100
+  },
+  {
+    "name": "MarbleBrownSwirl",
+    "results": [{"type":"MarbleBrownSwirl","amount": 1}],
+    "requires": [{"type":"rawMarble","amount": 2}],
+    "defaultLimit": 0,
+    "defaultPriority": -100
+  },
+  {
+    "name": "MarbleButterscotchFeldspar",
+    "results": [{"type":"MarbleButterscotchFeldspar","amount": 1}],
+    "requires": [{"type":"rawMarble","amount": 2}],
+    "defaultLimit": 0,
+    "defaultPriority": -100
+  },
+  {
+    "name": "MarbleDarkGray",
+    "results": [{"type":"MarbleDarkGray","amount": 1}],
+    "requires": [{"type":"rawMarble","amount": 2}],
+    "defaultLimit": 0,
+    "defaultPriority": -100
+  },
+  {
+    "name": "MarbleDarkGreen",
+    "results": [{"type":"MarbleDarkGreen","amount": 1}],
+    "requires": [{"type":"rawMarble","amount": 2}],
+    "defaultLimit": 0,
+    "defaultPriority": -100
+  },
+  {
+    "name": "MarbleEgyptian",
+    "results": [{"type":"MarbleEgyptian","amount": 1}],
+    "requires": [{"type":"rawMarble","amount": 2}],
+    "defaultLimit": 0,
+    "defaultPriority": -100
+  },
+  {
+    "name": "MarbleEmerald",
+    "results": [{"type":"MarbleEmerald","amount": 1}],
+    "requires": [{"type":"rawMarble","amount": 2}],
+    "defaultLimit": 0,
+    "defaultPriority": -100
+  },
+  {
+    "name": "MarbleGlassyMarine",
+    "results": [{"type":"MarbleGlassyMarine","amount": 1}],
+    "requires": [{"type":"rawMarble","amount": 2}],
+    "defaultLimit": 0,
+    "defaultPriority": -100
+  },
+  {
+    "name": "MarbleGlassyOrange",
+    "results": [{"type":"MarbleGlassyOrange","amount": 1}],
+    "requires": [{"type":"rawMarble","amount": 2}],
+    "defaultLimit": 0,
+    "defaultPriority": -100
+  },
+  {
+    "name": "MarbleGlassyPink",
+    "results": [{"type":"MarbleGlassyPink","amount": 1}],
+    "requires": [{"type":"rawMarble","amount": 2}],
+    "defaultLimit": 0,
+    "defaultPriority": -100
+  },
+  {
+    "name": "MarbleGlassyRed",
+    "results": [{"type":"MarbleGlassyRed","amount": 1}],
+    "requires": [{"type":"rawMarble","amount": 2}],
+    "defaultLimit": 0,
+    "defaultPriority": -100
+  },
+  {
+    "name": "MarbleGray",
+    "results": [{"type":"MarbleGray","amount": 1}],
+    "requires": [{"type":"rawMarble","amount": 2}],
+    "defaultLimit": 0,
+    "defaultPriority": -100
+  },
+  {
+    "name": "MarbleGreen",
+    "results": [{"type":"MarbleGreen","amount": 1}],
+    "requires": [{"type":"rawMarble","amount": 2}],
+    "defaultLimit": 0,
+    "defaultPriority": -100
+  },
+  {
+    "name": "MarbleLight",
+    "results": [{"type":"MarbleLight","amount": 1}],
+    "requires": [{"type":"rawMarble","amount": 2}],
+    "defaultLimit": 0,
+    "defaultPriority": -100
+  },
+  {
+    "name": "MarbleLightGreen",
+    "results": [{"type":"MarbleLightGreen","amount": 1}],
+    "requires": [{"type":"rawMarble","amount": 2}],
+    "defaultLimit": 0,
+    "defaultPriority": -100
+  },
+  {
+    "name": "MarbleOnixPina",
+    "results": [{"type":"MarbleOnixPina","amount": 1}],
+    "requires": [{"type":"rawMarble","amount": 2}],
+    "defaultLimit": 0,
+    "defaultPriority": -100
+  },
+  {
+    "name": "MarblePurple",
+    "results": [{"type":"MarblePurple","amount": 1}],
+    "requires": [{"type":"rawMarble","amount": 2}],
+    "defaultLimit": 0,
+    "defaultPriority": -100
+  },
+  {
+    "name": "MarbleRough",
+    "results": [{"type":"MarbleRough","amount": 1}],
+    "requires": [{"type":"rawMarble","amount": 2}],
+    "defaultLimit": 0,
+    "defaultPriority": -100   
+  },
+  {
+    "name": "MarbleRoughPink",
+    "results": [{"type":"MarbleRoughPink","amount": 1}],
+    "requires": [{"type":"rawMarble","amount": 2}],
+    "defaultLimit": 0,
+    "defaultPriority": -100
+  },
+  {
+    "name": "MarbleSeaGreen",
+    "results": [{"type":"MarbleSeaGreen","amount": 1}],
+    "requires": [{"type":"rawMarble","amount": 2}],
+    "defaultLimit": 0,
+    "defaultPriority": -100
+  },
+  {
+    "name": "MarbleSmashedGray",
+    "results": [{"type":"MarbleSmashedGray","amount": 1}],
+    "requires": [{"type":"rawMarble","amount": 2}],
+    "defaultLimit": 0,
+    "defaultPriority": -100
+  },
+  {
+    "name": "MarbleTepeacaGris",
+    "results": [{"type":"MarbleTepeacaGris","amount": 1}],
+    "requires": [{"type":"rawMarble","amount": 2}],
+    "defaultLimit": 0,
+    "defaultPriority": -100
+  },
+  {
+    "name": "MarbleTile1",
+    "results": [{"type":"MarbleTile1","amount": 1}],
+    "requires": [{"type":"rawMarble","amount": 2}],
+    "defaultLimit": 0,
+    "defaultPriority": -100
+  },
+  {
+    "name": "PurpleSlate",
+    "results": [{"type":"PurpleSlate","amount": 1}],
+    "requires": [{"type":"vanilla.stonebricks","amount": 1}],
+    "defaultLimit": 0,
+    "defaultPriority": -100
+  }
+]

@@ -1,0 +1,10 @@
+﻿[
+  {
+    "name": "Magma",
+    "results": [{"type":"Magma","amount": 1}],
+    "requires": [{"type":"vanilla.stoneblock","amount": 2}],
+    "defaultLimit": 0,
+    "defaultPriority": -100,
+    "isOptional": true
+  }
+]

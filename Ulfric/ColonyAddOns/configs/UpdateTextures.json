@@ -1,0 +1,38 @@
+﻿{
+	"vanilla.leavestaiga": {
+        "albedo": "leavesTaiga",
+        "emissive": "neutral",
+        "height": "neutral",
+        "normal": "neutral"
+    },
+    "vanilla.leavestemperate": {
+        "albedo": "leavestemperate",
+        "emissive": "neutral",
+        "height": "neutral",
+        "normal": "neutral"
+    },
+    "vanilla.logtaiga": {
+        "albedo": "logTaiga",
+        "emissive": "neutral",
+        "height": "neutral",
+        "normal": "neutral"
+    },
+    "vanilla.logtemperate": {
+        "albedo": "logTemperate",
+        "emissive": "neutral",
+        "height": "neutral",
+        "normal": "neutral"
+    },
+	"stumptemperate": {
+	    "albedo": "stumptemperate",
+        "emissive": "neutral",
+        "height": "neutral",
+        "normal": "neutral"
+	},
+	"stumptaiga": {
+	    "albedo": "stumptaiga",
+        "emissive": "neutral",
+        "height": "neutral",
+		"normal": "neutral"
+	}
+}

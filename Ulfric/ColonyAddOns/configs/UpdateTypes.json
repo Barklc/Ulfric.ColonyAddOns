@@ -1,0 +1,27 @@
+﻿{
+	"leavestaiga":{
+		"icon" : "LeavesTaiga.png"
+	},
+	"leavestemperate":{
+		"icon" : "LeavesTemperate.png"
+	}
+    "logtaiga": {
+		"icon":"LogTaiga.png",
+		"sidex+": "vanilla.logtaiga",
+        "sidex-": "vanilla.logtaiga",
+        "sidey+": "stumptaiga",
+        "sidey-": "stumptaiga",
+        "sidez+": "vanilla.logtaiga",
+        "sidez-": "vanilla.logtaiga"
+
+    },
+    "logtemperate": {
+		"icon": "LogTemperate.png",
+        "sidex+": "vanilla.logtemperate",
+        "sidex-": "vanilla.logtemperate",
+        "sidey+": "stumptemperate",
+        "sidey-": "stumptemperate",
+        "sidez+": "vanilla.logtemperate",
+        "sidez-": "vanilla.logtemperate"
+    }
+}
