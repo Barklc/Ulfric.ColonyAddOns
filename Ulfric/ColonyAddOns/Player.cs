@@ -54,8 +54,6 @@ namespace Ulfric.ColonyAddOns
 
         static Dictionary<Players.Player, PlayerState> _playerStates = new Dictionary<Players.Player, PlayerState>();
 
-        public bool BossesEnabled { get; set; } = true;
-
         public Players.Player Player { get; private set; }
 
         public bool EnableHeraldAnnouncingSunrise { get; set; } = true;
@@ -83,7 +81,7 @@ namespace Ulfric.ColonyAddOns
             return null;
         }
 
-        [ModLoader.ModCallback(ModLoader.EModCallbackType.OnLoadingPlayer, GameLoader.NAMESPACE + ".Entities.PlayerState.OnLoadingPlayer")]
+        [ModLoader.ModCallback(ModLoader.EModCallbackType.OnLoadingPlayer, GameLoader.NAMESPACE + ".PlayerState.OnLoadingPlayer")]
         public static void OnLoadingPlayer(JSONNode n, Players.Player p)
         {
             if (!_playerStates.ContainsKey(p))
@@ -104,7 +102,7 @@ namespace Ulfric.ColonyAddOns
             }
         }
 
-        [ModLoader.ModCallback(ModLoader.EModCallbackType.OnSavingPlayer, GameLoader.NAMESPACE + ".Entities.PlayerState.OnSavingPlayer")]
+        [ModLoader.ModCallback(ModLoader.EModCallbackType.OnSavingPlayer, GameLoader.NAMESPACE + ".PlayerState.OnSavingPlayer")]
         public static void OnSavingPlayer(JSONNode n, Players.Player p)
         {
             if (_playerStates.ContainsKey(p))
