@@ -10,6 +10,7 @@ namespace Ulfric.ColonyAddOns
     [ModLoader.ModManager]
     public static class Player
     {
+        //Set class variables and constants
         public const string NAMESPACE = "Ulfric.ColonyAddOns";
         private const string MOD_NAMESPACE = NAMESPACE + ".Player";
 
@@ -25,16 +26,14 @@ namespace Ulfric.ColonyAddOns
                 {
                     Random random = new Random();
 
+                    //To keep this from being OP we lower che chance of gettings berries with each pick
                     float chance = (float)random.NextDouble();
                     if (chance <= Configuration.ChanceOfBerriesPerPick)
                     {
                         var inv = Inventory.GetInventory(player);
                         inv.TryAdd(BuiltinBlocks.Berry, Configuration.NumberOfBerriesPerPick);
                     }
-                    //else
-                    //{
-                    //    Chat.Send(player, "No berries picked.",ChatColor.red);
-                    //}
+
                 }
             }
         }
@@ -42,8 +41,26 @@ namespace Ulfric.ColonyAddOns
         [ModLoader.ModCallback(ModLoader.EModCallbackType.AfterWorldLoad, MOD_NAMESPACE + ".AfterWorldLoad")]
         public static void AfterWorldLoad()
         {
-            Logger.Log("Add 10 Water buckets to initial stockpile");
-            Stockpile.AddToInitialPile(new InventoryItem(Blocks.MOD_NAMESPACE + ".WaterBucket", 10));
+            //Give players water to start off to support Hydration if enabled
+            if (Configuration.AllowDehydration)
+            {
+                Logger.Log("Add 10 Water buckets to initial stockpile");
+                Stockpile.AddToInitialPile(new InventoryItem(Blocks.MOD_NAMESPACE + ".WaterBucket", 10));
+            }
+        }
+
+        public static List<Players.Player> PlayerList()
+        {
+            List<Players.Player> players = new List<Players.Player>();
+            Players.PlayerDatabase.ForeachValue(x =>
+            {
+                if (!string.IsNullOrEmpty(x.Name))
+                    players.Add(x);
+                else if (x.ID.type == NetworkID.IDType.LocalHost)
+                    players.Add(x);
+            });
+
+            return players;
         }
 
     }
@@ -90,6 +107,7 @@ namespace Ulfric.ColonyAddOns
             if (n.TryGetChild(GameLoader.NAMESPACE + ".PlayerState", out var stateNode))
             {
  
+                //Load the configuration choices for the Herald for the specified player
                 if (stateNode.TryGetAs("EnableHeraldAnnouncingSunrise", out bool bEnableHeraldAnnouncingSunrise))
                     _playerStates[p].EnableHeraldAnnouncingSunrise = bEnableHeraldAnnouncingSunrise;
 
@@ -109,6 +127,7 @@ namespace Ulfric.ColonyAddOns
             {
                 var node = new JSONNode();
 
+                //Save the configuration choices for the Herald for the specified player
                 node.SetAs("EnableHeraldAnnouncingSunrise", _playerStates[p].EnableHeraldAnnouncingSunrise);
                 node.SetAs("EnableHeraldAnnouncingSunset", _playerStates[p].EnableHeraldAnnouncingSunset);
                 node.SetAs("EnableHeraldWarning", _playerStates[p].EnableHeraldWarning);

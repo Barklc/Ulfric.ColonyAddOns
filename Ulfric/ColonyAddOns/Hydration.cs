@@ -22,9 +22,7 @@ namespace Ulfric.ColonyAddOns
                     {
                         waterchecked = true;
 
-                        List<Players.Player> players = new List<Players.Player>();
-                        Players.PlayerDatabase.ForeachValue(x => players.Add(x));
-                        players.RemoveAll(x => string.IsNullOrEmpty(x.Name) && x.ID.type != NetworkID.IDType.LocalHost);
+                        List<Players.Player> players = Player.PlayerList();
 
                         foreach (Players.Player p in players)
                         {
