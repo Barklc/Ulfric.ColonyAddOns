@@ -44,6 +44,6 @@
     "requires": [{"type":"vanilla.planks","amount": 1}],
     "defaultPriority": -100,
     "defaultLimit": 1,
-    "isOptional" : true;
+    "isOptional" : true
    }
 ]

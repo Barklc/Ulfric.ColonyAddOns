@@ -5,5 +5,5 @@
     "requires": [{"type":"vanilla.stonebrick","amount": 1}],
     "defaultLimit": 0,
     "defaultPriority": -100
-  },
+  }
 ]

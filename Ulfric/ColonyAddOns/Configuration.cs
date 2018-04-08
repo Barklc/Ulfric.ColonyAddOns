@@ -24,9 +24,6 @@ namespace Ulfric.ColonyAddOns
         public static float ChanceOfBerriesPerPick = .50f;
 
         public static int HeraldWarningDistance = 20;
-        public static bool EnableHeraldAnnouncingSunrise = true;
-        public static bool EnableHeraldAnnouncingSunset = true;
-        public static bool EnableHeraldWarning = true;
 
         public static bool EnableStatisticCollecting = true;
 
@@ -47,9 +44,6 @@ namespace Ulfric.ColonyAddOns
             ChanceOfBerriesPerPick = GetorDefault("ChanceOfBerriesPerPick", ChanceOfBerriesPerPick);
 
             HeraldWarningDistance = GetorDefault("HeraldWarningDistance", HeraldWarningDistance);
-            EnableHeraldAnnouncingSunrise = GetorDefault("EnableHeraldAnnouncingSunrise", EnableHeraldAnnouncingSunrise);
-            EnableHeraldAnnouncingSunset = GetorDefault("EnableHeraldAnnouncingSunset", EnableHeraldAnnouncingSunset);
-            EnableHeraldWarning = GetorDefault("EnableHeraldWarning", EnableHeraldWarning);
 
             EnableStatisticCollecting = GetorDefault("EnableStatisticCollecting", EnableStatisticCollecting);
 
@@ -73,9 +67,6 @@ namespace Ulfric.ColonyAddOns
                 ChanceOfBerriesPerPick = GetorDefault("ChanceOfBerriesPerPick", ChanceOfBerriesPerPick);
 
                 HeraldWarningDistance = GetorDefault("HeraldWarningDistance", HeraldWarningDistance);
-                EnableHeraldAnnouncingSunrise = GetorDefault("EnableHeraldAnnouncingSunrise", EnableHeraldAnnouncingSunrise);
-                EnableHeraldAnnouncingSunset = GetorDefault("EnableHeraldAnnouncingSunset", EnableHeraldAnnouncingSunset);
-                EnableHeraldWarning = GetorDefault("EnableHeraldWarning", EnableHeraldWarning);
 
                 EnableStatisticCollecting = GetorDefault("EnableStatisticCollecting", EnableStatisticCollecting);
 
@@ -95,9 +86,6 @@ namespace Ulfric.ColonyAddOns
             _rootSettings.SetAs("ChanceOfBerriesPerPick", ChanceOfBerriesPerPick);
 
             _rootSettings.SetAs("HeraldWarningDistance", HeraldWarningDistance);
-            _rootSettings.SetAs("EnableHeraldAnnouncingSunrise", EnableHeraldAnnouncingSunrise);
-            _rootSettings.SetAs("EnableHeraldAnnouncingSunset", EnableHeraldAnnouncingSunset);
-            _rootSettings.SetAs("EnableHeraldWarning", EnableHeraldWarning);
 
             _rootSettings.SetAs("EnableStatisticCollecting", EnableStatisticCollecting);
 

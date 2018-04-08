@@ -33,12 +33,15 @@
   <ItemGroup>
     <Reference Include="APIProvider">
       <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Steam\SteamApps\common\Colony Survival\gamedata\mods\Pipliz\APIProvider\APIProvider.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="Assembly-CSharp">
       <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Steam\SteamApps\common\Colony Survival\colonyserver_Data\Managed\Assembly-CSharp.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="BaseGame">
       <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Steam\SteamApps\common\Colony Survival\gamedata\mods\Pipliz\BaseGame\BaseGame.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -48,9 +51,11 @@
     <Reference Include="System.Xml" />
     <Reference Include="UnityEngine">
       <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Steam\SteamApps\common\Colony Survival\colonyserver_Data\Managed\UnityEngine.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="UnityEngine.UI">
       <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Steam\SteamApps\common\Colony Survival\colonyserver_Data\Managed\UnityEngine.UI.dll</HintPath>
+      <Private>False</Private>
     </Reference>
   </ItemGroup>
   <ItemGroup>
@@ -58,6 +63,7 @@
     <Compile Include="Chat.cs" />
     <Compile Include="chatcommands\Command.cs" />
     <Compile Include="chatcommands\RosterChatCommand.cs" />
+    <Compile Include="chatcommands\HeraldChatCommand.cs" />
     <Compile Include="chatcommands\TradeChatCommand.cs" />
     <Compile Include="Configuration.cs" />
     <Compile Include="Hydration.cs" />

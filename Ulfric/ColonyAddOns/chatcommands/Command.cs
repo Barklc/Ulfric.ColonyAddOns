@@ -1,6 +1,7 @@
 ﻿using System;
 using System.IO;
 using Pipliz;
+using UnityEngine;
 
 namespace Ulfric.ColonyAddOns
 {
@@ -68,7 +69,7 @@ namespace Ulfric.ColonyAddOns
                     }
                 }
             }
-            int closestDist = int.MaxValue;
+            float closestDist = float.MaxValue;
             Players.Player closestMatch = null;
             foreach (Players.Player player in Players.PlayerDatabase.ValuesAsList)
             {
@@ -93,13 +94,13 @@ namespace Ulfric.ColonyAddOns
                     }
                     else
                     {
-                        int levDist = LevenshteinDistance.Compute(player.Name.ToLower(), identifier.ToLower());
-                        if (levDist < closestDist)
+                        float dis = Vector3.Distance(player.Position, targetPlayer.Position);
+                        if (dis < closestDist)
                         {
-                            closestDist = levDist;
+                            closestDist = dis;
                             closestMatch = player;
                         }
-                        else if (levDist == closestDist)
+                        else if (dis == closestDist)
                         {
                             closestMatch = null;
                         }
@@ -120,42 +121,6 @@ namespace Ulfric.ColonyAddOns
             }
             error = "player not found";
             return false;
-        }
-    }
-
-    // src: https://www.dotnetperls.com/levenshtein
-    static class LevenshteinDistance
-    {
-        public static int Compute(string s, string t)
-        {
-            int n = s.Length;
-            int m = t.Length;
-            int[,] d = new int[n + 1, m + 1];
-            if (n == 0)
-            {
-                return m;
-            }
-            if (m == 0)
-            {
-                return n;
-            }
-            for (int i = 0; i <= n; d[i, 0] = i++)
-            {
-            }
-            for (int j = 0; j <= m; d[0, j] = j++)
-            {
-            }
-            for (int i = 1; i <= n; i++)
-            {
-                for (int j = 1; j <= m; j++)
-                {
-                    int cost = (t[j - 1] == s[i - 1]) ? 0 : 1;
-                    d[i, j] = System.Math.Min(
-                      System.Math.Min(d[i - 1, j] + 1, d[i, j - 1] + 1),
-                      d[i - 1, j - 1] + cost);
-                }
-            }
-            return d[n, m];
         }
     }
 }

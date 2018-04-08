@@ -53,6 +53,7 @@ namespace Ulfric.ColonyAddOns.Jobs
     public class HeraldJob : BlockJobBase, IBlockJobBase, INPCTypeDefiner
     {
         Vector3Int originalPosition;
+        Players.Player _player;
         static bool DayAlarmed = false;
         static bool NightAlarmed = false;
         
@@ -80,6 +81,7 @@ namespace Ulfric.ColonyAddOns.Jobs
         public override ITrackableBlock InitializeFromJSON(Players.Player player, JSONNode node)
         {
             originalPosition = (Vector3Int)node[nameof(originalPosition)];
+            _player = player;
             InitializeJob(player, (Vector3Int)node["position"], node.GetAs<int>("npcID"));
             return this;
         }
@@ -109,7 +111,7 @@ namespace Ulfric.ColonyAddOns.Jobs
 
             if (!TimeCycle.ShouldSleep)
             {
-                if (!DayAlarmed && Configuration.EnableHeraldAnnouncingSunrise)
+                if (!DayAlarmed && PlayerState.GetPlayerState(_player).EnableHeraldAnnouncingSunrise)
                 {
                     ServerManager.SendAudio(owner.Position, GameLoader.NAMESPACE + ".DayAudio");
                     status = GameLoader.Trumpeting_Icon;
@@ -120,7 +122,7 @@ namespace Ulfric.ColonyAddOns.Jobs
 
             if (TimeCycle.ShouldSleep)
             {
-                if (!NightAlarmed && Configuration.EnableHeraldAnnouncingSunset)
+                if (!NightAlarmed && PlayerState.GetPlayerState(_player).EnableHeraldAnnouncingSunset)
                 {
                     ServerManager.SendAudio(owner.Position, GameLoader.NAMESPACE + ".NightAudio");
                     status = GameLoader.Trumpeting_Icon;
@@ -129,7 +131,7 @@ namespace Ulfric.ColonyAddOns.Jobs
                 }
             }
 
-            if (Configuration.EnableHeraldWarning)
+            if (PlayerState.GetPlayerState(_player).EnableHeraldWarning)
             {
 
                 IMonster monster = MonsterTracker.Find(originalPosition.Add(0, 1, 0), Configuration.HeraldWarningDistance, 100000.0f);

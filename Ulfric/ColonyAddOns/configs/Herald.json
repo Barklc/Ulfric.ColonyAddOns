@@ -1,9 +1,3 @@
 [
-  {
-    "name": "Gravel",
-    "results": [{"type":"Gravel","amount": 1}],
-    "requires": [{"type":"vanilla.stoneblock","amount": 1}],
-    "defaultLimit": 0,
-    "defaultPriority": -100
-  },
+
 ]
