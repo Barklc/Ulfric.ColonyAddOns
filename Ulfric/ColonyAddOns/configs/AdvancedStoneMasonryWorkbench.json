@@ -149,14 +149,14 @@
    {
     "name": "BrickAlternatingMud",
     "results": [{"type":"BrickAlternatingMud","amount": 1}],
-    "requires": [{"type":"vanilla.dirt","amount": 1},{"type":"waterBucket","amount": 1}],
+    "requires": [{"type":"vanilla.dirt","amount": 1},{"type":"WaterBucket","amount": 1}],
     "defaultLimit": 0,
     "defaultPriority": -100   
   }, 
   {
     "name": "BrickBlackRough",
     "results": [{"type":"BrickBlackRough","amount": 1}],
-    "requires": [{"type":"vanilla.bricksred","amount": 1},{"type":"waterBucket","amount": 1}],
+    "requires": [{"type":"vanilla.bricksred","amount": 1},{"type":"WaterBucket","amount": 1}],
     "defaultLimit": 0,
     "defaultPriority": -100    
   },
@@ -193,8 +193,8 @@
     "results": [{"type":"BrickworkWornBrown","amount": 1}],
     "requires": [{"type":"vanilla.bricksred","amount": 1}],
     "defaultPriority": -100,
-    "defaultLimit": 0,
-  }
+    "defaultLimit": 0
+  },
   {
     "name": "BricksBubbly",
     "results": [{"type":"BricksBubbly","amount": 1}],

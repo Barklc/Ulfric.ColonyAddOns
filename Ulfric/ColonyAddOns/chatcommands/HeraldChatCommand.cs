@@ -14,7 +14,7 @@ namespace Ulfric.ColonyAddOns
         [ModLoader.ModCallback(ModLoader.EModCallbackType.AfterItemTypesDefined, HeraldChatCommand.MOD_NAMESPACE + ".registercommand")]
         public static void AfterItemTypesDefined()
         {
-            ChatCommands.CommandManager.RegisterCommand(new StatisticsChatCommand());
+            ChatCommands.CommandManager.RegisterCommand(new HeraldChatCommand());
         }
 
         public bool IsCommand(string chat)
@@ -26,7 +26,7 @@ namespace Ulfric.ColonyAddOns
         {
             try
             {
-                var m = Regex.Match(chattext, @"/herald (?<action>.+)");
+                var m = Regex.Match(chattext, @"/herald( (?<action>.+))?");
                 if (!m.Success)
                 {
                     Chat.Send(causedBy, "Command didn't match, use /herald [action]");

@@ -151,7 +151,7 @@ namespace Ulfric.ColonyAddOns.Jobs
                 if (monster == null)
                     monster = MonsterTracker.Find(originalPosition.Add(0, 0, -1), Configuration.HeraldWarningDistance, 100000.0f);
 
-                if (monster != null)
+                if (monster != null && General.Physics.Physics.CanSee(originalPosition.Add(0,1,0).Vector, monster.Position))
                 {
                     ServerManager.SendAudio(owner.Position, GameLoader.NAMESPACE + ".Rally");
                     status = GameLoader.Trumpeting_Icon;

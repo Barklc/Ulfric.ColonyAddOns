@@ -16,8 +16,7 @@ namespace Ulfric.ColonyAddOns
         private static JSONNode _rootSettings = new JSONNode();
 
         public static bool AllowDehydration = true;
-        public static float WaterHydrationValue = 10.0f;
-        public static float HydrationValuePerColonists = 5.0f;
+         public static float HydrationValuePerColonists = 5.0f;
 
         public static bool AllowHandPickingBerryBushes = true;
         public static int NumberOfBerriesPerPick = 2;
@@ -29,6 +28,7 @@ namespace Ulfric.ColonyAddOns
 
         public static bool EnableTrades = true;
 
+        public static bool EnableMiningWithPickAxe = true;
 
         [ModLoader.ModCallback(ModLoader.EModCallbackType.AfterSelectedWorld, GameLoader.NAMESPACE + ".Configuration.AfterSelectedWorld")]
 //        ModLoader.ModCallbackDependsOn(GameLoader.NAMESPACE + ".AfterSelectedWorld")]
@@ -36,7 +36,6 @@ namespace Ulfric.ColonyAddOns
         {
             Reload();
             AllowDehydration = GetorDefault("AllowDehydration", AllowDehydration);
-            WaterHydrationValue = GetorDefault("WaterHydrationValue", WaterHydrationValue);
             HydrationValuePerColonists = GetorDefault("HydrationValuePerColonists", HydrationValuePerColonists);
 
             AllowHandPickingBerryBushes = GetorDefault("AllowHandPickingBerryBushes", AllowHandPickingBerryBushes);
@@ -49,6 +48,8 @@ namespace Ulfric.ColonyAddOns
 
             EnableTrades = GetorDefault("EnableTrades", EnableTrades);
 
+            EnableMiningWithPickAxe = GetorDefault("EnableMiningWithPickAxe", EnableMiningWithPickAxe);
+
             Save();
         }
 
@@ -59,7 +60,6 @@ namespace Ulfric.ColonyAddOns
                 _rootSettings = config;
 
                 AllowDehydration = GetorDefault("AllowDehydration", AllowDehydration);
-                WaterHydrationValue = GetorDefault("WaterHydrationValue", WaterHydrationValue);
                 HydrationValuePerColonists = GetorDefault("HydrationValuePerColonists", HydrationValuePerColonists);
 
                 AllowHandPickingBerryBushes = GetorDefault("AllowHandPickingBerryBushes", AllowHandPickingBerryBushes);
@@ -71,6 +71,8 @@ namespace Ulfric.ColonyAddOns
                 EnableStatisticCollecting = GetorDefault("EnableStatisticCollecting", EnableStatisticCollecting);
 
                 EnableTrades = GetorDefault("EnableTrades", EnableTrades);
+
+                EnableMiningWithPickAxe = GetorDefault("EnableMiningWithPickAxe", EnableMiningWithPickAxe);
             }
         }
 
@@ -78,7 +80,6 @@ namespace Ulfric.ColonyAddOns
         {
             
             _rootSettings.SetAs("AllowDehydration", AllowDehydration);
-            _rootSettings.SetAs("WaterHydrationValue", WaterHydrationValue);
             _rootSettings.SetAs("HydrationValuePerColonists", HydrationValuePerColonists);
 
             _rootSettings.SetAs("AllowHandPickingBerryBushes", AllowHandPickingBerryBushes);
@@ -90,6 +91,8 @@ namespace Ulfric.ColonyAddOns
             _rootSettings.SetAs("EnableStatisticCollecting", EnableStatisticCollecting);
 
             _rootSettings.SetAs("EnableTrades", EnableTrades);
+
+            _rootSettings.SetAs("EnableMiningWithPickAxe", EnableMiningWithPickAxe);
 
             JSON.Serialize(_saveFileName, _rootSettings);
         }

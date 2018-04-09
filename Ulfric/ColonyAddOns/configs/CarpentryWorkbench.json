@@ -176,12 +176,11 @@
     "defaultPriority": -100
   },
   {
-	"name" : "coatedplanks",
-	"results":[{"type":"vanilla.coatedplanks","amount":3}],
-	"requires":[{"type":"vanilla.linseedoil","amount":3},{"type":"vanilla.planks","amount":3}],
+	  "name" : "coatedplanks",
+	  "results":[{"type":"vanilla.coatedplanks","amount":3}],
+	  "requires":[{"type":"vanilla.linseedoil","amount":3},{"type":"vanilla.planks","amount":3}],
     "defaultLimit" : 3,
-	"defaultPriority" : -100,
-	"isOptional" : true
+	  "defaultPriority" : -100
   },
   {
     "name": "DarkWoodFrameTopAndBottom",
@@ -217,8 +216,8 @@
     "requires": [{"type":"vanilla.planks","amount": 1}],
     "defaultPriority": -100,
     "defaultLimit": 0
-   },
-   {
+  },
+  {
     "name": "BlackRottenWood",
     "results": [{"type":"BlackRottenWood","amount": 1}],
     "requires": [{"type":"vanilla.planks","amount": 1}],

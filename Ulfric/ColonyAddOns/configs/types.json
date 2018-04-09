@@ -109,11 +109,11 @@
 		"sideall" : "SELF"
 	},
     "Magma": {
-        "icon": "Magma.png",
-        "maxStackSize": 600,
-        "isPlaceable": false
+      "icon": "Magma.png",
+      "maxStackSize": 600,
+       "isPlaceable": false
     },
-	"infiniteWaterSource" : {
+	 "infiniteWaterSource" : {
 		"customData" : {
 			"minerIsMineable" : true,
 			"minerMiningTime" : 3
@@ -128,8 +128,9 @@
 			"ingredient",
 			"raw"
 		],
-        "icon": "WaterBucket.png",
-        "isPlaceable": false
+		"customData" : { "hydrationvalue" : 5 },
+    "icon": "WaterBucket.png",
+    "isPlaceable": false
     },
     "CarpentryWorkbench": {
         "icon": "CarpentryWorkbench.png",
@@ -1013,7 +1014,7 @@
         "onRemoveAudio": "vanilla.woodDeleteLight",
         "maxStackSize": 600,
         "sideall": "SELF",
-        "sidex+": "BirchLogsVert", , 
+        "sidex+": "BirchLogsVert", 
         "sidex-": "BirchLogsVert", 
         "sidey+": "WoodLogEnds", 
         "sidey-": "WoodLogEnds", 

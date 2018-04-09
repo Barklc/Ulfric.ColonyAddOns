@@ -1,11 +1,11 @@
 Set new colors for each new NPC's
-Brown Plaster needs optional flag flipped
+
 
 
 Future functions:
-Add Herald config to player variables so they can be controlled individually by each player
 Add rally function to herald.
 	Have 8 configured NPC report and surround the heralds as slingers.  
 	There needs to be slings available and space around Herald stand must be open.  
 	Will be released the NPC configurable ingame hours after last rally call by that herald.
 Add taiga planks
+Add catagories to new items

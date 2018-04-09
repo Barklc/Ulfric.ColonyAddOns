@@ -63,6 +63,63 @@ namespace Ulfric.ColonyAddOns
             return players;
         }
 
+        [ModLoader.ModCallback(ModLoader.EModCallbackType.OnPlayerClicked, GameLoader.NAMESPACE + ".PickAxeDig")]
+        public static void PickAxeDig(Players.Player player, Pipliz.Box<Shared.PlayerClickedData> boxedData)
+        {
+            if (boxedData.item1.IsConsumed)
+                return;
+
+            var click = boxedData.item1;
+            Shared.VoxelRayCastHit rayCastHit = click.rayCastHit;
+            var state = PlayerState.GetPlayerState(player);
+
+            ushort tool = click.typeSelected;
+            if (tool == ItemTypes.IndexLookup.GetIndex("bronzepickaxe") &&
+                click.rayCastHit.rayHitType == Shared.RayHitType.Block &&
+                click.clickType == Shared.PlayerClickedData.ClickType.Right)
+            {
+                long millisecondsSinceStart = Pipliz.Time.MillisecondsSinceStart;
+
+                if (Players.LastPunches.TryGetValue(player, out long num) && millisecondsSinceStart - num < Players.PlayerPunchCooldownMS*2)
+                {
+                    return;
+                }
+
+                Players.LastPunches[player] = millisecondsSinceStart;
+                boxedData.item1.consumedType = Shared.PlayerClickedData.ConsumedType.UsedByMod;
+
+                ushort blockhit = boxedData.item1.typeHit;
+                ItemTypes.ItemType itemMined = ItemTypes.GetType(blockhit);
+                if (CanMineBlock(itemMined.ItemIndex))
+                {
+                    List<ItemTypes.ItemTypeDrops> itemList = ItemTypes.GetType(itemMined.ItemIndex).OnRemoveItems;
+
+                    for (int i = 0; i < itemList.Count; i++)
+                        if (Pipliz.Random.NextDouble() <= itemList[i].chance)
+                            Inventory.GetInventory(player).TryAdd(itemList[i].item.Type);
+
+                    ServerManager.SendAudio(player.Position, GameLoader.NAMESPACE + "MiningAudio");
+                }
+            }
+        }
+
+        [ModLoader.ModCallback(ModLoader.EModCallbackType.AfterSelectedWorld, Player.MOD_NAMESPACE+ ".RegisterAudio"),
+        ModLoader.ModCallbackProvidesFor("pipliz.server.loadaudiofiles"), ModLoader.ModCallbackDependsOn("pipliz.server.registeraudiofiles")]
+        public static void RegisterAudio()
+        {
+            Logger.Log("Registering Audio...{0}", GameLoader.NAMESPACE + ".MiningAudio");
+            GameLoader.AddSoundFile(GameLoader.NAMESPACE + ".MiningAudio", new List<string>()
+            {
+                GameLoader.AudioFolder + "/mining.ogg"
+            });
+        }
+
+        public static bool CanMineBlock(ushort itemMined)
+        {
+            return ItemTypes.TryGetType(itemMined, out var item) &&
+                        item.CustomDataNode.TryGetAs("minerIsMineable", out bool minable) &&
+                        minable;
+        }
     }
 
     [ModLoader.ModManager]

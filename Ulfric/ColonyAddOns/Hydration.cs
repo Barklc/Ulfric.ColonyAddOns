@@ -38,46 +38,26 @@ namespace Ulfric.ColonyAddOns
                             {
                                 var stockpile = Stockpile.GetStockPile(p);
 
-                                Colony colony = Colony.Get(p);
-
                                 //Determine to total value if hydration available
-                                float totalHydrationValue = stockpile.AmountContained(type) * Configuration.WaterHydrationValue;
-                                Logger.Log("Water amount {0} ID {1} IsValid {2}", stockpile.AmountContained(type), p.ID.ToString(), p.IsValid.ToString());
-                                Logger.Log("Total Hydration Value = {0}", totalHydrationValue);
+                                float totalHydrationValue = TotalHydrationInStockPile(stockpile);
 
                                 //Determine the total hydration value need to hydrate all the colonists
-                                float followerHydrationNeeds = colony.FollowerCount * Configuration.HydrationValuePerColonists;
-                                Logger.Log("Follower Hydration Needs = {0}", followerHydrationNeeds);
+                                float followerHydrationNeeded = TotalHydrationNeeded(p);
 
-                                //If the total water used in less or equal to the total hydration value in the stock pile, remove the appropriate amount of water
-                                if (followerHydrationNeeds <= totalHydrationValue)
+                                //Remove the followedrHydrationNeeded amount, if this is greater then what is available then return the unhydrated colonist count.
+                                int colonistsDehydrated = UseHydration(followerHydrationNeeded, totalHydrationValue, stockpile);
+
+                                //
+                                for(int count = 0; count < colonistsDehydrated; count++)
                                 {
-                                    int waterToRemove = Convert.ToInt32(followerHydrationNeeds / Configuration.WaterHydrationValue);
-                                    stockpile.TryRemove(type, waterToRemove);
-                                    Logger.Log("Water to remove = {0}", waterToRemove);
-                                }
-                                else
-                                {
-                                    float neededHydration = followerHydrationNeeds - totalHydrationValue;
-                                    Logger.Log("Need Hydrations = {0}", neededHydration.ToString());
-
-                                    int waterToRemove = stockpile.AmountContained(type);
-                                    stockpile.TryRemove(type, waterToRemove);
-                                    Logger.Log("Water to remove = {0}", waterToRemove);
-
-                                    int colonistsDehydrated = Convert.ToInt32(neededHydration / Configuration.HydrationValuePerColonists);
-                                    Logger.Log("Colonists Dehydrated = {0}", colonistsDehydrated.ToString());
-
-                                    for(int count =0; count<= colonistsDehydrated; count++)
-                                    {
-                                        NPC.NPCBase follower = colony.Followers.Last<NPC.NPCBase>();
-                                        if (follower == null)
-                                            break;
-                                        follower.OnDeath();
+                                    NPC.NPCBase follower = Colony.Get(p).Followers.Last<NPC.NPCBase>();
+                                    if (follower == null)
+                                        break;
+                                    follower.OnDeath();
                                         
-                                    }
-                                    Chat.Send(p, "You do not have enough water for the whole colony!", ChatColor.red);
                                 }
+                                if (colonistsDehydrated !=0)
+                                    Chat.Send(p, "You do not have enough water for {0} Colonist(s)!", ChatColor.red, colonistsDehydrated.ToString());
                                 waterConsumed[p.Name] = true;
                             }
                             else
@@ -93,6 +73,66 @@ namespace Ulfric.ColonyAddOns
                 }
                 
             }
+        }
+
+        public static float ItemHydrateValue(ushort itemToCheck)
+        {
+            ItemTypes.TryGetType(itemToCheck, out var item);
+            item.CustomDataNode.TryGetAs("hydrationvalue", out float hydratevalue);
+            return hydratevalue;
+        }
+
+        public static float TotalHydrationInStockPile(Stockpile s)
+        {
+             ushort type = ItemTypes.IndexLookup.GetIndex(Blocks.MOD_NAMESPACE + ".WaterBucket");
+
+            //Determine to total value if hydration available
+            float results = s.AmountContained(type) * ItemHydrateValue(type);
+            Logger.Log("Water amount {0}", s.AmountContained(type));
+            Logger.Log("Total Hydration Value = {0}", results);
+
+            return results;
+        }
+
+        public static float TotalHydrationNeeded(Players.Player p)
+        {
+            Colony colony = Colony.Get(p);
+            
+            //Determine the total hydration value need to hydrate all the colonists
+            float results = colony.FollowerCount * Configuration.HydrationValuePerColonists;
+            Logger.Log("Follower Hydration Needs = {0}", results);
+
+            return results;
+        }
+
+        public static int UseHydration(float HydrationAmountNeeded, float TotalHydrationValue, Stockpile stockpile)
+        {
+            int results = 0;
+            ushort type = ItemTypes.IndexLookup.GetIndex(Blocks.MOD_NAMESPACE + ".WaterBucket");
+
+            //Future add logic to support other Hydration sources.
+
+            //Figure out how many WaterBuckets are needed
+            int totalWaterNeeded = Convert.ToInt32(HydrationAmountNeeded / ItemHydrateValue(type));
+            Logger.Log("Total WaterBuckets Needed {0}", totalWaterNeeded.ToString());
+
+            //Get the number of WaterBuckets in stockpile
+            int totalWaterInStockPile = stockpile.AmountContained(type);
+            Logger.Log("Total Water In Stockpile {0}", totalWaterInStockPile);
+
+            //if total needed exceeds total in stockpile then figure out how many colonists do not have water
+            if (totalWaterNeeded > totalWaterInStockPile)
+            {
+
+                results = Convert.ToInt32(((float)(totalWaterNeeded - totalWaterInStockPile) * ItemHydrateValue(type)) /Configuration.HydrationValuePerColonists);
+                Logger.Log("Colonists Dehydrated = {0}", results.ToString());
+                totalWaterNeeded = totalWaterInStockPile;
+            }
+
+            stockpile.TryRemove(type, totalWaterNeeded);
+            Logger.Log("Water to remove = {0}", totalWaterNeeded);
+
+            return results;
         }
     }
 }

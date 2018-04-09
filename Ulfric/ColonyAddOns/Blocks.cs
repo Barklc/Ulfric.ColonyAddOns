@@ -113,6 +113,10 @@ namespace Ulfric.ColonyAddOns
                                             else
                                                 realtype = MOD_NAMESPACE + "." + type;
 
+                                            //Check to make sure that the items specified in the results and requires are valid items
+                                            if (!ItemTypes.IndexLookup.TryGetIndex(realtype, out ushort index))
+                                                Logger.Log("ERROR Recipe Name {0}  {1} Type does not exist", name, realtype);
+
                                             jsonRecipePart.SetAs("type", realtype);
                                         }
                                     }
