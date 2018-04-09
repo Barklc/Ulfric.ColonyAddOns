@@ -1,5 +1,5 @@
 # Ulfric.ColonyAddOns
-Adds additional blocks, jobs, new mineable locks and new chat commands. 
+Adds additional blocks, jobs, new mineable blocks and new chat commands. 
 
 This mod adds:
 
