@@ -71,30 +71,30 @@
         "emissive": "neutral",
         "height": "neutral"
     },
-	"infiniteMarble" : {
-		"albedo" : "oreMarble",
-		"emissive" : "neutral",
-		"height" : "neutral",
-		"normal" : "neutral"
-	},
-	"infiniteWaterSource" : {
-		"albedo" : "oreWaterSource",
-		"emissive" : "neutral",
-		"height" : "neutral",
-		"normal" : "neutral"
-	},
-	"AdvancedAgricultureWorkbenchSides": {
+    "infiniteMarble": {
+        "albedo": "oreMarble",
+        "emissive": "neutral",
+        "height": "neutral",
+        "normal": "neutral"
+    },
+    "infiniteWaterSource": {
+        "albedo": "oreWaterSource",
+        "emissive": "neutral",
+        "height": "neutral",
+        "normal": "neutral"
+    },
+    "AdvancedAgricultureWorkbenchSides": {
         "albedo": "AdvancedAgricultureWorkbenchSides",
         "emissive": "neutral",
         "height": "neutral",
-        "normal": "AdvancedAgricultureWorkbench"  
-	},
-	"AdvancedAgricultureWorkbenchTop": {
+        "normal": "AdvancedAgricultureWorkbench"
+    },
+    "AdvancedAgricultureWorkbenchTop": {
         "albedo": "AdvancedAgricultureWorkbenchTop",
         "emissive": "neutral",
         "height": "neutral",
         "normal": "AdvancedAgricultureWorkbench"
-	},
+    },
     "CarpentryWorkbench": {
         "albedo": "CarpentryWorkbench",
         "emissive": "neutral",
@@ -113,13 +113,13 @@
         "height": "neutral",
         "normal": "AdvancedStoneMasonryWorkbench"
     },
-	"HeraldStand": {
+    "HeraldStand": {
         "albedo": "HeraldStand",
         "emissive": "neutral",
         "height": "neutral",
         "normal": "HeraldStand"
     },
-	"BlackDirtGrungyMetal": {
+    "BlackDirtGrungyMetal": {
         "albedo": "BlackDirtGrungyMetal",
         "normal": "neutral",
         "emissive": "neutral",
@@ -761,7 +761,7 @@
         "emissive": "neutral",
         "height": "neutral"
     },
-	"WoodLogEnds": {
+    "WoodLogEnds": {
         "albedo": "WoodLogEnds",
         "normal": "neutral",
         "emissive": "neutral",
@@ -772,14 +772,14 @@
         "normal": "neutral",
         "emissive": "neutral",
         "height": "neutral"
-	},
-	"BirchLogFence": {
+    },
+    "BirchLogFence": {
         "albedo": "BirchLogs",
         "normal": "neutral",
         "emissive": "neutral",
         "height": "neutral"
-	},
-	"BirchLogsHorz": {
+    },
+    "BirchLogsHorz": {
         "albedo": "BirchLogsHorz",
         "normal": "neutral",
         "emissive": "neutral",
@@ -791,22 +791,22 @@
         "emissive": "neutral",
         "height": "neutral"
     },
-	"CrateDarkWood": {
+    "CrateDarkWood": {
         "albedo": "CrateDarkWood",
         "normal": "neutral",
         "emissive": "neutral",
         "height": "neutral"
     },
-	"CrateMetalReenforcedDarkWood": {
+    "CrateMetalReenforcedDarkWood": {
         "albedo": "CrateMetalReenforcedDarkWood",
         "normal": "neutral",
         "emissive": "neutral",
         "height": "neutral"
-	},
-	"CrateMetalBlack": {
+    },
+    "CrateMetalBlack": {
         "albedo": "CrateMetalBlack",
         "normal": "neutral",
         "emissive": "neutral",
         "height": "neutral"
-	}
+    }
 }

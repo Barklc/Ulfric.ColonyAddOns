@@ -1,48 +1,101 @@
-[
-  {
+[{
     "name": "WaterBucket",
-    "results": [{"type":"WaterBucket","amount": 1}],
-    "requires": [{"type":"vanilla.snow","amount": 1}],
+    "results": [{
+        "type": "WaterBucket",
+        "amount": 1
+    }],
+    "requires": [{
+        "type": "vanilla.snow",
+        "amount": 1
+    }],
     "defaultLimit": 0,
     "defaultPriority": -100
-  },
-  {
+}, {
     "name": "CarpentryWorkbench",
-    "results": [{"type":"CarpentryWorkbench","amount": 1}],
-    "requires": [{"type":"vanilla.planks","amount": 1},{"type":"vanilla.coppertools","amount": 2},{"type":"vanilla.coppernails","amount": 5}],
-    "isOptional" : true,
-	"defaultLimit": 1,
+    "results": [{
+        "type": "CarpentryWorkbench",
+        "amount": 1
+    }],
+    "requires": [{
+        "type": "vanilla.planks",
+        "amount": 1
+    }, {
+        "type": "vanilla.coppertools",
+        "amount": 2
+    }, {
+        "type": "vanilla.coppernails",
+        "amount": 5
+    }],
+    "isOptional": true,
+    "defaultLimit": 1,
     "defaultPriority": -100
-   },
-   {
+}, {
     "name": "AdvancedStoneMasonryWorkbench",
-    "results": [{"type":"AdvancedStoneMasonryWorkbench","amount": 1}],
-    "requires": [{"type":"vanilla.stonebricks","amount": 1},{"type":"vanilla.coppertools","amount": 2},{"type":"vanilla.coppernails","amount": 5}],
-    "isOptional" : true,
-	 "defaultLimit": 1,
+    "results": [{
+        "type": "AdvancedStoneMasonryWorkbench",
+        "amount": 1
+    }],
+    "requires": [{
+        "type": "vanilla.stonebricks",
+        "amount": 1
+    }, {
+        "type": "vanilla.coppertools",
+        "amount": 2
+    }, {
+        "type": "vanilla.coppernails",
+        "amount": 5
+    }],
+    "isOptional": true,
+    "defaultLimit": 1,
     "defaultPriority": -100
-   },
-   {
+}, {
     "name": "FletcheryWorkbench",
-    "results": [{"type":"FletcheryWorkbench","amount": 1}],
-    "requires": [{"type":"vanilla.planks","amount": 1},{"type":"vanilla.bow","amount": 2},{"type":"vanilla.coppertools","amount": 5}],
-    "isOptional" : true,
-	"defaultLimit": 1,
+    "results": [{
+        "type": "FletcheryWorkbench",
+        "amount": 1
+    }],
+    "requires": [{
+        "type": "vanilla.planks",
+        "amount": 1
+    }, {
+        "type": "vanilla.bow",
+        "amount": 2
+    }, {
+        "type": "vanilla.coppertools",
+        "amount": 5
+    }],
+    "isOptional": true,
+    "defaultLimit": 1,
     "defaultPriority": -100
-   },  
-   {
+}, {
     "name": "HeraldStand",
-    "results": [{"type":"HeraldStand","amount": 1}],
-    "requires": [{"type":"vanilla.bronzeingot","amount": 2},{"type":"vanilla.coppertools","amount": 5}],
-    "isOptional" : true,
-	"defaultLimit": 1,
+    "results": [{
+        "type": "HeraldStand",
+        "amount": 1
+    }],
+    "requires": [{
+        "type": "vanilla.bronzeingot",
+        "amount": 2
+    }, {
+        "type": "vanilla.coppertools",
+        "amount": 5
+    }],
+    "isOptional": true,
+    "defaultLimit": 1,
     "defaultPriority": -100
-   },
-   {
+}, {
     "name": "BrownPlaster",
-    "results": [{"type":"BrownPlaster","amount": 2}],
-    "requires": [{"type":"vanilla.planks","amount": 1},{"type":"vanilla.gypsum","amount": 1}],
+    "results": [{
+        "type": "BrownPlaster",
+        "amount": 2
+    }],
+    "requires": [{
+        "type": "vanilla.planks",
+        "amount": 1
+    }, {
+        "type": "vanilla.gypsum",
+        "amount": 1
+    }],
     "defaultPriority": -100,
     "defaultLimit": 1
-   }
-]
+}]

@@ -1,5 +1,5 @@
-﻿{
-	"vanilla.leavestaiga": {
+{
+    "vanilla.leavestaiga": {
         "albedo": "leavesTaiga",
         "emissive": "neutral",
         "height": "neutral",
@@ -23,16 +23,16 @@
         "height": "neutral",
         "normal": "neutral"
     },
-	"stumptemperate": {
-	    "albedo": "stumptemperate",
+    "stumptemperate": {
+        "albedo": "stumptemperate",
         "emissive": "neutral",
         "height": "neutral",
         "normal": "neutral"
-	},
-	"stumptaiga": {
-	    "albedo": "stumptaiga",
+    },
+    "stumptaiga": {
+        "albedo": "stumptaiga",
         "emissive": "neutral",
         "height": "neutral",
-		"normal": "neutral"
-	}
+        "normal": "neutral"
+    }
 }

@@ -90,47 +90,47 @@
         "onRemoveAudio": "vanilla.stoneDelete",
         "destructionTime": 600
     },
-	"rawMarble": {
-		"categories" : [
-			"ingredient",
-			"raw"
-		],
+    "rawMarble": {
+        "categories": [
+            "ingredient",
+            "raw"],
         "icon": "rawMarble.png",
-		"isPlaceable" : false
-	},
-	"infiniteMarble" : {
-		"customData" : {
-			"minerIsMineable" : true,
-			"minerMiningTime" : 10
-		},
-		"destructionTime" : 1250,
-		"onRemoveAudio" : "vanilla.stoneDelete",
-		"onRemoveType" : "rawMarble",
-		"sideall" : "SELF"
-	},
-    "Magma": {
-      "icon": "Magma.png",
-      "maxStackSize": 600,
-       "isPlaceable": false
+        "isPlaceable": false
     },
-	 "infiniteWaterSource" : {
-		"customData" : {
-			"minerIsMineable" : true,
-			"minerMiningTime" : 3
-		},
-		"destructionTime" : 600,
-		"onRemoveAudio" : "vanilla.stoneDelete",
-		"onRemoveType" : "WaterBucket",
-		"sideall" : "SELF"
-	},
+    "infiniteMarble": {
+        "customData": {
+            "minerIsMineable": true,
+            "minerMiningTime": 10
+        },
+        "destructionTime": 1250,
+        "onRemoveAudio": "vanilla.stoneDelete",
+        "onRemoveType": "rawMarble",
+        "sideall": "SELF"
+    },
+    "Magma": {
+        "icon": "Magma.png",
+        "maxStackSize": 600,
+        "isPlaceable": false
+    },
+    "infiniteWaterSource": {
+        "customData": {
+            "minerIsMineable": true,
+            "minerMiningTime": 3
+        },
+        "destructionTime": 600,
+        "onRemoveAudio": "vanilla.stoneDelete",
+        "onRemoveType": "WaterBucket",
+        "sideall": "SELF"
+    },
     "WaterBucket": {
-		"categories" : [
-			"ingredient",
-			"raw"
-		],
-		"customData" : { "hydrationvalue" : 5 },
-    "icon": "WaterBucket.png",
-    "isPlaceable": false
+        "categories": [
+            "ingredient",
+            "raw"],
+        "customData": {
+            "hydrationvalue": 5
+        },
+        "icon": "WaterBucket.png",
+        "isPlaceable": false
     },
     "CarpentryWorkbench": {
         "icon": "CarpentryWorkbench.png",
@@ -160,13 +160,13 @@
         "sideall": "AdvancedAgricultureWorkbenchSides",
         "sidey+": "AdvancedAgricultureWorkbenchTop"
     },
-	"HeraldStand": {
+    "HeraldStand": {
         "icon": "HeraldStand.png",
         "onPlaceAudio": "vanilla.woodPlace",
         "onRemoveAudio": "vanilla.woodDeleteLight",
         "sideall": "HeraldStand"
-		},
-	"BlackDirtGrungyMetal": {
+    },
+    "BlackDirtGrungyMetal": {
         "icon": "BlackDirtGrungyMetal.png",
         "sideall": "SELF",
         "maxStackSize": 600,
@@ -984,50 +984,50 @@
         "maxStackSize": 600,
         "destructionTime": 600
     },
-	"WoodLogEnds": {
+    "WoodLogEnds": {
         "icon": "WoodLogEnds.png",
         "onPlaceAudio": "vanilla.woodPlace",
         "onRemoveAudio": "vanilla.woodDeleteLight",
         "maxStackSize": 600,
         "sideall": "SELF",
-		"isPlaceable" : false
+        "isPlaceable": false
     },
-	"BirchLogsVert": {
+    "BirchLogsVert": {
         "icon": "BirchLogs.png",
         "onPlaceAudio": "vanilla.woodPlace",
         "onRemoveAudio": "vanilla.woodDeleteLight",
         "maxStackSize": 600,
         "sideall": "SELF",
-		"isPlaceable" : false
+        "isPlaceable": false
     },
-	"BirchLogsHorz": {
+    "BirchLogsHorz": {
         "icon": "BirchLogsHorz.png",
         "onPlaceAudio": "vanilla.woodPlace",
         "onRemoveAudio": "vanilla.woodDeleteLight",
         "maxStackSize": 600,
         "sideall": "SELF",
-		"isPlaceable" : false
+        "isPlaceable": false
     },
-	"BirchLogFence": {
+    "BirchLogFence": {
         "icon": "BirchLogs.png",
         "onPlaceAudio": "vanilla.woodPlace",
         "onRemoveAudio": "vanilla.woodDeleteLight",
         "maxStackSize": 600,
         "sideall": "SELF",
-        "sidex+": "BirchLogsVert", 
-        "sidex-": "BirchLogsVert", 
-        "sidey+": "WoodLogEnds", 
-        "sidey-": "WoodLogEnds", 
-        "sidez+": "BirchLogsVert", 
+        "sidex+": "BirchLogsVert",
+        "sidex-": "BirchLogsVert",
+        "sidey+": "WoodLogEnds",
+        "sidey-": "WoodLogEnds",
+        "sidez+": "BirchLogsVert",
         "sidez-": "BirchLogsVert"
     },
-	 "WoodPile": {
+    "WoodPile": {
         "icon": "WoodLogEnds.png",
         "onPlaceAudio": "vanilla.woodPlace",
         "onRemoveAudio": "vanilla.woodDeleteLight",
         "maxStackSize": 600,
-        "isRotatable" : true,
-        "needsBase" : true,
+        "isRotatable": true,
+        "needsBase": true,
         "rotatablex+": "WoodPilex+",
         "rotatablex-": "WoodPilex-",
         "rotatablez+": "WoodPilez+",
@@ -1077,20 +1077,20 @@
         "maxStackSize": 600,
         "isCrate": true
     },
-	  "CrateMetalReenforcedDarkWood": {
+    "CrateMetalReenforcedDarkWood": {
         "icon": "CrateMetalReenforcedDarkWood.png",
         "sideall": "SELF",
         "maxStackSize": 600,
         "onPlaceAudio": "vanilla.woodPlace",
         "onRemoveAudio": "vanilla.woodDeleteLight",
-		    "isCrate": true
+        "isCrate": true
     },
-	  "CrateMetalBlack": {
+    "CrateMetalBlack": {
         "icon": "CrateMetalBlack.png",
         "sideall": "SELF",
         "maxStackSize": 600,
         "onPlaceAudio": "vanilla.woodPlace",
         "onRemoveAudio": "vanilla.woodDeleteLight",
-		    "isCrate": true
+        "isCrate": true
     }
 }

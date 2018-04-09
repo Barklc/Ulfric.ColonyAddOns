@@ -1,13 +1,13 @@
-﻿{
-	"leavestaiga":{
-		"icon" : "LeavesTaiga.png"
-	},
-	"leavestemperate":{
-		"icon" : "LeavesTemperate.png"
-	}
+{
+    "leavestaiga": {
+        "icon": "LeavesTaiga.png"
+    },
+    "leavestemperate": {
+        "icon": "LeavesTemperate.png"
+    }
     "logtaiga": {
-		"icon":"LogTaiga.png",
-		"sidex+": "vanilla.logtaiga",
+        "icon": "LogTaiga.png",
+        "sidex+": "vanilla.logtaiga",
         "sidex-": "vanilla.logtaiga",
         "sidey+": "stumptaiga",
         "sidey-": "stumptaiga",
@@ -16,7 +16,7 @@
 
     },
     "logtemperate": {
-		"icon": "LogTemperate.png",
+        "icon": "LogTemperate.png",
         "sidex+": "vanilla.logtemperate",
         "sidex-": "vanilla.logtemperate",
         "sidey+": "stumptemperate",
