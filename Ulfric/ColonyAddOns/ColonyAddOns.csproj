@@ -150,7 +150,6 @@
     <None Include="configs\UpdateTextures.json" />
     <None Include="configs\UpdateTypes.json" />
     <None Include="localization\en-US\translation.json" />
-    <None Include="UpdateServer.Bat" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
