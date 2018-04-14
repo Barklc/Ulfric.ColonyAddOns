@@ -1,5 +1,5 @@
 # Ulfric.ColonyAddOns
-Mods for Colony Survival
+Adds additional blocks, jobs, new mineable blocks and new chat commands. 
 
 This mod adds:
 
@@ -19,6 +19,6 @@ This mod adds:
   
   Most features can be controlled through configuration settings to all you to control your experience with the mod
   
-  
+ See Wiki for more details: https://github.com/Barklc/Ulfric.ColonyAddOns/wiki  
  Releases can be found here: https://github.com/Barklc/Ulfric.ColonyAddOns/releases
  
