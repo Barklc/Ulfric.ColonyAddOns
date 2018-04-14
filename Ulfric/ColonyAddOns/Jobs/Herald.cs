@@ -51,7 +51,7 @@ namespace Ulfric.ColonyAddOns.Jobs
             }
             catch (System.Exception e)
             {
-                
+                Logger.Log("(0).RegisterAudio had an error : {1}", HeraldRegister.MOD_NAMESPACE, e.Message);
             }
         }
     }
