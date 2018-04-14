@@ -28,7 +28,7 @@ namespace Ulfric.ColonyAddOns.Jobs
         {
             keyName = CarpentryRegister.JOB_NAME,
             printName = "Carpenter",
-            maskColor1 = new Color32(59, 55, 0, 255),
+            maskColor1 = new Color32(58,0,97,1),
             type = NPCTypeID.GetNextID()
         };
 

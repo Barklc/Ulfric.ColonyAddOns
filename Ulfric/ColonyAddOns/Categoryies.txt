@@ -1,0 +1,155 @@
+    "categories" : [
+			"decorative"
+		],
+		"categories" : [
+			"decorative",
+			"bricks"
+		],
+		"categories" : [
+			"decorative",
+			"carpet"
+		],
+		"categories" : [
+			"decorative",
+			"cobblestone"
+		],"
+		"categories" : [
+			"decorative",
+			"grass"
+		],
+		"categories" : [
+			"decorative",
+			"lantern"
+		],
+		"categories" : [
+			"decorative",
+			"leaves"
+		],
+		"categories" : [
+			"decorative",
+			"planks"
+		],
+		"categories" : [
+			"decorative",
+			"stairs"
+		],
+		
+		
+
+		"categories" : [
+			"food"
+		],
+		"categories" : [
+			"food",
+			"flower"
+		],
+		"categories" : [
+			"food",
+			"seed"
+		],
+		"categories" : [
+			"food",
+			"seed",
+			"decorative"
+		],
+		
+		
+
+		"categories" : [
+			"essential"
+		],
+		"categories" : [
+			"essential",
+			"ammo"
+		],
+		"categories" : [
+			"essential",
+			"bronze"
+		],
+		    "categories" : [
+			    "essential",
+			    "decorative"
+		    ],  **Crate**
+		"categories" : [
+			"essential",
+			"decorative",
+			"planks"
+		],
+		"categories" : [
+			"essential",
+			"weapon"
+		],
+
+
+
+		"categories" : [
+			"ingredient"
+		],
+		"categories" : [
+			"ingredient",
+			"bronze"
+		],
+		"categories" : [
+			"ingredient",
+			"copper"
+		],
+		"categories" : [
+			"ingredient",
+			"fuel"
+		],
+		"categories" : [
+			"ingredient",
+			"gold"
+		],
+		"categories" : [
+			"ingredient",
+			"iron"
+		],
+		"categories" : [
+			"ingredient",
+			"linen"
+		],
+		"categories" : [
+			"ingredient",
+			"raw"
+		],
+		"categories" : [
+			"ingredient",
+			"raw",
+			"iron"
+		],
+		"categories" : [
+			"ingredient",
+			"silver"
+		],
+		"categories" : [
+			"ingredient",
+			"steel"
+		],
+
+
+
+		"categories" : [
+			"job"
+		],
+
+
+
+		"categories" : [
+			"sciencebag"
+		],
+
+
+
+        "categories" : [
+          "decorative",
+          "ulfric",
+          "wood"
+        ],
+        "categories" : [
+          "decorative",
+          "ulfric",
+          "stone"
+        ],   
+    
+      

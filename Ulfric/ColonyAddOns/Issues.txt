@@ -1,6 +1,11 @@
-Set new colors for each new NPC's
-
-
+Fixed - Set new colors for each new NPC's
+Fixed - Herald not function bug fix
+Added - Top and Bottom slabs for most new blocks
+Added - Horizontal versions of temperate and taiga stumps that are rotatable
+Added - Horizontal logs can be crafted in the player inventory and converted to stardard logs and back
+Fixed - Missing Localization entries
+Added - Realistic grass texture for all biomes but Tundra
+Added - 
 
 Future functions:
 Add rally function to herald.
@@ -8,4 +13,4 @@ Add rally function to herald.
 	There needs to be slings available and space around Herald stand must be open.  
 	Will be released the NPC configurable ingame hours after last rally call by that herald.
 Add taiga planks
-Add catagories to new items
+ADD jOB PRIORITY TO ALLOW PLAYERS TO ASSIGN WHAT TYPE OF JOB GETS ASSIGNED FIRST

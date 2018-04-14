@@ -4,7 +4,7 @@
     },
     "leavestemperate": {
         "icon": "LeavesTemperate.png"
-    }
+    },
     "logtaiga": {
         "icon": "LogTaiga.png",
         "sidex+": "vanilla.logtaiga",
@@ -23,5 +23,17 @@
         "sidey-": "stumptemperate",
         "sidez+": "vanilla.logtemperate",
         "sidez-": "vanilla.logtemperate"
+    },
+	"grassstaiga": {
+        "icon": "grassTaiga.png"
+    },
+    "grasstemperate": {
+        "icon": "grassTemperate.png"
+    },
+	"grasssavanna": {
+        "icon": "grassSavanna.png"
+    },
+    "grassrainforest": {
+        "icon": "grassRainforest.png"
     }
 }

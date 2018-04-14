@@ -29,24 +29,30 @@ namespace Ulfric.ColonyAddOns.Jobs
         ModLoader.ModCallbackProvidesFor("pipliz.server.loadaudiofiles"), ModLoader.ModCallbackDependsOn("pipliz.server.registeraudiofiles")]
         public static void RegisterAudio()
         {
-            Logger.Log("Registering Audio...{0}",GameLoader.NAMESPACE + ".NightAudio");
-            GameLoader.AddSoundFile(GameLoader.NAMESPACE + ".NightAudio", new List<string>()
+            try
+            {
+                Logger.Log("Registering Audio...{0}", GameLoader.NAMESPACE + ".NightAudio");
+                GameLoader.AddSoundFile(GameLoader.NAMESPACE + ".NightAudio", new List<string>()
             {
                 GameLoader.AudioFolder + "/Taps.ogg"
             });
 
-            Logger.Log("Registering Audio...{0}", GameLoader.NAMESPACE + ".DayAudio");
-            GameLoader.AddSoundFile(GameLoader.NAMESPACE + ".DayAudio", new List<string>()
+                Logger.Log("Registering Audio...{0}", GameLoader.NAMESPACE + ".DayAudio");
+                GameLoader.AddSoundFile(GameLoader.NAMESPACE + ".DayAudio", new List<string>()
             {
                 GameLoader.AudioFolder + "/Reveille.ogg"
             });
 
-            Logger.Log("Registering Audio...{0}", GameLoader.NAMESPACE + ".Rally");
-            GameLoader.AddSoundFile(GameLoader.NAMESPACE + ".Rally", new List<string>()
+                Logger.Log("Registering Audio...{0}", GameLoader.NAMESPACE + ".Rally");
+                GameLoader.AddSoundFile(GameLoader.NAMESPACE + ".Rally", new List<string>()
             {
                 GameLoader.AudioFolder + "/Rally.ogg"
             });
-
+            }
+            catch (System.Exception e)
+            {
+                
+            }
         }
     }
 
@@ -62,12 +68,12 @@ namespace Ulfric.ColonyAddOns.Jobs
         {
             keyName =HeraldRegister.JOB_NAME,
             printName = "Herald",
-            maskColor1 = new Color32(59, 55, 0, 255),
+            maskColor1 = new Color32(160, 13, 199, 1),
             type = NPCTypeID.GetNextID(),
             inventoryCapacity = 1f
         };
 
-        public static float StaticCraftingCooldown =10f;
+        public static float StaticCraftingCooldown = 10f;
         public override bool ToSleep => false;
 
         public override string NPCTypeKey
@@ -89,6 +95,7 @@ namespace Ulfric.ColonyAddOns.Jobs
         public ITrackableBlock InitializeOnAdd(Vector3Int position, ushort type, Players.Player player)
         {
             originalPosition = position;
+            _player = player;
             InitializeJob(player, position, 0);
             return this;
         }
@@ -106,59 +113,67 @@ namespace Ulfric.ColonyAddOns.Jobs
         public override void OnNPCAtJob(ref NPCBase.NPCState state)
         {
 
-            float cooldown = HeraldJob.StaticCraftingCooldown;
-            ushort status = GameLoader.Waiting_Icon;
-
-            if (!TimeCycle.ShouldSleep)
+            try
             {
-                if (!DayAlarmed && PlayerState.GetPlayerState(_player).EnableHeraldAnnouncingSunrise)
-                {
-                    ServerManager.SendAudio(owner.Position, GameLoader.NAMESPACE + ".DayAudio");
-                    status = GameLoader.Trumpeting_Icon;
-                    DayAlarmed = true;
-                    NightAlarmed = false;
-                }
-            }
+                float cooldown = HeraldJob.StaticCraftingCooldown;
+                ushort status = GameLoader.Waiting_Icon;
 
-            if (TimeCycle.ShouldSleep)
+                if (!TimeCycle.ShouldSleep)
+                {
+                    if (!DayAlarmed && PlayerState.GetPlayerState(_player).EnableHeraldAnnouncingSunrise)
+                    {
+                        ServerManager.SendAudio(owner.Position, GameLoader.NAMESPACE + ".DayAudio");
+                        status = GameLoader.Trumpeting_Icon;
+                        DayAlarmed = true;
+                        NightAlarmed = false;
+                    }
+                }
+
+                if (TimeCycle.ShouldSleep)
+                {
+                    if (!NightAlarmed && PlayerState.GetPlayerState(_player).EnableHeraldAnnouncingSunset)
+                    {
+                        ServerManager.SendAudio(owner.Position, GameLoader.NAMESPACE + ".NightAudio");
+                        status = GameLoader.Trumpeting_Icon;
+                        DayAlarmed = false;
+                        NightAlarmed = true;
+                    }
+                }
+
+                if (PlayerState.GetPlayerState(_player).EnableHeraldWarning)
+                {
+
+                    IMonster monster = MonsterTracker.Find(originalPosition.Add(0, 1, 0), Configuration.HeraldWarningDistance, 100000.0f);
+
+                    if (monster == null)
+                        monster = MonsterTracker.Find(originalPosition.Add(1, 0, 0), Configuration.HeraldWarningDistance, 100000.0f);
+
+                    if (monster == null)
+                        monster = MonsterTracker.Find(originalPosition.Add(-1, 0, 0), Configuration.HeraldWarningDistance, 100000.0f);
+
+                    if (monster == null)
+                        monster = MonsterTracker.Find(originalPosition.Add(0, -1, 0), Configuration.HeraldWarningDistance, 100000.0f);
+
+                    if (monster == null)
+                        monster = MonsterTracker.Find(originalPosition.Add(0, 0, 1), Configuration.HeraldWarningDistance, 100000.0f);
+
+                    if (monster == null)
+                        monster = MonsterTracker.Find(originalPosition.Add(0, 0, -1), Configuration.HeraldWarningDistance, 100000.0f);
+
+                    if (monster != null && General.Physics.Physics.CanSee(originalPosition.Add(0, 1, 0).Vector, monster.Position))
+                    {
+                        ServerManager.SendAudio(owner.Position, GameLoader.NAMESPACE + ".Rally");
+                        status = GameLoader.Trumpeting_Icon;
+                    }
+                }
+
+                state.SetIndicator(new Shared.IndicatorState(cooldown, status));
+            }
+            catch (System.Exception e)
             {
-                if (!NightAlarmed && PlayerState.GetPlayerState(_player).EnableHeraldAnnouncingSunset)
-                {
-                    ServerManager.SendAudio(owner.Position, GameLoader.NAMESPACE + ".NightAudio");
-                    status = GameLoader.Trumpeting_Icon;
-                    DayAlarmed = false;
-                    NightAlarmed = true;
-                }
+                Logger.Log("{0}.OnNPCAtJob has an error {1} :",HeraldRegister.MOD_NAMESPACE, e.Message);
+            
             }
-
-            if (PlayerState.GetPlayerState(_player).EnableHeraldWarning)
-            {
-
-                IMonster monster = MonsterTracker.Find(originalPosition.Add(0, 1, 0), Configuration.HeraldWarningDistance, 100000.0f);
-
-                if (monster == null)
-                    monster = MonsterTracker.Find(originalPosition.Add(1, 0, 0), Configuration.HeraldWarningDistance, 100000.0f);
-
-                if (monster == null)
-                    monster = MonsterTracker.Find(originalPosition.Add(-1, 0, 0), Configuration.HeraldWarningDistance, 100000.0f);
-
-                if (monster == null)
-                    monster = MonsterTracker.Find(originalPosition.Add(0, -1, 0), Configuration.HeraldWarningDistance, 100000.0f);
-
-                if (monster == null)
-                    monster = MonsterTracker.Find(originalPosition.Add(0, 0, 1), Configuration.HeraldWarningDistance, 100000.0f);
-
-                if (monster == null)
-                    monster = MonsterTracker.Find(originalPosition.Add(0, 0, -1), Configuration.HeraldWarningDistance, 100000.0f);
-
-                if (monster != null && General.Physics.Physics.CanSee(originalPosition.Add(0,1,0).Vector, monster.Position))
-                {
-                    ServerManager.SendAudio(owner.Position, GameLoader.NAMESPACE + ".Rally");
-                    status = GameLoader.Trumpeting_Icon;
-                }
-            }
-
-            state.SetIndicator(new Shared.IndicatorState(cooldown, status));
           
         }
 

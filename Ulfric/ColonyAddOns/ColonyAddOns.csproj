@@ -63,11 +63,12 @@
     <Compile Include="Chat.cs" />
     <Compile Include="chatcommands\Command.cs" />
     <Compile Include="chatcommands\HydrationChatCommand.cs" />
+    <Compile Include="chatcommands\LineUpChatCommand.cs" />
     <Compile Include="chatcommands\RosterChatCommand.cs" />
     <Compile Include="chatcommands\HeraldChatCommand.cs" />
     <Compile Include="chatcommands\TradeChatCommand.cs" />
     <Compile Include="Configuration.cs" />
-    <Compile Include="Hydration.cs" />
+    <Compile Include="npc\Hydration.cs" />
     <Compile Include="Stats.cs" />
     <Compile Include="Fertilizer.cs" />
     <Compile Include="GameLoader.cs" />
@@ -91,11 +92,11 @@
     <Compile Include="chatcommands\UlfricAllChatCommand.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="meshes\" />
     <Folder Include="textures\emissive\" />
     <Folder Include="textures\height\" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Debug.txt" />
     <Content Include="icons\AshySandstone.png" />
     <Content Include="icons\CarpentryWorkbench.png" />
     <Content Include="icons\DarkHardwoodFloor.png" />
@@ -141,12 +142,13 @@
     <None Include="configs\Fletchery.json" />
     <None Include="configs\Carpenter.json" />
     <None Include="configs\CarpentryWorkbench.json" />
+    <None Include="configs\player.json" />
     <None Include="configs\shopping.json" />
     <None Include="configs\smelting.json" />
     <None Include="configs\stonemasonry.json" />
     <None Include="configs\texturemapping.json" />
-    <None Include="configs\types.json" />
     <None Include="configs\crafting.json" />
+    <None Include="configs\types.json" />
     <None Include="configs\UpdateTextures.json" />
     <None Include="configs\UpdateTypes.json" />
     <None Include="localization\en-US\translation.json" />
@@ -169,6 +171,8 @@ mkdir localization
 xcopy ..\..\..\..\localization\*.* localization /e /y
 mkdir audio
 xcopy ..\..\..\..\audio\*.* audio /e /y
+mkdir meshes
+xcopy ..\..\..\..\meshes\*.* meshes /e /y
 </PostBuildEvent>
   </PropertyGroup>
   <PropertyGroup>

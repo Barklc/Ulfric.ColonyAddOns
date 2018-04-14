@@ -28,7 +28,7 @@ namespace Ulfric.ColonyAddOns.Jobs
         {
             keyName = AdvancedAgricultureRegister.JOB_NAME,
             printName = "Agriculturist",
-            maskColor1 = new Color32(59, 55, 0, 255),
+            maskColor1 = new Color32(13, 51, 15, 1),
             type = NPCTypeID.GetNextID()
         };
 

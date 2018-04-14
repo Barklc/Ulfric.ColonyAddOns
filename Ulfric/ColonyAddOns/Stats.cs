@@ -20,40 +20,48 @@ namespace Ulfric.ColonyAddOns
         [ModLoader.ModCallback(ModLoader.EModCallbackType.OnNPCCraftedRecipe, Statistics.MOD_NAMESPACE + ".OnNPCCraftedRecipe")]
         public static void OnNPCCraftedRecipe(IJob job, Recipe recipe, List<InventoryItem> results)
         {
-            if (Configuration.EnableStatisticCollecting)
+            try
             {
-
-                Players.Player p = Players.GetPlayer(job.Owner.ID);
-                SortedDictionary<string, int> PlayerStats;
-
-                if (!Stats.ContainsKey(p.Name))
+                if (Configuration.EnableStatisticCollecting)
                 {
-                    PlayerStats = new SortedDictionary<string, int>();
-                    Stats.Add(p.Name, PlayerStats);
-                }
-                else
-                {
-                    PlayerStats = Stats[p.Name];
-                }
 
-                foreach (InventoryItem it in results)
-                {
-                    string name = ItemTypes.IndexLookup.GetName(it.Type);
-                    if (name.Contains("."))
-                        name = name.Substring(name.LastIndexOf('.') + 1);
+                    Players.Player p = Players.GetPlayer(job.Owner.ID);
+                    SortedDictionary<string, int> PlayerStats;
 
-                    if (!PlayerStats.ContainsKey(name))
-                        PlayerStats.Add(name, 1);
+                    if (!Stats.ContainsKey(p.Name))
+                    {
+                        PlayerStats = new SortedDictionary<string, int>();
+                        Stats.Add(p.Name, PlayerStats);
+                    }
                     else
                     {
-                        if (PlayerStats.TryGetValue(name, out int count))
+                        PlayerStats = Stats[p.Name];
+                    }
+
+                    foreach (InventoryItem it in results)
+                    {
+                        string name = ItemTypes.IndexLookup.GetName(it.Type);
+                        if (name.Contains("."))
+                            name = name.Substring(name.LastIndexOf('.') + 1);
+
+                        if (!PlayerStats.ContainsKey(name))
+                            PlayerStats.Add(name, 1);
+                        else
                         {
-                            count++;
-                            PlayerStats[name] = count;
+                            if (PlayerStats.TryGetValue(name, out int count))
+                            {
+                                count++;
+                                PlayerStats[name] = count;
+                            }
                         }
                     }
+                    Stats[p.Name] = PlayerStats;
                 }
-                Stats[p.Name] = PlayerStats;
+            }
+            catch (System.Exception e)
+            {
+                Logger.Log("{0}.OnNPCCraftedRecipe had an error : {1}", Statistics.MOD_NAMESPACE, e.Message);
+
             }
         }
 
@@ -86,78 +94,95 @@ namespace Ulfric.ColonyAddOns
 
         public static void SaveStatistics()
         {
-            JSONNode n = null;
-
-            string folder = $"{GameLoader.SavedGameFolder}/{ServerManager.WorldName}/players/Statistics/";
-
-            if (!Directory.Exists(folder))
-                Directory.CreateDirectory(folder);
-
-            string file = $"{folder}Statistics.json";
-
-            if (File.Exists(file))
-                JSON.Deserialize(file, out n); 
-
-            if (n == null)
-                n = new JSONNode();
-            
-            foreach (KeyValuePair<string, SortedDictionary<string, int>> playerstats in Statistics.Stats)
+            try
             {
-                Logger.Log("Saving Playerstats For = {0}", playerstats.Key);
+                JSONNode n = null;
 
-                if (n.HasChild(playerstats.Key))
-                    n.RemoveChild(playerstats.Key);
+                string folder = $"{GameLoader.SavedGameFolder}/{ServerManager.WorldName}/players/Statistics/";
 
-                JSONNode Root = new JSONNode(NodeType.Object);
+                if (!Directory.Exists(folder))
+                    Directory.CreateDirectory(folder);
 
-                foreach (KeyValuePair<string, int> item in playerstats.Value)
+                string file = $"{folder}Statistics.json";
+
+                if (File.Exists(file))
+                    JSON.Deserialize(file, out n);
+
+                if (n == null)
+                    n = new JSONNode();
+
+                foreach (KeyValuePair<string, SortedDictionary<string, int>> playerstats in Statistics.Stats)
                 {
-                    Root.SetAs(item.Key, item.Value);
-                }
+                    Logger.Log("Saving Playerstats For = {0}", playerstats.Key);
 
-                if (Root != null)
-                {
-                    n.SetAs(playerstats.Key,Root);
+                    if (n.HasChild(playerstats.Key))
+                        n.RemoveChild(playerstats.Key);
+
+                    JSONNode Root = new JSONNode(NodeType.Object);
+
+                    foreach (KeyValuePair<string, int> item in playerstats.Value)
+                    {
+                        Root.SetAs(item.Key, item.Value);
+                    }
+
+                    if (Root != null)
+                    {
+                        n.SetAs(playerstats.Key, Root);
+                    }
                 }
+                JSON.Serialize(file, n);
             }
-            JSON.Serialize(file, n);
+            catch (System.Exception e)
+            {
+                Logger.Log("{0}.SaveStatistics had an error : {1}", Statistics.MOD_NAMESPACE, e.Message);
+
+            }
+
         }
 
         [ModLoader.ModCallback(ModLoader.EModCallbackType.AfterWorldLoad, Statistics.MOD_NAMESPACE + ".AfterWorldLoad")]
         public static void AfterWorldLoad()
         {
-            if (Configuration.EnableStatisticCollecting)
+            try
             {
-                string folder = $"{GameLoader.SavedGameFolder}/{ServerManager.WorldName}/players/Statistics/";
-                string file = $"{folder}Statistics.json";
-
-                if (File.Exists(file))
+                if (Configuration.EnableStatisticCollecting)
                 {
-                    if (JSON.Deserialize(file, out var n))
+                    string folder = $"{GameLoader.SavedGameFolder}/{ServerManager.WorldName}/players/Statistics/";
+                    string file = $"{folder}Statistics.json";
+
+                    if (File.Exists(file))
                     {
-                        if (n.NodeType == NodeType.Object)
+                        if (JSON.Deserialize(file, out var n))
                         {
-                            foreach (KeyValuePair<string, JSONNode> playerEntry in n.LoopObject())
+                            if (n.NodeType == NodeType.Object)
                             {
-                                Logger.Log("Player {0} {1}", playerEntry.Key, playerEntry.Value.ChildCount);
-                                foreach (var child in playerEntry.Value.LoopObject())
+
+                                foreach (KeyValuePair<string, JSONNode> playerEntry in n.LoopObject())
                                 {
-                                    Logger.Log("{0} {1}", child.Key, child.Value.GetAs<int>());
-                                    if (Statistics.Stats.ContainsKey(playerEntry.Key))
+                                    Logger.Log("Loading Player Stats {0} = {1}", playerEntry.Key, playerEntry.Value.ChildCount);
+                                    foreach (var child in playerEntry.Value.LoopObject())
                                     {
-                                        Statistics.Stats[playerEntry.Key].Add(child.Key, child.Value.GetAs<int>());
-                                    }
-                                    else
-                                    {
-                                        SortedDictionary<string, int> item = new SortedDictionary<string, int>();
-                                        item.Add(child.Key, child.Value.GetAs<int>());
-                                        Statistics.Stats.Add(playerEntry.Key, item);
+                                        if (Statistics.Stats.ContainsKey(playerEntry.Key))
+                                        {
+                                            Statistics.Stats[playerEntry.Key].Add(child.Key, child.Value.GetAs<int>());
+                                        }
+                                        else
+                                        {
+                                            SortedDictionary<string, int> item = new SortedDictionary<string, int>();
+                                            item.Add(child.Key, child.Value.GetAs<int>());
+                                            Statistics.Stats.Add(playerEntry.Key, item);
+                                        }
                                     }
                                 }
                             }
                         }
                     }
                 }
+            }
+            catch (System.Exception e)
+            {
+                Logger.Log("{0}.AfterWorldLoad had an error : {1}", Statistics.MOD_NAMESPACE, e.Message);
+
             }
         }
     }

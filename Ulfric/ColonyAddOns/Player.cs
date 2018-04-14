@@ -4,6 +4,8 @@ using System.Linq;
 using System.Text;
 using BlockTypes.Builtin;
 using Pipliz.JSON;
+using Pipliz.Mods.BaseGame.BlockNPCs;
+using Pipliz.Mods.APIProvider.Jobs;
 
 namespace Ulfric.ColonyAddOns
 {
@@ -76,11 +78,11 @@ namespace Ulfric.ColonyAddOns
             ushort tool = click.typeSelected;
             if (tool == ItemTypes.IndexLookup.GetIndex("bronzepickaxe") &&
                 click.rayCastHit.rayHitType == Shared.RayHitType.Block &&
-                click.clickType == Shared.PlayerClickedData.ClickType.Right)
+                click.clickType == Shared.PlayerClickedData.ClickType.Left)
             {
                 long millisecondsSinceStart = Pipliz.Time.MillisecondsSinceStart;
 
-                if (Players.LastPunches.TryGetValue(player, out long num) && millisecondsSinceStart - num < Players.PlayerPunchCooldownMS*2)
+                if (Players.LastPunches.TryGetValue(player, out long num) && millisecondsSinceStart - num < (ItemTypes.GetType(boxedData.item1.typeHit).DestructionTime/2))
                 {
                     return;
                 }
@@ -90,15 +92,21 @@ namespace Ulfric.ColonyAddOns
 
                 ushort blockhit = boxedData.item1.typeHit;
                 ItemTypes.ItemType itemMined = ItemTypes.GetType(blockhit);
-                if (CanMineBlock(itemMined.ItemIndex))
+
+                if (itemMined != null && CanMineBlock(itemMined.ItemIndex))
                 {
                     List<ItemTypes.ItemTypeDrops> itemList = ItemTypes.GetType(itemMined.ItemIndex).OnRemoveItems;
 
+                    bool itemadd = false;
                     for (int i = 0; i < itemList.Count; i++)
                         if (Pipliz.Random.NextDouble() <= itemList[i].chance)
-                            Inventory.GetInventory(player).TryAdd(itemList[i].item.Type);
+                            if (Inventory.GetInventory(player).TryAdd(itemList[i].item.Type))
+                                itemadd = true;
 
-                    ServerManager.SendAudio(player.Position, GameLoader.NAMESPACE + "MiningAudio");
+                    if (itemadd)
+                        ServerManager.SendAudio(player.Position, GameLoader.NAMESPACE + ".MiningAudio");
+                    else
+                        Chat.Send(player, "Item could not be harvested!");
                 }
             }
         }

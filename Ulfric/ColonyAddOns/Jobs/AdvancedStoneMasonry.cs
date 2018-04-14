@@ -28,7 +28,7 @@ namespace Ulfric.ColonyAddOns.Jobs
         {
             keyName = AdvancedStoneMasonryRegister.JOB_NAME,
             printName = "AdvancedStoneMason",
-            maskColor1 = new Color32(59, 55, 0, 255),
+            maskColor1 = new Color32(211,64,250,1),
             type = NPCTypeID.GetNextID()
         };
 

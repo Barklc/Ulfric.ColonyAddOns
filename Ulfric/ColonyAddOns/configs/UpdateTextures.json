@@ -34,5 +34,29 @@
         "emissive": "neutral",
         "height": "neutral",
         "normal": "neutral"
+    },
+    "vanilla.grasstemperate": {
+        "albedo": "grassTemperate",
+        "emissive": "neutral",
+        "height": "vanilla.grassGeneric",
+        "normal": "vanilla.grassGeneric"
+    },
+    "vanilla.grasstaiga": {
+        "albedo": "grassTaiga",
+        "emissive": "neutral",
+        "height": "vanilla.grassGeneric",
+        "normal": "vanilla.grassGeneric"
+    },
+    "vanilla.grasssavanna": {
+        "albedo": "grassSavanna",
+        "emissive": "neutral",
+        "height": "vanilla.grassGeneric",
+        "normal": "vanilla.grassGeneric"
+    },
+    "vanilla.grassrainforest": {
+        "albedo": "grassRainforest",
+        "emissive": "neutral",
+        "height": "vanilla.grassGeneric",
+        "normal": "vanilla.grassGeneric"
     }
 }

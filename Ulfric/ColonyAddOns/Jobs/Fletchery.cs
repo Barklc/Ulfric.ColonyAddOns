@@ -28,7 +28,7 @@ namespace Ulfric.ColonyAddOns.Jobs
         {
             keyName = FletcherRegister.JOB_NAME,
             printName = "Fletcher",
-            maskColor1 = new Color32(59, 55, 0, 255),
+            maskColor1 = new Color32(109,0,148,1),
             type = NPCTypeID.GetNextID()
         };
 

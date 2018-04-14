@@ -1,0 +1,52 @@
+﻿[{
+    "name": "LogTaigaHorz",
+    "results": [{
+        "type": "LogTaigaHorz",
+        "amount": 1
+    }],
+    "requires": [{
+        "type": "vanilla.logtaiga",
+        "amount": 1
+    }],
+    "defaultLimit": 0,
+    "defaultPriority": -100
+},
+{
+    "name": "LogTaiga",
+    "results": [{
+        "type": "vanilla.logtaiga",
+        "amount": 1
+    }],
+    "requires": [{
+        "type": "LogTaigaHorz",
+        "amount": 1
+    }],
+    "defaultLimit": 0,
+    "defaultPriority": -100
+},
+{
+    "name": "LogTemperateHorz",
+    "results": [{
+        "type": "LogTemperateHorz",
+        "amount": 1
+    }],
+    "requires": [{
+        "type": "vanilla.logtemperate",
+        "amount": 1
+    }],
+    "defaultLimit": 0,
+    "defaultPriority": -100
+},
+{
+    "name": "LogTemperate",
+    "results": [{
+        "type": "vanilla.logtemperate",
+        "amount": 1
+    }],
+    "requires": [{
+        "type": "LogTemperateHorz",
+        "amount": 1
+    }],
+    "defaultLimit": 0,
+    "defaultPriority": -100
+}]

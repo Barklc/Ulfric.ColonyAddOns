@@ -2,25 +2,16 @@
 using System.IO;
 using Pipliz;
 using UnityEngine;
+using System.Reflection;
 
 namespace Ulfric.ColonyAddOns
 {
     [ModLoader.ModManager]
     public static class CommandsModEntries
     {
-        public static string MODPATH;
-        private const string MOD_NAMESPACE = GameLoader.NAMESPACE + ".CommandsModEntries";
-
-        [ModLoader.ModCallback(ModLoader.EModCallbackType.OnAssemblyLoaded, CommandsModEntries.MOD_NAMESPACE + ".assemblyload")]
-        public static void OnAssemblyLoaded(string path)
+        public static rT GetFieldValue<rT, oT>(this object o, string fieldName)
         {
-            MODPATH = Path.GetDirectoryName(path);
-        }
-
-        [ModLoader.ModCallback(ModLoader.EModCallbackType.AfterStartup, CommandsModEntries.MOD_NAMESPACE + ".registercallbacks")]
-        public static void AfterStartup()
-        {
-            Pipliz.Log.Write("Loaded Commands Mod 1.0.0 Ulfric Thanks to Scarabol");
+            return (rT)typeof(oT).GetField(fieldName, BindingFlags.NonPublic | BindingFlags.Instance).GetValue(o);
         }
     }
 

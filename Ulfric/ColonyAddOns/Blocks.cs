@@ -78,7 +78,8 @@ namespace Ulfric.ColonyAddOns
                             new string[] { Jobs.CarpentryRegister.JOB_NAME, "CarpentryWorkbench.json" },
                             new string[] { Jobs.FletcherRegister.JOB_NAME, "FletcheryWorkbench.json" },
                             new string[] { Jobs.AdvancedStoneMasonryRegister.JOB_NAME, "AdvancedStoneMasonryWorkbench.json" },
-                            new string[] { Jobs.AdvancedAgricultureRegister.JOB_NAME, "AdvancedAgricultureWorkbench.json" }
+                            new string[] { Jobs.AdvancedAgricultureRegister.JOB_NAME, "AdvancedAgricultureWorkbench.json" },
+                            new string[] {"pipliz.player","player.json" }
                     })
             {
                 Recipe craftingRecipe = null;
@@ -124,14 +125,29 @@ namespace Ulfric.ColonyAddOns
                                 }
 
                                 craftingRecipe = new Recipe(craftingEntry);
-                                craftingEntry.TryGetAs("isOptional",out bool result);
-                                if (result)
+                                craftingEntry.TryGetAs("isOptional", out bool result);
+                                if (jobAndFilename[0] == "pipliz.player")
                                 {
-                                    RecipeStorage.AddOptionalLimitTypeRecipe(jobAndFilename[0], craftingRecipe);
+                                    if (result)
+                                    {
+                                        RecipePlayer.AddOptionalRecipe(craftingRecipe);
+                                    }
+                                    else
+                                    {
+                                        RecipePlayer.AddDefaultRecipe(craftingRecipe);
+                                    }
+
                                 }
                                 else
                                 {
-                                    RecipeStorage.AddDefaultLimitTypeRecipe(jobAndFilename[0], craftingRecipe);
+                                    if (result)
+                                    {
+                                        RecipeStorage.AddOptionalLimitTypeRecipe(jobAndFilename[0], craftingRecipe);
+                                    }
+                                    else
+                                    {
+                                        RecipeStorage.AddDefaultLimitTypeRecipe(jobAndFilename[0], craftingRecipe);
+                                    }
                                 }
                                 Logger.Log("Loading Recipe for " + jobAndFilename[0] + "..." + craftingRecipe.Name);
                             }
@@ -267,6 +283,18 @@ namespace Ulfric.ColonyAddOns
                                 typeEntry.Value.SetAs("onRemoveAudio", realOnRemoveAudio);
                             }
 
+                            if (typeEntry.Value.TryGetAs("mesh", out string meshes))
+                            {
+                                string realMeshes;
+
+                                if (meshes.StartsWith(VANILLA_PREFIX))
+                                    realMeshes = "gamedata" + "/" + "meshes" + "/" + meshes.Substring(VANILLA_PREFIX.Length);
+                                else
+                                    realMeshes = GameLoader.MeshesFolder + "/" + meshes;
+
+                                typeEntry.Value.SetAs("mesh", realMeshes);
+                            }
+
                             string realkey = Blocks.MOD_NAMESPACE + "." + typeEntry.Key;
 
                             if (typeEntry.Value.TryGetAs("isCrate", out bool isCrate) && isCrate)
@@ -383,11 +411,46 @@ namespace Ulfric.ColonyAddOns
                     Logger.Log("Expected json object in {0}, but got {1} instead", "texturemapping.json", jsonTextureMapping.NodeType);
                 }
             }
-
         }
 
-    }
+        [ModLoader.ModCallback(ModLoader.EModCallbackType.OnTryChangeBlock, GameLoader.NAMESPACE + ".AutoLoad.trychangeblock")]
+        public static void OnTryChangeBlockUser(ModLoader.OnTryChangeBlockData userData)
+        {
+            if (userData.CallbackState == ModLoader.OnTryChangeBlockData.ECallbackState.Cancelled)
+                return;
 
+            if (userData.CallbackOrigin == ModLoader.OnTryChangeBlockData.ECallbackOrigin.ClientPlayerManual)
+            {
+                VoxelSide side = userData.PlayerClickedData.VoxelSideHit;
+                ushort newType = userData.TypeNew;
+                string suffix = "bottom";
+
+                switch (side)
+                {
+                    case VoxelSide.yPlus:
+                        suffix = "bottom";
+                        break;
+
+                    case VoxelSide.yMin:
+                        suffix = "top";
+                        break;
+                }
+
+                if (newType != userData.TypeOld && ItemTypes.IndexLookup.TryGetName(newType, out string typename))
+                {
+                    string otherTypename = typename + suffix;
+
+                    if (ItemTypes.IndexLookup.TryGetIndex(otherTypename, out ushort otherIndex))
+                    {
+                        Vector3Int position = userData.Position;
+                        ThreadManager.InvokeOnMainThread(delegate () {
+                            ServerManager.TryChangeBlock(position, otherIndex);
+                        }, 0.1f);
+                    }
+                }
+            }
+        }
+    }
 }
 
 

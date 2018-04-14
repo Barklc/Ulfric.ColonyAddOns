@@ -44,6 +44,17 @@ namespace Ulfric.ColonyAddOns
                     return true;
                 }
                 string typename = m.Groups["typename"].Value;
+                if (typename.Equals("help"))
+                {
+                    Chat.Send(causedBy, "ColonyAddOns Chat Commands");
+                    Chat.Send(causedBy,"/ulfric <item or all> - Place one of the block specified or one of every block added by the mod in your stockpile. 'Cheats need'");
+                    Chat.Send(causedBy, "/herald <action> - Toggle on or off sunrise, sunset and rally for your heralds.");
+                    Chat.Send(causedBy, "/hydration - Displays the total hydration value you have and how much you need per day for your colony.");
+                    Chat.Send(causedBy, "/roster <job name> - Displays all jobs in colony that is manned and by how many colonists.");
+                    Chat.Send(causedBy, "/stats [item] [page] - Displays the number of the item specified that has been crafted.  /stat reset - Clears list.");
+                    Chat.Send(causedBy, "/trade [Player] [item] [number] - Send the player the number of item specified.");
+
+                }
                 if (typename.Equals("all"))
                 {
                     Stockpile targetStockpile;
