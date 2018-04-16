@@ -63,7 +63,20 @@ namespace Ulfric.ColonyAddOns
                 log.WriteLine(message);
                 log.Flush();
                 log.Close();
+                if (!File.Exists(GameLoader.MODPATH + "/Debug.txt"))
+                {
+                    GameLoader.Debug = false;
+                }
             }
+            else
+            {
+                if (File.Exists(GameLoader.MODPATH + "/Debug.txt"))
+                {
+                    GameLoader.Debug = true;
+                    GameLoader.DebugFile = GameLoader.MODPATH + "/Debug " + DateTime.Now.ToString("MM-dd-yy hh-mm-ss") + ".txt";
+                }
+            }
+        
         }
     }
 }

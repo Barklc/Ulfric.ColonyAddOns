@@ -22,13 +22,19 @@ namespace Ulfric.ColonyAddOns
         public static int NumberOfBerriesPerPick = 2;
         public static float ChanceOfBerriesPerPick = .50f;
 
-        public static int HeraldWarningDistance = 20;
+        public static int HeraldWarningDistance = 5;
 
         public static bool EnableStatisticCollecting = true;
 
-        public static bool EnableTrades = true;
+        public static bool EnableTransfers = true;
 
-        public static bool EnableMiningWithPickAxe = true;
+        public static bool EnableMiningWithPick = true;
+
+        public static bool EnableWoodChoppingWithAxe = true;
+
+        public static float PlayerPickDuribilityDefault = 25;
+
+        public static float PlayerPickCoolDownMultiplier = 2;
 
         [ModLoader.ModCallback(ModLoader.EModCallbackType.AfterSelectedWorld, GameLoader.NAMESPACE + ".Configuration.AfterSelectedWorld")]
 //        ModLoader.ModCallbackDependsOn(GameLoader.NAMESPACE + ".AfterSelectedWorld")]
@@ -46,9 +52,11 @@ namespace Ulfric.ColonyAddOns
 
             EnableStatisticCollecting = GetorDefault("EnableStatisticCollecting", EnableStatisticCollecting);
 
-            EnableTrades = GetorDefault("EnableTrades", EnableTrades);
+            EnableTransfers = GetorDefault("EnableTransfers", EnableTransfers);
 
-            EnableMiningWithPickAxe = GetorDefault("EnableMiningWithPickAxe", EnableMiningWithPickAxe);
+            EnableMiningWithPick = GetorDefault("EnableMiningWithPick", EnableMiningWithPick);
+            PlayerPickDuribilityDefault = GetorDefault("PlayerPickDuribilityDefault", PlayerPickDuribilityDefault);
+            PlayerPickCoolDownMultiplier = GetorDefault("PlayerPickCoolDownMultiplier", PlayerPickCoolDownMultiplier);
 
             Save();
         }
@@ -70,9 +78,11 @@ namespace Ulfric.ColonyAddOns
 
                 EnableStatisticCollecting = GetorDefault("EnableStatisticCollecting", EnableStatisticCollecting);
 
-                EnableTrades = GetorDefault("EnableTrades", EnableTrades);
+                EnableTransfers = GetorDefault("EnableTransfers", EnableTransfers);
 
-                EnableMiningWithPickAxe = GetorDefault("EnableMiningWithPickAxe", EnableMiningWithPickAxe);
+                EnableMiningWithPick = GetorDefault("EnableMiningWithPick", EnableMiningWithPick);
+                PlayerPickDuribilityDefault = GetorDefault("PlayerPickDuribilityDefault", PlayerPickDuribilityDefault);
+                PlayerPickCoolDownMultiplier = GetorDefault("PlayerPickCoolDownMultiplier", PlayerPickCoolDownMultiplier);
             }
         }
 
@@ -90,9 +100,11 @@ namespace Ulfric.ColonyAddOns
 
             _rootSettings.SetAs("EnableStatisticCollecting", EnableStatisticCollecting);
 
-            _rootSettings.SetAs("EnableTrades", EnableTrades);
+            _rootSettings.SetAs("EnableTransfers", EnableTransfers);
 
-            _rootSettings.SetAs("EnableMiningWithPickAxe", EnableMiningWithPickAxe);
+            _rootSettings.SetAs("EnableMiningWithPick", EnableMiningWithPick);
+            _rootSettings.SetAs("PlayerPickDuribilityDefault", PlayerPickDuribilityDefault);
+            _rootSettings.SetAs("PlayerPickCoolDownMultiplier", PlayerPickCoolDownMultiplier);
 
             JSON.Serialize(_saveFileName, _rootSettings);
         }

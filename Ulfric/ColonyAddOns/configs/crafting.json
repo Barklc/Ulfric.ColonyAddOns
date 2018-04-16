@@ -98,4 +98,23 @@
     }],
     "defaultPriority": -100,
     "defaultLimit": 1
+},{
+    "name": "AdvancedAgricultureWorkbench",
+    "results": [{
+        "type": "AdvancedAgricultureWorkbench",
+        "amount": 1
+    }],
+    "requires": [{
+        "type": "vanilla.planks",
+        "amount": 1
+    }, {
+        "type": "vanilla.coppertools",
+        "amount": 2
+    }, {
+        "type": "vanilla.coppernails",
+        "amount": 5
+    }],
+    "isOptional": true,
+    "defaultLimit": 1,
+    "defaultPriority": -100
 }]

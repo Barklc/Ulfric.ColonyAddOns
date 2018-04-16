@@ -65,9 +65,10 @@ namespace Ulfric.ColonyAddOns
             return players;
         }
 
-        [ModLoader.ModCallback(ModLoader.EModCallbackType.OnPlayerClicked, GameLoader.NAMESPACE + ".PickAxeDig")]
-        public static void PickAxeDig(Players.Player player, Pipliz.Box<Shared.PlayerClickedData> boxedData)
+        [ModLoader.ModCallback(ModLoader.EModCallbackType.OnPlayerClicked, GameLoader.NAMESPACE + ".ToolUse")]
+        public static void ToolUse(Players.Player player, Pipliz.Box<Shared.PlayerClickedData> boxedData)
         {
+
             if (boxedData.item1.IsConsumed)
                 return;
 
@@ -76,37 +77,49 @@ namespace Ulfric.ColonyAddOns
             var state = PlayerState.GetPlayerState(player);
 
             ushort tool = click.typeSelected;
-            if (tool == ItemTypes.IndexLookup.GetIndex("bronzepickaxe") &&
-                click.rayCastHit.rayHitType == Shared.RayHitType.Block &&
-                click.clickType == Shared.PlayerClickedData.ClickType.Left)
+            if (Configuration.EnableMiningWithPick && ItemTypes.IndexLookup.TryGetIndex(Blocks.MOD_NAMESPACE + ".PlayerPick",out ushort toolindex) && tool == toolindex)
             {
-                long millisecondsSinceStart = Pipliz.Time.MillisecondsSinceStart;
-
-                if (Players.LastPunches.TryGetValue(player, out long num) && millisecondsSinceStart - num < (ItemTypes.GetType(boxedData.item1.typeHit).DestructionTime/2))
+                if (click.rayCastHit.rayHitType == Shared.RayHitType.Block && click.clickType == Shared.PlayerClickedData.ClickType.Left)
                 {
-                    return;
-                }
+                    long millisecondsSinceStart = Pipliz.Time.MillisecondsSinceStart;
 
-                Players.LastPunches[player] = millisecondsSinceStart;
-                boxedData.item1.consumedType = Shared.PlayerClickedData.ConsumedType.UsedByMod;
+                    if (Players.LastPunches.TryGetValue(player, out long num) && 
+                        millisecondsSinceStart - num < (ItemTypes.GetType(boxedData.item1.typeHit).DestructionTime) * Configuration.PlayerPickCoolDownMultiplier)
+                    {
+                        return;
+                    }
 
-                ushort blockhit = boxedData.item1.typeHit;
-                ItemTypes.ItemType itemMined = ItemTypes.GetType(blockhit);
+                    Players.LastPunches[player] = millisecondsSinceStart;
+                    boxedData.item1.consumedType = Shared.PlayerClickedData.ConsumedType.UsedByMod;
 
-                if (itemMined != null && CanMineBlock(itemMined.ItemIndex))
-                {
-                    List<ItemTypes.ItemTypeDrops> itemList = ItemTypes.GetType(itemMined.ItemIndex).OnRemoveItems;
+                    ushort blockhit = boxedData.item1.typeHit;
+                    ItemTypes.ItemType itemMined = ItemTypes.GetType(blockhit);
 
-                    bool itemadd = false;
-                    for (int i = 0; i < itemList.Count; i++)
-                        if (Pipliz.Random.NextDouble() <= itemList[i].chance)
-                            if (Inventory.GetInventory(player).TryAdd(itemList[i].item.Type))
-                                itemadd = true;
+                    if (itemMined != null && CanMineBlock(itemMined.ItemIndex))
+                    {
+                        List<ItemTypes.ItemTypeDrops> itemList = ItemTypes.GetType(itemMined.ItemIndex).OnRemoveItems;
 
-                    if (itemadd)
-                        ServerManager.SendAudio(player.Position, GameLoader.NAMESPACE + ".MiningAudio");
-                    else
-                        Chat.Send(player, "Item could not be harvested!");
+                        bool itemadd = false;
+                        for (int i = 0; i < itemList.Count; i++)
+                            if (Pipliz.Random.NextDouble() <= itemList[i].chance)
+                                if (Inventory.GetInventory(player).TryAdd(itemList[i].item.Type))
+                                    itemadd = true;
+
+                        PlayerState.GetPlayerState(player).PlayerPickDurability--;
+                        if (PlayerState.GetPlayerState(player).PlayerPickDurability == 0)
+                        {
+                            if (Inventory.TryGetInventory(player, out Inventory inventory) && inventory.TryRemove(tool))
+                            {
+                                Chat.Send(player, "Pick has broken!", ChatColor.red);
+                                PlayerState.GetPlayerState(player).PlayerPickDurability = Configuration.PlayerPickDuribilityDefault;
+
+                            }
+                            if (itemadd)
+                                ServerManager.SendAudio(player.Position, GameLoader.NAMESPACE + ".MiningAudio");
+                            else
+                                Chat.Send(player, "Item could not be harvested!");
+                        }
+                    }
                 }
             }
         }
@@ -144,6 +157,7 @@ namespace Ulfric.ColonyAddOns
 
         public bool EnableHeraldWarning { get; set; } = true;
 
+        public float PlayerPickDurability { get; set; } = Configuration.PlayerPickDuribilityDefault;
 
         public PlayerState(Players.Player p)
         {
@@ -182,6 +196,9 @@ namespace Ulfric.ColonyAddOns
                 if (stateNode.TryGetAs("EnableHeraldWarning", out bool bEnableHeraldWarning))
                     _playerStates[p].EnableHeraldWarning = bEnableHeraldWarning;
 
+                if (stateNode.TryGetAs("PlayerPickDurability", out float fPlayerPickDurability))
+                    _playerStates[p].PlayerPickDurability = fPlayerPickDurability;
+
             }
         }
 
@@ -196,6 +213,7 @@ namespace Ulfric.ColonyAddOns
                 node.SetAs("EnableHeraldAnnouncingSunrise", _playerStates[p].EnableHeraldAnnouncingSunrise);
                 node.SetAs("EnableHeraldAnnouncingSunset", _playerStates[p].EnableHeraldAnnouncingSunset);
                 node.SetAs("EnableHeraldWarning", _playerStates[p].EnableHeraldWarning);
+                node.SetAs("PlayerPickDurability", _playerStates[p].PlayerPickDurability);
 
                 n.SetAs(GameLoader.NAMESPACE + ".PlayerState", node);
             }

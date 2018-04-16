@@ -407,4 +407,341 @@
     }],
     "defaultPriority": -100,
     "defaultLimit": 0
+} {
+    "name": "WoodSidingSlab",
+    "results": [{
+        "type": "WoodSidingSlab",
+        "amount": 2
+    }],
+    "requires": [{
+        "type": "WoodSiding",
+        "amount": 1
+    }],
+    "defaultLimit": 0,
+    "defaultPriority": -100
+}, {
+    "name": "ScratchedLightBoardsSlab",
+    "results": [{
+        "type": "ScratchedLightBoardsSlab",
+        "amount": 2
+    }],
+    "requires": [{
+        "type": "ScratchedLightBoards",
+        "amount": 1
+    }],
+    "defaultLimit": 0,
+    "defaultPriority": -100
+}, {
+    "name": "NewShinglesSlab",
+    "results": [{
+        "type": "NewShinglesSlab",
+        "amount": 2
+    }],
+    "requires": [{
+        "type": "NewShingles",
+        "amount": 1
+    }],
+    "defaultLimit": 0,
+    "defaultPriority": -100
+}, {
+    "name": "OldShinglesSlab",
+    "results": [{
+        "type": "OldShinglesSlab",
+        "amount": 2
+    }],
+    "requires": [{
+        "type": "OldShingles",
+        "amount": 1
+    }],
+    "defaultLimit": 0,
+    "defaultPriority": -100
+}, {
+    "name": "OldWeatheredBoardsSlab",
+    "results": [{
+        "type": "OldWeatheredBoardsSlab",
+        "amount": 2
+    }],
+    "requires": [{
+        "type": "OldWeatheredBoards",
+        "amount": 1
+    }],
+    "defaultLimit": 0,
+    "defaultPriority": -100
+}, {
+    "name": "LightBoardsSlab",
+    "results": [{
+        "type": "LightBoardsSlab",
+        "amount": 2
+    }],
+    "requires": [{
+        "type": "LightBoards",
+        "amount": 1
+    }],
+    "defaultLimit": 0,
+    "defaultPriority": -100
+}, {
+    "name": "LightPanelingSlab",
+    "results": [{
+        "type": "LightPanelingSlab",
+        "amount": 2
+    }],
+    "requires": [{
+        "type": "LightPaneling",
+        "amount": 1
+    }],
+    "defaultLimit": 0,
+    "defaultPriority": -100
+}, {
+    "name": "MahoganyBoardsSlab",
+    "results": [{
+        "type": "MahoganyBoardsSlab",
+        "amount": 2
+    }],
+    "requires": [{
+        "type": "MahoganyBoards",
+        "amount": 1
+    }],
+    "defaultLimit": 0,
+    "defaultPriority": -100
+}, {
+    "name": "MapleSidingSlab",
+    "results": [{
+        "type": "MapleSidingSlab",
+        "amount": 2
+    }],
+    "requires": [{
+        "type": "MapleSiding",
+        "amount": 1
+    }],
+    "defaultLimit": 0,
+    "defaultPriority": -100
+}, {
+    "name": "GreyWoodPanelWithPinsSlab",
+    "results": [{
+        "type": "GreyWoodPanelWithPinsSlab",
+        "amount": 2
+    }],
+    "requires": [{
+        "type": "GreyWoodPanelWithPins",
+        "amount": 1
+    }],
+    "defaultLimit": 0,
+    "defaultPriority": -100
+}, {
+    "name": "GreenSidingSlab",
+    "results": [{
+        "type": "GreenSidingSlab",
+        "amount": 2
+    }],
+    "requires": [{
+        "type": "GreenSiding",
+        "amount": 1
+    }],
+    "defaultLimit": 0,
+    "defaultPriority": -100
+}, {
+    "name": "FloorWoodParquetSlab",
+    "results": [{
+        "type": "FloorWoodParquetSlab",
+        "amount": 2
+    }],
+    "requires": [{
+        "type": "FloorWoodParquet",
+        "amount": 1
+    }],
+    "defaultLimit": 0,
+    "defaultPriority": -100
+}, {
+    "name": "FloorWrinkledBasketweaveSlab",
+    "results": [{
+        "type": "FloorWrinkledBasketweaveSlab",
+        "amount": 2
+    }],
+    "requires": [{
+        "type": "FloorWrinkledBasketweave",
+        "amount": 1
+    }],
+    "defaultLimit": 0,
+    "defaultPriority": -100
+}, {
+    "name": "FloorDarkHardwoodSlab",
+    "results": [{
+        "type": "FloorDarkHardwoodSlab",
+        "amount": 2
+    }],
+    "requires": [{
+        "type": "FloorDarkHardwood",
+        "amount": 1
+    }],
+    "defaultLimit": 0,
+    "defaultPriority": -100
+}, {
+    "name": "FloorDarkHerringboneSlab",
+    "results": [{
+        "type": "FloorDarkHerringboneSlab",
+        "amount": 2
+    }],
+    "requires": [{
+        "type": "FloorDarkHerringbone",
+        "amount": 1
+    }],
+    "defaultLimit": 0,
+    "defaultPriority": -100
+}, {
+    "name": "FloorDarkWoodSlab",
+    "results": [{
+        "type": "FloorDarkWoodSlab",
+        "amount": 2
+    }],
+    "requires": [{
+        "type": "FloorDarkWood",
+        "amount": 1
+    }],
+    "defaultLimit": 0,
+    "defaultPriority": -100
+}, {
+    "name": "FloorFadedBasketweaveSlab",
+    "results": [{
+        "type": "FloorFadedBasketweaveSlab",
+        "amount": 2
+    }],
+    "requires": [{
+        "type": "FloorFadedBasketweave",
+        "amount": 1
+    }],
+    "defaultLimit": 0,
+    "defaultPriority": -100
+}, {
+    "name": "FloorGougedBasketweaveSlab",
+    "results": [{
+        "type": "FloorGougedBasketweaveSlab",
+        "amount": 2
+    }],
+    "requires": [{
+        "type": "FloorGougedBasketweave",
+        "amount": 1
+    }],
+    "defaultLimit": 0,
+    "defaultPriority": -100
+}, {
+    "name": "FloorGrittyLongBoardsSlab",
+    "results": [{
+        "type": "FloorGrittyLongBoardsSlab",
+        "amount": 2
+    }],
+    "requires": [{
+        "type": "FloorGrittyLongBoards",
+        "amount": 1
+    }],
+    "defaultLimit": 0,
+    "defaultPriority": -100
+}, {
+    "name": "FloorLightBasketweaveSlab",
+    "results": [{
+        "type": "FloorLightBasketweaveSlab",
+        "amount": 2
+    }],
+    "requires": [{
+        "type": "FloorLightBasketweave",
+        "amount": 1
+    }],
+    "defaultLimit": 0,
+    "defaultPriority": -100
+}, {
+    "name": "FloorPinkBasketweaveSlab",
+    "results": [{
+        "type": "FloorPinkBasketweaveSlab",
+        "amount": 2
+    }],
+    "requires": [{
+        "type": "FloorPinkBasketweave",
+        "amount": 1
+    }],
+    "defaultLimit": 0,
+    "defaultPriority": -100
+}
+    "FloorTileSlab", {
+    "name": "FloorTileSlab",
+    "results": [{
+        "type": "FloorTileSlab",
+        "amount": 2
+    }],
+    "requires": [{
+        "type": "FloorTile",
+        "amount": 1
+    }],
+    "defaultLimit": 0,
+    "defaultPriority": -100
+}, {
+    "name": "FloorTrinsicHouseSlab",
+    "results": [{
+        "type": "FloorTrinsicHouseSlab",
+        "amount": 2
+    }],
+    "requires": [{
+        "type": "FloorTrinsicHouse",
+        "amount": 1
+    }],
+    "defaultLimit": 0,
+    "defaultPriority": -100
+}, {
+    "name": "FloorBeigeWoodSlab",
+    "results": [{
+        "type": "FloorBeigeWoodSlab",
+        "amount": 2
+    }],
+    "requires": [{
+        "type": "FloorBeigeWood",
+        "amount": 1
+    }],
+    "defaultLimit": 0,
+    "defaultPriority": -100
+}, {
+    "name": "FloorBlueStainedBasketweaveSlab",
+    "results": [{
+        "type": "FloorBlueStainedBasketweaveSlab",
+        "amount": 2
+    }],
+    "requires": [{
+        "type": "FloorBlueStainedBasketweave",
+        "amount": 1
+    }],
+    "defaultLimit": 0,
+    "defaultPriority": -100
+}, {
+    "name": "BrownishGreenWoodPanelSlab",
+    "results": [{
+        "type": "BrownishGreenWoodPanelSlab",
+        "amount": 2
+    }],
+    "requires": [{
+        "type": "BrownishGreenWoodPanel",
+        "amount": 1
+    }],
+    "defaultLimit": 0,
+    "defaultPriority": -100
+}, {
+    "name": "BrownPlasterSlab",
+    "results": [{
+        "type": "BrownPlasterSlab",
+        "amount": 2
+    }],
+    "requires": [{
+        "type": "BrownPlaster",
+        "amount": 1
+    }],
+    "defaultLimit": 0,
+    "defaultPriority": -100
+}, {
+    "name": "BlackRottenWoodSlab",
+    "results": [{
+        "type": "BlackRottenWoodSlab",
+        "amount": 2
+    }],
+    "requires": [{
+        "type": "BlackRottenWood",
+        "amount": 1
+    }],
+    "defaultLimit": 0,
+    "defaultPriority": -100
 }]

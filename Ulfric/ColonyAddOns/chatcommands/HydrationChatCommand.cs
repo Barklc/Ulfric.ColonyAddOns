@@ -26,27 +26,33 @@ namespace Ulfric.ColonyAddOns
         {
             try
             {
-                var m = Regex.Match(chattext, @"/hydration");
-                if (!m.Success)
+                if (Configuration.AllowDehydration)
                 {
-                    Chat.Send(causedBy, "Command didn't match, use /hydration");
-                    return true;
+                    var m = Regex.Match(chattext, @"/hydration");
+                    if (!m.Success)
+                    {
+                        Chat.Send(causedBy, "Command didn't match, use /hydration");
+                        return true;
+                    }
+
+                    float TotalHydrationInStockPile = Hydration.TotalHydrationInStockPile(Stockpile.GetStockPile(causedBy));
+                    float TotalHydrationNeeded = Hydration.TotalHydrationNeeded(causedBy);
+
+                    Chat.Send(causedBy, "Hydration:");
+
+                    ChatColor chatColor = ChatColor.white;
+                    if (TotalHydrationNeeded > TotalHydrationInStockPile)
+                        chatColor = ChatColor.red;
+                    if (TotalHydrationNeeded * 2 > TotalHydrationInStockPile)
+                        chatColor = ChatColor.orange;
+
+                    Chat.Send(causedBy, "Total Hydration: {0}", chatColor, TotalHydrationInStockPile.ToString());
+                    Chat.Send(causedBy, "Need Hydration per day {0}", ChatColor.white, TotalHydrationNeeded.ToString());
                 }
-
-                float TotalHydrationInStockPile = Hydration.TotalHydrationInStockPile(Stockpile.GetStockPile(causedBy));
-                float TotalHydrationNeeded = Hydration.TotalHydrationNeeded(causedBy);
-
-                Chat.Send(causedBy, "Hydration:");
-
-                ChatColor chatColor = ChatColor.white;
-                if (TotalHydrationNeeded > TotalHydrationInStockPile)
-                    chatColor = ChatColor.red;
-                if (TotalHydrationNeeded * 2 > TotalHydrationInStockPile)
-                    chatColor = ChatColor.orange;
-
-                Chat.Send(causedBy, "Total Hydration: {0}", chatColor, TotalHydrationInStockPile.ToString());
-                Chat.Send(causedBy, "Need Hydration per day {0}", ChatColor.white, TotalHydrationNeeded.ToString());
-
+                else
+                {
+                    Chat.Send(causedBy, "Hydration chat command is disabled.");
+                }
             }
             catch (System.Exception exception)
             {

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System;
 using Pipliz.Threading;
 using Pipliz;
+using BlockTypes.Builtin;
 
 namespace Ulfric.ColonyAddOns
 
@@ -419,6 +420,15 @@ namespace Ulfric.ColonyAddOns
             if (userData.CallbackState == ModLoader.OnTryChangeBlockData.ECallbackState.Cancelled)
                 return;
 
+            if (userData.TypeNew == BuiltinBlocks.Dirt)
+            {
+                if (ItemTypes.TryGetType(userData.TypeOld, out ItemTypes.ItemType itemtype)
+                    && itemtype.CustomDataNode.TryGetAs<float>("fertilizervalue", out float result))
+                {
+                    userData.TypeNew = userData.TypeOld;
+                }
+            }
+
             if (userData.CallbackOrigin == ModLoader.OnTryChangeBlockData.ECallbackOrigin.ClientPlayerManual)
             {
                 VoxelSide side = userData.PlayerClickedData.VoxelSideHit;
@@ -449,6 +459,7 @@ namespace Ulfric.ColonyAddOns
                     }
                 }
             }
+
         }
     }
 }

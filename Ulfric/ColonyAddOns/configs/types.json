@@ -77,7 +77,10 @@
         "icon": "FineSoil.png",
         "onPlaceAudio": "vanilla.dirtPlace",
         "onRemoveAudio": "vanilla.grassDelete",
-        "sideall": "SELF",
+        "customData": {
+            "fertilizervalue": 0.5
+        },
+		"sideall": "SELF",
         "isFertile": true,
         "maxStackSize": 600
     },
@@ -5947,5 +5950,29 @@
         "sidey-": "vanilla.logtemperate",
         "sidez+": "stumptemperate",
         "sidez-": "stumptemperate"
-    }
+    },
+	"PlayerPick": {
+        "icon": "PlayerPick.png",
+		"categories" : [
+			"essential",
+			"tool"
+		],
+        "maxStackSize": 1,
+		"isPlaceable" : false
+	},
+	"purplebanner" : {
+		"customData" : {
+			"colors" : ["#ff0000->#341a05","#00ff00->#b70df2","#0000ff->#960909"],
+			"farShadows" : true,
+			"warnRemoval" : true
+		},
+		"icon" : "vanilla.banner.png",
+		"isSolid" : false,
+		"mesh" : "vanilla.banner.ply",
+		"needsBase" : true,
+		"onPlaceAudio" : "vanilla.woodPlace",
+		"onRemoveAmount" : 0,
+		"onRemoveAudio" : "vanilla.woodDeleteLight",
+		"sideall" : "neutral"
+	}
 }

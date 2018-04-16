@@ -49,4 +49,30 @@
     }],
     "defaultLimit": 0,
     "defaultPriority": -100
+},
+{
+    "name": "PlayerPick",
+    "results": [{
+        "type": "PlayerPick",
+        "amount": 1
+    }],
+    "requires": [{
+        "type": "vanilla.bronzepickaxe",
+        "amount": 3
+    }],
+    "defaultLimit": 0,
+    "defaultPriority": -100
+},
+{
+    "name": "PlayerAxe",
+    "results": [{
+        "type": "PlayerAxe",
+        "amount": 1
+    }],
+    "requires": [{
+        "type": "vanilla.bronzeaxe",
+        "amount": 3
+    }],
+    "defaultLimit": 0,
+    "defaultPriority": -100
 }]
