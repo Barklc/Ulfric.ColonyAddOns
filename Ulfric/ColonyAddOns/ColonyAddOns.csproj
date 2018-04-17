@@ -353,7 +353,7 @@
     <Content Include="icons\WaterBucket.png" />
     <Content Include="icons\WoodLogEnds.png" />
     <Content Include="icons\WoodSidingSlab.png" />
-    <Content Include="Issues.txt" />
+    <Content Include="ReleaseNotes.txt" />
     <Content Include="textures\albedo\AdvancedAgricultureWorkbenchSides.png" />
     <Content Include="textures\albedo\AdvancedAgricultureWorkbenchTop.png" />
     <Content Include="textures\albedo\AdvancedStoneMasonryWorkbench.png" />

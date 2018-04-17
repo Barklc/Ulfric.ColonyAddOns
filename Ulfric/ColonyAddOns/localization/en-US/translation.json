@@ -238,7 +238,11 @@
     "Ulfric.ColonyAddOns.Blocks.StoneWall6Slab": "StoneWall6 Slab",
     "Ulfric.ColonyAddOns.Blocks.TanRoughStoneSlab": "Tan Rough Stone Slab",
     "Ulfric.ColonyAddOns.Blocks.WoodSidingSlab": "Wood Siding Slab",
-    "Ulfric.ColonyAddOns.Blocks.StoneBricksSlab": "Stone Bricks Slab"
+    "Ulfric.ColonyAddOns.Blocks.StoneBricksSlab": "Stone Bricks Slab",
+    "Ulfric.ColonyAddOns.Blocks.Crate1": "Yet another crate",
+    "Ulfric.ColonyAddOns.Blocks.Crate2": "Yet another crate",
+    "Ulfric.ColonyAddOns.Blocks.Crate3": "Yet another crate",
+    "Ulfric.ColonyAddOns.Blocks.Crate4": "Yet another crate"
     },
 "typeuses": {
     "Ulfric.ColonyAddOns.Blocks.AdvancedAgricultureWorkbench": "Agriculture Workbench",
@@ -479,7 +483,12 @@
     "Ulfric.ColonyAddOns.Blocks.StoneWall6Slab": "StoneWall6 Slab",
     "Ulfric.ColonyAddOns.Blocks.TanRoughStoneSlab": "Tan Rough Stone Slab",
     "Ulfric.ColonyAddOns.Blocks.WoodSidingSlab": "Wood Siding Slab",
-    "Ulfric.ColonyAddOns.Blocks.StoneBricksSlab": "Stone Bricks Slab"
+    "Ulfric.ColonyAddOns.Blocks.StoneBricksSlab": "Stone Bricks Slab",
+	"Ulfric.ColonyAddOns.Blocks.Crate1": "Yet another crate",
+    "Ulfric.ColonyAddOns.Blocks.Crate2": "Yet another crate",
+    "Ulfric.ColonyAddOns.Blocks.Crate3": "Yet another crate",
+    "Ulfric.ColonyAddOns.Blocks.Crate4": "Yet another crate"
+
     },
 "sentences": {
     "popup": {

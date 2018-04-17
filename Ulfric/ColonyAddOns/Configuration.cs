@@ -30,8 +30,6 @@ namespace Ulfric.ColonyAddOns
 
         public static bool EnableMiningWithPick = true;
 
-        public static bool EnableWoodChoppingWithAxe = true;
-
         public static float PlayerPickDuribilityDefault = 25;
 
         public static float PlayerPickCoolDownMultiplier = 2;

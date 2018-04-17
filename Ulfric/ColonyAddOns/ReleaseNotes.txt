@@ -1,0 +1,28 @@
+Release Notes: 0.0.2.0
+Fixed - Set new colors for each new NPC's
+Fixed - Herald not function bug fix
+Added - Top and Bottom slabs for most new blocks
+Added - Horizontal versions of temperate and taiga stumps that are rotatable
+Added - Horizontal logs can be crafted in the player inventory and converted to stardard logs and back
+Fixed - Missing Localization entries
+Added - Realistic grass texture for all biomes but Tundra
+Added - Added player pick that allows players to get ores for mineable blocks without breaking the block but at a very slow rate and uses durablility
+Added = Added configuration settings for allowing the use of player pick, what its durability and the cooldowntime multiplier 
+Added - Added Online Chat command to see who is logged in the server
+Fixed - FineSoil no longer replaced when farm area is placed down.
+Added - Adding the customData tag "fertilizervalue" : <chance of extra item being harvested, ex 0.5 = 50%>
+Changed - removed trade chat commmand
+Added - transfer chat command to transfer the item in the last inventory slot to player specified
+Fixed  - Fertilizer
+Removed - Trade Chat Command
+Added - Added Transfer Chat Command
+
+Future functions:
+Add rally function to herald.
+	Have 8 configured NPC report and surround the heralds as slingers.  
+	There needs to be slings available and space around Herald stand must be open.  
+	Will be released the NPC configurable ingame hours after last rally call by that herald.
+Add taiga planks
+ADD jOB PRIORITY TO ALLOW PLAYERS TO ASSIGN WHAT TYPE OF JOB GETS ASSIGNED FIRST
+add /bannercolor will allow players the set what colors wil be used on the banner when it is put down
+
