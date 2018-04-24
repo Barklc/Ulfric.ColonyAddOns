@@ -159,6 +159,10 @@ namespace Ulfric.ColonyAddOns
 
         public float PlayerPickDurability { get; set; } = Configuration.PlayerPickDuribilityDefault;
 
+        public bool EnableMilitia { get; set; } = true;
+
+        public string[] LineUp = new string[]{ "","","","","" };
+
         public PlayerState(Players.Player p)
         {
             Player = p;
@@ -199,6 +203,17 @@ namespace Ulfric.ColonyAddOns
                 if (stateNode.TryGetAs("PlayerPickDurability", out float fPlayerPickDurability))
                     _playerStates[p].PlayerPickDurability = fPlayerPickDurability;
 
+                if (stateNode.TryGetAs("EnableMilitia", out bool EnableMilitia))
+                    _playerStates[p].EnableMilitia = EnableMilitia;
+
+                if (stateNode.TryGetAs("LineUp",out JSONNode lineup))
+                {
+                    foreach(KeyValuePair<string,JSONNode> spot in lineup.LoopObject())
+                    {
+                        
+                        _playerStates[p].LineUp[Convert.ToInt32(spot.Key)] = spot.Value.GetAs<string>();
+                    }
+                }
             }
         }
 
@@ -214,6 +229,16 @@ namespace Ulfric.ColonyAddOns
                 node.SetAs("EnableHeraldAnnouncingSunset", _playerStates[p].EnableHeraldAnnouncingSunset);
                 node.SetAs("EnableHeraldWarning", _playerStates[p].EnableHeraldWarning);
                 node.SetAs("PlayerPickDurability", _playerStates[p].PlayerPickDurability);
+                node.SetAs("EnableMilitia", _playerStates[p].EnableMilitia);
+
+                JSONNode lineup = new JSONNode();
+                lineup.SetAs("0", _playerStates[p].LineUp[0]);
+                lineup.SetAs("1", _playerStates[p].LineUp[1]);
+                lineup.SetAs("2", _playerStates[p].LineUp[2]);
+                lineup.SetAs("3", _playerStates[p].LineUp[3]);
+                lineup.SetAs("4", _playerStates[p].LineUp[4]);
+
+                node.SetAs("LineUp", lineup);
 
                 n.SetAs(GameLoader.NAMESPACE + ".PlayerState", node);
             }

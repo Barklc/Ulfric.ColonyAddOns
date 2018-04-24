@@ -38,14 +38,25 @@ namespace Ulfric.ColonyAddOns
                 Chat.Send(causedBy,string.Format("{0} does not have permission for '/roster' command.", causedBy.Name));
                 return true;
             }
-            var m = Regex.Match(chattext, @"/roster (?<jobname>.+)");
+            var m = Regex.Match(chattext, @"/roster (?<jobname>['].+?[']|[^ ]+)");
             if (!m.Success)
             {
                 Chat.Send(causedBy, "Command didn't match, use /roster <jobname>");
                 return true;
             }
             string typename = m.Groups["jobname"].Value;
-
+            if (typename.StartsWith("'"))
+            {
+                if (typename.EndsWith("'"))
+                {
+                    typename = typename.Substring(1, typename.Length - 2);
+                }
+                else
+                {
+                    Chat.Send(causedBy, "Missing ' after typename");
+                    return true;
+                }
+            }
             Colony colony = Colony.Get(causedBy);
 
             foreach (NPCBase follower in colony.Followers)

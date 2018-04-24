@@ -4,6 +4,7 @@ using System;
 using Pipliz.Threading;
 using Pipliz;
 using BlockTypes.Builtin;
+using System.IO;
 
 namespace Ulfric.ColonyAddOns
 
@@ -57,6 +58,8 @@ namespace Ulfric.ColonyAddOns
             ModLoader.ModCallbackProvidesFor("pipliz.apiprovider.jobs.resolvetypes")]
         public static void AfterItemTypesDefined()
         {
+            //HelperFunctions hf = new HelperFunctions();
+            //hf.DumpItemsToJSON(GameLoader.MODPATH + "/test.json", new List<ushort> { 267, 268, 269, 270, 266 });
 
             Logger.Log("Loading recipes...");
 
@@ -86,77 +89,12 @@ namespace Ulfric.ColonyAddOns
                 Recipe craftingRecipe = null;
                 try
                 {
-                    if (JSON.Deserialize(GameLoader.ConfigFolder + "/" + jobAndFilename[1], out JSONNode jsonRecipes, false))
+                    AddRecipe(GameLoader.ConfigFolder, jobAndFilename);
+
+                    //Add recipes in any subdiectories in Config directory
+                    foreach(string path in Directory.GetDirectories(GameLoader.ConfigFolder))
                     {
-                        if (jsonRecipes.NodeType == NodeType.Array)
-                        {
-                            foreach (JSONNode craftingEntry in jsonRecipes.LoopArray())
-                            {
-                                if (craftingEntry.TryGetAs("name", out string name))
-                                {
-                                    if (name.StartsWith(VANILLA_PREFIX))
-                                        name = name.Substring(VANILLA_PREFIX.Length);
-                                    else
-                                        name = MOD_NAMESPACE + "." + name;
-
-                                    craftingEntry.SetAs("name", name);
-
-                                    foreach (string recipePart in new string[] { "results", "requires" })
-                                    {
-                                        JSONNode jsonRecipeParts = craftingEntry.GetAs<JSONNode>(recipePart);
-
-                                        foreach (JSONNode jsonRecipePart in jsonRecipeParts.LoopArray())
-                                        {
-                                            string type = jsonRecipePart.GetAs<string>("type");
-                                            string realtype;
-
-                                            if (type.StartsWith(VANILLA_PREFIX))
-                                                realtype = type.Substring(VANILLA_PREFIX.Length);
-                                            else
-                                                realtype = MOD_NAMESPACE + "." + type;
-
-                                            //Check to make sure that the items specified in the results and requires are valid items
-                                            if (!ItemTypes.IndexLookup.TryGetIndex(realtype, out ushort index))
-                                                Logger.Log("ERROR Recipe Name {0}  {1} Type does not exist", name, realtype);
-
-                                            jsonRecipePart.SetAs("type", realtype);
-                                        }
-                                    }
-
-                                }
-
-                                craftingRecipe = new Recipe(craftingEntry);
-                                craftingEntry.TryGetAs("isOptional", out bool result);
-                                if (jobAndFilename[0] == "pipliz.player")
-                                {
-                                    if (result)
-                                    {
-                                        RecipePlayer.AddOptionalRecipe(craftingRecipe);
-                                    }
-                                    else
-                                    {
-                                        RecipePlayer.AddDefaultRecipe(craftingRecipe);
-                                    }
-
-                                }
-                                else
-                                {
-                                    if (result)
-                                    {
-                                        RecipeStorage.AddOptionalLimitTypeRecipe(jobAndFilename[0], craftingRecipe);
-                                    }
-                                    else
-                                    {
-                                        RecipeStorage.AddDefaultLimitTypeRecipe(jobAndFilename[0], craftingRecipe);
-                                    }
-                                }
-                                Logger.Log("Loading Recipe for " + jobAndFilename[0] + "..." + craftingRecipe.Name);
-                            }
-                        }
-                        else
-                        {
-                            Logger.Log("Expected json array in {0}, but got {1} instead", jobAndFilename[1], jsonRecipes.NodeType);
-                        }
+                        AddRecipe(GameLoader.ConfigFolder+ "/" + path, jobAndFilename);
                     }
                 }
                 catch (Exception exception)
@@ -164,14 +102,101 @@ namespace Ulfric.ColonyAddOns
                     if (craftingRecipe != null)
                         Logger.Log("Exception while loading recipes from {0}: {1}. {2} (3)", jobAndFilename[0], jobAndFilename[1], craftingRecipe.ToString(), exception.Message);
                     else
-                        Logger.Log("Exception while loading recipes from {0}: {1}. {3}", jobAndFilename[0], jobAndFilename[1],exception.Message);
+                        Logger.Log("Exception while loading recipes from {0}: {1}. {3}", jobAndFilename[0], jobAndFilename[1], exception.Message);
 
                 }
             }
 
         }
+         
+        private static void AddRecipe(string path, string[] jobAndFilename)
+        {
+            Recipe craftingRecipe = null;
+            try
+            {
+                if (JSON.Deserialize(path + "/" + jobAndFilename[1], out JSONNode jsonRecipes, false))
+                {
+                    if (jsonRecipes.NodeType == NodeType.Array)
+                    {
+                        foreach (JSONNode craftingEntry in jsonRecipes.LoopArray())
+                        {
+                            if (craftingEntry.TryGetAs("name", out string name))
+                            {
+                                if (name.StartsWith(VANILLA_PREFIX))
+                                    name = name.Substring(VANILLA_PREFIX.Length);
+                                else
+                                    name = MOD_NAMESPACE + "." + name;
 
- 
+                                craftingEntry.SetAs("name", name);
+
+                                foreach (string recipePart in new string[] { "results", "requires" })
+                                {
+                                    JSONNode jsonRecipeParts = craftingEntry.GetAs<JSONNode>(recipePart);
+
+                                    foreach (JSONNode jsonRecipePart in jsonRecipeParts.LoopArray())
+                                    {
+                                        string type = jsonRecipePart.GetAs<string>("type");
+                                        string realtype;
+
+                                        if (type.StartsWith(VANILLA_PREFIX))
+                                            realtype = type.Substring(VANILLA_PREFIX.Length);
+                                        else
+                                            realtype = MOD_NAMESPACE + "." + type;
+
+                                        //Check to make sure that the items specified in the results and requires are valid items
+                                        if (!ItemTypes.IndexLookup.TryGetIndex(realtype, out ushort index))
+                                            Logger.Log("ERROR Recipe Name {0}  {1} Type does not exist", name, realtype);
+
+                                        jsonRecipePart.SetAs("type", realtype);
+                                    }
+                                }
+
+                            }
+
+                            craftingRecipe = new Recipe(craftingEntry);
+                            craftingEntry.TryGetAs("isOptional", out bool result);
+                            if (jobAndFilename[0] == "pipliz.player")
+                            {
+                                if (result)
+                                {
+                                    RecipePlayer.AddOptionalRecipe(craftingRecipe);
+                                }
+                                else
+                                {
+                                    RecipePlayer.AddDefaultRecipe(craftingRecipe);
+                                }
+
+                            }
+                            else
+                            {
+                                if (result)
+                                {
+                                    RecipeStorage.AddOptionalLimitTypeRecipe(jobAndFilename[0], craftingRecipe);
+                                }
+                                else
+                                {
+                                    RecipeStorage.AddDefaultLimitTypeRecipe(jobAndFilename[0], craftingRecipe);
+                                }
+                            }
+                            Logger.Log("Loading Recipe for " + jobAndFilename[0] + "..." + craftingRecipe.Name);
+                        }
+                    }
+                    else
+                    {
+                        Logger.Log("Expected json array in {0}, but got {1} instead", jobAndFilename[1], jsonRecipes.NodeType);
+                    }
+                }
+            }
+            catch (Exception exception)
+            {
+                if (craftingRecipe != null)
+                    Logger.Log("Exception while loading recipes from {0}: {1}. {2} (3)", jobAndFilename[0], jobAndFilename[1], craftingRecipe.ToString(), exception.Message);
+                else
+                    Logger.Log("Exception while loading recipes from {0}: {1}. {3}", jobAndFilename[0], jobAndFilename[1], exception.Message);
+
+            }
+
+        }
         /// <summary>
         /// afterAddingBaseTypes callback. Used for adding blocks.
         /// </summary>
@@ -181,7 +206,20 @@ namespace Ulfric.ColonyAddOns
         {
             Logger.Log("Loading Types.....");
 
-            if (JSON.Deserialize(GameLoader.ConfigFolder + "/" + "types.json", out JSONNode jsonTypes, false))
+            AddTypes(GameLoader.ConfigFolder, items);
+            //Add recipes in any subdiectories in Config directory
+            Logger.Log("{0}", Directory.GetDirectories(GameLoader.ConfigFolder + "/").Length);
+            foreach (string path in Directory.GetDirectories(GameLoader.ConfigFolder))
+            {
+                Logger.Log("{0}", path);
+                AddTypes(path, items);
+            }
+
+        }
+
+        private static void AddTypes(string path, Dictionary<string, ItemTypesServer.ItemTypeRaw> items)
+        {
+            if (JSON.Deserialize(path + "/types.json", out JSONNode jsonTypes, false))
             {
                 if (jsonTypes.NodeType == NodeType.Object)
                 {
@@ -305,7 +343,7 @@ namespace Ulfric.ColonyAddOns
                             Logger.Log("Loading Type..." + realkey);
 
 
-                            }
+                        }
                         catch (Exception exception)
                         {
                             Logger.Log("Exception while loading block type {0}; {1}", typeEntry.Key, exception.Message);
@@ -328,7 +366,17 @@ namespace Ulfric.ColonyAddOns
         {
             Logger.Log("Loading texture mappings...");
 
-            if (JSON.Deserialize(GameLoader.ConfigFolder + "/" + "texturemapping.json", out JSONNode jsonTextureMapping, false))
+            AddTextureMapping(GameLoader.ConfigFolder);
+            //Add recipes in any subdiectories in Config directory
+            foreach (string path in Directory.GetDirectories(GameLoader.ConfigFolder))
+            {
+                AddTextureMapping(GameLoader.ConfigFolder + "/" + path);
+            }
+        }
+
+        private static void AddTextureMapping(string path)
+        {
+            if (JSON.Deserialize(path + "/texturemapping.json", out JSONNode jsonTextureMapping, false))
             {
                 if (jsonTextureMapping.NodeType == NodeType.Object)
                 {

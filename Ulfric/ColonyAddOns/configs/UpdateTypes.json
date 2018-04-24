@@ -24,16 +24,19 @@
         "sidez+": "vanilla.logtemperate",
         "sidez-": "vanilla.logtemperate"
     },
-	"grassstaiga": {
+	  "grassstaiga": {
         "icon": "grassTaiga.png"
     },
     "grasstemperate": {
         "icon": "grassTemperate.png"
     },
-	"grasssavanna": {
+	  "grasssavanna": {
         "icon": "grassSavanna.png"
     },
     "grassrainforest": {
         "icon": "grassRainforest.png"
+    },
+    "darkstone" : {
+        "onRemoveType" : "vanilla.darkstone"
     }
 }

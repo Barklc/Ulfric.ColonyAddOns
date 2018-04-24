@@ -117,4 +117,15 @@
     "isOptional": true,
     "defaultLimit": 1,
     "defaultPriority": -100
+}, {
+		"name" : "StoneBrick",
+		"results" : [{
+		    "type":"vanilla.stonebricks",
+		    "amount":5
+		}],
+		"requires" : [{
+		    "type":"vanilla.darkstone",
+		    "amount":5
+		}],
+		"defaultLimit" : 0
 }]

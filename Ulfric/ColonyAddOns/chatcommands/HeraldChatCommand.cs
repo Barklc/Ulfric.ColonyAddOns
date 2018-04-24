@@ -41,7 +41,8 @@ namespace Ulfric.ColonyAddOns
                     Chat.Send(causedBy, "Herald:");
                     Chat.Send(causedBy, "Sunrise: {0}", ChatColor.white, playerState.EnableHeraldAnnouncingSunrise.ToString());
                     Chat.Send(causedBy, "Sunset: {0}", ChatColor.white, playerState.EnableHeraldAnnouncingSunset.ToString());
-                    Chat.Send(causedBy, "Warning: {0}", ChatColor.white, playerState.EnableHeraldWarning.ToString());
+                    Chat.Send(causedBy, "Rally: {0}", ChatColor.white, playerState.EnableHeraldWarning.ToString());
+                    Chat.Send(causedBy, "Militia: {0}", ChatColor.white, playerState.EnableHeraldWarning.ToString());
                 }
 
                 if (action.Equals("sunrise"))
@@ -83,6 +84,20 @@ namespace Ulfric.ColonyAddOns
                     {
                         PlayerState.GetPlayerState(causedBy).EnableHeraldWarning = true;
                         Chat.Send(causedBy, "Herald Rally Announcement is ON");
+                    }
+                }
+
+                if (action.Equals("militia"))
+                {
+                    if (PlayerState.GetPlayerState(causedBy).EnableMilitia)
+                    {
+                        PlayerState.GetPlayerState(causedBy).EnableMilitia = false;
+                        Chat.Send(causedBy, "Rally Militia Announcement is OFF");
+                    }
+                    else
+                    {
+                        PlayerState.GetPlayerState(causedBy).EnableMilitia = true;
+                        Chat.Send(causedBy, "Rally Militia Announcement is ON");
                     }
                 }
             }

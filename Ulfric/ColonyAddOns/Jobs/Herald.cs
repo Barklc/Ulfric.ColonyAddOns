@@ -6,6 +6,8 @@ using NPC;
 using Pipliz;
 using Pipliz.JSON;
 using Server.Monsters;
+using System;
+using Pipliz.Collections;
 
 namespace Ulfric.ColonyAddOns.Jobs
 {
@@ -21,7 +23,7 @@ namespace Ulfric.ColonyAddOns.Jobs
         [ModLoader.ModCallbackProvidesFor("pipliz.apiprovider.jobs.resolvetypes")]
         public static void RegisterJobs()
         {
-            Logger.Log("Registering Job..." + JOB_NAME + " and Item Key " +JOB_ITEM_KEY);
+            Logger.Log("Registering Job..." + JOB_NAME + " and Item Key " + JOB_ITEM_KEY);
             BlockJobManagerTracker.Register<HeraldJob>(JOB_ITEM_KEY);
         }
 
@@ -59,14 +61,16 @@ namespace Ulfric.ColonyAddOns.Jobs
     public class HeraldJob : BlockJobBase, IBlockJobBase, INPCTypeDefiner
     {
         Vector3Int originalPosition;
-        Players.Player _player;
-        static bool DayAlarmed = false;
-        static bool NightAlarmed = false;
-        
+        Players.Player player;
+        double lastNightTrumpeted = 0;
+        double lastDayTrumpeted = 0;
+        double lastRally = 0;
+
+        List<int> MilitiaList = new List<int>();
 
         private static NPCTypeStandardSettings _type = new NPCTypeStandardSettings
         {
-            keyName =HeraldRegister.JOB_NAME,
+            keyName = HeraldRegister.JOB_NAME,
             printName = "Herald",
             maskColor1 = new Color32(160, 13, 199, 1),
             type = NPCTypeID.GetNextID(),
@@ -87,15 +91,20 @@ namespace Ulfric.ColonyAddOns.Jobs
         public override ITrackableBlock InitializeFromJSON(Players.Player player, JSONNode node)
         {
             originalPosition = (Vector3Int)node[nameof(originalPosition)];
-            _player = player;
+            this.player = player;
+            lastRally = node.GetAs<double>(nameof(lastRally));
             InitializeJob(player, (Vector3Int)node["position"], node.GetAs<int>("npcID"));
+            lastDayTrumpeted = node.GetAs<double>(nameof(lastDayTrumpeted));
+            lastNightTrumpeted = node.GetAs<double>(nameof(lastNightTrumpeted));
+
             return this;
         }
 
         public ITrackableBlock InitializeOnAdd(Vector3Int position, ushort type, Players.Player player)
         {
             originalPosition = position;
-            _player = player;
+            this.player = player;
+            lastRally = TimeCycle.TotalTime - Configuration.MilitiaRallyCooldown;
             InitializeJob(player, position, 0);
             return this;
         }
@@ -113,75 +122,234 @@ namespace Ulfric.ColonyAddOns.Jobs
         public override void OnNPCAtJob(ref NPCBase.NPCState state)
         {
 
-            try
-            {
-                float cooldown = HeraldJob.StaticCraftingCooldown;
-                ushort status = GameLoader.Waiting_Icon;
+            //try
+            //{
+            float cooldown = HeraldJob.StaticCraftingCooldown;
+            ushort status = GameLoader.Waiting_Icon;
 
-                if (!TimeCycle.ShouldSleep)
+            if (PlayerState.GetPlayerState(player).EnableHeraldWarning )
+            {
+                IMonster monster = MonsterTracker.Find(originalPosition.Add(0, 1, 0), Configuration.HeraldWarningDistance, 500.0f);
+
+                if (monster == null)
+                    monster = MonsterTracker.Find(originalPosition.Add(1, 0, 0), Configuration.HeraldWarningDistance, 500.0f);
+
+                if (monster == null)
+                    monster = MonsterTracker.Find(originalPosition.Add(-1, 0, 0), Configuration.HeraldWarningDistance, 500.0f);
+
+                if (monster == null)
+                    monster = MonsterTracker.Find(originalPosition.Add(0, -1, 0), Configuration.HeraldWarningDistance, 500.0f);
+
+                if (monster == null)
+                    monster = MonsterTracker.Find(originalPosition.Add(0, 0, 1), Configuration.HeraldWarningDistance, 500.0f);
+
+                if (monster == null)
+                    monster = MonsterTracker.Find(originalPosition.Add(0, 0, -1), Configuration.HeraldWarningDistance, 500.0f);
+
+                if (monster != null)
                 {
-                    if (!DayAlarmed && PlayerState.GetPlayerState(_player).EnableHeraldAnnouncingSunrise)
+                    if (General.Physics.Physics.CanSee(originalPosition.Add(0, 1, 0).Vector, monster.PositionToAimFor) && TimeCycle.TotalTime >= lastRally + Configuration.MilitiaRallyCooldown)
+                    {
+
+                        ServerManager.SendAudio(owner.Position, GameLoader.NAMESPACE + ".Rally");
+                        status = GameLoader.Trumpeting_Icon;
+
+                        if (Configuration.AllowMilitiaToBeCalled && MilitiaList.Count == 0 && PlayerState.GetPlayerState(player).EnableMilitia)
+                        {
+                            lastRally = TimeCycle.TotalTime;
+                            ActivateMilitia(player, originalPosition);
+                        }
+
+                    }
+                }
+            }
+            else if (!TimeCycle.ShouldSleep)
+            {
+                if (PlayerState.GetPlayerState(player).EnableHeraldAnnouncingSunrise)
+                {
+                    if (TimeCycle.TotalTime > lastDayTrumpeted + TimeCycle.DayLength)
                     {
                         ServerManager.SendAudio(owner.Position, GameLoader.NAMESPACE + ".DayAudio");
                         status = GameLoader.Trumpeting_Icon;
-                        DayAlarmed = true;
-                        NightAlarmed = false;
                     }
                 }
-
-                if (TimeCycle.ShouldSleep)
+            }
+            else if (TimeCycle.ShouldSleep)
+            {
+                if (PlayerState.GetPlayerState(player).EnableHeraldAnnouncingSunset)
                 {
-                    if (!NightAlarmed && PlayerState.GetPlayerState(_player).EnableHeraldAnnouncingSunset)
+                    if (TimeCycle.TotalTime > lastNightTrumpeted + TimeCycle.NightLength)
                     {
                         ServerManager.SendAudio(owner.Position, GameLoader.NAMESPACE + ".NightAudio");
                         status = GameLoader.Trumpeting_Icon;
-                        DayAlarmed = false;
-                        NightAlarmed = true;
                     }
                 }
-
-                if (PlayerState.GetPlayerState(_player).EnableHeraldWarning)
-                {
-
-                    IMonster monster = MonsterTracker.Find(originalPosition.Add(0, 1, 0), Configuration.HeraldWarningDistance, 100000.0f);
-
-                    if (monster == null)
-                        monster = MonsterTracker.Find(originalPosition.Add(1, 0, 0), Configuration.HeraldWarningDistance, 100000.0f);
-
-                    if (monster == null)
-                        monster = MonsterTracker.Find(originalPosition.Add(-1, 0, 0), Configuration.HeraldWarningDistance, 100000.0f);
-
-                    if (monster == null)
-                        monster = MonsterTracker.Find(originalPosition.Add(0, -1, 0), Configuration.HeraldWarningDistance, 100000.0f);
-
-                    if (monster == null)
-                        monster = MonsterTracker.Find(originalPosition.Add(0, 0, 1), Configuration.HeraldWarningDistance, 100000.0f);
-
-                    if (monster == null)
-                        monster = MonsterTracker.Find(originalPosition.Add(0, 0, -1), Configuration.HeraldWarningDistance, 100000.0f);
-
-                    if (monster != null && General.Physics.Physics.CanSee(originalPosition.Add(0, 1, 0).Vector, monster.Position))
-                    {
-                        ServerManager.SendAudio(owner.Position, GameLoader.NAMESPACE + ".Rally");
-                        status = GameLoader.Trumpeting_Icon;
-                    }
-                }
-
-                state.SetIndicator(new Shared.IndicatorState(cooldown, status));
             }
-            catch (System.Exception e)
+
+            state.SetIndicator(new Shared.IndicatorState(cooldown, status));
+
+            //Check to see if any militia assigned to this herald need to be released.
+            List<int> temp = new List<int>(MilitiaList);
+            if (MilitiaList.Count > 0)
             {
-                Logger.Log("{0}.OnNPCAtJob has an error {1} :",HeraldRegister.MOD_NAMESPACE, e.Message);
-            
+                foreach (int i in temp)
+                {
+                    NPCBase follower = Colony.Get(player).Followers.Find(x => x.ID == i);
+                    if (!follower.GetTempValues().TryGet<double>("RecruitedTime", out double recruitedTime))
+                    {
+                        Logger.Log("Militia NPC has no recruited timestamp.");
+                        recruitedTime = 0;
+                    }
+                    if (TimeCycle.TotalTime > recruitedTime + Configuration.MititiaTermOfDuty)
+                    {
+
+                        follower.Job.NPC = null;
+                        follower.ClearJob();
+                        MilitiaList.Remove(i);
+                        JobTracker.Remove(player, follower.Position);
+                    }
+                }
             }
-          
+            //}
+            //catch (System.Exception e)
+            //{
+            //    Logger.Log("{0}.OnNPCAtJob has an error {1} :",HeraldRegister.MOD_NAMESPACE, e.Message);
+
+            //}
+
         }
 
         public override JSONNode GetJSON()
         {
-            return base.GetJSON().SetAs(nameof(originalPosition), (JSONNode)originalPosition);
+            JSONNode newJSON = base.GetJSON();
+            newJSON.SetAs(nameof(originalPosition), (JSONNode)originalPosition);
+            newJSON.SetAs(nameof(lastRally), lastRally);
+            newJSON.SetAs(nameof(lastDayTrumpeted), lastDayTrumpeted);
+            newJSON.SetAs(nameof(lastNightTrumpeted), lastNightTrumpeted);
+
+            return newJSON;
         }
 
+        private void ActivateMilitia(Players.Player player, Vector3Int heraldPosition)
+        {
+            //Determine open spaces around herald to determine the number of militia that will be called.
+            List<Vector3Int> openspot = new List<Vector3Int>();
 
+            if (IsSpacesEmpty(heraldPosition, 1, 1)) openspot.Add(heraldPosition.Add(1, 0, 1));
+            if (IsSpacesEmpty(heraldPosition, 1, -1)) openspot.Add(heraldPosition.Add(1, 0, -1));
+            if (IsSpacesEmpty(heraldPosition, -1, 1)) openspot.Add(heraldPosition.Add(-1, 0, 1));
+            if (IsSpacesEmpty(heraldPosition, -1, -1)) openspot.Add(heraldPosition.Add(-1, 0, -1));
+
+            Logger.Log("Open Spot count: {0}", openspot.Count);
+
+            //Get all Laborers available and assign them to Milita first
+            List<NPCBase> laborers = Colony.Get(player).Followers.FindAll(x => x.NPCType.IsLaborer);
+            Logger.Log("Laborers Count : {0}", laborers.Count);
+            if (openspot.Count<4)
+            {
+                Chat.Send(player,"One or more corners of Herald Stand is blocked.", ChatColor.red);
+            }
+            if (openspot.Count > 0)
+            {
+                foreach (NPCBase follower in Colony.Get(player).Followers)
+                {
+                    if (openspot.Count > 0)
+                    {
+                        if (AssignLaborerFirst(follower,openspot[0]))
+                        {
+                            openspot.RemoveAt(0);
+                            MilitiaList.Add(follower.ID);
+                            Logger.Log("Follower {0} set to {1}", follower.ID, follower.NPCType.ToString());
+                        }
+                    }
+                }
+                
+                if (openspot.Count > 0)
+                {
+                    foreach (NPCBase follower in Colony.Get(player).Followers)
+                    {
+                        if (openspot.Count > 0)
+                        {
+                            if (AssignNonExcludedFollower(follower, openspot[0]))
+                            {
+                                openspot.RemoveAt(0);
+                                MilitiaList.Add(follower.ID);
+                                Logger.Log("Follower {0} set to {1}", follower.ID, follower.NPCType.ToString());
+                            }
+                        }
+                    }
+                }
+            }
+            if (openspot.Count > 0)
+            {
+                Chat.Send(player, "Not enough colonists to fill all Milita positions!", ChatColor.red);
+            }
+        }
+
+        public bool AssignLaborerFirst(NPCBase follower,Vector3Int position)
+        {
+            if (follower.NPCType.IsLaborer)
+            {
+                var militiaJob = new MilitiaJob();
+                militiaJob.InitializeJob(player, position, follower.ID);
+                militiaJob.OnAssignedNPC(follower);
+                follower.TakeJob(militiaJob);
+                return true;
+            }
+            return false;
+        }
+
+        public bool AssignNonExcludedFollower(NPCBase follower, Vector3Int position)
+        {
+            var job = follower.Job;
+
+            if (!IsJobExcluded(job))
+            {
+                try
+                {
+                    if (follower.Job != null)
+                    {
+                        follower.Job.NPC = null;
+                        follower.ClearJob();
+                    }
+                }
+                catch (Exception ex)
+                {
+                    Logger.Log("ActivateMilitia Error has occurred: {0}", ex.Message);
+                }
+
+                var militiaJob = new MilitiaJob();
+                militiaJob.InitializeJob(player, position, follower.ID);
+                militiaJob.OnAssignedNPC(follower);
+                follower.TakeJob(militiaJob);
+                return true;
+            }
+
+            return false;
+        }
+
+        private bool IsSpacesEmpty(Vector3Int position, int x, int z)
+        {
+            World.TryIsSolid(position.Add(x, 0, z), out bool result1);
+            World.TryIsSolid(position.Add(x, 1, z), out bool result2);
+
+            if (result1 || result2)
+                return false;
+            else
+                return true;
+        }
+
+        private bool IsJobExcluded(IJob jobname)
+        {
+            bool returnvalue = false;
+
+            List<string> ExcludeJobTypes = new List<string> { "Day Slinger Guard", "Night Slinger Guard", "Day Bow Guard", "Night Bow Guard", "Day Crossbow Guard", "Night Crossbow Guard", "Day Matchlock Guard", "Night Matchlock Guard", "Militia", "Herald" };
+            if (jobname != null)
+            {
+                Logger.Log("Is {0} excluded for Militia duty? {1}", jobname.NPCType.ToString() == null ? "": jobname.NPCType.ToString(), ExcludeJobTypes.Contains(jobname.NPCType.ToString() == null ? "": jobname.NPCType.ToString()));
+                returnvalue = ExcludeJobTypes.Contains(jobname.NPCType.ToString());
+            }
+            return returnvalue;
+        }
     }
 }

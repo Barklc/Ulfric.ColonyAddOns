@@ -22,17 +22,20 @@ namespace Ulfric.ColonyAddOns
         public static int NumberOfBerriesPerPick = 2;
         public static float ChanceOfBerriesPerPick = .50f;
 
-        public static int HeraldWarningDistance = 5;
+        public static int HeraldWarningDistance = 10;
 
         public static bool EnableStatisticCollecting = true;
 
         public static bool EnableTransfers = true;
 
         public static bool EnableMiningWithPick = true;
-
         public static float PlayerPickDuribilityDefault = 25;
-
         public static float PlayerPickCoolDownMultiplier = 2;
+
+        public static float MilitiaRallyCooldown = TimeCycle.NightLength *2;
+        public static float MititiaTermOfDuty = TimeCycle.NightLength/2;
+        public static bool AllowMilitiaToBeCalled = true;
+
 
         [ModLoader.ModCallback(ModLoader.EModCallbackType.AfterSelectedWorld, GameLoader.NAMESPACE + ".Configuration.AfterSelectedWorld")]
 //        ModLoader.ModCallbackDependsOn(GameLoader.NAMESPACE + ".AfterSelectedWorld")]
@@ -55,6 +58,10 @@ namespace Ulfric.ColonyAddOns
             EnableMiningWithPick = GetorDefault("EnableMiningWithPick", EnableMiningWithPick);
             PlayerPickDuribilityDefault = GetorDefault("PlayerPickDuribilityDefault", PlayerPickDuribilityDefault);
             PlayerPickCoolDownMultiplier = GetorDefault("PlayerPickCoolDownMultiplier", PlayerPickCoolDownMultiplier);
+
+            AllowMilitiaToBeCalled = GetorDefault("AllowMilitiaToBeCalled", AllowMilitiaToBeCalled);
+            MilitiaRallyCooldown = GetorDefault("MilitiaRallyCooldown", MilitiaRallyCooldown);
+            MititiaTermOfDuty = GetorDefault("MititiaTermOfDuty", MititiaTermOfDuty);
 
             Save();
         }
@@ -81,6 +88,10 @@ namespace Ulfric.ColonyAddOns
                 EnableMiningWithPick = GetorDefault("EnableMiningWithPick", EnableMiningWithPick);
                 PlayerPickDuribilityDefault = GetorDefault("PlayerPickDuribilityDefault", PlayerPickDuribilityDefault);
                 PlayerPickCoolDownMultiplier = GetorDefault("PlayerPickCoolDownMultiplier", PlayerPickCoolDownMultiplier);
+
+                AllowMilitiaToBeCalled = GetorDefault("AllowMilitiaToBeCalled", AllowMilitiaToBeCalled);
+                MilitiaRallyCooldown = GetorDefault("MilitiaRallyCooldown", MilitiaRallyCooldown);
+                MititiaTermOfDuty = GetorDefault("MititiaTermOfDuty", MititiaTermOfDuty);
             }
         }
 
@@ -103,6 +114,10 @@ namespace Ulfric.ColonyAddOns
             _rootSettings.SetAs("EnableMiningWithPick", EnableMiningWithPick);
             _rootSettings.SetAs("PlayerPickDuribilityDefault", PlayerPickDuribilityDefault);
             _rootSettings.SetAs("PlayerPickCoolDownMultiplier", PlayerPickCoolDownMultiplier);
+
+            _rootSettings.SetAs("AllowMilitiaToBeCalled", AllowMilitiaToBeCalled);
+            _rootSettings.SetAs("MilitiaRallyCooldown", MilitiaRallyCooldown);
+            _rootSettings.SetAs("MititiaTermOfDuty", MititiaTermOfDuty);
 
             JSON.Serialize(_saveFileName, _rootSettings);
         }

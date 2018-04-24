@@ -18,7 +18,6 @@ namespace Ulfric.ColonyAddOns
         [ModLoader.ModCallback(ModLoader.EModCallbackType.OnItemTypeRegistered, "OnItemTypeRegistered")]
         [ModLoader.ModCallbackProvidesFor("pipliz.server.itemtypesserver")]
         static void OnItemTypeRegistered(ItemTypes.ItemType type)
-        //public static void AfterItemTypesDefined()
         {
 
             if (JSON.Deserialize(GameLoader.ConfigFolder + "/" + "UpdateTypes.json", out JSONNode jsonTypes, false))
@@ -30,12 +29,12 @@ namespace Ulfric.ColonyAddOns
                         Logger.Log("Updating Exisiting Types.....{0}",type.Name);
 
                         type = Icon(typeEntry, type);
-                        //type = Rotatables(typeEntry, type);
-                        //type = ParentType(typeEntry, type);
+                        type = Rotatables(typeEntry, type);
+                        type = ParentType(typeEntry, type);
                         type = Sides(typeEntry, type);
-                        //type = OnRemoveType(typeEntry, type);
-                        ////add OnRemove support
-                        ////Add RemoveAmount
+                        type = OnRemoveType(typeEntry, type);
+                        //add OnRemove support
+                        //add RemoveAmount
                         ////Add NeedBase
                         ////Add IsFertile
                         ////Add IsPlaceable
@@ -88,11 +87,11 @@ namespace Ulfric.ColonyAddOns
             return type;
         }
 
-        private static ItemTypes.ItemType Rotatables(KeyValuePair<string, JSONNode> typeEntry, ItemTypes.ItemType type)
+        private static ItemTypes.ItemType Rotatables(JSONNode typeEntry, ItemTypes.ItemType type)
         {
             foreach (string rotatable in new string[] { "rotatablex+", "rotatablex-", "rotatablez+", "rotatablez-" })
             {
-                if (typeEntry.Value.TryGetAs(rotatable, out string key))
+                if (typeEntry.TryGetAs(rotatable, out string key))
                 {
                     string rotatablekey = AddNamespace(key);
 
@@ -116,9 +115,9 @@ namespace Ulfric.ColonyAddOns
             return type;
         }
 
-        private static ItemTypes.ItemType ParentType(KeyValuePair<string, JSONNode> typeEntry, ItemTypes.ItemType type)
+        private static ItemTypes.ItemType ParentType(JSONNode typeEntry, ItemTypes.ItemType type)
         {
-            if (typeEntry.Value.TryGetAs("parentType", out string parentType))
+            if (typeEntry.TryGetAs("parentType", out string parentType))
             {
                 type.ParentType = AddNamespace(parentType);
             }
@@ -166,9 +165,9 @@ namespace Ulfric.ColonyAddOns
             return type;
         }
 
-        private static ItemTypes.ItemType OnRemoveType(KeyValuePair<string, JSONNode> typeEntry, ItemTypes.ItemType type)
+        private static ItemTypes.ItemType OnRemoveType(JSONNode typeEntry, ItemTypes.ItemType type)
         {
-            if (typeEntry.Value.TryGetAs("onRemoveType", out string onRemoveType))
+            if (typeEntry.TryGetAs("onRemoveType", out string onRemoveType))
             {
                 string realOnRemoveType = AddNamespace(onRemoveType);
 
@@ -188,9 +187,9 @@ namespace Ulfric.ColonyAddOns
             return type;
         }
 
-        private static ItemTypes.ItemType OnPlaceAudio(KeyValuePair<string, JSONNode> typeEntry, ItemTypes.ItemType type)
+        private static ItemTypes.ItemType OnPlaceAudio(JSONNode typeEntry, ItemTypes.ItemType type)
         {
-            if (typeEntry.Value.TryGetAs("onPlaceAudio", out string onPlaceAudio))
+            if (typeEntry.TryGetAs("onPlaceAudio", out string onPlaceAudio))
             {
                 type.OnPlaceAudio = AddNamespace(onPlaceAudio);
             }
@@ -198,9 +197,9 @@ namespace Ulfric.ColonyAddOns
             return type;
         }
 
-        private static ItemTypes.ItemType OnRemoveAudio(KeyValuePair<string, JSONNode> typeEntry, ItemTypes.ItemType type)
+        private static ItemTypes.ItemType OnRemoveAudio(JSONNode typeEntry, ItemTypes.ItemType type)
         {
-            if (typeEntry.Value.TryGetAs("onRemoveAudio", out string onRemoveAudio))
+            if (typeEntry.TryGetAs("onRemoveAudio", out string onRemoveAudio))
             {
                 type.OnRemoveAudio = AddNamespace(onRemoveAudio);
             }

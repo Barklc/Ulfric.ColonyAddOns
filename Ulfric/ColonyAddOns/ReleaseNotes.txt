@@ -1,3 +1,17 @@
+Release Notes: 0.0.2.2
+Added - Added Rally function to Herald
+Added - Added Militia job to support Rally of Herald
+
+Release Notes: 0.0.2.1
+Fixed - Fixed CarpentryWoekbench recipe error
+Added - Added 4 new crates
+Added - Added lineup chat command that reassigns colonists to the high priority jobs
+Added = Added lineupset chat command that allows for the 5 jobs type to be prioritized for the lineup command
+Fixed - Fixed /roster and /lineupset to support job names in spaces
+Fixed - Fixed FineSoil to show up on Build Tab
+Fixed - Fixed recipes in the AdvancedStoneMasonary recipes what use brickred to bricks
+
+
 Release Notes: 0.0.2.0
 Fixed - Set new colors for each new NPC's
 Fixed - Herald not function bug fix
@@ -17,12 +31,12 @@ Fixed  - Fertilizer
 Removed - Trade Chat Command
 Added - Added Transfer Chat Command
 
-Future functions:
-Add rally function to herald.
-	Have 8 configured NPC report and surround the heralds as slingers.  
-	There needs to be slings available and space around Herald stand must be open.  
-	Will be released the NPC configurable ingame hours after last rally call by that herald.
-Add taiga planks
-ADD jOB PRIORITY TO ALLOW PLAYERS TO ASSIGN WHAT TYPE OF JOB GETS ASSIGNED FIRST
-add /bannercolor will allow players the set what colors wil be used on the banner when it is put down
 
+Future functions:
+Add taiga planks
+add /bannercolor will allow players the set what colors wil be used on the banner when it is put down
+add /roster open - displays all open jobs
+add /hydration disable - set configuration to false
+add /stats enable/disable - set configuration to true or false
+add /allowplayermining - toggles configuration to allow users to mine mineable block
+make Militia exclude list configurable instead of hardcoded in Herald.

@@ -63,12 +63,16 @@
     <Compile Include="Chat.cs" />
     <Compile Include="chatcommands\Command.cs" />
     <Compile Include="chatcommands\HydrationChatCommand.cs" />
+    <Compile Include="chatcommands\LineUpSetChatCommand.cs" />
     <Compile Include="chatcommands\LineUpChatCommand.cs" />
     <Compile Include="chatcommands\OnlineChatCommand.cs" />
     <Compile Include="chatcommands\RosterChatCommand.cs" />
     <Compile Include="chatcommands\HeraldChatCommand.cs" />
     <Compile Include="chatcommands\TransferChatCommand.cs" />
     <Compile Include="Configuration.cs" />
+    <Compile Include="HelperFunctions.cs" />
+    <Compile Include="Jobs\Job.cs" />
+    <Compile Include="Jobs\Militia.cs" />
     <Compile Include="npc\Hydration.cs" />
     <Compile Include="Stats.cs" />
     <Compile Include="Fertilizer.cs" />
@@ -523,6 +527,7 @@
     <None Include="configs\Fletchery.json" />
     <None Include="configs\Carpenter.json" />
     <None Include="configs\CarpentryWorkbench.json" />
+    <None Include="configs\Militia\types.json" />
     <None Include="configs\player.json" />
     <None Include="configs\shopping.json" />
     <None Include="configs\smelting.json" />
@@ -543,9 +548,9 @@ del *.* /q
 copy ..\..\..\modinfo.json  Ulfric/y
 cd Ulfric\ColonyAddOns
 mkdir icons
-copy ..\..\..\..\icons\*.* icons /y
+xcopy ..\..\..\..\icons\*.* icons /e /y
 mkdir configs
-copy ..\..\..\..\configs\*.* configs /y
+xcopy ..\..\..\..\configs\*.* configs /e /y
 mkdir textures
 xcopy ..\..\..\..\textures\*.* textures /e /y
 mkdir localization

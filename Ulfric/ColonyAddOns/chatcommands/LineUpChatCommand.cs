@@ -16,7 +16,7 @@ namespace Ulfric.ColonyAddOns
     {
         public string MODPATH;
         public const string NAMESPACE = "Ulfric.ColonyAddOns";
-        private const string MOD_NAMESPACE = NAMESPACE + ". LineUpChatCommand";
+        private const string MOD_NAMESPACE = NAMESPACE + ".LineUpChatCommand";
 
         [ModLoader.ModCallback(ModLoader.EModCallbackType.AfterItemTypesDefined, LineUpChatCommand.MOD_NAMESPACE + ".registercommand")]
         public static void AfterItemTypesDefined()
@@ -26,7 +26,7 @@ namespace Ulfric.ColonyAddOns
 
         public bool IsCommand(string chat)
         {
-            return chat.Equals("/lineup") || chat.StartsWith("/lineup ");
+            return chat.Equals("/lineup") || chat.Equals("/lineup list");
         }
 
         public bool TryDoCommand(Players.Player causedBy, string chattext)
@@ -35,155 +35,74 @@ namespace Ulfric.ColonyAddOns
 
             if (!Permissions.PermissionsManager.CheckAndWarnPermission(causedBy, LineUpChatCommand.MOD_NAMESPACE))
             {
-                Chat.Send(causedBy, string.Format("{0} does not have permission for '/roster' command.", causedBy.Name));
+                Chat.Send(causedBy, string.Format("{0} does not have permission for '/lineup' command.", causedBy.Name));
                 return true;
             }
-            var m = Regex.Match(chattext, @"/lineup (?<jobname>.+)");
+            var m = Regex.Match(chattext, @"/lineup( list)?");
             if (!m.Success)
             {
-                Chat.Send(causedBy, "Command didn't match, use /lineup <jobname> <number>");
+                Chat.Send(causedBy, "Command didn't match, use /lineup [list]");
                 return true;
             }
-            string typename = m.Groups["jobname"].Value;
 
             Colony colony = Colony.Get(causedBy);
 
+            if (chattext.Equals("/lineup"))
+            {
+                SetPriorityJobs(colony);
+            }
+            else
+            {
+                for(int i=0;i<5;i++)
+                {
+                    string slot = PlayerState.GetPlayerState(causedBy).LineUp[i];
+                    Chat.Send(causedBy, "Lineup slot [{0}] {1}", ChatColor.white, i.ToString(), slot);
+                }
+            }
 
-            //        foreach (NPCBase follower in colony.Followers)
-            //        {
-            //            string npc = follower.Job.NPCType.ToString();
-            //            var jf =
-            //        }
-
-            //        if (typename.Equals("all"))
-            //        {
-            //            Chat.Send(causedBy, "Roster:", ChatColor.white);
-            //            string results = "";
-
-            //            foreach (KeyValuePair<string, int> job in roster)
-            //            {
-            //                if (results.Equals(""))
-            //                {
-            //                    results = job.Key + "(" + job.Value.ToString() + ")";
-            //                }
-            //                else
-            //                {
-            //                    results += ", " + job.Key + "(" + job.Value.ToString() + ")";
-            //                }
-
-            //            }
-            //            Chat.Send(causedBy, "Jobs : {0}", ChatColor.white, results);
-            //        }
-            //        else if (typename.Equals("jobs"))
-            //        {
-            //            string results = "";
-            //            foreach (KeyValuePair<string, int> job in roster)
-            //            {
-            //                if (results.Equals(""))
-            //                    results = job.Key;
-            //                else
-            //                    results += ", " + job.Key;
-            //            }
-            //            Chat.Send(causedBy, "Available Jobs : {0}", ChatColor.white, results);
-            //        }
-            //        else if (roster.ContainsKey(typename))
-            //        {
-            //            roster.TryGetValue(typename, out int value);
-            //            Chat.Send(causedBy, "Job {0} has {1} worker(s).", ChatColor.white, typename, value.ToString());
-            //        }
-            //        else
-            //        {
-            //            Chat.Send(causedBy, string.Format("There are no workers on that type.... {0}", typename));
-            //        }
 
             return true;
         }
 
-        private static Dictionary<int, IJob> JobsPresent(Colony colony)
+        private static void SetPriorityJobs(Colony colony)
         {
-            Dictionary<int, IJob> joblist = new Dictionary<int, IJob>();
-
-            foreach (NPCBase follower in colony.Followers)
-            {
-                joblist.Add(follower.ID, follower.Job);
-            }
-
-            return joblist;
-        }
-
-        private static Dictionary<string, int> JobsCount(Colony colony)
-        {
-            Dictionary<string, int> current = new Dictionary<string, int>();
-
-            foreach (NPCBase follower in colony.Followers)
-            {
-                string npc = follower.Job.NPCType.ToString();
-                if (current.ContainsKey(npc))
-                {
-                    current[npc]++;
-                }
-                else
-                {
-                    if (follower.Job.NeedsNPC)
-                        current.Add(npc, 0);
-                    else
-                        current.Add(npc, 1);
-                }
-            }
+            SortedDictionary<string, IJob> current = new SortedDictionary<string, IJob>();
 
             JobTracker.JobFinder jobfinder = JobTracker.GetOrCreateJobFinder(colony.Owner) as JobTracker.JobFinder;
-            List<IJob> openjobs = jobfinder.openJobs;
 
-            foreach (IJob job in openjobs)
+            foreach (NPCBase follower in colony.Followers)
             {
-                string npc = job.NPCType.ToString();
-                if (current.ContainsKey(npc))
+                if (follower.Job != null)
                 {
-                    current[npc]++;
-                }
-                else
-                {
-                    current.Add(npc, 1);
+                    follower.Job.NPC = null;
+                    follower.ClearJob();
                 }
             }
 
-            return current;
+            IJob[] openjobs = jobfinder.openJobs.ToArray();
+            int count = 0;
+            Logger.Log("{0} ", openjobs.Length.ToString());
+            foreach(string o in PlayerState.GetPlayerState(colony.Owner).LineUp)
+            {
+                count = 0;
+                while (count < openjobs.Length)
+                {
+                    IJob j = openjobs[count];
+                    if (o == j.NPCType.ToString() && j.NeedsNPC)
+                    {
+                        foreach (NPCBase follower in colony.Followers)
+                        {
+                            if (follower.Job == null)
+                            {
+                                Logger.Log("Job set to : {0}", j.NPCType.ToString());
+                                follower.TakeJob(j);
+                                break;
+                            }
+                        }
+                    }
+                    count++;
+                }
+            }
         }
-
-        //    private static void ReJob(Colony colony, Dictionary<string, int> jobCount, Dictionary<int, IJob> jobsPresent, List<string> order)
-        //    {
-        //        Dictionary<int, bool> assigned = new Dictionary<int, bool>();
-
-        //        //Loop through the order list and see what followers already are assigned to jobs based on order
-        //        foreach (string currentJob in order)
-        //        {
-
-        //            //go through the list and see what jobs have been filled from order
-        //            foreach (NPCBase follower in colony.Followers)
-        //            {
-        //                if (follower.Job.NPCType.ToString() == currentJob)
-        //                {
-        //                    if (jobCount.ContainsKey(currentJob) && jobCount[currentJob] > 0)
-        //                    {
-        //                        jobCount.TryGetValue(currentJob, out int value);
-        //                        if (value > 0)
-        //                        {
-        //                            assigned[follower.ID] = true;
-        //                            jobCount[currentJob] = value - 1;
-        //                        }
-
-        //                    }
-        //                }
-        //            }
-
-        //            foreach (NPCBase follower in colony.Followers)
-        //            {
-        //                if (!assigned[follower.ID] && current.ContainsKey(currentJob) && current[currentJob] > 0)
-        //                {
-        //                    follower.Job =
-        //                }
-        //            }
-        //        }
-        //    }
     }
 }
