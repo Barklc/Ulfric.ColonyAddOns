@@ -98,5 +98,5 @@
 		"onRemoveAudio" : "woodDeleteLight",
 		"parentType" : "MilitiaJob",
 		"sideAll" : "outlinedblock",
-	}
+	}	
 }

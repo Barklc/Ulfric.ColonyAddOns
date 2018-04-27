@@ -275,48 +275,6 @@
 		"height" : "neutral",
 		"normal" : "neutral"
 	},
-	"Crate1" : {
-		"albedo" : "Crate1",
-		"emissive" : "neutral",
-		"height" : "neutral",
-		"normal" : "neutral"
-	},
-	"Crate2" : {
-		"albedo" : "Crate2",
-		"emissive" : "neutral",
-		"height" : "neutral",
-		"normal" : "neutral"
-	},
-	"Crate3" : {
-		"albedo" : "LogTemperateHorz",
-		"emissive" : "neutral",
-		"height" : "neutral",
-		"normal" : "neutral"
-	},
-	"Crate4" : {
-		"albedo" : "Crate4",
-		"emissive" : "neutral",
-		"height" : "neutral",
-		"normal" : "neutral"
-	},
-	"CrateDarkWood" : {
-		"albedo" : "CrateDarkWood",
-		"emissive" : "neutral",
-		"height" : "neutral",
-		"normal" : "neutral"
-	},
-	"CrateMetalBlack" : {
-		"albedo" : "CrateMetalBlack",
-		"emissive" : "neutral",
-		"height" : "neutral",
-		"normal" : "neutral"
-	},
-	"CrateMetalReenforcedDarkWood" : {
-		"albedo" : "CrateMetalReenforcedDarkWood",
-		"emissive" : "neutral",
-		"height" : "neutral",
-		"normal" : "neutral"
-	},
 	"DarkWoodFrameTopAndBottom" : {
 		"albedo" : "DarkWoodFrameTopAndBottom",
 		"emissive" : "neutral",
@@ -1465,6 +1423,12 @@
 	},
 	"WoodPile" : {
 		"albedo" : "BirchLogs",
+		"emissive" : "neutral",
+		"height" : "neutral",
+		"normal" : "neutral"
+	},
+	"WoodSiding" : {
+		"albedo" : "WoodSiding",
 		"emissive" : "neutral",
 		"height" : "neutral",
 		"normal" : "neutral"

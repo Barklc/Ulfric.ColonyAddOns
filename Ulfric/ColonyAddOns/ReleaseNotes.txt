@@ -1,9 +1,15 @@
 Release Notes: 0.0.2.2
 Added - Added Rally function to Herald
 Added - Added Militia job to support Rally of Herald
+Added - Added crate recipes to build crates that store Bread, Berries, Flour, Stone Bullets, Arrows, Bolts, Lead Bullets and Gunpowder pouches outside of stockpile and inventory
+Added - Added Apple trees
+Added - Added Apples to help with hunger
+Added - Added Recipes for Apple Pie and Apple Cider
+Added - Added configuration settings for Militia TourOfDuty length, Herald Rally cooldown and what jobs can not be called to the militia
+
 
 Release Notes: 0.0.2.1
-Fixed - Fixed CarpentryWoekbench recipe error
+Fixed - Fixed CarpentryWorkbench recipe error
 Added - Added 4 new crates
 Added - Added lineup chat command that reassigns colonists to the high priority jobs
 Added = Added lineupset chat command that allows for the 5 jobs type to be prioritized for the lineup command

@@ -92,10 +92,10 @@ namespace Ulfric.ColonyAddOns.Jobs
         {
             originalPosition = (Vector3Int)node[nameof(originalPosition)];
             this.player = player;
-            lastRally = node.GetAs<double>(nameof(lastRally));
+            lastRally = node.GetAsOrDefault<double>(nameof(lastRally),0);
             InitializeJob(player, (Vector3Int)node["position"], node.GetAs<int>("npcID"));
-            lastDayTrumpeted = node.GetAs<double>(nameof(lastDayTrumpeted));
-            lastNightTrumpeted = node.GetAs<double>(nameof(lastNightTrumpeted));
+            lastDayTrumpeted = node.GetAsOrDefault<double>(nameof(lastDayTrumpeted), TimeCycle.TotalTime);
+            lastNightTrumpeted = node.GetAsOrDefault<double>(nameof(lastNightTrumpeted),TimeCycle.TotalTime);
 
             return this;
         }
@@ -106,6 +106,9 @@ namespace Ulfric.ColonyAddOns.Jobs
             this.player = player;
             lastRally = TimeCycle.TotalTime - Configuration.MilitiaRallyCooldown;
             InitializeJob(player, position, 0);
+            lastDayTrumpeted = TimeCycle.TotalTime;
+            lastNightTrumpeted = TimeCycle.TotalTime;
+
             return this;
         }
 
@@ -122,8 +125,6 @@ namespace Ulfric.ColonyAddOns.Jobs
         public override void OnNPCAtJob(ref NPCBase.NPCState state)
         {
 
-            //try
-            //{
             float cooldown = HeraldJob.StaticCraftingCooldown;
             ushort status = GameLoader.Waiting_Icon;
 
@@ -163,59 +164,39 @@ namespace Ulfric.ColonyAddOns.Jobs
                     }
                 }
             }
-            else if (!TimeCycle.ShouldSleep)
+            if (TimeCycle.IsDay)
             {
                 if (PlayerState.GetPlayerState(player).EnableHeraldAnnouncingSunrise)
                 {
-                    if (TimeCycle.TotalTime > lastDayTrumpeted + TimeCycle.DayLength)
+                    
+                    if (TimeCycle.TimeOfDay > TimeCycle.SunRise && TimeCycle.TimeOfDay < TimeCycle.SunRise + 1 && TimeCycle.TotalTime > lastDayTrumpeted + 1)
                     {
+                        Logger.Log("SunRise trumpeted at {0} the Last Day Trumpeted at {1}", TimeCycle.TotalTime, lastDayTrumpeted);
+                        lastDayTrumpeted = TimeCycle.TotalTime + TimeCycle.DayLength;
                         ServerManager.SendAudio(owner.Position, GameLoader.NAMESPACE + ".DayAudio");
+                        cooldown = 20f;
                         status = GameLoader.Trumpeting_Icon;
+
                     }
                 }
             }
-            else if (TimeCycle.ShouldSleep)
+            if (!TimeCycle.IsDay)
             {
                 if (PlayerState.GetPlayerState(player).EnableHeraldAnnouncingSunset)
                 {
-                    if (TimeCycle.TotalTime > lastNightTrumpeted + TimeCycle.NightLength)
+                    if (TimeCycle.TimeOfDay > TimeCycle.SunSet && TimeCycle.TimeOfDay < TimeCycle.SunSet + 1 && TimeCycle.TotalTime > lastNightTrumpeted + 1)
                     {
+                        Logger.Log("SunSet trumpeted at {0} the Last Night Trumpeted at {1}", TimeCycle.TotalTime, lastNightTrumpeted);
+                        lastNightTrumpeted = TimeCycle.TotalTime + TimeCycle.DayLength;
                         ServerManager.SendAudio(owner.Position, GameLoader.NAMESPACE + ".NightAudio");
+                        cooldown = 20f;
                         status = GameLoader.Trumpeting_Icon;
+
                     }
                 }
             }
 
             state.SetIndicator(new Shared.IndicatorState(cooldown, status));
-
-            //Check to see if any militia assigned to this herald need to be released.
-            List<int> temp = new List<int>(MilitiaList);
-            if (MilitiaList.Count > 0)
-            {
-                foreach (int i in temp)
-                {
-                    NPCBase follower = Colony.Get(player).Followers.Find(x => x.ID == i);
-                    if (!follower.GetTempValues().TryGet<double>("RecruitedTime", out double recruitedTime))
-                    {
-                        Logger.Log("Militia NPC has no recruited timestamp.");
-                        recruitedTime = 0;
-                    }
-                    if (TimeCycle.TotalTime > recruitedTime + Configuration.MititiaTermOfDuty)
-                    {
-
-                        follower.Job.NPC = null;
-                        follower.ClearJob();
-                        MilitiaList.Remove(i);
-                        JobTracker.Remove(player, follower.Position);
-                    }
-                }
-            }
-            //}
-            //catch (System.Exception e)
-            //{
-            //    Logger.Log("{0}.OnNPCAtJob has an error {1} :",HeraldRegister.MOD_NAMESPACE, e.Message);
-
-            //}
 
         }
 
@@ -258,7 +239,6 @@ namespace Ulfric.ColonyAddOns.Jobs
                         if (AssignLaborerFirst(follower,openspot[0]))
                         {
                             openspot.RemoveAt(0);
-                            MilitiaList.Add(follower.ID);
                             Logger.Log("Follower {0} set to {1}", follower.ID, follower.NPCType.ToString());
                         }
                     }
@@ -273,7 +253,6 @@ namespace Ulfric.ColonyAddOns.Jobs
                             if (AssignNonExcludedFollower(follower, openspot[0]))
                             {
                                 openspot.RemoveAt(0);
-                                MilitiaList.Add(follower.ID);
                                 Logger.Log("Follower {0} set to {1}", follower.ID, follower.NPCType.ToString());
                             }
                         }
@@ -294,6 +273,7 @@ namespace Ulfric.ColonyAddOns.Jobs
                 militiaJob.InitializeJob(player, position, follower.ID);
                 militiaJob.OnAssignedNPC(follower);
                 follower.TakeJob(militiaJob);
+                ColonyManager.AddJobs(militiaJob);
                 return true;
             }
             return false;
@@ -322,6 +302,7 @@ namespace Ulfric.ColonyAddOns.Jobs
                 militiaJob.InitializeJob(player, position, follower.ID);
                 militiaJob.OnAssignedNPC(follower);
                 follower.TakeJob(militiaJob);
+                ColonyManager.AddJobs(militiaJob);
                 return true;
             }
 
@@ -343,11 +324,10 @@ namespace Ulfric.ColonyAddOns.Jobs
         {
             bool returnvalue = false;
 
-            List<string> ExcludeJobTypes = new List<string> { "Day Slinger Guard", "Night Slinger Guard", "Day Bow Guard", "Night Bow Guard", "Day Crossbow Guard", "Night Crossbow Guard", "Day Matchlock Guard", "Night Matchlock Guard", "Militia", "Herald" };
             if (jobname != null)
             {
-                Logger.Log("Is {0} excluded for Militia duty? {1}", jobname.NPCType.ToString() == null ? "": jobname.NPCType.ToString(), ExcludeJobTypes.Contains(jobname.NPCType.ToString() == null ? "": jobname.NPCType.ToString()));
-                returnvalue = ExcludeJobTypes.Contains(jobname.NPCType.ToString());
+                Logger.Log("Is {0} excluded for Militia duty? {1}", jobname.NPCType.ToString() == null ? "": jobname.NPCType.ToString(), Configuration.ExcludeJobTypes.Contains(jobname.NPCType.ToString() == null ? "": jobname.NPCType.ToString()));
+                returnvalue = Configuration.ExcludeJobTypes.Contains(jobname.NPCType.ToString());
             }
             return returnvalue;
         }

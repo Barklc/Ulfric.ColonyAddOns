@@ -35,7 +35,9 @@ namespace Ulfric.ColonyAddOns
         public static float MilitiaRallyCooldown = TimeCycle.NightLength *2;
         public static float MititiaTermOfDuty = TimeCycle.NightLength/2;
         public static bool AllowMilitiaToBeCalled = true;
+        public static List<string> ExcludeJobTypes = new List<string> { "Day Slinger Guard", "Night Slinger Guard", "Day Bow Guard", "Night Bow Guard", "Day Crossbow Guard", "Night Crossbow Guard", "Day Matchlock Guard", "Night Matchlock Guard", "Militia", "Herald" };
 
+        private static JSONNode ExcludedJobJSON = new JSONNode(); 
 
         [ModLoader.ModCallback(ModLoader.EModCallbackType.AfterSelectedWorld, GameLoader.NAMESPACE + ".Configuration.AfterSelectedWorld")]
 //        ModLoader.ModCallbackDependsOn(GameLoader.NAMESPACE + ".AfterSelectedWorld")]
@@ -62,6 +64,14 @@ namespace Ulfric.ColonyAddOns
             AllowMilitiaToBeCalled = GetorDefault("AllowMilitiaToBeCalled", AllowMilitiaToBeCalled);
             MilitiaRallyCooldown = GetorDefault("MilitiaRallyCooldown", MilitiaRallyCooldown);
             MititiaTermOfDuty = GetorDefault("MititiaTermOfDuty", MititiaTermOfDuty);
+            ExcludedJobJSON = GetorDefault<JSONNode>("ExcludedFromMilitia", ExcludedJobJSON);
+
+            ExcludeJobTypes.Clear();
+            foreach (JSONNode spot in ExcludedJobJSON.LoopArray())
+            {
+                ExcludeJobTypes.Add(spot.GetAs<string>());
+            }
+
 
             Save();
         }
@@ -92,6 +102,13 @@ namespace Ulfric.ColonyAddOns
                 AllowMilitiaToBeCalled = GetorDefault("AllowMilitiaToBeCalled", AllowMilitiaToBeCalled);
                 MilitiaRallyCooldown = GetorDefault("MilitiaRallyCooldown", MilitiaRallyCooldown);
                 MititiaTermOfDuty = GetorDefault("MititiaTermOfDuty", MititiaTermOfDuty);
+                ExcludedJobJSON = GetorDefault<JSONNode>("ExcludedFromMilitia", ExcludedJobJSON);
+
+                ExcludeJobTypes.Clear();
+                foreach (JSONNode spot in ExcludedJobJSON.LoopArray())
+                {
+                    ExcludeJobTypes.Add(spot.GetAs<string>());
+                }
             }
         }
 
@@ -118,6 +135,15 @@ namespace Ulfric.ColonyAddOns
             _rootSettings.SetAs("AllowMilitiaToBeCalled", AllowMilitiaToBeCalled);
             _rootSettings.SetAs("MilitiaRallyCooldown", MilitiaRallyCooldown);
             _rootSettings.SetAs("MititiaTermOfDuty", MititiaTermOfDuty);
+
+            JSONNode node = new JSONNode(NodeType.Array);
+            foreach(string job in ExcludeJobTypes)
+            {
+                JSONNode subnode = new JSONNode();
+                subnode.SetAs<string>(job);
+                node.AddToArray(subnode);
+            }
+            _rootSettings.SetAs("ExcludedFromMilitia", node);
 
             JSON.Serialize(_saveFileName, _rootSettings);
         }

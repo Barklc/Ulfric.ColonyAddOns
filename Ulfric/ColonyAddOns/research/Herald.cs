@@ -38,7 +38,6 @@ namespace Ulfric.ColonyAddOns.Research
 
         public static void Herald_ResearchComplete(object sender, ResearchCompleteEventArgs e)
         {
-
             RecipeStorage.GetPlayerStorage(e.Manager.Player).SetRecipeAvailability(MOD_NAMESPACE_BLOCKS + ".HeraldStand", true);
         }
 

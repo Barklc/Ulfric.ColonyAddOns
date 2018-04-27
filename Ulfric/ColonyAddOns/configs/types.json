@@ -623,69 +623,6 @@
 		"parentType" : "CorrodedTechnoTilesSlab",
 		"sideall" : "CorrodedTechnoTilesSlab"
 	},
-	"Crate1" : {
-		"categories" : ["essential","decorative"],
-		"icon" : "Crate1.png",
-		"isCrate" : true,
-		"maxStackSize" : 600,
-		"onPlaceAudio" : "vanilla.woodPlace",
-		"onRemoveAudio" : "vanilla.woodDeleteLight",
-		"sideall" : "SELF"
-	},
-	"Crate2" : {
-		"categories" : ["essential","decorative"],
-		"icon" : "Crate2.png",
-		"isCrate" : true,
-		"maxStackSize" : 600,
-		"onPlaceAudio" : "vanilla.woodPlace",
-		"onRemoveAudio" : "vanilla.woodDeleteLight",
-		"sideall" : "SELF"
-	},
-	"Crate3" : {
-		"categories" : ["essential","decorative"],
-		"icon" : "Crate3.png",
-		"isCrate" : true,
-		"maxStackSize" : 600,
-		"onPlaceAudio" : "vanilla.woodPlace",
-		"onRemoveAudio" : "vanilla.woodDeleteLight",
-		"sideall" : "SELF"
-	},
-	"Crate4" : {
-		"categories" : ["essential","decorative"],
-		"icon" : "Crate4.png",
-		"isCrate" : true,
-		"maxStackSize" : 600,
-		"onPlaceAudio" : "vanilla.woodPlace",
-		"onRemoveAudio" : "vanilla.woodDeleteLight",
-		"sideall" : "SELF"
-	},
-	"CrateDarkWood" : {
-		"categories" : ["essential","decorative"],
-		"icon" : "CrateDarkWood.png",
-		"isCrate" : true,
-		"maxStackSize" : 600,
-		"onPlaceAudio" : "vanilla.woodPlace",
-		"onRemoveAudio" : "vanilla.woodDeleteLight",
-		"sideall" : "SELF"
-	},
-	"CrateMetalBlack" : {
-		"categories" : ["essential","decorative"],
-		"icon" : "CrateMetalBlack.png",
-		"isCrate" : true,
-		"maxStackSize" : 600,
-		"onPlaceAudio" : "vanilla.woodPlace",
-		"onRemoveAudio" : "vanilla.woodDeleteLight",
-		"sideall" : "SELF"
-	},
-	"CrateMetalReenforcedDarkWood" : {
-		"categories" : ["essential","decorative"],
-		"icon" : "CrateMetalReenforcedDarkWood.png",
-		"isCrate" : true,
-		"maxStackSize" : 600,
-		"onPlaceAudio" : "vanilla.woodPlace",
-		"onRemoveAudio" : "vanilla.woodDeleteLight",
-		"sideall" : "SELF"
-	},
 	"DarkWoodFrameTopAndBottom" : {
 		"categories" : ["decorative","ulfric","wood"],
 		"icon" : "DarkWoodFrameTopAndBottom.png",
@@ -3122,7 +3059,7 @@
 		"onPlaceAudio" : "vanilla.woodPlace",
 		"onRemoveAmount" : 0,
 		"onRemoveAudio" : "vanilla.woodDeleteLight",
-		"sideall" : "neutral"
+		"sideall" : "vanilla.neutral"
 	},
 	"PurpleSlate" : {
 		"categories" : ["decorative","ulfric","stone"],
@@ -3741,6 +3678,15 @@
 		"sidey+" : "BirchLogsVert",
 		"sidez-" : "WoodLogEnds",
 		"sidez+" : "WoodLogEnds"
+	},
+	"WoodSiding" : {
+		"categories" : ["decorative","ulfric","wood"],
+		"icon" : "WoodSiding.png",
+		"maxStackSize" : 600,
+		"npcLimit" : 0,
+		"onPlaceAudio" : "vanilla.woodPlace",
+		"onRemoveAudio" : "vanilla.woodDeleteLight",
+		"sideall" : "SELF"
 	},
 	"WoodSidingSlab" : {
 		"categories" : ["decorative","ulfric","wood"],

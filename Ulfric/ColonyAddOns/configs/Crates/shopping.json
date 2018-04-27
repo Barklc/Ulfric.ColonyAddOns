@@ -1,7 +1,7 @@
-[{
-    "name": "Basket",
+﻿[{
+    "name": "CrateMetalBlack",
     "results": [{
-        "type": "Basket",
+        "type": "CrateMetalBlack",
         "amount": 1
     }],
     "requires": [{

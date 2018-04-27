@@ -1,0 +1,97 @@
+﻿[{
+    "name": "Bread",
+    "results": [{
+        "type": "vanilla.bread",
+        "amount": 100
+    }],
+    "requires": [{
+        "type": "CrateBread",
+        "amount": 1
+    }],
+    "defaultLimit": 0,
+    "defaultPriority": -100
+}, {
+    "name": "Berry",
+    "results": [{
+        "type": "vanilla.berry",
+        "amount": 600
+    }],
+    "requires": [{
+        "type": "CrateBerry",
+        "amount": 1
+    }],
+    "defaultLimit": 0,
+    "defaultPriority": -100
+}, {
+    "name": "SlingBullets",
+    "results": [{
+        "type": "vanilla.slingbullet",
+        "amount": 50
+    }],
+    "requires": [{
+        "type": "CrateSlingBullet",
+        "amount": 1
+    }],
+    "defaultLimit": 0,
+    "defaultPriority": -100
+}, {
+    "name": "Arrow",
+    "results": [{
+        "type": "vanilla.bronzearrow",
+        "amount": 50
+    }],
+    "requires": [{
+        "type": "CrateArrow",
+        "amount": 1
+    }],
+    "defaultLimit": 0,
+    "defaultPriority": -100
+}, {
+    "name": "Bolts",
+    "results": [{
+        "type": "vanilla.crossbowbolt",
+        "amount": 50
+    }],
+    "requires": [{
+        "type": "CrateBolts",
+        "amount": 1
+    }],
+    "defaultLimit": 0,
+    "defaultPriority": -100
+}, {
+    "name": "Gunpowder Pouch",
+    "results": [{
+        "type": "vanilla.gunpowderpouch",
+        "amount": 50
+    }],
+    "requires": [{
+        "type": "CrateGunpowder",
+        "amount": 1
+    }],
+    "defaultLimit": 0,
+    "defaultPriority": -100
+}, {
+    "name": "Lead Bullet",
+    "results": [{
+        "type": "vanilla.leadbullet",
+        "amount": 50
+    }],
+    "requires": [{
+        "type": "CrateLeadBullet",
+        "amount": 1
+    }],
+    "defaultLimit": 0,
+    "defaultPriority": -100
+}, {
+    "name": "Flour",
+    "results": [{
+        "type": "vanilla.flour",
+        "amount": 100
+    }],
+    "requires": [{
+        "type": "CrateFlour",
+        "amount": 1
+    }],
+    "defaultLimit": 0,
+    "defaultPriority": -100
+}]

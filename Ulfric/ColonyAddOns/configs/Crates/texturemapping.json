@@ -1,0 +1,92 @@
+﻿{
+	"Crate1" : {
+		"albedo" : "Crate1",
+		"emissive" : "neutral",
+		"height" : "neutral",
+	    "normal" : "neutral"
+	},
+	"Crate2" : {
+		"albedo" : "Crate2",
+		"emissive" : "neutral",
+		"height" : "neutral",
+		"normal" : "neutral"
+	},
+	"Crate3" : {
+		"albedo" : "LogTemperateHorz",
+		"emissive" : "neutral",
+		"height" : "neutral",
+		"normal" : "neutral"
+	},
+	"Crate4" : {
+		"albedo" : "Crate4",
+		"emissive" : "neutral",
+		"height" : "neutral",
+		"normal" : "neutral"
+	},
+	"CrateDarkWood" : {
+		"albedo" : "CrateDarkWood",
+		"emissive" : "neutral",
+		"height" : "neutral",
+		"normal" : "neutral"
+	},
+	"CrateMetalBlack" : {
+		"albedo" : "CrateMetalBlack",
+		"emissive" : "neutral",
+		"height" : "neutral",
+		"normal" : "neutral"
+	},
+	"CrateMetalReenforcedDarkWood" : {
+		"albedo" : "CrateMetalReenforcedDarkWood",
+		"emissive" : "neutral",
+		"height" : "neutral",
+		"normal" : "neutral"
+	},
+	"CrateBerry" : {
+		"albedo" : "CrateBerry",
+		"emissive" : "neutral",
+		"height" : "neutral",
+		"normal" : "neutral"
+	},
+	"CrateBread" : {
+		"albedo" : "CrateBread",
+		"emissive" : "neutral",
+		"height" : "neutral",
+		"normal" : "neutral"
+	},
+	"CrateSlingBullet" : {
+		"albedo" : "CrateSlingBullet",
+		"emissive" : "neutral",
+		"height" : "neutral",
+		"normal" : "neutral"
+	},
+	"CrateArrow" : {
+		"albedo" : "CrateArrow",
+		"emissive" : "neutral",
+		"height" : "neutral",
+		"normal" : "neutral"
+	},
+	"CrateBolts" : {
+		"albedo" : "CrateBolts",
+		"emissive" : "neutral",
+		"height" : "neutral",
+		"normal" : "neutral"
+	},
+	"CrateGunpowder" : {
+		"albedo" : "CrateGunpowder",
+		"emissive" : "neutral",
+		"height" : "neutral",
+		"normal" : "neutral"
+	},
+	"CrateLeadBullet" : {
+		"albedo" : "CrateLeadBullet",
+		"emissive" : "neutral",
+		"height" : "neutral",
+		"normal" : "neutral"
+	},
+	"CrateFlour" : {
+		"albedo" : "CrateFlour",
+		"emissive" : "neutral",
+		"height" : "neutral",
+		"normal" : "neutral"
+	}
+}

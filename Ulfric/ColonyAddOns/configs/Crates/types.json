@@ -1,0 +1,129 @@
+﻿{
+	"Crate1" : {
+		"categories" : ["essential","decorative"],
+		"icon" : "Crate1.png",
+		"isCrate" : true,
+		"maxStackSize" : 600,
+		"onPlaceAudio" : "vanilla.woodPlace",
+		"onRemoveAudio" : "vanilla.woodDeleteLight",
+		"sideall" : "SELF"
+	},
+	"Crate2" : {
+		"categories" : ["essential","decorative"],
+		"icon" : "Crate2.png",
+		"isCrate" : true,
+		"maxStackSize" : 600,
+		"onPlaceAudio" : "vanilla.woodPlace",
+		"onRemoveAudio" : "vanilla.woodDeleteLight",
+		"sideall" : "SELF"
+	},
+	"Crate3" : {
+		"categories" : ["essential","decorative"],
+		"icon" : "Crate3.png",
+		"isCrate" : true,
+		"maxStackSize" : 600,
+		"onPlaceAudio" : "vanilla.woodPlace",
+		"onRemoveAudio" : "vanilla.woodDeleteLight",
+		"sideall" : "SELF"
+	},
+	"Crate4" : {
+		"categories" : ["essential","decorative"],
+		"icon" : "Crate4.png",
+		"isCrate" : true,
+		"maxStackSize" : 600,
+		"onPlaceAudio" : "vanilla.woodPlace",
+		"onRemoveAudio" : "vanilla.woodDeleteLight",
+		"sideall" : "SELF"
+	},
+	"CrateDarkWood" : {
+		"categories" : ["essential","decorative"],
+		"icon" : "CrateDarkWood.png",
+		"isCrate" : true,
+		"maxStackSize" : 600,
+		"onPlaceAudio" : "vanilla.woodPlace",
+		"onRemoveAudio" : "vanilla.woodDeleteLight",
+		"sideall" : "SELF"
+	},
+	"CrateMetalBlack" : {
+		"categories" : ["essential","decorative"],
+		"icon" : "CrateMetalBlack.png",
+		"isCrate" : true,
+		"maxStackSize" : 600,
+		"onPlaceAudio" : "vanilla.woodPlace",
+		"onRemoveAudio" : "vanilla.woodDeleteLight",
+		"sideall" : "SELF"
+	},
+	"CrateMetalReenforcedDarkWood" : {
+		"categories" : ["essential","decorative"],
+		"icon" : "CrateMetalReenforcedDarkWood.png",
+		"isCrate" : true,
+		"maxStackSize" : 600,
+		"onPlaceAudio" : "vanilla.woodPlace",
+		"onRemoveAudio" : "vanilla.woodDeleteLight",
+		"sideall" : "SELF"
+	},
+	"CrateBerry" : {
+		"categories" : ["essential","decorative"],
+		"icon" : "CrateBerry.png",
+		"maxStackSize" : 600,
+		"onPlaceAudio" : "vanilla.woodPlace",
+		"onRemoveAudio" : "vanilla.woodDeleteLight",
+		"sideall" : "SELF"
+	},
+	"CrateBread" : {
+		"categories" : ["essential","decorative"],
+		"icon" : "CrateBread.png",
+		"maxStackSize" : 600,
+		"onPlaceAudio" : "vanilla.woodPlace",
+		"onRemoveAudio" : "vanilla.woodDeleteLight",
+		"sideall" : "SELF"
+	},
+	"CrateSlingBullet" : {
+		"categories" : ["essential","decorative"],
+		"icon" : "CrateSlingBullet.png",
+		"maxStackSize" : 600,
+		"onPlaceAudio" : "vanilla.woodPlace",
+		"onRemoveAudio" : "vanilla.woodDeleteLight",
+		"sideall" : "SELF"
+	},
+	"CrateArrow" : {
+		"categories" : ["essential","decorative"],
+		"icon" : "CrateArrow.png",
+		"maxStackSize" : 600,
+		"onPlaceAudio" : "vanilla.woodPlace",
+		"onRemoveAudio" : "vanilla.woodDeleteLight",
+		"sideall" : "SELF"
+	},
+	"CrateBolts" : {
+		"categories" : ["essential","decorative"],
+		"icon" : "CrateBolts.png",
+		"maxStackSize" : 600,
+		"onPlaceAudio" : "vanilla.woodPlace",
+		"onRemoveAudio" : "vanilla.woodDeleteLight",
+		"sideall" : "SELF"
+	},
+	"CrateGunpowder" : {
+		"categories" : ["essential","decorative"],
+		"icon" : "CrateGunpowder.png",
+		"maxStackSize" : 600,
+		"onPlaceAudio" : "vanilla.woodPlace",
+		"onRemoveAudio" : "vanilla.woodDeleteLight",
+		"sideall" : "SELF"
+	},
+	"CrateLeadBullet" : {
+		"categories" : ["essential","decorative"],
+		"icon" : "CrateLeadBullet.png",
+		"maxStackSize" : 600,
+		"onPlaceAudio" : "vanilla.woodPlace",
+		"onRemoveAudio" : "vanilla.woodDeleteLight",
+		"sideall" : "SELF"
+	},
+	"CrateFlour" : {
+		"categories" : ["essential","decorative"],
+		"icon" : "CrateFlour.png",
+		"maxStackSize" : 600,
+		"onPlaceAudio" : "vanilla.woodPlace",
+		"onRemoveAudio" : "vanilla.woodDeleteLight",
+		"sideall" : "SELF"
+	}
+}

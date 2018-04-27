@@ -24,36 +24,6 @@
     "defaultPriority": -100
 
 }, {
-    "name": "CrateDarkWood",
-    "results": [{
-        "type": "CrateDarkWood",
-        "amount": 1
-    }],
-    "requires": [{
-        "type": "vanilla.planks",
-        "amount": 1
-    }, {
-        "type": "vanilla.coppernails",
-        "amount": 4
-    }],
-    "defaultLimit": 0,
-    "defaultPriority": -100
-}, {
-    "name": "CrateMetalReenforcedDarkWood",
-    "results": [{
-        "type": "CrateMetalReenforcedDarkWood",
-        "amount": 1
-    }],
-    "requires": [{
-        "type": "vanilla.planks",
-        "amount": 1
-    }, {
-        "type": "vanilla.coppernails",
-        "amount": 4
-    }],
-    "defaultLimit": 0,
-    "defaultPriority": -100
-}, {
     "name": "NewShingles",
     "results": [{
         "type": "NewShingles",
@@ -740,66 +710,6 @@
     "requires": [{
         "type": "BlackRottenWood",
         "amount": 1
-    }],
-    "defaultLimit": 0,
-    "defaultPriority": -100
-}, {
-    "name": "Crate1",
-    "results": [{
-        "type": "Crate1",
-        "amount": 1
-    }],
-    "requires": [{
-        "type": "vanilla.planks",
-        "amount": 1
-    }, {
-        "type": "vanilla.coppernails",
-        "amount": 4
-    }],
-    "defaultLimit": 0,
-    "defaultPriority": -100
-}, {
-    "name": "Crate2",
-    "results": [{
-        "type": "Crate2",
-        "amount": 1
-    }],
-    "requires": [{
-        "type": "vanilla.planks",
-        "amount": 1
-    }, {
-        "type": "vanilla.coppernails",
-        "amount": 4
-    }],
-    "defaultLimit": 0,
-    "defaultPriority": -100
-}, {
-    "name": "Crate3",
-    "results": [{
-        "type": "Crate3",
-        "amount": 1
-    }],
-    "requires": [{
-        "type": "vanilla.planks",
-        "amount": 1
-    }, {
-        "type": "vanilla.coppernails",
-        "amount": 4
-    }],
-    "defaultLimit": 0,
-    "defaultPriority": -100
-}, {
-    "name": "Crate4",
-    "results": [{
-        "type": "Crate4",
-        "amount": 1
-    }],
-    "requires": [{
-        "type": "vanilla.planks",
-        "amount": 1
-    }, {
-        "type": "vanilla.coppernails",
-        "amount": 4
     }],
     "defaultLimit": 0,
     "defaultPriority": -100

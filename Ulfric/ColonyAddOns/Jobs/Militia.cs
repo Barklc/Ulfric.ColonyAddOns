@@ -15,6 +15,7 @@ namespace Ulfric.ColonyAddOns
     public class MilitiaJob : Job, INPCTypeDefiner
     {
         protected ushort blockType;
+        protected double RecruitedTime = 0;
 
         static NPCTypeStandardSettings MilitiaNPCSettings = new NPCTypeStandardSettings()
         {
@@ -39,7 +40,6 @@ namespace Ulfric.ColonyAddOns
 
         static GuardBaseJob.GuardSettings guardsettings = GetGuardSettings();
         IMonster target;
-        BoxedDictionary tmpVals;
 
         public override bool ToSleep => false;
 
@@ -80,6 +80,12 @@ namespace Ulfric.ColonyAddOns
 
         public override void OnNPCAtJob(ref NPCBase.NPCState state)
         {
+            if (TimeCycle.TotalTime > RecruitedTime + Configuration.MititiaTermOfDuty)
+            {
+
+                OnRemovedNPC();
+
+            }
             if (HasTarget)
             {
                 Vector3 npcPos = position.Add(0, 1, 0).Vector;
@@ -136,13 +142,11 @@ namespace Ulfric.ColonyAddOns
 
         new public void InitializeJob(Players.Player owner, Vector3Int position, int desiredNPCID)
         {
-            Logger.Log("InitializeJob Add new Militia block {0} {1} {2}", owner.Name, position, desiredNPCID);
             this.position = position;
             this.owner = owner;
             if (desiredNPCID != 0 && NPCTracker.TryGetNPC(desiredNPCID, out usedNPC))
             {
-                Logger.Log("NPC {0} assigned this job", usedNPC.ID);
-                usedNPC.TakeJob(this);
+                 usedNPC.TakeJob(this);
             }
             else
             {
@@ -180,9 +184,20 @@ namespace Ulfric.ColonyAddOns
             return GetGuardSettings();
         }
 
+        public override ITrackableBlock InitializeFromJSON(Players.Player player, JSONNode node)
+        {
+            RecruitedTime = node.GetAs<double>("RecruitedTime");
+            InitializeJob(player, (Vector3Int)node[nameof(position)], node.GetAs<int>("npcID"));
+            return this;
+        }
         public override JSONNode GetJSON()
         {
-            return base.GetJSON().SetAs("type", ItemTypes.IndexLookup.GetName(blockType));
+            JSONNode node = base.GetJSON();
+            node.SetAs("type", MilitiaNPCSettings.KeyName);
+            node.SetAs<double>("RecruitedTime", RecruitedTime);
+            node.SetAs(nameof(position), (JSONNode)position);
+
+            return node;
         }
 
         public NPCTypeStandardSettings GetNPCTypeDefinition()
@@ -194,14 +209,15 @@ namespace Ulfric.ColonyAddOns
 
         public override void OnAssignedNPC(NPCBase npc)
         {
-            tmpVals = npc.GetTempValues(true);
-            tmpVals.Set<double>("RecruitedTime", TimeCycle.TotalTime);
+            RecruitedTime = TimeCycle.TotalTime;
             NPC = npc;
         }
 
         public override void OnRemovedNPC()
         {
-            usedNPC = null;           
+            usedNPC.ClearJob();
+            usedNPC = null;
+            JobTracker.Remove(owner, position);
         }
 
         public override void OnRemove()
@@ -209,6 +225,7 @@ namespace Ulfric.ColonyAddOns
             isValid = false;
             if (usedNPC != null)
             {
+                ColonyManager.RemoveJobs(this);
                 usedNPC.ClearJob();
                 usedNPC = null;
             }

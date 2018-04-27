@@ -94,7 +94,7 @@ namespace Ulfric.ColonyAddOns
                     //Add recipes in any subdiectories in Config directory
                     foreach(string path in Directory.GetDirectories(GameLoader.ConfigFolder))
                     {
-                        AddRecipe(GameLoader.ConfigFolder+ "/" + path, jobAndFilename);
+                        AddRecipe(path, jobAndFilename);
                     }
                 }
                 catch (Exception exception)
@@ -208,7 +208,7 @@ namespace Ulfric.ColonyAddOns
 
             AddTypes(GameLoader.ConfigFolder, items);
             //Add recipes in any subdiectories in Config directory
-            Logger.Log("{0}", Directory.GetDirectories(GameLoader.ConfigFolder + "/").Length);
+            Logger.Log("Number of subdirectories {0}", Directory.GetDirectories(GameLoader.ConfigFolder + "/").Length);
             foreach (string path in Directory.GetDirectories(GameLoader.ConfigFolder))
             {
                 Logger.Log("{0}", path);
@@ -277,7 +277,7 @@ namespace Ulfric.ColonyAddOns
 
                                         if (key.StartsWith(VANILLA_PREFIX))
                                             sidekey = key.Substring(VANILLA_PREFIX.Length);
-                                        else
+                                        else 
                                             sidekey = Blocks.MOD_NAMESPACE + "." + key;
 
                                         typeEntry.Value.SetAs(side, sidekey);
@@ -333,6 +333,30 @@ namespace Ulfric.ColonyAddOns
 
                                 typeEntry.Value.SetAs("mesh", realMeshes);
                             }
+                            
+                            if (typeEntry.Value.TryGetAs("onRemove", out JSONNode onRemoveJSON))
+                            {
+                                JSONNode newnode = new JSONNode(NodeType.Array);
+                                foreach(JSONNode j in onRemoveJSON.LoopArray())
+                                {
+                                    if (j.TryGetAs("type", out string onRemove))
+                                    {
+                                        string realOnRemove;
+
+                                        if (onRemove.StartsWith(VANILLA_PREFIX))
+                                            realOnRemove = onRemove.Substring(VANILLA_PREFIX.Length);
+                                        else
+                                            realOnRemove = Blocks.MOD_NAMESPACE + "." + onRemove;
+
+                                        j.SetAs("type", realOnRemove);
+                                        newnode.AddToArray(j);
+                                    }
+                                    else
+                                        newnode.AddToArray(j);
+                                }
+
+                                typeEntry.Value.SetAs("onRemove", newnode);
+                            }
 
                             string realkey = Blocks.MOD_NAMESPACE + "." + typeEntry.Key;
 
@@ -370,7 +394,7 @@ namespace Ulfric.ColonyAddOns
             //Add recipes in any subdiectories in Config directory
             foreach (string path in Directory.GetDirectories(GameLoader.ConfigFolder))
             {
-                AddTextureMapping(GameLoader.ConfigFolder + "/" + path);
+                AddTextureMapping(path);
             }
         }
 
@@ -470,9 +494,9 @@ namespace Ulfric.ColonyAddOns
 
             if (userData.TypeNew == BuiltinBlocks.Dirt)
             {
-                if (ItemTypes.TryGetType(userData.TypeOld, out ItemTypes.ItemType itemtype)
-                    && itemtype.CustomDataNode.TryGetAs<float>("fertilizervalue", out float result))
+                if (ItemTypes.TryGetType(userData.TypeOld, out ItemTypes.ItemType itemtype))                
                 {
+                    if (itemtype.IsFertile && itemtype.CustomDataNode.TryGetAs<float>("fertilizervalue", out float result))
                     userData.TypeNew = userData.TypeOld;
                 }
             }
