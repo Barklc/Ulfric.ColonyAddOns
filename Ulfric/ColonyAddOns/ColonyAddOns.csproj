@@ -59,6 +59,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="areajob\AppleFarmerAreaJob.cs" />
     <Compile Include="areajob\AppleForesterAreaJob.cs" />
     <Compile Include="Blocks.cs" />
     <Compile Include="Chat.cs" />
@@ -72,10 +73,14 @@
     <Compile Include="chatcommands\TransferChatCommand.cs" />
     <Compile Include="ColonyManager.cs" />
     <Compile Include="Configuration.cs" />
+    <Compile Include="growable\TaigaSapling.cs" />
     <Compile Include="growable\AppleSapling.cs" />
+    <Compile Include="Jobs\Sick.cs" />
+    <Compile Include="misc\Calendar.cs" />
     <Compile Include="misc\HelperFunctions.cs" />
     <Compile Include="Jobs\Job.cs" />
     <Compile Include="Jobs\Militia.cs" />
+    <Compile Include="npc\Disease.cs" />
     <Compile Include="npc\Hydration.cs" />
     <Compile Include="misc\Stats.cs" />
     <Compile Include="misc\Fertilizer.cs" />
@@ -538,8 +543,10 @@
     <None Include="configs\Carpenter.json" />
     <None Include="configs\CarpentryWorkbench.json" />
     <None Include="configs\Growables\baking.json" />
+    <None Include="configs\Growables\shopping.json" />
     <None Include="configs\Growables\texturemapping.json" />
     <None Include="configs\Growables\types.json" />
+    <None Include="configs\Militia\texturemapping.json" />
     <None Include="configs\Militia\types.json" />
     <None Include="configs\player.json" />
     <None Include="configs\shopping.json" />

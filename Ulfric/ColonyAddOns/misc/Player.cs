@@ -163,6 +163,12 @@ namespace Ulfric.ColonyAddOns
 
         public string[] LineUp = new string[]{ "","","","","" };
 
+        public double StartOfSiege { get; set; } = 0;
+
+        public bool DiseaseOutbreak { get; set; } = true;
+
+        public double LastDiseaseCheck { get; set; } = 0;
+
         public PlayerState(Players.Player p)
         {
             Player = p;
@@ -210,6 +216,15 @@ namespace Ulfric.ColonyAddOns
                 if (stateNode.TryGetAs("EnableMilitia", out bool EnableMilitia))
                     _playerStates[p].EnableMilitia = EnableMilitia;
 
+                if (stateNode.TryGetAs("StartOfSiege", out double StartOfSiege))
+                    _playerStates[p].StartOfSiege = StartOfSiege;
+
+                if (stateNode.TryGetAs("DiseaseOutbreak", out bool DiseaseOutbreak))
+                    _playerStates[p].DiseaseOutbreak = DiseaseOutbreak;
+
+                if (stateNode.TryGetAs("LastDiseaseCheck", out double LastDiseaseCheck))
+                    _playerStates[p].LastDiseaseCheck = LastDiseaseCheck;
+
                 if (stateNode.TryGetAs("LineUp",out JSONNode lineup))
                 {
                     foreach(KeyValuePair<string,JSONNode> spot in lineup.LoopObject())
@@ -233,6 +248,9 @@ namespace Ulfric.ColonyAddOns
                 node.SetAs("EnableHeraldWarning", _playerStates[p].EnableHeraldWarning);
                 node.SetAs("PlayerPickDurability", _playerStates[p].PlayerPickDurability);
                 node.SetAs("EnableMilitia", _playerStates[p].EnableMilitia);
+                node.SetAs("StartOfSiege", _playerStates[p].StartOfSiege);
+                node.SetAs("DiseaseOutbreak", _playerStates[p].DiseaseOutbreak);
+                node.SetAs("LastDiseaseCheck", _playerStates[p].LastDiseaseCheck);
 
                 JSONNode lineup = new JSONNode();
                 lineup.SetAs("0", _playerStates[p].LineUp[0]);

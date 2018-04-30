@@ -58,5 +58,77 @@
 		"icon" : "AppleCider.png",
 		"isPlaceable" : false,
 		"maxStackSize" : 600,
+	},
+	"AppleBarrel": {
+        "icon": "Marker.png",
+        "onPlaceAudio": "vanilla.woodPlace",
+        "onRemoveAudio": "vanilla.woodDeleteLight",
+        "sideall": "SELF",
+        "npcLimit": 0,
+        "maxStackSize": 600,
+        "isRotatable": true,
+        "rotatablex+": "AppleBarrelx+",
+        "rotatablex-": "AppleBarrelx-",
+        "rotatablez+": "AppleBarrelz+",
+        "rotatablez-": "AppleBarrelz-",
+        "categories": [
+          "decorative",
+          "wood"
+    ]
+    },
+    "AppleBarrelx+": {
+        "parentType": "AppleBarrel",
+        "mesh": "AppleBarrelx+.obj"
+    },
+    "AppleBarrelx-": {
+        "parentType": "AppleBarrel",
+        "mesh": "AppleBarrelx-.obj"
+    },
+    "AppleBarrelz+": {
+        "parentType": "AppleBarrel",
+        "mesh": "AppleBarrelz+.obj"
+    },
+    "AppleBarrelz-": {
+       "parentType": "AppleBarrel",
+       "mesh": "AppleBarrelz-.obj"
+    },
+	"AppleBasket" : {
+		"categories" : ["decorative","ulfric","wood"],
+		"icon" : "AppleBasket.png",
+		"isCrate": true,
+		"maxStackSize" : 600,
+		"onPlaceAudio" : "vanilla.woodPlace",
+		"onRemoveAudio" : "vanilla.woodDeleteLight",
+		"sideall" : "SELF",
+		"sidey+" : "BasketTop"
+	},
+	"Basket" : {
+		"categories" : ["decorative","ulfric","wood"],
+		"icon" : "Basket.png",
+		"maxStackSize" : 600,
+		"onPlaceAudio" : "vanilla.woodPlace",
+		"onRemoveAudio" : "vanilla.woodDeleteLight",
+		"sideall" : "SELF",
+		"sidey+" : "BasketTop"
+	},
+		"TaigaSapling" : {
+		"categories" : [
+			"food",
+			"seed"
+		],
+		"colliders" : {
+			"boxes" : [{"max":[0.25,0,0.25],"min":[-0.25,-0.5,-0.25]}],
+			"collidePlayer" : false
+		},
+		"customData" : {
+			"colors" : ["#ff0000->#542909","#00ff00->#e36363"]
+		},
+		"icon" : "TaigaSapling.png",
+		"isSolid" : false,
+		"mesh" : "vanilla.sapling.ply",
+		"needsBase" : true,
+		"onPlaceAudio" : "vanilla.woodPlace",
+		"onRemoveAudio" : "vanilla.grassDelete",
+		"sideall" : "vanilla.neutral"
 	}
 }

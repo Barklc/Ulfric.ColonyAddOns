@@ -5,6 +5,7 @@ using Pipliz.Threading;
 using Pipliz;
 using BlockTypes.Builtin;
 using System.IO;
+using Pipliz.Mods.APIProvider.AreaJobs;
 
 namespace Ulfric.ColonyAddOns
 
@@ -94,6 +95,7 @@ namespace Ulfric.ColonyAddOns
                     //Add recipes in any subdiectories in Config directory
                     foreach(string path in Directory.GetDirectories(GameLoader.ConfigFolder))
                     {
+                        Logger.Log("Loading Recipes from {0}", path.Substring(path.LastIndexOf('/')));
                         AddRecipe(path, jobAndFilename);
                     }
                 }
@@ -211,7 +213,7 @@ namespace Ulfric.ColonyAddOns
             Logger.Log("Number of subdirectories {0}", Directory.GetDirectories(GameLoader.ConfigFolder + "/").Length);
             foreach (string path in Directory.GetDirectories(GameLoader.ConfigFolder))
             {
-                Logger.Log("{0}", path);
+                Logger.Log("Loading Types from {0}", path.Substring(path.LastIndexOf('/')));
                 AddTypes(path, items);
             }
 
@@ -394,6 +396,7 @@ namespace Ulfric.ColonyAddOns
             //Add recipes in any subdiectories in Config directory
             foreach (string path in Directory.GetDirectories(GameLoader.ConfigFolder))
             {
+                Logger.Log("Loading TextureMappings from {0}", path.Substring(path.LastIndexOf('/')));
                 AddTextureMapping(path);
             }
         }
@@ -494,10 +497,10 @@ namespace Ulfric.ColonyAddOns
 
             if (userData.TypeNew == BuiltinBlocks.Dirt)
             {
-                if (ItemTypes.TryGetType(userData.TypeOld, out ItemTypes.ItemType itemtype))                
+                if (ItemTypes.TryGetType(userData.TypeOld, out ItemTypes.ItemType itemtype))
                 {
                     if (itemtype.IsFertile && itemtype.CustomDataNode.TryGetAs<float>("fertilizervalue", out float result))
-                    userData.TypeNew = userData.TypeOld;
+                        userData.TypeNew = userData.TypeOld;
                 }
             }
 
@@ -525,13 +528,13 @@ namespace Ulfric.ColonyAddOns
                     if (ItemTypes.IndexLookup.TryGetIndex(otherTypename, out ushort otherIndex))
                     {
                         Vector3Int position = userData.Position;
-                        ThreadManager.InvokeOnMainThread(delegate () {
+                        ThreadManager.InvokeOnMainThread(delegate ()
+                        {
                             ServerManager.TryChangeBlock(position, otherIndex);
                         }, 0.1f);
                     }
                 }
             }
-
         }
     }
 }

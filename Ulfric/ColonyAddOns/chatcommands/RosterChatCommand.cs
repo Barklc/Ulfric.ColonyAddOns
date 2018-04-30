@@ -16,7 +16,7 @@ namespace Ulfric.ColonyAddOns
     {
         public string MODPATH;
         public const string NAMESPACE = "Ulfric.ColonyAddOns";
-        private const string MOD_NAMESPACE = NAMESPACE + ". RosterChatCommand";
+        private const string MOD_NAMESPACE = NAMESPACE + ".RosterChatCommand";
 
         [ModLoader.ModCallback(ModLoader.EModCallbackType.AfterItemTypesDefined, RosterChatCommand.MOD_NAMESPACE + ".registercommand")]
         public static void AfterItemTypesDefined()
@@ -33,11 +33,6 @@ namespace Ulfric.ColonyAddOns
         {
             SortedDictionary<string, int> roster = new SortedDictionary<string, int>();
 
-            if (!Permissions.PermissionsManager.CheckAndWarnPermission(causedBy, RosterChatCommand.MOD_NAMESPACE))
-            {
-                Chat.Send(causedBy,string.Format("{0} does not have permission for '/roster' command.", causedBy.Name));
-                return true;
-            }
             var m = Regex.Match(chattext, @"/roster (?<jobname>['].+?[']|[^ ]+)");
             if (!m.Success)
             {

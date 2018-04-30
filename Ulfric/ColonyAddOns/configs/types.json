@@ -54,15 +54,7 @@
 		"onPlaceAudio" : "vanilla.woodPlace",
 		"onRemoveAudio" : "vanilla.woodDeleteLight",
 		"sideall" : "SELF"
-	},
-	"Basket" : {
-		"categories" : ["decorative","ulfric","wood"],
-		"icon" : "Basket.png",
-		"maxStackSize" : 600,
-		"onPlaceAudio" : "vanilla.woodPlace",
-		"onRemoveAudio" : "vanilla.woodDeleteLight",
-		"sideall" : "SELF"
-	},
+	}
 	"BirchLogFence" : {
 		"categories" : ["decorative","ulfric","wood"],
 		"icon" : "BirchLogs.png",
@@ -786,7 +778,9 @@
 		"sideall" : "FancyPavingSlabsSlab"
 	},
 	"FineSoil" : {
+		"categories" : ["decorative","ulfric","dirt"],
 		"customData" : {"fertilizervalue":0.5},
+		"isSolid": true,
 		"icon" : "FineSoil.png",
 		"isFertile" : true,
 		"maxStackSize" : 600,

@@ -40,9 +40,14 @@ Added - Added Transfer Chat Command
 
 Future functions:
 Add taiga planks
-add /bannercolor will allow players the set what colors wil be used on the banner when it is put down
-add /roster open - displays all open jobs
-add /hydration disable - set configuration to false
-add /stats enable/disable - set configuration to true or false
-add /allowplayermining - toggles configuration to allow users to mine mineable block
-make Militia exclude list configurable instead of hardcoded in Herald.
+add chat command /bannercolor will allow players the set what colors wil be used on the banner when it is put down
+add chat command /roster open - displays all open jobs
+add chat command /hydration disable - set configuration to false
+add chat command /stats enable/disable - set configuration to true or false
+add chat command /allowplayermining - toggles configuration to allow users to mine mineable block
+add Perserver Job to make food crates
+Update UpdateTypes to support multiple config directory and add support for onRemove
+Add new UpdateTypes for vanilla.leavestaiga 
+			"onRemove" : [
+			{"amount":1,"chance":0.6,"type":"vanilla.leavestaiga"},
+			{"amount":1,"chance":0.1,"type":"TaigaSapling"},

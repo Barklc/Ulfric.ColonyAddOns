@@ -134,6 +134,11 @@ namespace Ulfric.ColonyAddOns
                                             m.InitializeFromJSON(Players.GetPlayer(NetworkID.Parse(p.Key)), j);
                                             JobList.Add(m);
                                             break;
+                                        case "Ulfric.ColonyAddOns.Sick":
+                                            SickJob s = new SickJob();
+                                            s.InitializeFromJSON(Players.GetPlayer(NetworkID.Parse(p.Key)), j);
+                                            JobList.Add(s);
+                                            break;
                                     }
 
                                 }

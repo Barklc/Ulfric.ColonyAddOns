@@ -1,0 +1,8 @@
+﻿{
+	"Flag": {
+        "albedo": "Flag",
+        "normal": "neutral",
+        "emissive": "neutral",
+        "height": "neutral"
+    }
+}

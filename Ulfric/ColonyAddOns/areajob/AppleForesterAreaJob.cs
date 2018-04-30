@@ -5,8 +5,9 @@ using System.Threading;
 using Pipliz.Mods.APIProvider.AreaJobs;
 using Pipliz;
 using Pipliz.JSON;
-namespace Ulfric.ColonyAddOns.AreaJobs
+using Pipliz.Threading;
 
+namespace Ulfric.ColonyAddOns.AreaJobs
 {
 	[AreaJobDefinitionAutoLoader]
 	public class AppleForesterDefinition : AreaJobDefinitionDefault<AppleForesterDefinition>
@@ -135,7 +136,7 @@ namespace Ulfric.ColonyAddOns.AreaJobs
 							GatherResults.Add(new ItemTypes.ItemTypeDrops(leaveIndex, 9, 1.0));
 							GatherResults.Add(new ItemTypes.ItemTypeDrops(saplingIndex, 1, 1.0));
 							GatherResults.Add(new ItemTypes.ItemTypeDrops(saplingIndex, 1, 0.25));
-                            GatherResults.Add(new ItemTypes.ItemTypeDrops(fruitIndex, 1, 0.3));
+                            GatherResults.Add(new ItemTypes.ItemTypeDrops(fruitIndex, 2, 0.5));
 
                             ModLoader.TriggerCallbacks(ModLoader.EModCallbackType.OnNPCGathered, job as IJob, positionSub, GatherResults);
 
@@ -217,6 +218,50 @@ namespace Ulfric.ColonyAddOns.AreaJobs
 			}
 		}
 
-		#endregion LOAD_LEGACY_BLOCKS_WORKAROUND
-	}
+        #endregion LOAD_LEGACY_BLOCKS_WORKAROUND
+
+        //[ModLoader.ModCallback(ModLoader.EModCallbackType.OnTryChangeBlock, GameLoader.NAMESPACE + ".AppleForester.trychangeblock")]
+        //public static void OnTryChangeBlockUser(ModLoader.OnTryChangeBlockData userData)
+        //{
+        //    if (userData.TypeNew == ItemTypes.IndexLookup.GetIndex("Ulfric.ColonyAddOns.Blocks.AppleBasket") && userData.TypeOld == BuiltinBlocks.Air)
+        //    {
+        //        Vector3Int position = userData.Position;
+        //        int xlen = 9;
+        //        int zlen = 9;
+        //        int radius = 4;
+
+        //        //set NW corner
+        //        Vector3Int nwcorner = new Vector3Int(position.x - radius, position.y, position.z - radius);
+        //        Vector3Int secorner = new Vector3Int(position.x + radius, position.y, position.z + radius);
+
+        //        bool blocked = false;
+        //        for (int x = 0; x <= xlen; x++)
+        //        {
+        //            for (int z = 0; z <= zlen; z++)
+        //            {
+        //                if (World.TryGetTypeAt(nwcorner.Add(x, 0, z), out ushort val) && val != BuiltinBlocks.Air)
+        //                {
+        //                    blocked = true;
+        //                }
+        //            }
+        //        }
+
+        //        if (blocked)
+        //        {
+        //            Chat.Send(userData.RequestedByPlayer, "Apple Farmer 9 x 9 area is blocked.");
+        //        }
+        //        else
+        //        {
+        //            var job = new DefaultFarmerAreaJob<AreaJobs.AppleForesterDefinition>(userData.RequestedByPlayer, nwcorner, secorner);
+        //            AreaJobTracker.RegisterAreaJob(job);
+
+        //            ThreadManager.InvokeOnMainThread(delegate ()
+        //            {
+        //                ServerManager.TryChangeBlock(position, userData.TypeNew);
+        //            }, 0.1f);
+        //        }
+
+        //    }
+        //}
+    }
 }

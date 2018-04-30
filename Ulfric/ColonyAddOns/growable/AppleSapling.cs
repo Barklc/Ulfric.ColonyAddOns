@@ -112,7 +112,7 @@ namespace Ulfric.ColonyAddOns.GrowableBlocks
 		{
             Logger.Log("{0} TryAdvanceStage",filename);
 			Vector3Int pos = block.Position;
-			if (currentStageIndex == 0 && pos.IsValid) {
+            if (currentStageIndex == 0 && pos.IsValid) {
 				for (int i = 0; i < logs.Count; i++) {
 					ushort currentType;
 					if (World.TryGetTypeAt(pos + logs[i], out currentType)) {

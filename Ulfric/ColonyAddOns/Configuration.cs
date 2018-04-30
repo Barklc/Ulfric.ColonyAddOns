@@ -37,6 +37,11 @@ namespace Ulfric.ColonyAddOns
         public static bool AllowMilitiaToBeCalled = true;
         public static List<string> ExcludeJobTypes = new List<string> { "Day Slinger Guard", "Night Slinger Guard", "Day Bow Guard", "Night Bow Guard", "Day Crossbow Guard", "Night Crossbow Guard", "Day Matchlock Guard", "Night Matchlock Guard", "Militia", "Herald" };
 
+        public static bool EnableDisease = false;
+        public static double DiseaseStartThreshold = 0;
+        public static float ChanceOfDiseaseSpread = 0.3f;
+        public static float LengthOfDiseaseInDays = 3;
+
         private static JSONNode ExcludedJobJSON = new JSONNode(); 
 
         [ModLoader.ModCallback(ModLoader.EModCallbackType.AfterSelectedWorld, GameLoader.NAMESPACE + ".Configuration.AfterSelectedWorld")]
@@ -66,12 +71,16 @@ namespace Ulfric.ColonyAddOns
             MititiaTermOfDuty = GetorDefault("MititiaTermOfDuty", MititiaTermOfDuty);
             ExcludedJobJSON = GetorDefault<JSONNode>("ExcludedFromMilitia", ExcludedJobJSON);
 
+            EnableDisease = GetorDefault<bool>("EnableDisease", EnableDisease);
+            DiseaseStartThreshold = GetorDefault <double>("DiseaseStartThreshold", DiseaseStartThreshold);
+            ChanceOfDiseaseSpread = GetorDefault<float>("ChanceOfDiseaseSpread", ChanceOfDiseaseSpread);
+            LengthOfDiseaseInDays = GetorDefault<float>("LengthOfDiseaseInDays", LengthOfDiseaseInDays);
+
             ExcludeJobTypes.Clear();
             foreach (JSONNode spot in ExcludedJobJSON.LoopArray())
             {
                 ExcludeJobTypes.Add(spot.GetAs<string>());
             }
-
 
             Save();
         }
@@ -104,6 +113,11 @@ namespace Ulfric.ColonyAddOns
                 MititiaTermOfDuty = GetorDefault("MititiaTermOfDuty", MititiaTermOfDuty);
                 ExcludedJobJSON = GetorDefault<JSONNode>("ExcludedFromMilitia", ExcludedJobJSON);
 
+                EnableDisease = GetorDefault<bool>("EnableDisease", EnableDisease);
+                DiseaseStartThreshold = GetorDefault<double>("DiseaseStartThreshold", DiseaseStartThreshold);
+                ChanceOfDiseaseSpread = GetorDefault<float>("ChanceOfDiseaseSpread", ChanceOfDiseaseSpread);
+                LengthOfDiseaseInDays = GetorDefault<float>("LengthOfDiseaseInDays", LengthOfDiseaseInDays);
+
                 ExcludeJobTypes.Clear();
                 foreach (JSONNode spot in ExcludedJobJSON.LoopArray())
                 {
@@ -135,6 +149,10 @@ namespace Ulfric.ColonyAddOns
             _rootSettings.SetAs("AllowMilitiaToBeCalled", AllowMilitiaToBeCalled);
             _rootSettings.SetAs("MilitiaRallyCooldown", MilitiaRallyCooldown);
             _rootSettings.SetAs("MititiaTermOfDuty", MititiaTermOfDuty);
+
+            _rootSettings.SetAs("EnableDisease", EnableDisease);
+            _rootSettings.SetAs("DiseaseStartThreshold", DiseaseStartThreshold);
+            _rootSettings.SetAs("LengthOfDiseaseInDays", LengthOfDiseaseInDays);
 
             JSONNode node = new JSONNode(NodeType.Array);
             foreach(string job in ExcludeJobTypes)

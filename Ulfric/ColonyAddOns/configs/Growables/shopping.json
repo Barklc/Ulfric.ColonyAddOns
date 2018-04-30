@@ -1,0 +1,25 @@
+[{
+    "name": "AppleBasket",
+    "results": [{
+        "type": "AppleBasket",
+        "amount": 1
+    }],
+    "requires": [{
+        "type": "vanilla.goldcoin",
+        "amount": 100
+    }],
+    "defaultLimit": 0,
+    "defaultPriority": -100
+	}, {
+    "name": "AppleSapling",
+    "results": [{
+        "type": "AppleSapling",
+        "amount": 1
+    }],
+    "requires": [{
+        "type": "vanilla.goldcoin",
+        "amount": 100
+    }],
+    "defaultLimit": 0,
+    "defaultPriority": -100
+}]

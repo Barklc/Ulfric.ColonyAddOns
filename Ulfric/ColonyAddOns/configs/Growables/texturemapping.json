@@ -4,5 +4,29 @@
 		"emissive" : "neutral",
 		"height" : "neutral",
 		"normal" : "neutral"
+	},
+	"AppleBarrel": {
+     "albedo": "AppleBarrel",
+     "normal": "neutral",
+     "emissive": "neutral",
+     "height": "neutral"
+  },
+	"AppleBasket" : {
+		 "albedo" : "AppleBasket",
+		 "emissive" : "neutral",
+		 "height" : "neutral",
+		 "normal" : "neutral"
+	},
+	"BasketTop" : {
+		 "albedo" : "BasketTop",
+		 "emissive" : "neutral",
+		 "height" : "neutral",
+		 "normal" : "neutral"
+	},
+	"Basket" : {
+		 "albedo" : "Basket",
+		 "emissive" : "neutral",
+		 "height" : "neutral",
+		 "normal" : "neutral"
 	}
 }

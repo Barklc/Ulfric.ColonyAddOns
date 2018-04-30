@@ -33,11 +33,6 @@ namespace Ulfric.ColonyAddOns
         {
             SortedDictionary<string, int> lineup = new SortedDictionary<string, int>();
 
-            if (!Permissions.PermissionsManager.CheckAndWarnPermission(causedBy, LineUpSetChatCommand.MOD_NAMESPACE))
-            {
-                Chat.Send(causedBy, string.Format("{0} does not have permission for '/lineupset' command.", causedBy.Name));
-                return true;
-            }
             var m = Regex.Match(chattext, @"/lineupset (?<jobname>['].+?[']|[^ ]+) (?<page>\d+)");
             if (!m.Success)
             {
