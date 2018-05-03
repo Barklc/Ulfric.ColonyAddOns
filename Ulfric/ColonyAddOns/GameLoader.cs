@@ -18,6 +18,7 @@ namespace Ulfric.ColonyAddOns
         public static string AudioFolder = "";
         public static string SavedGameFolder = "";
         public static string MeshesFolder = "";
+        public static string StructuresFolder = "";
 
         public static bool Debug = false;
         public static string DebugFile = "";
@@ -61,6 +62,9 @@ namespace Ulfric.ColonyAddOns
 
             SavedGameFolder = path.Substring(0, path.IndexOf("gamedata") + "gamedata".Length) + "/savegames/";
             Logger.Log("SavedGameFolder Path {0}", SavedGameFolder);
+
+            StructuresFolder = path.Substring(0, path.IndexOf("gamedata") + "gamedata".Length) + "/structures/";
+            Logger.Log("StrucutresFolder Path {0}", StructuresFolder);
 
         }
 

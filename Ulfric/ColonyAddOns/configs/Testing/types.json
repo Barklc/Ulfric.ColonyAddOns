@@ -1,0 +1,14 @@
+﻿{
+	 "Flag": {
+        "icon": "Flag.png",
+     		"customData" : {"colors":["#ff0000->##a00dc7"]},
+        "onPlaceAudio": "vanilla.woodPlace",
+        "onRemoveAudio": "vanilla.woodDeleteLight",
+        "mesh" : "Flag.ply",
+        "maxStackSize": 600,
+        "isSolid": false,
+        "categories": [
+          "decorative",
+          "wood"]
+    }
+}

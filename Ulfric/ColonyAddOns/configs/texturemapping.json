@@ -23,12 +23,6 @@
 		"height" : "neutral",
 		"normal" : "neutral"
 	},
-	"AshySandstoneSlab" : {
-		"albedo" : "AshySandstone",
-		"emissive" : "neutral",
-		"height" : "neutral",
-		"normal" : "neutral"
-	},
 	"BambooWall" : {
 		"albedo" : "BambooWall",
 		"emissive" : "neutral",
@@ -71,19 +65,7 @@
 		"height" : "neutral",
 		"normal" : "neutral"
 	},
-	"BlackRottenWoodSlab" : {
-		"albedo" : "BlackRottenWood",
-		"emissive" : "neutral",
-		"height" : "neutral",
-		"normal" : "neutral"
-	},
 	"BrickAlternatingMud" : {
-		"albedo" : "BrickAlternatingMud",
-		"emissive" : "neutral",
-		"height" : "neutral",
-		"normal" : "neutral"
-	},
-	"BrickAlternatingMudSlab" : {
 		"albedo" : "BrickAlternatingMud",
 		"emissive" : "neutral",
 		"height" : "neutral",
@@ -95,19 +77,7 @@
 		"height" : "neutral",
 		"normal" : "neutral"
 	},
-	"BrickBlackRoughSlab" : {
-		"albedo" : "BrickBlackRough",
-		"emissive" : "neutral",
-		"height" : "neutral",
-		"normal" : "neutral"
-	},
 	"BrickBurlywood" : {
-		"albedo" : "BrickBurlywood",
-		"emissive" : "neutral",
-		"height" : "neutral",
-		"normal" : "neutral"
-	},
-	"BrickBurlywoodSlab" : {
 		"albedo" : "BrickBurlywood",
 		"emissive" : "neutral",
 		"height" : "neutral",
@@ -119,19 +89,7 @@
 		"height" : "neutral",
 		"normal" : "neutral"
 	},
-	"BrickGreenChippedSlab" : {
-		"albedo" : "BrickGreenChipped",
-		"emissive" : "neutral",
-		"height" : "neutral",
-		"normal" : "neutral"
-	},
 	"BrickLight" : {
-		"albedo" : "BrickLight",
-		"emissive" : "neutral",
-		"height" : "neutral",
-		"normal" : "neutral"
-	},
-	"BrickLightSlab" : {
 		"albedo" : "BrickLight",
 		"emissive" : "neutral",
 		"height" : "neutral",
@@ -143,19 +101,7 @@
 		"height" : "neutral",
 		"normal" : "neutral"
 	},
-	"BrickRedBasketweaveSlab" : {
-		"albedo" : "BrickRedBasketweave",
-		"emissive" : "neutral",
-		"height" : "neutral",
-		"normal" : "neutral"
-	},
 	"BricksBubbly" : {
-		"albedo" : "BricksBubbly",
-		"emissive" : "neutral",
-		"height" : "neutral",
-		"normal" : "neutral"
-	},
-	"BricksBubblySlab" : {
 		"albedo" : "BricksBubbly",
 		"emissive" : "neutral",
 		"height" : "neutral",
@@ -173,19 +119,7 @@
 		"height" : "neutral",
 		"normal" : "neutral"
 	},
-	"BrickWhiteSlab" : {
-		"albedo" : "BrickWhite",
-		"emissive" : "neutral",
-		"height" : "neutral",
-		"normal" : "neutral"
-	},
 	"BrickworkWornBrown" : {
-		"albedo" : "BrickworkWornBrown",
-		"emissive" : "neutral",
-		"height" : "neutral",
-		"normal" : "neutral"
-	},
-	"BrickworkWornBrownSlab" : {
 		"albedo" : "BrickworkWornBrown",
 		"emissive" : "neutral",
 		"height" : "neutral",
@@ -197,19 +131,7 @@
 		"height" : "neutral",
 		"normal" : "neutral"
 	},
-	"BrownishGreenWoodPanelSlab" : {
-		"albedo" : "BrownishGreenWoodPanel",
-		"emissive" : "neutral",
-		"height" : "neutral",
-		"normal" : "neutral"
-	},
 	"BrownPlaster" : {
-		"albedo" : "BrownPlaster",
-		"emissive" : "neutral",
-		"height" : "neutral",
-		"normal" : "neutral"
-	},
-	"BrownPlasterSlab" : {
 		"albedo" : "BrownPlaster",
 		"emissive" : "neutral",
 		"height" : "neutral",
@@ -227,12 +149,6 @@
 		"height" : "neutral",
 		"normal" : "neutral"
 	},
-	"CementLargeBlockWallSlab" : {
-		"albedo" : "CementLargeBlockWall",
-		"emissive" : "neutral",
-		"height" : "neutral",
-		"normal" : "neutral"
-	},
 	"ChiseledBlackStone" : {
 		"albedo" : "ChiseledBlackStone",
 		"emissive" : "neutral",
@@ -245,31 +161,13 @@
 		"height" : "neutral",
 		"normal" : "neutral"
 	},
-	"CobbleStoneWallSlab" : {
-		"albedo" : "CobbleStoneWall",
-		"emissive" : "neutral",
-		"height" : "neutral",
-		"normal" : "neutral"
-	},
 	"ConcreteBrickTiles" : {
 		"albedo" : "ConcreteBrickTiles",
 		"emissive" : "neutral",
 		"height" : "neutral",
 		"normal" : "neutral"
 	},
-	"ConcreteBrickTilesSlab" : {
-		"albedo" : "ConcreteBrickTiles",
-		"emissive" : "neutral",
-		"height" : "neutral",
-		"normal" : "neutral"
-	},
 	"CorrodedTechnoTiles" : {
-		"albedo" : "CorrodedTechnoTiles",
-		"emissive" : "neutral",
-		"height" : "neutral",
-		"normal" : "neutral"
-	},
-	"CorrodedTechnoTilesSlab" : {
 		"albedo" : "CorrodedTechnoTiles",
 		"emissive" : "neutral",
 		"height" : "neutral",
@@ -293,19 +191,7 @@
 		"height" : "neutral",
 		"normal" : "neutral"
 	},
-	"DirtyLargeBlocksWallSlab" : {
-		"albedo" : "DirtyLargeBlocksWall",
-		"emissive" : "neutral",
-		"height" : "neutral",
-		"normal" : "neutral"
-	},
 	"DustyGreyStone" : {
-		"albedo" : "DustyGreyStone",
-		"emissive" : "neutral",
-		"height" : "neutral",
-		"normal" : "neutral"
-	},
-	"DustyGreyStoneSlab" : {
 		"albedo" : "DustyGreyStone",
 		"emissive" : "neutral",
 		"height" : "neutral",
@@ -329,19 +215,7 @@
 		"height" : "neutral",
 		"normal" : "neutral"
 	},
-	"FancyGreyBrickSlab" : {
-		"albedo" : "FancyGreyBrick",
-		"emissive" : "neutral",
-		"height" : "neutral",
-		"normal" : "neutral"
-	},
 	"FancyPavingSlabs" : {
-		"albedo" : "FancyPavingSlabs",
-		"emissive" : "neutral",
-		"height" : "neutral",
-		"normal" : "neutral"
-	},
-	"FancyPavingSlabsSlab" : {
 		"albedo" : "FancyPavingSlabs",
 		"emissive" : "neutral",
 		"height" : "neutral",
@@ -365,19 +239,7 @@
 		"height" : "neutral",
 		"normal" : "neutral"
 	},
-	"FloorBeigeWoodSlab" : {
-		"albedo" : "FloorBeigeWood",
-		"emissive" : "neutral",
-		"height" : "neutral",
-		"normal" : "neutral"
-	},
 	"FloorBlueStainedBasketweave" : {
-		"albedo" : "FloorBlueStainedBasketweave",
-		"emissive" : "neutral",
-		"height" : "neutral",
-		"normal" : "neutral"
-	},
-	"FloorBlueStainedBasketweaveSlab" : {
 		"albedo" : "FloorBlueStainedBasketweave",
 		"emissive" : "neutral",
 		"height" : "neutral",
@@ -389,19 +251,7 @@
 		"height" : "neutral",
 		"normal" : "neutral"
 	},
-	"FloorChippedBricksSlab" : {
-		"albedo" : "FloorChippedBricks",
-		"emissive" : "neutral",
-		"height" : "neutral",
-		"normal" : "neutral"
-	},
 	"FloorConcrete" : {
-		"albedo" : "FloorConcrete",
-		"emissive" : "neutral",
-		"height" : "neutral",
-		"normal" : "neutral"
-	},
-	"FloorConcreteSlab" : {
 		"albedo" : "FloorConcrete",
 		"emissive" : "neutral",
 		"height" : "neutral",
@@ -413,19 +263,7 @@
 		"height" : "neutral",
 		"normal" : "neutral"
 	},
-	"FloorDarkHardwoodSlab" : {
-		"albedo" : "FloorDarkHardwood",
-		"emissive" : "neutral",
-		"height" : "neutral",
-		"normal" : "neutral"
-	},
 	"FloorDarkHerringbone" : {
-		"albedo" : "FloorDarkHerringbone",
-		"emissive" : "neutral",
-		"height" : "neutral",
-		"normal" : "neutral"
-	},
-	"FloorDarkHerringboneSlab" : {
 		"albedo" : "FloorDarkHerringbone",
 		"emissive" : "neutral",
 		"height" : "neutral",
@@ -437,19 +275,7 @@
 		"height" : "neutral",
 		"normal" : "neutral"
 	},
-	"FloorDarkWoodSlab" : {
-		"albedo" : "FloorDarkWood",
-		"emissive" : "neutral",
-		"height" : "neutral",
-		"normal" : "neutral"
-	},
 	"FloorFadedBasketweave" : {
-		"albedo" : "FloorFadedBasketweave",
-		"emissive" : "neutral",
-		"height" : "neutral",
-		"normal" : "neutral"
-	},
-	"FloorFadedBasketweaveSlab" : {
 		"albedo" : "FloorFadedBasketweave",
 		"emissive" : "neutral",
 		"height" : "neutral",
@@ -461,19 +287,7 @@
 		"height" : "neutral",
 		"normal" : "neutral"
 	},
-	"FloorGougedBasketweaveSlab" : {
-		"albedo" : "FloorGougedBasketweave",
-		"emissive" : "neutral",
-		"height" : "neutral",
-		"normal" : "neutral"
-	},
 	"FloorGrittyLongBoards" : {
-		"albedo" : "FloorGrittyLongBoards",
-		"emissive" : "neutral",
-		"height" : "neutral",
-		"normal" : "neutral"
-	},
-	"FloorGrittyLongBoardsSlab" : {
 		"albedo" : "FloorGrittyLongBoards",
 		"emissive" : "neutral",
 		"height" : "neutral",
@@ -485,19 +299,7 @@
 		"height" : "neutral",
 		"normal" : "neutral"
 	},
-	"FloorLightBasketweaveSlab" : {
-		"albedo" : "FloorLightBasketweave",
-		"emissive" : "neutral",
-		"height" : "neutral",
-		"normal" : "neutral"
-	},
 	"FloorPinkBasketweave" : {
-		"albedo" : "FloorPinkBasketweave",
-		"emissive" : "neutral",
-		"height" : "neutral",
-		"normal" : "neutral"
-	},
-	"FloorPinkBasketweaveSlab" : {
 		"albedo" : "FloorPinkBasketweave",
 		"emissive" : "neutral",
 		"height" : "neutral",
@@ -509,19 +311,7 @@
 		"height" : "neutral",
 		"normal" : "neutral"
 	},
-	"FloorTileSlab" : {
-		"albedo" : "FloorTile",
-		"emissive" : "neutral",
-		"height" : "neutral",
-		"normal" : "neutral"
-	},
 	"FloorTrinsicHouse" : {
-		"albedo" : "FloorTrinsicHouse",
-		"emissive" : "neutral",
-		"height" : "neutral",
-		"normal" : "neutral"
-	},
-	"FloorTrinsicHouseSlab" : {
 		"albedo" : "FloorTrinsicHouse",
 		"emissive" : "neutral",
 		"height" : "neutral",
@@ -533,19 +323,7 @@
 		"height" : "neutral",
 		"normal" : "neutral"
 	},
-	"FloorTrinsicStoneSlab" : {
-		"albedo" : "FloorTrinsicStone",
-		"emissive" : "neutral",
-		"height" : "neutral",
-		"normal" : "neutral"
-	},
 	"FloorWoodParquet" : {
-		"albedo" : "FloorWoodParquet",
-		"emissive" : "neutral",
-		"height" : "neutral",
-		"normal" : "neutral"
-	},
-	"FloorWoodParquetSlab" : {
 		"albedo" : "FloorWoodParquet",
 		"emissive" : "neutral",
 		"height" : "neutral",
@@ -557,31 +335,13 @@
 		"height" : "neutral",
 		"normal" : "neutral"
 	},
-	"FloorWrinkledBasketweaveSlab" : {
-		"albedo" : "FloorWrinkledBasketweave",
-		"emissive" : "neutral",
-		"height" : "neutral",
-		"normal" : "neutral"
-	},
 	"GraniteTechno" : {
 		"albedo" : "GraniteTechno",
 		"emissive" : "neutral",
 		"height" : "neutral",
 		"normal" : "neutral"
 	},
-	"GraniteTechnoSlab" : {
-		"albedo" : "GraniteTechno",
-		"emissive" : "neutral",
-		"height" : "neutral",
-		"normal" : "neutral"
-	},
 	"GraniteWall" : {
-		"albedo" : "GraniteWall",
-		"emissive" : "neutral",
-		"height" : "neutral",
-		"normal" : "neutral"
-	},
-	"GraniteWallSlab" : {
 		"albedo" : "GraniteWall",
 		"emissive" : "neutral",
 		"height" : "neutral",
@@ -599,19 +359,7 @@
 		"height" : "neutral",
 		"normal" : "neutral"
 	},
-	"Gravel2Slab" : {
-		"albedo" : "Gravel2",
-		"emissive" : "neutral",
-		"height" : "neutral",
-		"normal" : "neutral"
-	},
 	"Gravel3" : {
-		"albedo" : "Gravel3",
-		"emissive" : "neutral",
-		"height" : "neutral",
-		"normal" : "neutral"
-	},
-	"Gravel3Slab" : {
 		"albedo" : "Gravel3",
 		"emissive" : "neutral",
 		"height" : "neutral",
@@ -623,37 +371,13 @@
 		"height" : "neutral",
 		"normal" : "neutral"
 	},
-	"Gravel4Slab" : {
-		"albedo" : "Gravel4",
-		"emissive" : "neutral",
-		"height" : "neutral",
-		"normal" : "neutral"
-	},
-	"GravelSlab" : {
-		"albedo" : "Gravel",
-		"emissive" : "neutral",
-		"height" : "neutral",
-		"normal" : "neutral"
-	},
 	"GreenGraniteWalkway" : {
 		"albedo" : "GreenGraniteWalkway",
 		"emissive" : "neutral",
 		"height" : "neutral",
 		"normal" : "neutral"
 	},
-	"GreenGraniteWalkwaySlab" : {
-		"albedo" : "GreenGraniteWalkway",
-		"emissive" : "neutral",
-		"height" : "neutral",
-		"normal" : "neutral"
-	},
 	"GreenSiding" : {
-		"albedo" : "GreenSiding",
-		"emissive" : "neutral",
-		"height" : "neutral",
-		"normal" : "neutral"
-	},
-	"GreenSidingSlab" : {
 		"albedo" : "GreenSiding",
 		"emissive" : "neutral",
 		"height" : "neutral",
@@ -671,18 +395,6 @@
 		"height" : "neutral",
 		"normal" : "neutral"
 	},
-	"GreyStoneConcreteWallSlab" : {
-		"albedo" : "GreyStoneConcreteWall",
-		"emissive" : "neutral",
-		"height" : "neutral",
-		"normal" : "neutral"
-	},
-	"GreyStoneSlab" : {
-		"albedo" : "GreyStone",
-		"emissive" : "neutral",
-		"height" : "neutral",
-		"normal" : "neutral"
-	},
 	"GreyWoodFrameTopAndBottom" : {
 		"albedo" : "GreyWoodFrameTopAndBottom",
 		"emissive" : "neutral",
@@ -695,19 +407,7 @@
 		"height" : "neutral",
 		"normal" : "neutral"
 	},
-	"GreyWoodPanelWithPinsSlab" : {
-		"albedo" : "GreyWoodPanelWithPins",
-		"emissive" : "neutral",
-		"height" : "neutral",
-		"normal" : "neutral"
-	},
 	"HardenedLava" : {
-		"albedo" : "HardenedLava",
-		"emissive" : "neutral",
-		"height" : "neutral",
-		"normal" : "neutral"
-	},
-	"HardenedLavaSlab" : {
 		"albedo" : "HardenedLava",
 		"emissive" : "neutral",
 		"height" : "neutral",
@@ -743,19 +443,7 @@
 		"height" : "neutral",
 		"normal" : "neutral"
 	},
-	"LightBoardsSlab" : {
-		"albedo" : "LightBoards",
-		"emissive" : "neutral",
-		"height" : "neutral",
-		"normal" : "neutral"
-	},
 	"LightPaneling" : {
-		"albedo" : "LightPaneling",
-		"emissive" : "neutral",
-		"height" : "neutral",
-		"normal" : "neutral"
-	},
-	"LightPanelingSlab" : {
 		"albedo" : "LightPaneling",
 		"emissive" : "neutral",
 		"height" : "neutral",
@@ -779,19 +467,7 @@
 		"height" : "neutral",
 		"normal" : "neutral"
 	},
-	"MahoganyBoardsSlab" : {
-		"albedo" : "MahoganyBoards",
-		"emissive" : "neutral",
-		"height" : "neutral",
-		"normal" : "neutral"
-	},
 	"MapleSiding" : {
-		"albedo" : "MapleSiding",
-		"emissive" : "neutral",
-		"height" : "neutral",
-		"normal" : "neutral"
-	},
-	"MapleSidingSlab" : {
 		"albedo" : "MapleSiding",
 		"emissive" : "neutral",
 		"height" : "neutral",
@@ -809,19 +485,7 @@
 		"height" : "neutral",
 		"normal" : "neutral"
 	},
-	"MarbleBlackSlab" : {
-		"albedo" : "MarbleBlack",
-		"emissive" : "neutral",
-		"height" : "neutral",
-		"normal" : "neutral"
-	},
 	"MarbleBlood" : {
-		"albedo" : "MarbleBlood",
-		"emissive" : "neutral",
-		"height" : "neutral",
-		"normal" : "neutral"
-	},
-	"MarbleBloodSlab" : {
 		"albedo" : "MarbleBlood",
 		"emissive" : "neutral",
 		"height" : "neutral",
@@ -839,25 +503,7 @@
 		"height" : "neutral",
 		"normal" : "neutral"
 	},
-	"MarbleBlueCrackSlab" : {
-		"albedo" : "MarbleBlueCrack",
-		"emissive" : "neutral",
-		"height" : "neutral",
-		"normal" : "neutral"
-	},
-	"MarbleBlueSlab" : {
-		"albedo" : "MarbleBlue",
-		"emissive" : "neutral",
-		"height" : "neutral",
-		"normal" : "neutral"
-	},
 	"MarbleBrightPurple" : {
-		"albedo" : "MarbleBrightPurple",
-		"emissive" : "neutral",
-		"height" : "neutral",
-		"normal" : "neutral"
-	},
-	"MarbleBrightPurpleSlab" : {
 		"albedo" : "MarbleBrightPurple",
 		"emissive" : "neutral",
 		"height" : "neutral",
@@ -869,19 +515,7 @@
 		"height" : "neutral",
 		"normal" : "neutral"
 	},
-	"MarbleBrownSwirlSlab" : {
-		"albedo" : "MarbleBrownSwirl",
-		"emissive" : "neutral",
-		"height" : "neutral",
-		"normal" : "neutral"
-	},
 	"MarbleButterscotchFeldspar" : {
-		"albedo" : "MarbleButterscotchFeldspar",
-		"emissive" : "neutral",
-		"height" : "neutral",
-		"normal" : "neutral"
-	},
-	"MarbleButterscotchFeldsparSlab" : {
 		"albedo" : "MarbleButterscotchFeldspar",
 		"emissive" : "neutral",
 		"height" : "neutral",
@@ -893,19 +527,7 @@
 		"height" : "neutral",
 		"normal" : "neutral"
 	},
-	"MarbleDarkGraySlab" : {
-		"albedo" : "MarbleDarkGray",
-		"emissive" : "neutral",
-		"height" : "neutral",
-		"normal" : "neutral"
-	},
 	"MarbleDarkGreen" : {
-		"albedo" : "MarbleDarkGreen",
-		"emissive" : "neutral",
-		"height" : "neutral",
-		"normal" : "neutral"
-	},
-	"MarbleDarkGreenSlab" : {
 		"albedo" : "MarbleDarkGreen",
 		"emissive" : "neutral",
 		"height" : "neutral",
@@ -917,19 +539,7 @@
 		"height" : "neutral",
 		"normal" : "neutral"
 	},
-	"MarbleEgyptianSlab" : {
-		"albedo" : "MarbleEgyptian",
-		"emissive" : "neutral",
-		"height" : "neutral",
-		"normal" : "neutral"
-	},
 	"MarbleEmerald" : {
-		"albedo" : "MarbleEmerald",
-		"emissive" : "neutral",
-		"height" : "neutral",
-		"normal" : "neutral"
-	},
-	"MarbleEmeraldSlab" : {
 		"albedo" : "MarbleEmerald",
 		"emissive" : "neutral",
 		"height" : "neutral",
@@ -941,19 +551,7 @@
 		"height" : "neutral",
 		"normal" : "neutral"
 	},
-	"MarbleGlassyMarineSlab" : {
-		"albedo" : "MarbleGlassyMarine",
-		"emissive" : "neutral",
-		"height" : "neutral",
-		"normal" : "neutral"
-	},
 	"MarbleGlassyOrange" : {
-		"albedo" : "MarbleGlassyOrange",
-		"emissive" : "neutral",
-		"height" : "neutral",
-		"normal" : "neutral"
-	},
-	"MarbleGlassyOrangeSlab" : {
 		"albedo" : "MarbleGlassyOrange",
 		"emissive" : "neutral",
 		"height" : "neutral",
@@ -965,19 +563,7 @@
 		"height" : "neutral",
 		"normal" : "neutral"
 	},
-	"MarbleGlassyPinkSlab" : {
-		"albedo" : "MarbleGlassyPink",
-		"emissive" : "neutral",
-		"height" : "neutral",
-		"normal" : "neutral"
-	},
 	"MarbleGlassyRed" : {
-		"albedo" : "MarbleGlassyRed",
-		"emissive" : "neutral",
-		"height" : "neutral",
-		"normal" : "neutral"
-	},
-	"MarbleGlassyRedSlab" : {
 		"albedo" : "MarbleGlassyRed",
 		"emissive" : "neutral",
 		"height" : "neutral",
@@ -989,19 +575,7 @@
 		"height" : "neutral",
 		"normal" : "neutral"
 	},
-	"MarbleGraySlab" : {
-		"albedo" : "MarbleGray",
-		"emissive" : "neutral",
-		"height" : "neutral",
-		"normal" : "neutral"
-	},
 	"MarbleGreen" : {
-		"albedo" : "MarbleGreen",
-		"emissive" : "neutral",
-		"height" : "neutral",
-		"normal" : "neutral"
-	},
-	"MarbleGreenSlab" : {
 		"albedo" : "MarbleGreen",
 		"emissive" : "neutral",
 		"height" : "neutral",
@@ -1019,37 +593,13 @@
 		"height" : "neutral",
 		"normal" : "neutral"
 	},
-	"MarbleLightGreenSlab" : {
-		"albedo" : "MarbleLightGreen",
-		"emissive" : "neutral",
-		"height" : "neutral",
-		"normal" : "neutral"
-	},
-	"MarbleLightSlab" : {
-		"albedo" : "MarbleLight",
-		"emissive" : "neutral",
-		"height" : "neutral",
-		"normal" : "neutral"
-	},
 	"MarbleOnixPina" : {
 		"albedo" : "MarbleOnixPina",
 		"emissive" : "neutral",
 		"height" : "neutral",
 		"normal" : "neutral"
 	},
-	"MarbleOnixPinaSlab" : {
-		"albedo" : "MarbleOnixPina",
-		"emissive" : "neutral",
-		"height" : "neutral",
-		"normal" : "neutral"
-	},
 	"MarblePurple" : {
-		"albedo" : "MarblePurple",
-		"emissive" : "neutral",
-		"height" : "neutral",
-		"normal" : "neutral"
-	},
-	"MarblePurpleSlab" : {
 		"albedo" : "MarblePurple",
 		"emissive" : "neutral",
 		"height" : "neutral",
@@ -1067,43 +617,13 @@
 		"height" : "neutral",
 		"normal" : "neutral"
 	},
-	"MarbleRoughPinkSlab" : {
-		"albedo" : "MarbleRoughPink",
-		"emissive" : "neutral",
-		"height" : "neutral",
-		"normal" : "neutral"
-	},
-	"MarbleRoughSlab" : {
-		"albedo" : "MarbleRough",
-		"emissive" : "neutral",
-		"height" : "neutral",
-		"normal" : "neutral"
-	},
 	"MarbleSeaGreen" : {
 		"albedo" : "MarbleSeaGreen",
 		"emissive" : "neutral",
 		"height" : "neutral",
 		"normal" : "neutral"
 	},
-	"MarbleSeaGreenSlab" : {
-		"albedo" : "MarbleSeaGreen",
-		"emissive" : "neutral",
-		"height" : "neutral",
-		"normal" : "neutral"
-	},
-	"MarbleSlab" : {
-		"albedo" : "Marble",
-		"emissive" : "neutral",
-		"height" : "neutral",
-		"normal" : "neutral"
-	},
 	"MarbleSmashedGray" : {
-		"albedo" : "MarbleSmashedGray",
-		"emissive" : "neutral",
-		"height" : "neutral",
-		"normal" : "neutral"
-	},
-	"MarbleSmashedGraySlab" : {
 		"albedo" : "MarbleSmashedGray",
 		"emissive" : "neutral",
 		"height" : "neutral",
@@ -1115,31 +635,13 @@
 		"height" : "neutral",
 		"normal" : "neutral"
 	},
-	"MarbleTepeacaGrisSlab" : {
-		"albedo" : "MarbleTepeacaGris",
-		"emissive" : "neutral",
-		"height" : "neutral",
-		"normal" : "neutral"
-	},
 	"MarbleTile1" : {
 		"albedo" : "MarbleTile1",
 		"emissive" : "neutral",
 		"height" : "neutral",
 		"normal" : "neutral"
 	},
-	"MarbleTile1Slab" : {
-		"albedo" : "MarbleTile1",
-		"emissive" : "neutral",
-		"height" : "neutral",
-		"normal" : "neutral"
-	},
 	"MarbleTiles" : {
-		"albedo" : "MarbleTiles",
-		"emissive" : "neutral",
-		"height" : "neutral",
-		"normal" : "neutral"
-	},
-	"MarbleTilesSlab" : {
 		"albedo" : "MarbleTiles",
 		"emissive" : "neutral",
 		"height" : "neutral",
@@ -1157,19 +659,7 @@
 		"height" : "neutral",
 		"normal" : "neutral"
 	},
-	"NewShinglesSlab" : {
-		"albedo" : "NewShingles",
-		"emissive" : "neutral",
-		"height" : "neutral",
-		"normal" : "neutral"
-	},
 	"OldShingles" : {
-		"albedo" : "OldShingles",
-		"emissive" : "neutral",
-		"height" : "neutral",
-		"normal" : "neutral"
-	},
-	"OldShinglesSlab" : {
 		"albedo" : "OldShingles",
 		"emissive" : "neutral",
 		"height" : "neutral",
@@ -1181,19 +671,7 @@
 		"height" : "neutral",
 		"normal" : "neutral"
 	},
-	"OldWeatheredBoardsSlab" : {
-		"albedo" : "OldWeatheredBoards",
-		"emissive" : "neutral",
-		"height" : "neutral",
-		"normal" : "neutral"
-	},
 	"OrangeMarble" : {
-		"albedo" : "OrangeMarble",
-		"emissive" : "neutral",
-		"height" : "neutral",
-		"normal" : "neutral"
-	},
-	"OrangeMarbleSlab" : {
 		"albedo" : "OrangeMarble",
 		"emissive" : "neutral",
 		"height" : "neutral",
@@ -1211,19 +689,7 @@
 		"height" : "neutral",
 		"normal" : "neutral"
 	},
-	"PurpleSlateSlab" : {
-		"albedo" : "PurpleSlate",
-		"emissive" : "neutral",
-		"height" : "neutral",
-		"normal" : "neutral"
-	},
 	"RockWall" : {
-		"albedo" : "RockWall",
-		"emissive" : "neutral",
-		"height" : "neutral",
-		"normal" : "neutral"
-	},
-	"RockWallSlab" : {
 		"albedo" : "RockWall",
 		"emissive" : "neutral",
 		"height" : "neutral",
@@ -1235,19 +701,7 @@
 		"height" : "neutral",
 		"normal" : "neutral"
 	},
-	"RoughBrownStoneSlab" : {
-		"albedo" : "RoughBrownStone",
-		"emissive" : "neutral",
-		"height" : "neutral",
-		"normal" : "neutral"
-	},
 	"ScratchedLightBoards" : {
-		"albedo" : "ScratchedLightBoards",
-		"emissive" : "neutral",
-		"height" : "neutral",
-		"normal" : "neutral"
-	},
-	"ScratchedLightBoardsSlab" : {
 		"albedo" : "ScratchedLightBoards",
 		"emissive" : "neutral",
 		"height" : "neutral",
@@ -1271,37 +725,13 @@
 		"height" : "neutral",
 		"normal" : "neutral"
 	},
-	"StoneBlockRoughWallSlab" : {
-		"albedo" : "StoneBlockRoughWall",
-		"emissive" : "neutral",
-		"height" : "neutral",
-		"normal" : "neutral"
-	},
 	"StoneBlocksWoodEdged" : {
 		"albedo" : "StoneBlocksWoodEdged",
 		"emissive" : "neutral",
 		"height" : "neutral",
 		"normal" : "neutral"
 	},
-	"StoneBlocksWoodEdgedSlab" : {
-		"albedo" : "StoneBlocksWoodEdged",
-		"emissive" : "neutral",
-		"height" : "neutral",
-		"normal" : "neutral"
-	},
-	"StoneBricksSlab" : {
-		"albedo" : "vanilla.stoneBricks",
-		"emissive" : "neutral",
-		"height" : "vanilla.stoneBricks",
-		"normal" : "vanilla.stoneBricks"
-	},
 	"StoneBrickWall" : {
-		"albedo" : "StoneBrickWall",
-		"emissive" : "neutral",
-		"height" : "neutral",
-		"normal" : "neutral"
-	},
-	"StoneBrickWallSlab" : {
 		"albedo" : "StoneBrickWall",
 		"emissive" : "neutral",
 		"height" : "neutral",
@@ -1313,19 +743,7 @@
 		"height" : "neutral",
 		"normal" : "neutral"
 	},
-	"StoneMidnightSlab" : {
-		"albedo" : "StoneMidnight",
-		"emissive" : "neutral",
-		"height" : "neutral",
-		"normal" : "neutral"
-	},
 	"StonePath" : {
-		"albedo" : "StonePath",
-		"emissive" : "neutral",
-		"height" : "neutral",
-		"normal" : "neutral"
-	},
-	"StonePathSlab" : {
 		"albedo" : "StonePath",
 		"emissive" : "neutral",
 		"height" : "neutral",
@@ -1337,19 +755,7 @@
 		"height" : "neutral",
 		"normal" : "neutral"
 	},
-	"StoneWall1Slab" : {
-		"albedo" : "StoneWall1",
-		"emissive" : "neutral",
-		"height" : "neutral",
-		"normal" : "neutral"
-	},
 	"StoneWall2" : {
-		"albedo" : "StoneWall2",
-		"emissive" : "neutral",
-		"height" : "neutral",
-		"normal" : "neutral"
-	},
-	"StoneWall2Slab" : {
 		"albedo" : "StoneWall2",
 		"emissive" : "neutral",
 		"height" : "neutral",
@@ -1361,19 +767,7 @@
 		"height" : "neutral",
 		"normal" : "neutral"
 	},
-	"StoneWall3Slab" : {
-		"albedo" : "StoneWall3",
-		"emissive" : "neutral",
-		"height" : "neutral",
-		"normal" : "neutral"
-	},
 	"StoneWall4" : {
-		"albedo" : "StoneWall4",
-		"emissive" : "neutral",
-		"height" : "neutral",
-		"normal" : "neutral"
-	},
-	"StoneWall4Slab" : {
 		"albedo" : "StoneWall4",
 		"emissive" : "neutral",
 		"height" : "neutral",
@@ -1385,31 +779,13 @@
 		"height" : "neutral",
 		"normal" : "neutral"
 	},
-	"StoneWall5Slab" : {
-		"albedo" : "StoneWall5",
-		"emissive" : "neutral",
-		"height" : "neutral",
-		"normal" : "neutral"
-	},
 	"StoneWall6" : {
 		"albedo" : "StoneWall6",
 		"emissive" : "neutral",
 		"height" : "neutral",
 		"normal" : "neutral"
 	},
-	"StoneWall6Slab" : {
-		"albedo" : "StoneWall6",
-		"emissive" : "neutral",
-		"height" : "neutral",
-		"normal" : "neutral"
-	},
 	"TanRoughStone" : {
-		"albedo" : "TanRoughStone",
-		"emissive" : "neutral",
-		"height" : "neutral",
-		"normal" : "neutral"
-	},
-	"TanRoughStoneSlab" : {
 		"albedo" : "TanRoughStone",
 		"emissive" : "neutral",
 		"height" : "neutral",
@@ -1428,12 +804,6 @@
 		"normal" : "neutral"
 	},
 	"WoodSiding" : {
-		"albedo" : "WoodSiding",
-		"emissive" : "neutral",
-		"height" : "neutral",
-		"normal" : "neutral"
-	},
-	"WoodSidingSlab" : {
 		"albedo" : "WoodSiding",
 		"emissive" : "neutral",
 		"height" : "neutral",

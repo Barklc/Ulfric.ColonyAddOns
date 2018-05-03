@@ -17,23 +17,34 @@ namespace Ulfric.ColonyAddOns
         //[ModLoader.ModCallback(ModLoader.EModCallbackType.AfterItemTypesDefined, MOD_NAMESPACE + ".AfterItemTypesDefined")]
         [ModLoader.ModCallback(ModLoader.EModCallbackType.OnItemTypeRegistered, "OnItemTypeRegistered")]
         [ModLoader.ModCallbackProvidesFor("pipliz.server.itemtypesserver")]
-        static void OnItemTypeRegistered(ItemTypes.ItemType type)
+        static void OnItemTypeRegistered(ItemTypes.ItemType item)
         {
 
-            if (JSON.Deserialize(GameLoader.ConfigFolder + "/" + "UpdateTypes.json", out JSONNode jsonTypes, false))
+            UpdateType(GameLoader.ConfigFolder, item, "");
+            //Add recipes in any subdiectories in Config directory
+            foreach (string path in Directory.GetDirectories(GameLoader.ConfigFolder))
+            {
+                string sub = path.Substring(path.LastIndexOf('\\')) + "/";
+                UpdateType(path, item, sub);
+            }
+        }
+
+        private static void UpdateType(string path, ItemTypes.ItemType type, string sub)
+        {
+            if (JSON.Deserialize(path + "/UpdateTypes.json", out JSONNode jsonTypes, false))
             {
                 if (jsonTypes.NodeType == NodeType.Object)
                 {
-                    if (jsonTypes.TryGetAs(type.Name,out JSONNode typeEntry))
+                    if (jsonTypes.TryGetAs(type.Name, out JSONNode typeEntry))
                     {
-                        Logger.Log("Updating Exisiting Types.....{0}",type.Name);
+                        Logger.Log("Updating Exisiting Types.....{0}", type.Name);
 
-                        type = Icon(typeEntry, type);
+                        type = Icon(typeEntry, type, sub);
                         type = Rotatables(typeEntry, type);
                         type = ParentType(typeEntry, type);
                         type = Sides(typeEntry, type);
                         type = OnRemoveType(typeEntry, type);
-                        //add OnRemove support
+                        type = OnRemove(typeEntry, type);
                         //add RemoveAmount
                         ////Add NeedBase
                         ////Add IsFertile
@@ -66,7 +77,7 @@ namespace Ulfric.ColonyAddOns
             return real;
         }
 
-        private static ItemTypes.ItemType Icon(JSONNode typeEntry, ItemTypes.ItemType type)
+        private static ItemTypes.ItemType Icon(JSONNode typeEntry, ItemTypes.ItemType type, string sub)
         {
             if (typeEntry.TryGetAs("icon", out string iconType))
             {
@@ -74,9 +85,9 @@ namespace Ulfric.ColonyAddOns
                 string real;
 
                 if (iconType.StartsWith(VANILLA_PREFIX))
-                    real = "gamedata/textures/icons/" + iconType.Substring(VANILLA_PREFIX.Length);
+                    real = "gamedata/textures/icons/" +  iconType.Substring(VANILLA_PREFIX.Length);
                 else
-                    real = GameLoader.IconFolder + "/" + iconType;
+                    real = GameLoader.IconFolder + "/" + sub+ iconType;
 
                 Logger.Log("New icon.....{0}", real);
  
@@ -110,6 +121,7 @@ namespace Ulfric.ColonyAddOns
                             type.RotatedZMinus = rotatablekey;
                             break;
                     }
+                    Logger.Log("New {0}..{1}", rotatable, rotatablekey);
                 }
             }
             return type;
@@ -182,12 +194,45 @@ namespace Ulfric.ColonyAddOns
                     Logger.Log("{0}.OnRemoveType of {1} not a valid type!", type.Name, realOnRemoveType);
                 }
 
+                Logger.Log("New RemoveType {0}", realOnRemoveType);
+
             }
 
             return type;
         }
 
-        private static ItemTypes.ItemType OnPlaceAudio(JSONNode typeEntry, ItemTypes.ItemType type)
+        private static ItemTypes.ItemType OnRemove(JSONNode typeEntry, ItemTypes.ItemType type)
+        {
+            if (typeEntry.TryGetAs("onRemove", out JSONNode onRemove))
+            {
+
+                List<ItemTypes.ItemTypeDrops> newOnRemoveItems = new List<ItemTypes.ItemTypeDrops>();
+                foreach (JSONNode j in onRemove.LoopArray())
+                {
+                    if (j.TryGetAs("type", out string onRemoveType))
+                    {
+                        string realOnRemoveType = AddNamespace(onRemoveType);
+
+                        ushort i = ItemTypes.IndexLookup.GetIndex(realOnRemoveType);
+                        if (i > 0)
+                        {
+                            ItemTypes.ItemTypeDrops itemtypedrop = new ItemTypes.ItemTypeDrops(ItemTypes.IndexLookup.GetIndex(realOnRemoveType), j.GetAs<int>("amount"), j.GetAs<double>("chance"));
+                            Logger.Log("New {0}.OnRemove {1}", type.Name, realOnRemoveType);
+                            newOnRemoveItems.Add(itemtypedrop);
+                        }
+                        else
+                        {
+                            Logger.Log("{0}.OnRemoveType of {1} not a valid type!", type.Name, realOnRemoveType);
+                        }
+                    }
+                }
+                type.OnRemoveItems = newOnRemoveItems;
+            }
+
+            return type;
+        }
+
+            private static ItemTypes.ItemType OnPlaceAudio(JSONNode typeEntry, ItemTypes.ItemType type)
         {
             if (typeEntry.TryGetAs("onPlaceAudio", out string onPlaceAudio))
             {
@@ -214,9 +259,21 @@ namespace Ulfric.ColonyAddOns
             ModLoader.ModCallbackProvidesFor("pipliz.server.registertexturemappingtextures")]
         public static void afterSelectedWorld()
         {
+
+            AddTextureMapping(GameLoader.ConfigFolder,"");
+            //Add recipes in any subdiectories in Config directory
+            foreach (string path in Directory.GetDirectories(GameLoader.ConfigFolder))
+            {
+                string sub = path.Substring(path.LastIndexOf('\\')) +"/";
+                AddTextureMapping(path,sub);
+            }
+        }
+
+        private static void AddTextureMapping(string path, string sub)
+        {
             Logger.Log("Update texture mappings...");
 
-            if (JSON.Deserialize(GameLoader.ConfigFolder + "/" + "UpdateTextures.json", out JSONNode jsonTextureMapping, false))
+            if (JSON.Deserialize(path + "/UpdateTextures.json", out JSONNode jsonTextureMapping, false))
             {
                 if (jsonTextureMapping.NodeType == NodeType.Object)
                 {
@@ -242,7 +299,7 @@ namespace Ulfric.ColonyAddOns
                                     }
                                     else
                                     {
-                                        realTextureTypeValue = GameLoader.TextureFolder + "/" + textureType + "/" + textureTypeValue + ".png";
+                                        realTextureTypeValue = GameLoader.TextureFolder + "/" + textureType + "/" + sub + textureTypeValue + ".png";
 
                                         switch (textureType.ToLowerInvariant())
                                         {

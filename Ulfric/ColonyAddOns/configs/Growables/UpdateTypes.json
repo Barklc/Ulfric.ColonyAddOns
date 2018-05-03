@@ -1,0 +1,13 @@
+﻿{
+    "leavestaiga": {
+        "onRemove" : [
+		    {"amount":1,"chance":0.6,"type":"vanilla.leavestaiga"},
+			{"amount":1,"chance":0.1,"type":"TaigaSapling"}]
+    },
+	"cherryblossom" :{
+	    "onRemove" : [
+		    {"amount":1,"chance":0.6,"type":"vanilla.cherryblossom"},
+			{"amount":1,"chance":0.1,"type":"vanilla.cherrysapling"},
+			{"amount":1,"chance":0.3,"type":"Cherry"}]
+	}
+}

@@ -62,8 +62,6 @@ namespace Ulfric.ColonyAddOns
             //HelperFunctions hf = new HelperFunctions();
             //hf.DumpItemsToJSON(GameLoader.MODPATH + "/test.json", new List<ushort> { 267, 268, 269, 270, 266 });
 
-            Logger.Log("Loading recipes...");
-
             foreach (string[] jobAndFilename in new string[][] {
                             new string[] { "pipliz.crafter", "crafting.json"},
                             new string[] { "pipliz.tailor", "tailoring.json" },
@@ -95,7 +93,6 @@ namespace Ulfric.ColonyAddOns
                     //Add recipes in any subdiectories in Config directory
                     foreach(string path in Directory.GetDirectories(GameLoader.ConfigFolder))
                     {
-                        Logger.Log("Loading Recipes from {0}", path.Substring(path.LastIndexOf('/')));
                         AddRecipe(path, jobAndFilename);
                     }
                 }
@@ -118,6 +115,7 @@ namespace Ulfric.ColonyAddOns
             {
                 if (JSON.Deserialize(path + "/" + jobAndFilename[1], out JSONNode jsonRecipes, false))
                 {
+                    Logger.Log("Loading Recipes from {0}", path.Substring(path.LastIndexOf('/')));
                     if (jsonRecipes.NodeType == NodeType.Array)
                     {
                         foreach (JSONNode craftingEntry in jsonRecipes.LoopArray())
@@ -206,23 +204,24 @@ namespace Ulfric.ColonyAddOns
         [ModLoader.ModCallbackDependsOn("pipliz.blocknpcs.addlittypes")]
         public static void afterAddingBaseTypes(Dictionary<string, ItemTypesServer.ItemTypeRaw> items)
         {
-            Logger.Log("Loading Types.....");
-
-            AddTypes(GameLoader.ConfigFolder, items);
+   
+            AddTypes(GameLoader.ConfigFolder, items,"");
             //Add recipes in any subdiectories in Config directory
             Logger.Log("Number of subdirectories {0}", Directory.GetDirectories(GameLoader.ConfigFolder + "/").Length);
             foreach (string path in Directory.GetDirectories(GameLoader.ConfigFolder))
             {
-                Logger.Log("Loading Types from {0}", path.Substring(path.LastIndexOf('/')));
-                AddTypes(path, items);
+
+                string sub = path.Substring(path.LastIndexOf('\\') + 1) + "/";
+                AddTypes(path, items,sub);
             }
 
         }
 
-        private static void AddTypes(string path, Dictionary<string, ItemTypesServer.ItemTypeRaw> items)
+        private static void AddTypes(string path, Dictionary<string, ItemTypesServer.ItemTypeRaw> items, string sub)
         {
             if (JSON.Deserialize(path + "/types.json", out JSONNode jsonTypes, false))
             {
+                Logger.Log("Loading Types from {0}", path.Substring(path.LastIndexOf('/')));
                 if (jsonTypes.NodeType == NodeType.Object)
                 {
                     foreach (KeyValuePair<string, JSONNode> typeEntry in jsonTypes.LoopObject())
@@ -236,7 +235,7 @@ namespace Ulfric.ColonyAddOns
                                 if (icon.StartsWith(VANILLA_PREFIX))
                                     realicon = "gamedata" + "/" + "textures" + "/" + "icons" + "/" + icon.Substring(VANILLA_PREFIX.Length);
                                 else
-                                    realicon = GameLoader.IconFolder + "/" + icon;
+                                    realicon = GameLoader.IconFolder + "/" + sub + icon;
 
                                 typeEntry.Value.SetAs("icon", realicon);
 
@@ -331,7 +330,7 @@ namespace Ulfric.ColonyAddOns
                                 if (meshes.StartsWith(VANILLA_PREFIX))
                                     realMeshes = "gamedata" + "/" + "meshes" + "/" + meshes.Substring(VANILLA_PREFIX.Length);
                                 else
-                                    realMeshes = GameLoader.MeshesFolder + "/" + meshes;
+                                    realMeshes = GameLoader.MeshesFolder + "/" + sub + meshes;
 
                                 typeEntry.Value.SetAs("mesh", realMeshes);
                             }
@@ -390,21 +389,22 @@ namespace Ulfric.ColonyAddOns
             ModLoader.ModCallbackProvidesFor("pipliz.server.registertexturemappingtextures")]
         public static void afterSelectedWorld()
         {
-            Logger.Log("Loading texture mappings...");
-
-            AddTextureMapping(GameLoader.ConfigFolder);
+ 
+            AddTextureMapping(GameLoader.ConfigFolder,"");
             //Add recipes in any subdiectories in Config directory
             foreach (string path in Directory.GetDirectories(GameLoader.ConfigFolder))
             {
-                Logger.Log("Loading TextureMappings from {0}", path.Substring(path.LastIndexOf('/')));
-                AddTextureMapping(path);
+
+                string sub = path.Substring(path.LastIndexOf('\\')+1) + "/";
+                AddTextureMapping(path,sub);
             }
         }
 
-        private static void AddTextureMapping(string path)
+        private static void AddTextureMapping(string path,string sub)
         {
             if (JSON.Deserialize(path + "/texturemapping.json", out JSONNode jsonTextureMapping, false))
             {
+                Logger.Log("Loading TextureMappings from {0}", sub);
                 if (jsonTextureMapping.NodeType == NodeType.Object)
                 {
                     foreach (KeyValuePair<string, JSONNode> textureEntry in jsonTextureMapping.LoopObject())
@@ -429,7 +429,7 @@ namespace Ulfric.ColonyAddOns
                                     }
                                     else
                                     {
-                                        realTextureTypeValue = GameLoader.TextureFolder + "/" + textureType + "/" + textureTypeValue + ".png";
+                                        realTextureTypeValue = GameLoader.TextureFolder + "/" + textureType + "/" + sub + textureTypeValue + ".png";
 
                                         switch (textureType.ToLowerInvariant())
                                         {

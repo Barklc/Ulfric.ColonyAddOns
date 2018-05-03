@@ -12,7 +12,7 @@
 		"normal" : "neutral"
 	},
 	"Crate3" : {
-		"albedo" : "LogTemperateHorz",
+		"albedo" : "Crate3",
 		"emissive" : "neutral",
 		"height" : "neutral",
 		"normal" : "neutral"

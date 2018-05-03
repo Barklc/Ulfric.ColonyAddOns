@@ -60,7 +60,7 @@
 		"maxStackSize" : 600,
 	},
 	"AppleBarrel": {
-        "icon": "Marker.png",
+        "icon": "AppleBarrel.png",
         "onPlaceAudio": "vanilla.woodPlace",
         "onRemoveAudio": "vanilla.woodDeleteLight",
         "sideall": "SELF",
@@ -130,5 +130,33 @@
 		"onPlaceAudio" : "vanilla.woodPlace",
 		"onRemoveAudio" : "vanilla.grassDelete",
 		"sideall" : "vanilla.neutral"
+	},
+	"CherryBasket" : {
+		"categories" : ["decorative","ulfric","wood"],
+		"icon" : "CherryBasket.png",
+		"isCrate": true,
+		"maxStackSize" : 600,
+		"onPlaceAudio" : "vanilla.woodPlace",
+		"onRemoveAudio" : "vanilla.woodDeleteLight",
+		"sideall" : "SELF",
+		"sidey+" : "BasketTop"
+	},
+	"Cherry" : {
+		"categories" : [
+			"food"
+		],
+		"icon" : "Cherry.png",
+		"isPlaceable" : false,
+		"maxStackSize" : 600,
+		"nutritionalValue" : 1
+	},
+	"CherryPie" : {
+		"categories" : [
+			"food"
+		],
+		"icon" : "CherryPie.png",
+		"isPlaceable" : false,
+		"maxStackSize" : 600,
+		"nutritionalValue" : 5
 	}
 }

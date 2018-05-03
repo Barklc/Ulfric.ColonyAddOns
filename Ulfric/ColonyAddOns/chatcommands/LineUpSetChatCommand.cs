@@ -33,7 +33,7 @@ namespace Ulfric.ColonyAddOns
         {
             SortedDictionary<string, int> lineup = new SortedDictionary<string, int>();
 
-            var m = Regex.Match(chattext, @"/lineupset (?<jobname>['].+?[']|[^ ]+) (?<page>\d+)");
+            var m = Regex.Match(chattext, @"/lineupset (?<jobname>['].+?[']|[^ ]+) (?<place>\d+)");
             if (!m.Success)
             {
                 Chat.Send(causedBy, "Command didn't match, use /lineupset <jobname> <number>");

@@ -24,29 +24,6 @@
 		"onRemoveAudio" : "vanilla.stoneDelete",
 		"sideall" : "SELF"
 	},
-	"AshySandstoneSlab" : {
-		"categories" : ["decorative","ulfric","stone"],
-		"customData" : {"useHeightMap":true,"useNormalMap":true},
-		"fullblockType" : "AshySandstoneSlab",
-		"icon" : "AshySandstoneSlab.png",
-		"maxStackSize" : 600,
-		"npcLimit" : 0,
-		"onPlaceAudio" : "vanilla.stonePlace",
-		"onRemoveAudio" : "vanilla.stoneDelete",
-		"sideall" : "SELF"
-	},
-	"AshySandstoneSlabbottom" : {
-		"colliders" : {"boxes":[{"max":[0.5,0,0.5],"min":[-0.5,-0.5,-0.5]}]},
-		"mesh" : "slabbottom.obj",
-		"parentType" : "AshySandstoneSlab",
-		"sideall" : "AshySandstoneSlab"
-	},
-	"AshySandstoneSlabtop" : {
-		"colliders" : {"boxes":[{"max":[0.5,0.5,0.5],"min":[-0.5,0,-0.5]}]},
-		"mesh" : "slabtop.obj",
-		"parentType" : "AshySandstoneSlab",
-		"sideall" : "AshySandstoneSlab"
-	},
 	"BambooWall" : {
 		"categories" : ["decorative","ulfric","wood"],
 		"icon" : "BambooWall.png",
@@ -54,7 +31,7 @@
 		"onPlaceAudio" : "vanilla.woodPlace",
 		"onRemoveAudio" : "vanilla.woodDeleteLight",
 		"sideall" : "SELF"
-	}
+	},
 	"BirchLogFence" : {
 		"categories" : ["decorative","ulfric","wood"],
 		"icon" : "BirchLogs.png",
@@ -100,29 +77,6 @@
 		"onRemoveAudio" : "vanilla.woodDeleteLight",
 		"sideall" : "SELF"
 	},
-	"BlackRottenWoodSlab" : {
-		"categories" : ["decorative","ulfric","wood"],
-		"customData" : {"useHeightMap":true,"useNormalMap":true},
-		"fullblockType" : "BlackRottenWoodSlab",
-		"icon" : "BlackRottenWoodSlab.png",
-		"maxStackSize" : 600,
-		"npcLimit" : 0,
-		"onPlaceAudio" : "vanilla.woodPlace",
-		"onRemoveAudio" : "vanilla.woodDeleteLight",
-		"sideall" : "SELF"
-	},
-	"BlackRottenWoodSlabbottom" : {
-		"colliders" : {"boxes":[{"max":[0.5,0,0.5],"min":[-0.5,-0.5,-0.5]}]},
-		"mesh" : "slabbottom.obj",
-		"parentType" : "BlackRottenWoodSlab",
-		"sideall" : "BlackRottenWoodSlab"
-	},
-	"BlackRottenWoodSlabtop" : {
-		"colliders" : {"boxes":[{"max":[0.5,0.5,0.5],"min":[-0.5,0,-0.5]}]},
-		"mesh" : "slabtop.obj",
-		"parentType" : "BlackRottenWoodSlab",
-		"sideall" : "BlackRottenWoodSlab"
-	},
 	"BrickAlternatingMud" : {
 		"categories" : ["decorative","bricks"],
 		"destructionTime" : 600,
@@ -131,29 +85,6 @@
 		"onPlaceAudio" : "vanilla.stonePlace",
 		"onRemoveAudio" : "vanilla.stoneDelete",
 		"sideall" : "SELF"
-	},
-	"BrickAlternatingMudSlab" : {
-		"categories" : ["decorative","ulfric","stone"],
-		"customData" : {"useHeightMap":true,"useNormalMap":true},
-		"fullblockType" : "BrickAlternatingMudSlab",
-		"icon" : "BrickAlternatingMudSlab.png",
-		"maxStackSize" : 600,
-		"npcLimit" : 0,
-		"onPlaceAudio" : "vanilla.stonePlace",
-		"onRemoveAudio" : "vanilla.stoneDelete",
-		"sideall" : "SELF"
-	},
-	"BrickAlternatingMudSlabbottom" : {
-		"colliders" : {"boxes":[{"max":[0.5,0,0.5],"min":[-0.5,-0.5,-0.5]}]},
-		"mesh" : "slabbottom.obj",
-		"parentType" : "BrickAlternatingMudSlab",
-		"sideall" : "BrickAlternatingMudSlab"
-	},
-	"BrickAlternatingMudSlabtop" : {
-		"colliders" : {"boxes":[{"max":[0.5,0.5,0.5],"min":[-0.5,0,-0.5]}]},
-		"mesh" : "slabtop.obj",
-		"parentType" : "BrickAlternatingMudSlab",
-		"sideall" : "BrickAlternatingMudSlab"
 	},
 	"BrickBlackRough" : {
 		"categories" : ["decorative","bricks"],
@@ -164,29 +95,6 @@
 		"onRemoveAudio" : "vanilla.stoneDelete",
 		"sideall" : "SELF"
 	},
-	"BrickBlackRoughSlab" : {
-		"categories" : ["decorative","bricks"],
-		"customData" : {"useHeightMap":true,"useNormalMap":true},
-		"fullblockType" : "BrickBlackRoughSlab",
-		"icon" : "BrickBlackRoughSlab.png",
-		"maxStackSize" : 600,
-		"npcLimit" : 0,
-		"onPlaceAudio" : "vanilla.stonePlace",
-		"onRemoveAudio" : "vanilla.stoneDelete",
-		"sideall" : "SELF"
-	},
-	"BrickBlackRoughSlabbottom" : {
-		"colliders" : {"boxes":[{"max":[0.5,0,0.5],"min":[-0.5,-0.5,-0.5]}]},
-		"mesh" : "slabbottom.obj",
-		"parentType" : "BrickBlackRoughSlab",
-		"sideall" : "BrickBlackRoughSlab"
-	},
-	"BrickBlackRoughSlabtop" : {
-		"colliders" : {"boxes":[{"max":[0.5,0.5,0.5],"min":[-0.5,0,-0.5]}]},
-		"mesh" : "slabtop.obj",
-		"parentType" : "BrickBlackRoughSlab",
-		"sideall" : "BrickBlackRoughSlab"
-	},
 	"BrickBurlywood" : {
 		"categories" : ["decorative","ulfric","brick"],
 		"destructionTime" : 600,
@@ -195,29 +103,6 @@
 		"onPlaceAudio" : "vanilla.stonePlace",
 		"onRemoveAudio" : "vanilla.stoneDelete",
 		"sideall" : "SELF"
-	},
-	"BrickBurlywoodSlab" : {
-		"categories" : ["decorative","ulfric","wood"],
-		"customData" : {"useHeightMap":true,"useNormalMap":true},
-		"fullblockType" : "BrickBurlywoodSlab",
-		"icon" : "BrickBurlywoodSlab.png",
-		"maxStackSize" : 600,
-		"npcLimit" : 0,
-		"onPlaceAudio" : "vanilla.woodPlace",
-		"onRemoveAudio" : "vanilla.woodDeleteLight",
-		"sideall" : "SELF"
-	},
-	"BrickBurlywoodSlabbottom" : {
-		"colliders" : {"boxes":[{"max":[0.5,0,0.5],"min":[-0.5,-0.5,-0.5]}]},
-		"mesh" : "slabbottom.obj",
-		"parentType" : "BrickBurlywoodSlab",
-		"sideall" : "BrickBurlywoodSlab"
-	},
-	"BrickBurlywoodSlabtop" : {
-		"colliders" : {"boxes":[{"max":[0.5,0.5,0.5],"min":[-0.5,0,-0.5]}]},
-		"mesh" : "slabtop.obj",
-		"parentType" : "BrickBurlywoodSlab",
-		"sideall" : "BrickBurlywoodSlab"
 	},
 	"BrickGreenChipped" : {
 		"categories" : ["decorative","bricks"],
@@ -228,29 +113,6 @@
 		"onRemoveAudio" : "vanilla.stoneDelete",
 		"sideall" : "SELF"
 	},
-	"BrickGreenChippedSlab" : {
-		"categories" : ["decorative","bricks"],
-		"customData" : {"useHeightMap":true,"useNormalMap":true},
-		"fullblockType" : "BrickGreenChippedSlab",
-		"icon" : "BrickGreenChippedSlab.png",
-		"maxStackSize" : 600,
-		"npcLimit" : 0,
-		"onPlaceAudio" : "vanilla.stonePlace",
-		"onRemoveAudio" : "vanilla.stoneDelete",
-		"sideall" : "SELF"
-	},
-	"BrickGreenChippedSlabbottom" : {
-		"colliders" : {"boxes":[{"max":[0.5,0,0.5],"min":[-0.5,-0.5,-0.5]}]},
-		"mesh" : "slabbottom.obj",
-		"parentType" : "BrickGreenChippedSlab",
-		"sideall" : "BrickGreenChippedSlab"
-	},
-	"BrickGreenChippedSlabtop" : {
-		"colliders" : {"boxes":[{"max":[0.5,0.5,0.5],"min":[-0.5,0,-0.5]}]},
-		"mesh" : "slabtop.obj",
-		"parentType" : "BrickGreenChippedSlab",
-		"sideall" : "BrickGreenChippedSlab"
-	},
 	"BrickLight" : {
 		"categories" : ["decorative","bricks"],
 		"destructionTime" : 600,
@@ -259,29 +121,6 @@
 		"onPlaceAudio" : "vanilla.stonePlace",
 		"onRemoveAudio" : "vanilla.stoneDelete",
 		"sideall" : "SELF"
-	},
-	"BrickLightSlab" : {
-		"categories" : ["decorative","bricks"],
-		"customData" : {"useHeightMap":true,"useNormalMap":true},
-		"fullblockType" : "BrickLightSlab",
-		"icon" : "BrickLightSlab.png",
-		"maxStackSize" : 600,
-		"npcLimit" : 0,
-		"onPlaceAudio" : "vanilla.stonePlace",
-		"onRemoveAudio" : "vanilla.stoneDelete",
-		"sideall" : "SELF"
-	},
-	"BrickLightSlabbottom" : {
-		"colliders" : {"boxes":[{"max":[0.5,0,0.5],"min":[-0.5,-0.5,-0.5]}]},
-		"mesh" : "slabbottom.obj",
-		"parentType" : "BrickLightSlab",
-		"sideall" : "BrickLightSlab"
-	},
-	"BrickLightSlabtop" : {
-		"colliders" : {"boxes":[{"max":[0.5,0.5,0.5],"min":[-0.5,0,-0.5]}]},
-		"mesh" : "slabtop.obj",
-		"parentType" : "BrickLightSlab",
-		"sideall" : "BrickLightSlab"
 	},
 	"BrickRedBasketweave" : {
 		"categories" : ["decorative","bricks"],
@@ -292,29 +131,6 @@
 		"onRemoveAudio" : "vanilla.stoneDelete",
 		"sideall" : "SELF"
 	},
-	"BrickRedBasketweaveSlab" : {
-		"categories" : ["decorative","bricks"],
-		"customData" : {"useHeightMap":true,"useNormalMap":true},
-		"fullblockType" : "BrickRedBasketweaveSlab",
-		"icon" : "BrickRedBasketweaveSlab.png",
-		"maxStackSize" : 600,
-		"npcLimit" : 0,
-		"onPlaceAudio" : "vanilla.stonePlace",
-		"onRemoveAudio" : "vanilla.stoneDelete",
-		"sideall" : "SELF"
-	},
-	"BrickRedBasketweaveSlabbottom" : {
-		"colliders" : {"boxes":[{"max":[0.5,0,0.5],"min":[-0.5,-0.5,-0.5]}]},
-		"mesh" : "slabbottom.obj",
-		"parentType" : "BrickRedBasketweaveSlab",
-		"sideall" : "BrickRedBasketweaveSlab"
-	},
-	"BrickRedBasketweaveSlabtop" : {
-		"colliders" : {"boxes":[{"max":[0.5,0.5,0.5],"min":[-0.5,0,-0.5]}]},
-		"mesh" : "slabtop.obj",
-		"parentType" : "BrickRedBasketweaveSlab",
-		"sideall" : "BrickRedBasketweaveSlab"
-	},
 	"BricksBubbly" : {
 		"categories" : ["decorative","bricks"],
 		"destructionTime" : 600,
@@ -324,29 +140,6 @@
 		"onRemoveAudio" : "vanilla.woodDeleteLight",
 		"sideall" : "SELF"
 	},
-	"BricksBubblySlab" : {
-		"categories" : ["decorative","bricks"],
-		"customData" : {"useHeightMap":true,"useNormalMap":true},
-		"fullblockType" : "BricksBubblySlab",
-		"icon" : "BricksBubblySlab.png",
-		"maxStackSize" : 600,
-		"npcLimit" : 0,
-		"onPlaceAudio" : "vanilla.stonePlace",
-		"onRemoveAudio" : "vanilla.stoneDelete",
-		"sideall" : "SELF"
-	},
-	"BricksBubblySlabbottom" : {
-		"colliders" : {"boxes":[{"max":[0.5,0,0.5],"min":[-0.5,-0.5,-0.5]}]},
-		"mesh" : "slabbottom.obj",
-		"parentType" : "BricksBubblySlab",
-		"sideall" : "BricksBubblySlab"
-	},
-	"BricksBubblySlabtop" : {
-		"colliders" : {"boxes":[{"max":[0.5,0.5,0.5],"min":[-0.5,0,-0.5]}]},
-		"mesh" : "slabtop.obj",
-		"parentType" : "BricksBubblySlab",
-		"sideall" : "BricksBubblySlab"
-	},
 	"BrickWhite" : {
 		"destructionTime" : 600,
 		"icon" : "BrickWhite.png",
@@ -354,29 +147,6 @@
 		"onPlaceAudio" : "vanilla.stonePlace",
 		"onRemoveAudio" : "vanilla.stoneDelete",
 		"sideall" : "SELF"
-	},
-	"BrickWhiteSlab" : {
-		"categories" : ["decorative","bricks"],
-		"customData" : {"useHeightMap":true,"useNormalMap":true},
-		"fullblockType" : "BrickWhiteSlab",
-		"icon" : "BrickWhiteSlab.png",
-		"maxStackSize" : 600,
-		"npcLimit" : 0,
-		"onPlaceAudio" : "vanilla.stonePlace",
-		"onRemoveAudio" : "vanilla.stoneDelete",
-		"sideall" : "SELF"
-	},
-	"BrickWhiteSlabbottom" : {
-		"colliders" : {"boxes":[{"max":[0.5,0,0.5],"min":[-0.5,-0.5,-0.5]}]},
-		"mesh" : "slabbottom.obj",
-		"parentType" : "BrickWhiteSlab",
-		"sideall" : "BrickWhiteSlab"
-	},
-	"BrickWhiteSlabtop" : {
-		"colliders" : {"boxes":[{"max":[0.5,0.5,0.5],"min":[-0.5,0,-0.5]}]},
-		"mesh" : "slabtop.obj",
-		"parentType" : "BrickWhiteSlab",
-		"sideall" : "BrickWhiteSlab"
 	},
 	"BrickworkWornBrown" : {
 		"destructionTime" : 600,
@@ -386,29 +156,6 @@
 		"onRemoveAudio" : "vanilla.stoneDelete",
 		"sideall" : "SELF"
 	},
-	"BrickworkWornBrownSlab" : {
-		"categories" : ["decorative","bricks"],
-		"customData" : {"useHeightMap":true,"useNormalMap":true},
-		"fullblockType" : "BrickworkWornBrownSlab",
-		"icon" : "BrickworkWornBrownSlab.png",
-		"maxStackSize" : 600,
-		"npcLimit" : 0,
-		"onPlaceAudio" : "vanilla.stonePlace",
-		"onRemoveAudio" : "vanilla.stoneDelete",
-		"sideall" : "SELF"
-	},
-	"BrickworkWornBrownSlabbottom" : {
-		"colliders" : {"boxes":[{"max":[0.5,0,0.5],"min":[-0.5,-0.5,-0.5]}]},
-		"mesh" : "slabbottom.obj",
-		"parentType" : "BrickworkWornBrownSlab",
-		"sideall" : "BrickworkWornBrownSlab"
-	},
-	"BrickworkWornBrownSlabtop" : {
-		"colliders" : {"boxes":[{"max":[0.5,0.5,0.5],"min":[-0.5,0,-0.5]}]},
-		"mesh" : "slabtop.obj",
-		"parentType" : "BrickworkWornBrownSlab",
-		"sideall" : "BrickworkWornBrownSlab"
-	},
 	"BrownishGreenWoodPanel" : {
 		"categories" : ["decorative","ulfric","wood"],
 		"icon" : "BrownishGreenWoodPanel.png",
@@ -417,29 +164,6 @@
 		"onRemoveAudio" : "vanilla.woodDeleteLight",
 		"sideall" : "SELF"
 	},
-	"BrownishGreenWoodPanelSlab" : {
-		"categories" : ["decorative","ulfric","wood"],
-		"customData" : {"useHeightMap":true,"useNormalMap":true},
-		"fullblockType" : "BrownishGreenWoodPanelSlab",
-		"icon" : "BrownishGreenWoodPanelSlab.png",
-		"maxStackSize" : 600,
-		"npcLimit" : 0,
-		"onPlaceAudio" : "vanilla.woodPlace",
-		"onRemoveAudio" : "vanilla.woodDeleteLight",
-		"sideall" : "SELF"
-	},
-	"BrownishGreenWoodPanelSlabbottom" : {
-		"colliders" : {"boxes":[{"max":[0.5,0,0.5],"min":[-0.5,-0.5,-0.5]}]},
-		"mesh" : "slabbottom.obj",
-		"parentType" : "BrownishGreenWoodPanelSlab",
-		"sideall" : "BrownishGreenWoodPanelSlab"
-	},
-	"BrownishGreenWoodPanelSlabtop" : {
-		"colliders" : {"boxes":[{"max":[0.5,0.5,0.5],"min":[-0.5,0,-0.5]}]},
-		"mesh" : "slabtop.obj",
-		"parentType" : "BrownishGreenWoodPanelSlab",
-		"sideall" : "BrownishGreenWoodPanelSlab"
-	},
 	"BrownPlaster" : {
 		"destructionTime" : 600,
 		"icon" : "BrownPlaster.png",
@@ -447,29 +171,6 @@
 		"onPlaceAudio" : "vanilla.dirtPlace",
 		"onRemoveAudio" : "vanilla.grassDelete",
 		"sideall" : "SELF"
-	},
-	"BrownPlasterSlab" : {
-		"categories" : ["decorative","ulfric","stone"],
-		"customData" : {"useHeightMap":true,"useNormalMap":true},
-		"fullblockType" : "BrownPlasterSlab",
-		"icon" : "BrownPlasterSlab.png",
-		"maxStackSize" : 600,
-		"npcLimit" : 0,
-		"onPlaceAudio" : "vanilla.stonePlace",
-		"onRemoveAudio" : "vanilla.stoneDelete",
-		"sideall" : "SELF"
-	},
-	"BrownPlasterSlabbottom" : {
-		"colliders" : {"boxes":[{"max":[0.5,0,0.5],"min":[-0.5,-0.5,-0.5]}]},
-		"mesh" : "slabbottom.obj",
-		"parentType" : "BrownPlasterSlab",
-		"sideall" : "BrownPlasterSlab"
-	},
-	"BrownPlasterSlabtop" : {
-		"colliders" : {"boxes":[{"max":[0.5,0.5,0.5],"min":[-0.5,0,-0.5]}]},
-		"mesh" : "slabtop.obj",
-		"parentType" : "BrownPlasterSlab",
-		"sideall" : "BrownPlasterSlab"
 	},
 	"CarpentryWorkbench" : {
 		"categories" : ["job"],
@@ -487,29 +188,6 @@
 		"onPlaceAudio" : "vanilla.stonePlace",
 		"onRemoveAudio" : "vanilla.stoneDelete",
 		"sideall" : "SELF"
-	},
-	"CementLargeBlockWallSlab" : {
-		"categories" : ["decorative","ulfric","stone"],
-		"customData" : {"useHeightMap":true,"useNormalMap":true},
-		"fullblockType" : "CementLargeBlockWallSlab",
-		"icon" : "CementLargeBlockWallSlab.png",
-		"maxStackSize" : 600,
-		"npcLimit" : 0,
-		"onPlaceAudio" : "vanilla.stonePlace",
-		"onRemoveAudio" : "vanilla.stoneDelete",
-		"sideall" : "SELF"
-	},
-	"CementLargeBlockWallSlabbottom" : {
-		"colliders" : {"boxes":[{"max":[0.5,0,0.5],"min":[-0.5,-0.5,-0.5]}]},
-		"mesh" : "slabbottom.obj",
-		"parentType" : "CementLargeBlockWallSlab",
-		"sideall" : "CementLargeBlockWallSlab"
-	},
-	"CementLargeBlockWallSlabtop" : {
-		"colliders" : {"boxes":[{"max":[0.5,0.5,0.5],"min":[-0.5,0,-0.5]}]},
-		"mesh" : "slabtop.obj",
-		"parentType" : "CementLargeBlockWallSlab",
-		"sideall" : "CementLargeBlockWallSlab"
 	},
 	"ChiseledBlackStone" : {
 		"categories" : ["decorative","ulfric","stone"],
@@ -529,60 +207,14 @@
 		"onRemoveAudio" : "vanilla.woodDeleteLight",
 		"sideall" : "SELF"
 	},
-	"CobbleStoneWallSlab" : {
-		"categories" : ["decorative","ulfric","stone"],
-		"customData" : {"useHeightMap":true,"useNormalMap":true},
-		"fullblockType" : "CobbleStoneWallSlab",
-		"icon" : "CobbleStoneWallSlab.png",
-		"maxStackSize" : 600,
-		"npcLimit" : 0,
-		"onPlaceAudio" : "vanilla.stonePlace",
-		"onRemoveAudio" : "vanilla.stoneDelete",
-		"sideall" : "SELF"
-	},
-	"CobbleStoneWallSlabbottom" : {
-		"colliders" : {"boxes":[{"max":[0.5,0,0.5],"min":[-0.5,-0.5,-0.5]}]},
-		"mesh" : "slabbottom.obj",
-		"parentType" : "CobbleStoneWallSlab",
-		"sideall" : "CobbleStoneWallSlab"
-	},
-	"CobbleStoneWallSlabtop" : {
-		"colliders" : {"boxes":[{"max":[0.5,0.5,0.5],"min":[-0.5,0,-0.5]}]},
-		"mesh" : "slabtop.obj",
-		"parentType" : "CobbleStoneWallSlab",
-		"sideall" : "CobbleStoneWallSlab"
-	},
 	"ConcreteBrickTiles" : {
-		"categories" : ["decorative","bricks"],
+		"categories" : ["decorative","ulfric","stone"],
 		"destructionTime" : 600,
 		"icon" : "ConcreteBrickTiles.png",
 		"maxStackSize" : 600,
 		"onPlaceAudio" : "vanilla.stonePlace",
 		"onRemoveAudio" : "vanilla.stoneDelete",
 		"sideall" : "SELF"
-	},
-	"ConcreteBrickTilesSlab" : {
-		"categories" : ["decorative","ulfric","stone"],
-		"customData" : {"useHeightMap":true,"useNormalMap":true},
-		"fullblockType" : "ConcreteBrickTilesSlab",
-		"icon" : "ConcreteBrickTilesSlab.png",
-		"maxStackSize" : 600,
-		"npcLimit" : 0,
-		"onPlaceAudio" : "vanilla.stonePlace",
-		"onRemoveAudio" : "vanilla.stoneDelete",
-		"sideall" : "SELF"
-	},
-	"ConcreteBrickTilesSlabbottom" : {
-		"colliders" : {"boxes":[{"max":[0.5,0,0.5],"min":[-0.5,-0.5,-0.5]}]},
-		"mesh" : "slabbottom.obj",
-		"parentType" : "ConcreteBrickTilesSlab",
-		"sideall" : "ConcreteBrickTilesSlab"
-	},
-	"ConcreteBrickTilesSlabtop" : {
-		"colliders" : {"boxes":[{"max":[0.5,0.5,0.5],"min":[-0.5,0,-0.5]}]},
-		"mesh" : "slabtop.obj",
-		"parentType" : "ConcreteBrickTilesSlab",
-		"sideall" : "ConcreteBrickTilesSlab"
 	},
 	"CorrodedTechnoTiles" : {
 		"destructionTime" : 600,
@@ -591,29 +223,6 @@
 		"onPlaceAudio" : "vanilla.stonePlace",
 		"onRemoveAudio" : "vanilla.stoneDelete",
 		"sideall" : "SELF"
-	},
-	"CorrodedTechnoTilesSlab" : {
-		"categories" : ["decorative","ulfric","stone"],
-		"customData" : {"useHeightMap":true,"useNormalMap":true},
-		"fullblockType" : "CorrodedTechnoTilesSlab",
-		"icon" : "CorrodedTechnoTilesSlab.png",
-		"maxStackSize" : 600,
-		"npcLimit" : 0,
-		"onPlaceAudio" : "vanilla.stonePlace",
-		"onRemoveAudio" : "vanilla.stoneDelete",
-		"sideall" : "SELF"
-	},
-	"CorrodedTechnoTilesSlabbottom" : {
-		"colliders" : {"boxes":[{"max":[0.5,0,0.5],"min":[-0.5,-0.5,-0.5]}]},
-		"mesh" : "slabbottom.obj",
-		"parentType" : "CorrodedTechnoTilesSlab",
-		"sideall" : "CorrodedTechnoTilesSlab"
-	},
-	"CorrodedTechnoTilesSlabtop" : {
-		"colliders" : {"boxes":[{"max":[0.5,0.5,0.5],"min":[-0.5,0,-0.5]}]},
-		"mesh" : "slabtop.obj",
-		"parentType" : "CorrodedTechnoTilesSlab",
-		"sideall" : "CorrodedTechnoTilesSlab"
 	},
 	"DarkWoodFrameTopAndBottom" : {
 		"categories" : ["decorative","ulfric","wood"],
@@ -640,29 +249,6 @@
 		"onRemoveAudio" : "vanilla.stoneDelete",
 		"sideall" : "SELF"
 	},
-	"DirtyLargeBlocksWallSlab" : {
-		"categories" : ["decorative","ulfric","stone"],
-		"customData" : {"useHeightMap":true,"useNormalMap":true},
-		"fullblockType" : "DirtyLargeBlocksWallSlab",
-		"icon" : "DirtyLargeBlocksWallSlab.png",
-		"maxStackSize" : 600,
-		"npcLimit" : 0,
-		"onPlaceAudio" : "vanilla.stonePlace",
-		"onRemoveAudio" : "vanilla.stoneDelete",
-		"sideall" : "SELF"
-	},
-	"DirtyLargeBlocksWallSlabbottom" : {
-		"colliders" : {"boxes":[{"max":[0.5,0,0.5],"min":[-0.5,-0.5,-0.5]}]},
-		"mesh" : "slabbottom.obj",
-		"parentType" : "DirtyLargeBlocksWallSlab",
-		"sideall" : "DirtyLargeBlocksWallSlab"
-	},
-	"DirtyLargeBlocksWallSlabtop" : {
-		"colliders" : {"boxes":[{"max":[0.5,0.5,0.5],"min":[-0.5,0,-0.5]}]},
-		"mesh" : "slabtop.obj",
-		"parentType" : "DirtyLargeBlocksWallSlab",
-		"sideall" : "DirtyLargeBlocksWallSlab"
-	},
 	"DustyGreyStone" : {
 		"categories" : ["decorative","ulfric","stone"],
 		"destructionTime" : 600,
@@ -671,29 +257,6 @@
 		"onPlaceAudio" : "vanilla.stonePlace",
 		"onRemoveAudio" : "vanilla.stoneDelete",
 		"sideall" : "SELF"
-	},
-	"DustyGreyStoneSlab" : {
-		"categories" : ["decorative","ulfric","stone"],
-		"customData" : {"useHeightMap":true,"useNormalMap":true},
-		"fullblockType" : "DustyGreyStoneSlab",
-		"icon" : "DustyGreyStoneSlab.png",
-		"maxStackSize" : 600,
-		"npcLimit" : 0,
-		"onPlaceAudio" : "vanilla.stonePlace",
-		"onRemoveAudio" : "vanilla.stoneDelete",
-		"sideall" : "SELF"
-	},
-	"DustyGreyStoneSlabbottom" : {
-		"colliders" : {"boxes":[{"max":[0.5,0,0.5],"min":[-0.5,-0.5,-0.5]}]},
-		"mesh" : "slabbottom.obj",
-		"parentType" : "DustyGreyStoneSlab",
-		"sideall" : "DustyGreyStoneSlab"
-	},
-	"DustyGreyStoneSlabtop" : {
-		"colliders" : {"boxes":[{"max":[0.5,0.5,0.5],"min":[-0.5,0,-0.5]}]},
-		"mesh" : "slabtop.obj",
-		"parentType" : "DustyGreyStoneSlab",
-		"sideall" : "DustyGreyStoneSlab"
 	},
 	"FancyChiseledBlackStone" : {
 		"categories" : ["decorative","ulfric","stone"],
@@ -722,60 +285,14 @@
 		"onRemoveAudio" : "vanilla.stoneDelete",
 		"sideall" : "SELF"
 	},
-	"FancyGreyBrickSlab" : {
-		"categories" : ["decorative","bricks"],
-		"customData" : {"useHeightMap":true,"useNormalMap":true},
-		"fullblockType" : "FancyGreyBrickSlab",
-		"icon" : "FancyGreyBrickSlab.png",
-		"maxStackSize" : 600,
-		"npcLimit" : 0,
-		"onPlaceAudio" : "vanilla.stonePlace",
-		"onRemoveAudio" : "vanilla.stoneDelete",
-		"sideall" : "SELF"
-	},
-	"FancyGreyBrickSlabbottom" : {
-		"colliders" : {"boxes":[{"max":[0.5,0,0.5],"min":[-0.5,-0.5,-0.5]}]},
-		"mesh" : "slabbottom.obj",
-		"parentType" : "FancyGreyBrickSlab",
-		"sideall" : "FancyGreyBrickSlab"
-	},
-	"FancyGreyBrickSlabtop" : {
-		"colliders" : {"boxes":[{"max":[0.5,0.5,0.5],"min":[-0.5,0,-0.5]}]},
-		"mesh" : "slabtop.obj",
-		"parentType" : "FancyGreyBrickSlab",
-		"sideall" : "FancyGreyBrickSlab"
-	},
 	"FancyPavingSlabs" : {
-		"categories" : ["decorative","ulfric","stone"],
+		"categories" : ["decorative","bricks"],
 		"destructionTime" : 600,
 		"icon" : "FancyPavingSlabs.png",
 		"maxStackSize" : 600,
 		"onPlaceAudio" : "vanilla.stonePlace",
 		"onRemoveAudio" : "vanilla.stoneDelete",
 		"sideall" : "SELF"
-	},
-	"FancyPavingSlabsSlab" : {
-		"categories" : ["decorative","ulfric","stone"],
-		"customData" : {"useHeightMap":true,"useNormalMap":true},
-		"fullblockType" : "FancyPavingSlabsSlab",
-		"icon" : "FancyPavingSlabsSlab.png",
-		"maxStackSize" : 600,
-		"npcLimit" : 0,
-		"onPlaceAudio" : "vanilla.stonePlace",
-		"onRemoveAudio" : "vanilla.stoneDelete",
-		"sideall" : "SELF"
-	},
-	"FancyPavingSlabsSlabbottom" : {
-		"colliders" : {"boxes":[{"max":[0.5,0,0.5],"min":[-0.5,-0.5,-0.5]}]},
-		"mesh" : "slabbottom.obj",
-		"parentType" : "FancyPavingSlabsSlab",
-		"sideall" : "FancyPavingSlabsSlab"
-	},
-	"FancyPavingSlabsSlabtop" : {
-		"colliders" : {"boxes":[{"max":[0.5,0.5,0.5],"min":[-0.5,0,-0.5]}]},
-		"mesh" : "slabtop.obj",
-		"parentType" : "FancyPavingSlabsSlab",
-		"sideall" : "FancyPavingSlabsSlab"
 	},
 	"FineSoil" : {
 		"categories" : ["decorative","ulfric","dirt"],
@@ -804,29 +321,6 @@
 		"onRemoveAudio" : "vanilla.woodDeleteLight",
 		"sideall" : "SELF"
 	},
-	"FloorBeigeWoodSlab" : {
-		"categories" : ["decorative","ulfric","wood"],
-		"customData" : {"useHeightMap":true,"useNormalMap":true},
-		"fullblockType" : "FloorBeigeWoodSlab",
-		"icon" : "FloorBeigeWoodSlab.png",
-		"maxStackSize" : 600,
-		"npcLimit" : 0,
-		"onPlaceAudio" : "vanilla.woodPlace",
-		"onRemoveAudio" : "vanilla.woodDeleteLight",
-		"sideall" : "SELF"
-	},
-	"FloorBeigeWoodSlabbottom" : {
-		"colliders" : {"boxes":[{"max":[0.5,0,0.5],"min":[-0.5,-0.5,-0.5]}]},
-		"mesh" : "slabbottom.obj",
-		"parentType" : "FloorBeigeWoodSlab",
-		"sideall" : "FloorBeigeWoodSlab"
-	},
-	"FloorBeigeWoodSlabtop" : {
-		"colliders" : {"boxes":[{"max":[0.5,0.5,0.5],"min":[-0.5,0,-0.5]}]},
-		"mesh" : "slabtop.obj",
-		"parentType" : "FloorBeigeWoodSlab",
-		"sideall" : "FloorBeigeWoodSlab"
-	},
 	"FloorBlueStainedBasketweave" : {
 		"categories" : ["decorative","bricks"],
 		"icon" : "FloorBlueStainedBasketweave.png",
@@ -834,29 +328,6 @@
 		"onPlaceAudio" : "vanilla.woodPlace",
 		"onRemoveAudio" : "vanilla.woodDeleteLight",
 		"sideall" : "SELF"
-	},
-	"FloorBlueStainedBasketweaveSlab" : {
-		"categories" : ["decorative","bricks"],
-		"customData" : {"useHeightMap":true,"useNormalMap":true},
-		"fullblockType" : "FloorBlueStainedBasketweaveSlab",
-		"icon" : "FloorBlueStainedBasketweaveSlab.png",
-		"maxStackSize" : 600,
-		"npcLimit" : 0,
-		"onPlaceAudio" : "vanilla.stonePlace",
-		"onRemoveAudio" : "vanilla.stoneDelete",
-		"sideall" : "SELF"
-	},
-	"FloorBlueStainedBasketweaveSlabbottom" : {
-		"colliders" : {"boxes":[{"max":[0.5,0,0.5],"min":[-0.5,-0.5,-0.5]}]},
-		"mesh" : "slabbottom.obj",
-		"parentType" : "FloorBlueStainedBasketweaveSlab",
-		"sideall" : "FloorBlueStainedBasketweaveSlab"
-	},
-	"FloorBlueStainedBasketweaveSlabtop" : {
-		"colliders" : {"boxes":[{"max":[0.5,0.5,0.5],"min":[-0.5,0,-0.5]}]},
-		"mesh" : "slabtop.obj",
-		"parentType" : "FloorBlueStainedBasketweaveSlab",
-		"sideall" : "FloorBlueStainedBasketweaveSlab"
 	},
 	"FloorChippedBricks" : {
 		"categories" : ["decorative","bricks"],
@@ -867,29 +338,6 @@
 		"onRemoveAudio" : "vanilla.stoneDelete",
 		"sideall" : "SELF"
 	},
-	"FloorChippedBricksSlab" : {
-		"categories" : ["decorative","bricks"],
-		"customData" : {"useHeightMap":true,"useNormalMap":true},
-		"fullblockType" : "FloorChippedBricksSlab",
-		"icon" : "FloorChippedBricksSlab.png",
-		"maxStackSize" : 600,
-		"npcLimit" : 0,
-		"onPlaceAudio" : "vanilla.stonePlace",
-		"onRemoveAudio" : "vanilla.stoneDelete",
-		"sideall" : "SELF"
-	},
-	"FloorChippedBricksSlabbottom" : {
-		"colliders" : {"boxes":[{"max":[0.5,0,0.5],"min":[-0.5,-0.5,-0.5]}]},
-		"mesh" : "slabbottom.obj",
-		"parentType" : "FloorChippedBricksSlab",
-		"sideall" : "FloorChippedBricksSlab"
-	},
-	"FloorChippedBricksSlabtop" : {
-		"colliders" : {"boxes":[{"max":[0.5,0.5,0.5],"min":[-0.5,0,-0.5]}]},
-		"mesh" : "slabtop.obj",
-		"parentType" : "FloorChippedBricksSlab",
-		"sideall" : "FloorChippedBricksSlab"
-	},
 	"FloorConcrete" : {
 		"categories" : ["decorative","ulfric","stone"],
 		"destructionTime" : 600,
@@ -899,29 +347,6 @@
 		"onRemoveAudio" : "vanilla.stoneDelete",
 		"sideall" : "SELF"
 	},
-	"FloorConcreteSlab" : {
-		"categories" : ["decorative","ulfric","stone"],
-		"customData" : {"useHeightMap":true,"useNormalMap":true},
-		"fullblockType" : "FloorConcreteSlab",
-		"icon" : "FloorConcreteSlab.png",
-		"maxStackSize" : 600,
-		"npcLimit" : 0,
-		"onPlaceAudio" : "vanilla.stonePlace",
-		"onRemoveAudio" : "vanilla.stoneDelete",
-		"sideall" : "SELF"
-	},
-	"FloorConcreteSlabbottom" : {
-		"colliders" : {"boxes":[{"max":[0.5,0,0.5],"min":[-0.5,-0.5,-0.5]}]},
-		"mesh" : "slabbottom.obj",
-		"parentType" : "FloorConcreteSlab",
-		"sideall" : "FloorConcreteSlab"
-	},
-	"FloorConcreteSlabtop" : {
-		"colliders" : {"boxes":[{"max":[0.5,0.5,0.5],"min":[-0.5,0,-0.5]}]},
-		"mesh" : "slabtop.obj",
-		"parentType" : "FloorConcreteSlab",
-		"sideall" : "FloorConcreteSlab"
-	},
 	"FloorDarkHardwood" : {
 		"categories" : ["decorative","ulfric","wood"],
 		"icon" : "FloorDarkHardwood.png",
@@ -929,29 +354,6 @@
 		"onPlaceAudio" : "vanilla.woodPlace",
 		"onRemoveAudio" : "vanilla.woodDeleteLight",
 		"sideall" : "SELF"
-	},
-	"FloorDarkHardwoodSlab" : {
-		"categories" : ["decorative","ulfric","wood"],
-		"customData" : {"useHeightMap":true,"useNormalMap":true},
-		"fullblockType" : "FloorDarkHardwoodSlab",
-		"icon" : "FloorDarkHardwoodSlab.png",
-		"maxStackSize" : 600,
-		"npcLimit" : 0,
-		"onPlaceAudio" : "vanilla.woodPlace",
-		"onRemoveAudio" : "vanilla.woodDeleteLight",
-		"sideall" : "SELF"
-	},
-	"FloorDarkHardwoodSlabbottom" : {
-		"colliders" : {"boxes":[{"max":[0.5,0,0.5],"min":[-0.5,-0.5,-0.5]}]},
-		"mesh" : "slabbottom.obj",
-		"parentType" : "FloorDarkHardwoodSlab",
-		"sideall" : "FloorDarkHardwoodSlab"
-	},
-	"FloorDarkHardwoodSlabtop" : {
-		"colliders" : {"boxes":[{"max":[0.5,0.5,0.5],"min":[-0.5,0,-0.5]}]},
-		"mesh" : "slabtop.obj",
-		"parentType" : "FloorDarkHardwoodSlab",
-		"sideall" : "FloorDarkHardwoodSlab"
 	},
 	"FloorDarkHerringbone" : {
 		"categories" : ["decorative","bricks"],
@@ -961,29 +363,6 @@
 		"onRemoveAudio" : "vanilla.woodDeleteLight",
 		"sideall" : "SELF"
 	},
-	"FloorDarkHerringboneSlab" : {
-		"categories" : ["decorative","bricks"],
-		"customData" : {"useHeightMap":true,"useNormalMap":true},
-		"fullblockType" : "FloorDarkHerringboneSlab",
-		"icon" : "FloorDarkHerringboneSlab.png",
-		"maxStackSize" : 600,
-		"npcLimit" : 0,
-		"onPlaceAudio" : "vanilla.stonePlace",
-		"onRemoveAudio" : "vanilla.stoneDelete",
-		"sideall" : "SELF"
-	},
-	"FloorDarkHerringboneSlabbottom" : {
-		"colliders" : {"boxes":[{"max":[0.5,0,0.5],"min":[-0.5,-0.5,-0.5]}]},
-		"mesh" : "slabbottom.obj",
-		"parentType" : "FloorDarkHerringboneSlab",
-		"sideall" : "FloorDarkHerringboneSlab"
-	},
-	"FloorDarkHerringboneSlabtop" : {
-		"colliders" : {"boxes":[{"max":[0.5,0.5,0.5],"min":[-0.5,0,-0.5]}]},
-		"mesh" : "slabtop.obj",
-		"parentType" : "FloorDarkHerringboneSlab",
-		"sideall" : "FloorDarkHerringboneSlab"
-	},
 	"FloorDarkWood" : {
 		"categories" : ["decorative","ulfric","wood"],
 		"icon" : "FloorDarkWood.png",
@@ -991,29 +370,6 @@
 		"onPlaceAudio" : "vanilla.woodPlace",
 		"onRemoveAudio" : "vanilla.woodDeleteLight",
 		"sideall" : "SELF"
-	},
-	"FloorDarkWoodSlab" : {
-		"categories" : ["decorative","ulfric","wood"],
-		"customData" : {"useHeightMap":true,"useNormalMap":true},
-		"fullblockType" : "FloorDarkWoodSlab",
-		"icon" : "FloorDarkWoodSlab.png",
-		"maxStackSize" : 600,
-		"npcLimit" : 0,
-		"onPlaceAudio" : "vanilla.woodPlace",
-		"onRemoveAudio" : "vanilla.woodDeleteLight",
-		"sideall" : "SELF"
-	},
-	"FloorDarkWoodSlabbottom" : {
-		"colliders" : {"boxes":[{"max":[0.5,0,0.5],"min":[-0.5,-0.5,-0.5]}]},
-		"mesh" : "slabbottom.obj",
-		"parentType" : "FloorDarkWoodSlab",
-		"sideall" : "FloorDarkWoodSlab"
-	},
-	"FloorDarkWoodSlabtop" : {
-		"colliders" : {"boxes":[{"max":[0.5,0.5,0.5],"min":[-0.5,0,-0.5]}]},
-		"mesh" : "slabtop.obj",
-		"parentType" : "FloorDarkWoodSlab",
-		"sideall" : "FloorDarkWoodSlab"
 	},
 	"FloorFadedBasketweave" : {
 		"categories" : ["decorative","bricks"],
@@ -1023,29 +379,6 @@
 		"onRemoveAudio" : "vanilla.woodDeleteLight",
 		"sideall" : "SELF"
 	},
-	"FloorFadedBasketweaveSlab" : {
-		"categories" : ["decorative","bricks"],
-		"customData" : {"useHeightMap":true,"useNormalMap":true},
-		"fullblockType" : "FloorFadedBasketweaveSlab",
-		"icon" : "FloorFadedBasketweaveSlab.png",
-		"maxStackSize" : 600,
-		"npcLimit" : 0,
-		"onPlaceAudio" : "vanilla.stonePlace",
-		"onRemoveAudio" : "vanilla.stoneDelete",
-		"sideall" : "SELF"
-	},
-	"FloorFadedBasketweaveSlabbottom" : {
-		"colliders" : {"boxes":[{"max":[0.5,0,0.5],"min":[-0.5,-0.5,-0.5]}]},
-		"mesh" : "slabbottom.obj",
-		"parentType" : "FloorFadedBasketweaveSlab",
-		"sideall" : "FloorFadedBasketweaveSlab"
-	},
-	"FloorFadedBasketweaveSlabtop" : {
-		"colliders" : {"boxes":[{"max":[0.5,0.5,0.5],"min":[-0.5,0,-0.5]}]},
-		"mesh" : "slabtop.obj",
-		"parentType" : "FloorFadedBasketweaveSlab",
-		"sideall" : "FloorFadedBasketweaveSlab"
-	},
 	"FloorGougedBasketweave" : {
 		"categories" : ["decorative","bricks"],
 		"icon" : "FloorGougedBasketweave.png",
@@ -1053,29 +386,6 @@
 		"onPlaceAudio" : "vanilla.woodPlace",
 		"onRemoveAudio" : "vanilla.woodDeleteLight",
 		"sideall" : "SELF"
-	},
-	"FloorGougedBasketweaveSlab" : {
-		"categories" : ["decorative","bricks"],
-		"customData" : {"useHeightMap":true,"useNormalMap":true},
-		"fullblockType" : "FloorGougedBasketweaveSlab",
-		"icon" : "FloorGougedBasketweaveSlab.png",
-		"maxStackSize" : 600,
-		"npcLimit" : 0,
-		"onPlaceAudio" : "vanilla.stonePlace",
-		"onRemoveAudio" : "vanilla.stoneDelete",
-		"sideall" : "SELF"
-	},
-	"FloorGougedBasketweaveSlabbottom" : {
-		"colliders" : {"boxes":[{"max":[0.5,0,0.5],"min":[-0.5,-0.5,-0.5]}]},
-		"mesh" : "slabbottom.obj",
-		"parentType" : "FloorGougedBasketweaveSlab",
-		"sideall" : "FloorGougedBasketweaveSlab"
-	},
-	"FloorGougedBasketweaveSlabtop" : {
-		"colliders" : {"boxes":[{"max":[0.5,0.5,0.5],"min":[-0.5,0,-0.5]}]},
-		"mesh" : "slabtop.obj",
-		"parentType" : "FloorGougedBasketweaveSlab",
-		"sideall" : "FloorGougedBasketweaveSlab"
 	},
 	"FloorGrittyLongBoards" : {
 		"categories" : ["decorative","ulfric","wood"],
@@ -1085,29 +395,6 @@
 		"onRemoveAudio" : "vanilla.woodDeleteLight",
 		"sideall" : "SELF"
 	},
-	"FloorGrittyLongBoardsSlab" : {
-		"categories" : ["decorative","ulfric","wood"],
-		"customData" : {"useHeightMap":true,"useNormalMap":true},
-		"fullblockType" : "FloorGrittyLongBoardsSlab",
-		"icon" : "FloorGrittyLongBoardsSlab.png",
-		"maxStackSize" : 600,
-		"npcLimit" : 0,
-		"onPlaceAudio" : "vanilla.woodPlace",
-		"onRemoveAudio" : "vanilla.woodDeleteLight",
-		"sideall" : "SELF"
-	},
-	"FloorGrittyLongBoardsSlabbottom" : {
-		"colliders" : {"boxes":[{"max":[0.5,0,0.5],"min":[-0.5,-0.5,-0.5]}]},
-		"mesh" : "slabbottom.obj",
-		"parentType" : "FloorGrittyLongBoardsSlab",
-		"sideall" : "FloorGrittyLongBoardsSlab"
-	},
-	"FloorGrittyLongBoardsSlabtop" : {
-		"colliders" : {"boxes":[{"max":[0.5,0.5,0.5],"min":[-0.5,0,-0.5]}]},
-		"mesh" : "slabtop.obj",
-		"parentType" : "FloorGrittyLongBoardsSlab",
-		"sideall" : "FloorGrittyLongBoardsSlab"
-	},
 	"FloorLightBasketweave" : {
 		"categories" : ["decorative","bricks"],
 		"icon" : "FloorLightBasketweave.png",
@@ -1115,29 +402,6 @@
 		"onPlaceAudio" : "vanilla.woodPlace",
 		"onRemoveAudio" : "vanilla.woodDeleteLight",
 		"sideall" : "SELF"
-	},
-	"FloorLightBasketweaveSlab" : {
-		"categories" : ["decorative","ulfric","stone"],
-		"customData" : {"useHeightMap":true,"useNormalMap":true},
-		"fullblockType" : "FloorLightBasketweaveSlab",
-		"icon" : "FloorLightBasketweaveSlab.png",
-		"maxStackSize" : 600,
-		"npcLimit" : 0,
-		"onPlaceAudio" : "vanilla.stonePlace",
-		"onRemoveAudio" : "vanilla.stoneDelete",
-		"sideall" : "SELF"
-	},
-	"FloorLightBasketweaveSlabbottom" : {
-		"colliders" : {"boxes":[{"max":[0.5,0,0.5],"min":[-0.5,-0.5,-0.5]}]},
-		"mesh" : "slabbottom.obj",
-		"parentType" : "FloorLightBasketweaveSlab",
-		"sideall" : "FloorLightBasketweaveSlab"
-	},
-	"FloorLightBasketweaveSlabtop" : {
-		"colliders" : {"boxes":[{"max":[0.5,0.5,0.5],"min":[-0.5,0,-0.5]}]},
-		"mesh" : "slabtop.obj",
-		"parentType" : "FloorLightBasketweaveSlab",
-		"sideall" : "FloorLightBasketweaveSlab"
 	},
 	"FloorPinkBasketweave" : {
 		"categories" : ["decorative","wood"],
@@ -1147,29 +411,6 @@
 		"onRemoveAudio" : "vanilla.woodDeleteLight",
 		"sideall" : "SELF"
 	},
-	"FloorPinkBasketweaveSlab" : {
-		"categories" : ["decorative","wood"],
-		"customData" : {"useHeightMap":true,"useNormalMap":true},
-		"fullblockType" : "FloorPinkBasketweaveSlab",
-		"icon" : "FloorPinkBasketweaveSlab.png",
-		"maxStackSize" : 600,
-		"npcLimit" : 0,
-		"onPlaceAudio" : "vanilla.woodPlace",
-		"onRemoveAudio" : "vanilla.woodDeleteLight",
-		"sideall" : "SELF"
-	},
-	"FloorPinkBasketweaveSlabbottom" : {
-		"colliders" : {"boxes":[{"max":[0.5,0,0.5],"min":[-0.5,-0.5,-0.5]}]},
-		"mesh" : "slabbottom.obj",
-		"parentType" : "FloorPinkBasketweaveSlab",
-		"sideall" : "FloorPinkBasketweaveSlab"
-	},
-	"FloorPinkBasketweaveSlabtop" : {
-		"colliders" : {"boxes":[{"max":[0.5,0.5,0.5],"min":[-0.5,0,-0.5]}]},
-		"mesh" : "slabtop.obj",
-		"parentType" : "FloorPinkBasketweaveSlab",
-		"sideall" : "FloorPinkBasketweaveSlab"
-	},
 	"FloorTile" : {
 		"categories" : ["decorative","ulfric","wood"],
 		"icon" : "FloorTile.png",
@@ -1178,29 +419,6 @@
 		"onRemoveAudio" : "vanilla.woodDeleteLight",
 		"sideall" : "SELF"
 	},
-	"FloorTileSlab" : {
-		"categories" : ["decorative","ulfric","wood"],
-		"customData" : {"useHeightMap":true,"useNormalMap":true},
-		"fullblockType" : "FloorTileSlab",
-		"icon" : "FloorTileSlab.png",
-		"maxStackSize" : 600,
-		"npcLimit" : 0,
-		"onPlaceAudio" : "vanilla.woodPlace",
-		"onRemoveAudio" : "vanilla.woodDeleteLight",
-		"sideall" : "SELF"
-	},
-	"FloorTileSlabbottom" : {
-		"colliders" : {"boxes":[{"max":[0.5,0,0.5],"min":[-0.5,-0.5,-0.5]}]},
-		"mesh" : "slabbottom.obj",
-		"parentType" : "FloorTileSlab",
-		"sideall" : "FloorTileSlab"
-	},
-	"FloorTileSlabtop" : {
-		"colliders" : {"boxes":[{"max":[0.5,0.5,0.5],"min":[-0.5,0,-0.5]}]},
-		"mesh" : "slabtop.obj",
-		"parentType" : "FloorTileSlab",
-		"sideall" : "FloorTileSlab"
-	},
 	"FloorTrinsicHouse" : {
 		"categories" : ["decorative","ulfric","wood"],
 		"icon" : "FloorTrinsicHouse.png",
@@ -1208,29 +426,6 @@
 		"onPlaceAudio" : "vanilla.woodPlace",
 		"onRemoveAudio" : "vanilla.woodDeleteLight",
 		"sideall" : "SELF"
-	},
-	"FloorTrinsicHouseSlab" : {
-		"categories" : ["decorative","ulfric","wood"],
-		"customData" : {"useHeightMap":true,"useNormalMap":true},
-		"fullblockType" : "FloorTrinsicHouseSlab",
-		"icon" : "FloorTrinsicHouseSlab.png",
-		"maxStackSize" : 600,
-		"npcLimit" : 0,
-		"onPlaceAudio" : "vanilla.woodPlace",
-		"onRemoveAudio" : "vanilla.woodDeleteLight",
-		"sideall" : "SELF"
-	},
-	"FloorTrinsicHouseSlabbottom" : {
-		"colliders" : {"boxes":[{"max":[0.5,0,0.5],"min":[-0.5,-0.5,-0.5]}]},
-		"mesh" : "slabbottom.obj",
-		"parentType" : "FloorTrinsicHouseSlab",
-		"sideall" : "FloorTrinsicHouseSlab"
-	},
-	"FloorTrinsicHouseSlabtop" : {
-		"colliders" : {"boxes":[{"max":[0.5,0.5,0.5],"min":[-0.5,0,-0.5]}]},
-		"mesh" : "slabtop.obj",
-		"parentType" : "FloorTrinsicHouseSlab",
-		"sideall" : "FloorTrinsicHouseSlab"
 	},
 	"FloorTrinsicStone" : {
 		"categories" : ["decorative","ulfric","stone"],
@@ -1241,29 +436,6 @@
 		"onRemoveAudio" : "vanilla.stoneDelete",
 		"sideall" : "SELF"
 	},
-	"FloorTrinsicStoneSlab" : {
-		"categories" : ["decorative","ulfric","stone"],
-		"customData" : {"useHeightMap":true,"useNormalMap":true},
-		"fullblockType" : "FloorTrinsicStoneSlab",
-		"icon" : "FloorTrinsicStoneSlab.png",
-		"maxStackSize" : 600,
-		"npcLimit" : 0,
-		"onPlaceAudio" : "vanilla.stonePlace",
-		"onRemoveAudio" : "vanilla.stoneDelete",
-		"sideall" : "SELF"
-	},
-	"FloorTrinsicStoneSlabbottom" : {
-		"colliders" : {"boxes":[{"max":[0.5,0,0.5],"min":[-0.5,-0.5,-0.5]}]},
-		"mesh" : "slabbottom.obj",
-		"parentType" : "FloorTrinsicStoneSlab",
-		"sideall" : "FloorTrinsicStoneSlab"
-	},
-	"FloorTrinsicStoneSlabtop" : {
-		"colliders" : {"boxes":[{"max":[0.5,0.5,0.5],"min":[-0.5,0,-0.5]}]},
-		"mesh" : "slabtop.obj",
-		"parentType" : "FloorTrinsicStoneSlab",
-		"sideall" : "FloorTrinsicStoneSlab"
-	},
 	"FloorWoodParquet" : {
 		"categories" : ["decorative","ulfric","wood"],
 		"icon" : "FloorWoodParquet.png",
@@ -1272,29 +444,6 @@
 		"onRemoveAudio" : "vanilla.woodDeleteLight",
 		"sideall" : "SELF"
 	},
-	"FloorWoodParquetSlab" : {
-		"categories" : ["decorative","ulfric","wood"],
-		"customData" : {"useHeightMap":true,"useNormalMap":true},
-		"fullblockType" : "FloorWoodParquetSlab",
-		"icon" : "FloorWoodParquetSlab.png",
-		"maxStackSize" : 600,
-		"npcLimit" : 0,
-		"onPlaceAudio" : "vanilla.woodPlace",
-		"onRemoveAudio" : "vanilla.woodDeleteLight",
-		"sideall" : "SELF"
-	},
-	"FloorWoodParquetSlabbottom" : {
-		"colliders" : {"boxes":[{"max":[0.5,0,0.5],"min":[-0.5,-0.5,-0.5]}]},
-		"mesh" : "slabbottom.obj",
-		"parentType" : "FloorWoodParquetSlab",
-		"sideall" : "FloorWoodParquetSlab"
-	},
-	"FloorWoodParquetSlabtop" : {
-		"colliders" : {"boxes":[{"max":[0.5,0.5,0.5],"min":[-0.5,0,-0.5]}]},
-		"mesh" : "slabtop.obj",
-		"parentType" : "FloorWoodParquetSlab",
-		"sideall" : "FloorWoodParquetSlab"
-	},
 	"FloorWrinkledBasketweave" : {
 		"categories" : ["decorative","bricks"],
 		"icon" : "FloorWrinkledBasketweave.png",
@@ -1302,29 +451,6 @@
 		"onPlaceAudio" : "vanilla.woodPlace",
 		"onRemoveAudio" : "vanilla.woodDeleteLight",
 		"sideall" : "SELF"
-	},
-	"FloorWrinkledBasketweaveSlab" : {
-		"categories" : ["decorative","bricks"],
-		"customData" : {"useHeightMap":true,"useNormalMap":true},
-		"fullblockType" : "FloorWrinkledBasketweaveSlab",
-		"icon" : "FloorWrinkledBasketweaveSlab.png",
-		"maxStackSize" : 600,
-		"npcLimit" : 0,
-		"onPlaceAudio" : "vanilla.stonePlace",
-		"onRemoveAudio" : "vanilla.stoneDelete",
-		"sideall" : "SELF"
-	},
-	"FloorWrinkledBasketweaveSlabbottom" : {
-		"colliders" : {"boxes":[{"max":[0.5,0,0.5],"min":[-0.5,-0.5,-0.5]}]},
-		"mesh" : "slabbottom.obj",
-		"parentType" : "FloorWrinkledBasketweaveSlab",
-		"sideall" : "FloorWrinkledBasketweaveSlab"
-	},
-	"FloorWrinkledBasketweaveSlabtop" : {
-		"colliders" : {"boxes":[{"max":[0.5,0.5,0.5],"min":[-0.5,0,-0.5]}]},
-		"mesh" : "slabtop.obj",
-		"parentType" : "FloorWrinkledBasketweaveSlab",
-		"sideall" : "FloorWrinkledBasketweaveSlab"
 	},
 	"GraniteTechno" : {
 		"categories" : ["decorative","ulfric","stone"],
@@ -1335,29 +461,6 @@
 		"onRemoveAudio" : "vanilla.stoneDelete",
 		"sideall" : "SELF"
 	},
-	"GraniteTechnoSlab" : {
-		"categories" : ["decorative","ulfric","stone"],
-		"customData" : {"useHeightMap":true,"useNormalMap":true},
-		"fullblockType" : "GraniteTechnoSlab",
-		"icon" : "GraniteTechnoSlab.png",
-		"maxStackSize" : 600,
-		"npcLimit" : 0,
-		"onPlaceAudio" : "vanilla.stonePlace",
-		"onRemoveAudio" : "vanilla.stoneDelete",
-		"sideall" : "SELF"
-	},
-	"GraniteTechnoSlabbottom" : {
-		"colliders" : {"boxes":[{"max":[0.5,0,0.5],"min":[-0.5,-0.5,-0.5]}]},
-		"mesh" : "slabbottom.obj",
-		"parentType" : "GraniteTechnoSlab",
-		"sideall" : "GraniteTechnoSlab"
-	},
-	"GraniteTechnoSlabtop" : {
-		"colliders" : {"boxes":[{"max":[0.5,0.5,0.5],"min":[-0.5,0,-0.5]}]},
-		"mesh" : "slabtop.obj",
-		"parentType" : "GraniteTechnoSlab",
-		"sideall" : "GraniteTechnoSlab"
-	},
 	"GraniteWall" : {
 		"categories" : ["decorative","ulfric","stone"],
 		"destructionTime" : 600,
@@ -1366,29 +469,6 @@
 		"onPlaceAudio" : "vanilla.stonePlace",
 		"onRemoveAudio" : "vanilla.stoneDelete",
 		"sideall" : "SELF"
-	},
-	"GraniteWallSlab" : {
-		"categories" : ["decorative","ulfric","stone"],
-		"customData" : {"useHeightMap":true,"useNormalMap":true},
-		"fullblockType" : "GraniteWallSlab",
-		"icon" : "GraniteWallSlab.png",
-		"maxStackSize" : 600,
-		"npcLimit" : 0,
-		"onPlaceAudio" : "vanilla.stonePlace",
-		"onRemoveAudio" : "vanilla.stoneDelete",
-		"sideall" : "SELF"
-	},
-	"GraniteWallSlabbottom" : {
-		"colliders" : {"boxes":[{"max":[0.5,0,0.5],"min":[-0.5,-0.5,-0.5]}]},
-		"mesh" : "slabbottom.obj",
-		"parentType" : "GraniteWallSlab",
-		"sideall" : "GraniteWallSlab"
-	},
-	"GraniteWallSlabtop" : {
-		"colliders" : {"boxes":[{"max":[0.5,0.5,0.5],"min":[-0.5,0,-0.5]}]},
-		"mesh" : "slabtop.obj",
-		"parentType" : "GraniteWallSlab",
-		"sideall" : "GraniteWallSlab"
 	},
 	"Gravel" : {
 		"categories" : ["decorative","ulfric","stone"],
@@ -1408,29 +488,6 @@
 		"onRemoveAudio" : "vanilla.stoneDelete",
 		"sideall" : "SELF"
 	},
-	"Gravel2Slab" : {
-		"categories" : ["decorative","ulfric","stone"],
-		"customData" : {"useHeightMap":true,"useNormalMap":true},
-		"fullblockType" : "Gravel2Slab",
-		"icon" : "Gravel2Slab.png",
-		"maxStackSize" : 600,
-		"npcLimit" : 0,
-		"onPlaceAudio" : "vanilla.stonePlace",
-		"onRemoveAudio" : "vanilla.stoneDelete",
-		"sideall" : "SELF"
-	},
-	"Gravel2Slabbottom" : {
-		"colliders" : {"boxes":[{"max":[0.5,0,0.5],"min":[-0.5,-0.5,-0.5]}]},
-		"mesh" : "slabbottom.obj",
-		"parentType" : "Gravel2Slab",
-		"sideall" : "Gravel2Slab"
-	},
-	"Gravel2Slabtop" : {
-		"colliders" : {"boxes":[{"max":[0.5,0.5,0.5],"min":[-0.5,0,-0.5]}]},
-		"mesh" : "slabtop.obj",
-		"parentType" : "Gravel2Slab",
-		"sideall" : "Gravel2Slab"
-	},
 	"Gravel3" : {
 		"categories" : ["decorative","ulfric","stone"],
 		"destructionTime" : 600,
@@ -1439,29 +496,6 @@
 		"onPlaceAudio" : "vanilla.stonePlace",
 		"onRemoveAudio" : "vanilla.stoneDelete",
 		"sideall" : "SELF"
-	},
-	"Gravel3Slab" : {
-		"categories" : ["decorative","ulfric","stone"],
-		"customData" : {"useHeightMap":true,"useNormalMap":true},
-		"fullblockType" : "Gravel3Slab",
-		"icon" : "Gravel3Slab.png",
-		"maxStackSize" : 600,
-		"npcLimit" : 0,
-		"onPlaceAudio" : "vanilla.stonePlace",
-		"onRemoveAudio" : "vanilla.stoneDelete",
-		"sideall" : "SELF"
-	},
-	"Gravel3Slabbottom" : {
-		"colliders" : {"boxes":[{"max":[0.5,0,0.5],"min":[-0.5,-0.5,-0.5]}]},
-		"mesh" : "slabbottom.obj",
-		"parentType" : "Gravel3Slab",
-		"sideall" : "Gravel3Slab"
-	},
-	"Gravel3Slabtop" : {
-		"colliders" : {"boxes":[{"max":[0.5,0.5,0.5],"min":[-0.5,0,-0.5]}]},
-		"mesh" : "slabtop.obj",
-		"parentType" : "Gravel3Slab",
-		"sideall" : "Gravel3Slab"
 	},
 	"Gravel4" : {
 		"categories" : ["decorative","ulfric","stone"],
@@ -1472,52 +506,6 @@
 		"onRemoveAudio" : "vanilla.stoneDelete",
 		"sideall" : "SELF"
 	},
-	"Gravel4Slab" : {
-		"categories" : ["decorative","ulfric","stone"],
-		"customData" : {"useHeightMap":true,"useNormalMap":true},
-		"fullblockType" : "Gravel4Slab",
-		"icon" : "Gravel4Slab.png",
-		"maxStackSize" : 600,
-		"npcLimit" : 0,
-		"onPlaceAudio" : "vanilla.stonePlace",
-		"onRemoveAudio" : "vanilla.stoneDelete",
-		"sideall" : "SELF"
-	},
-	"Gravel4Slabbottom" : {
-		"colliders" : {"boxes":[{"max":[0.5,0,0.5],"min":[-0.5,-0.5,-0.5]}]},
-		"mesh" : "slabbottom.obj",
-		"parentType" : "Gravel4Slab",
-		"sideall" : "Gravel4Slab"
-	},
-	"Gravel4Slabtop" : {
-		"colliders" : {"boxes":[{"max":[0.5,0.5,0.5],"min":[-0.5,0,-0.5]}]},
-		"mesh" : "slabtop.obj",
-		"parentType" : "Gravel4Slab",
-		"sideall" : "Gravel4Slab"
-	},
-	"GravelSlab" : {
-		"categories" : ["decorative","ulfric","stone"],
-		"customData" : {"useHeightMap":true,"useNormalMap":true},
-		"fullblockType" : "GravelSlab",
-		"icon" : "GravelSlab.png",
-		"maxStackSize" : 600,
-		"npcLimit" : 0,
-		"onPlaceAudio" : "vanilla.stonePlace",
-		"onRemoveAudio" : "vanilla.stoneDelete",
-		"sideall" : "SELF"
-	},
-	"GravelSlabbottom" : {
-		"colliders" : {"boxes":[{"max":[0.5,0,0.5],"min":[-0.5,-0.5,-0.5]}]},
-		"mesh" : "slabbottom.obj",
-		"parentType" : "GravelSlab",
-		"sideall" : "GravelSlab"
-	},
-	"GravelSlabtop" : {
-		"colliders" : {"boxes":[{"max":[0.5,0.5,0.5],"min":[-0.5,0,-0.5]}]},
-		"mesh" : "slabtop.obj",
-		"parentType" : "GravelSlab",
-		"sideall" : "GravelSlab"
-	},
 	"GreenGraniteWalkway" : {
 		"categories" : ["decorative","ulfric","stone"],
 		"destructionTime" : 600,
@@ -1527,29 +515,6 @@
 		"onRemoveAudio" : "vanilla.stoneDelete",
 		"sideall" : "SELF"
 	},
-	"GreenGraniteWalkwaySlab" : {
-		"categories" : ["decorative","ulfric","stone"],
-		"customData" : {"useHeightMap":true,"useNormalMap":true},
-		"fullblockType" : "GreenGraniteWalkwaySlab",
-		"icon" : "GreenGraniteWalkwaySlab.png",
-		"maxStackSize" : 600,
-		"npcLimit" : 0,
-		"onPlaceAudio" : "vanilla.stonePlace",
-		"onRemoveAudio" : "vanilla.stoneDelete",
-		"sideall" : "SELF"
-	},
-	"GreenGraniteWalkwaySlabbottom" : {
-		"colliders" : {"boxes":[{"max":[0.5,0,0.5],"min":[-0.5,-0.5,-0.5]}]},
-		"mesh" : "slabbottom.obj",
-		"parentType" : "GreenGraniteWalkwaySlab",
-		"sideall" : "GreenGraniteWalkwaySlab"
-	},
-	"GreenGraniteWalkwaySlabtop" : {
-		"colliders" : {"boxes":[{"max":[0.5,0.5,0.5],"min":[-0.5,0,-0.5]}]},
-		"mesh" : "slabtop.obj",
-		"parentType" : "GreenGraniteWalkwaySlab",
-		"sideall" : "GreenGraniteWalkwaySlab"
-	},
 	"GreenSiding" : {
 		"categories" : ["decorative","ulfric","wood"],
 		"icon" : "GreenSiding.png",
@@ -1557,29 +522,6 @@
 		"onPlaceAudio" : "vanilla.woodPlace",
 		"onRemoveAudio" : "vanilla.woodDeleteLight",
 		"sideall" : "SELF"
-	},
-	"GreenSidingSlab" : {
-		"categories" : ["decorative","ulfric","wood"],
-		"customData" : {"useHeightMap":true,"useNormalMap":true},
-		"fullblockType" : "GreenSidingSlab",
-		"icon" : "GreenSidingSlab.png",
-		"maxStackSize" : 600,
-		"npcLimit" : 0,
-		"onPlaceAudio" : "vanilla.woodPlace",
-		"onRemoveAudio" : "vanilla.woodDeleteLight",
-		"sideall" : "SELF"
-	},
-	"GreenSidingSlabbottom" : {
-		"colliders" : {"boxes":[{"max":[0.5,0,0.5],"min":[-0.5,-0.5,-0.5]}]},
-		"mesh" : "slabbottom.obj",
-		"parentType" : "GreenSidingSlab",
-		"sideall" : "GreenSidingSlab"
-	},
-	"GreenSidingSlabtop" : {
-		"colliders" : {"boxes":[{"max":[0.5,0.5,0.5],"min":[-0.5,0,-0.5]}]},
-		"mesh" : "slabtop.obj",
-		"parentType" : "GreenSidingSlab",
-		"sideall" : "GreenSidingSlab"
 	},
 	"GreyStone" : {
 		"categories" : ["decorative","ulfric","stone"],
@@ -1599,52 +541,6 @@
 		"onRemoveAudio" : "vanilla.stoneDelete",
 		"sideall" : "SELF"
 	},
-	"GreyStoneConcreteWallSlab" : {
-		"categories" : ["decorative","ulfric","stone"],
-		"customData" : {"useHeightMap":true,"useNormalMap":true},
-		"fullblockType" : "GreyStoneConcreteWallSlab",
-		"icon" : "GreyStoneConcreteWallSlab.png",
-		"maxStackSize" : 600,
-		"npcLimit" : 0,
-		"onPlaceAudio" : "vanilla.stonePlace",
-		"onRemoveAudio" : "vanilla.stoneDelete",
-		"sideall" : "SELF"
-	},
-	"GreyStoneConcreteWallSlabbottom" : {
-		"colliders" : {"boxes":[{"max":[0.5,0,0.5],"min":[-0.5,-0.5,-0.5]}]},
-		"mesh" : "slabbottom.obj",
-		"parentType" : "GreyStoneConcreteWallSlab",
-		"sideall" : "GreyStoneConcreteWallSlab"
-	},
-	"GreyStoneConcreteWallSlabtop" : {
-		"colliders" : {"boxes":[{"max":[0.5,0.5,0.5],"min":[-0.5,0,-0.5]}]},
-		"mesh" : "slabtop.obj",
-		"parentType" : "GreyStoneConcreteWallSlab",
-		"sideall" : "GreyStoneConcreteWallSlab"
-	},
-	"GreyStoneSlab" : {
-		"categories" : ["decorative","ulfric","stone"],
-		"customData" : {"useHeightMap":true,"useNormalMap":true},
-		"fullblockType" : "GreyStone",
-		"icon" : "GreyStoneSlab.png",
-		"maxStackSize" : 600,
-		"npcLimit" : 0,
-		"onPlaceAudio" : "vanilla.stonePlace",
-		"onRemoveAudio" : "vanilla.stoneDelete",
-		"sideall" : "SELF"
-	},
-	"GreyStoneSlabbottom" : {
-		"colliders" : {"boxes":[{"max":[0.5,0,0.5],"min":[-0.5,-0.5,-0.5]}]},
-		"mesh" : "slabbottom.obj",
-		"parentType" : "GreyStoneSlab",
-		"sideall" : "GreyStoneSlab"
-	},
-	"GreyStoneSlabtop" : {
-		"colliders" : {"boxes":[{"max":[0.5,0.5,0.5],"min":[-0.5,0,-0.5]}]},
-		"mesh" : "slabtop.obj",
-		"parentType" : "GreyStoneSlab",
-		"sideall" : "GreyStoneSlab"
-	},
 	"GreyWoodFrameTopAndBottom" : {
 		"categories" : ["decorative","ulfric","wood"],
 		"icon" : "GreyWoodFrameTopAndBottom.png",
@@ -1661,29 +557,6 @@
 		"onRemoveAudio" : "vanilla.woodDeleteLight",
 		"sideall" : "SELF"
 	},
-	"GreyWoodPanelWithPinsSlab" : {
-		"categories" : ["decorative","ulfric","wood"],
-		"customData" : {"useHeightMap":true,"useNormalMap":true},
-		"fullblockType" : "GreyWoodPanelWithPinsSlab",
-		"icon" : "GreyWoodPanelWithPinsSlab.png",
-		"maxStackSize" : 600,
-		"npcLimit" : 0,
-		"onPlaceAudio" : "vanilla.woodPlace",
-		"onRemoveAudio" : "vanilla.woodDeleteLight",
-		"sideall" : "SELF"
-	},
-	"GreyWoodPanelWithPinsSlabbottom" : {
-		"colliders" : {"boxes":[{"max":[0.5,0,0.5],"min":[-0.5,-0.5,-0.5]}]},
-		"mesh" : "slabbottom.obj",
-		"parentType" : "GreyWoodPanelWithPinsSlab",
-		"sideall" : "GreyWoodPanelWithPinsSlab"
-	},
-	"GreyWoodPanelWithPinsSlabtop" : {
-		"colliders" : {"boxes":[{"max":[0.5,0.5,0.5],"min":[-0.5,0,-0.5]}]},
-		"mesh" : "slabtop.obj",
-		"parentType" : "GreyWoodPanelWithPinsSlab",
-		"sideall" : "GreyWoodPanelWithPinsSlab"
-	},
 	"HardenedLava" : {
 		"categories" : ["decorative","ulfric","stone"],
 		"destructionTime" : 600,
@@ -1692,29 +565,6 @@
 		"onPlaceAudio" : "vanilla.stonePlace",
 		"onRemoveAudio" : "vanilla.stoneDelete",
 		"sideall" : "SELF"
-	},
-	"HardenedLavaSlab" : {
-		"categories" : ["decorative","ulfric","stone"],
-		"customData" : {"useHeightMap":true,"useNormalMap":true},
-		"fullblockType" : "HardenedLavaSlab",
-		"icon" : "HardenedLavaSlab.png",
-		"maxStackSize" : 600,
-		"npcLimit" : 0,
-		"onPlaceAudio" : "vanilla.stonePlace",
-		"onRemoveAudio" : "vanilla.stoneDelete",
-		"sideall" : "SELF"
-	},
-	"HardenedLavaSlabbottom" : {
-		"colliders" : {"boxes":[{"max":[0.5,0,0.5],"min":[-0.5,-0.5,-0.5]}]},
-		"mesh" : "slabbottom.obj",
-		"parentType" : "HardenedLavaSlab",
-		"sideall" : "HardenedLavaSlab"
-	},
-	"HardenedLavaSlabtop" : {
-		"colliders" : {"boxes":[{"max":[0.5,0.5,0.5],"min":[-0.5,0,-0.5]}]},
-		"mesh" : "slabtop.obj",
-		"parentType" : "HardenedLavaSlab",
-		"sideall" : "HardenedLavaSlab"
 	},
 	"Hedge" : {
 		"icon" : "Hedge.png",
@@ -1752,29 +602,6 @@
 		"onRemoveAudio" : "vanilla.woodDeleteLight",
 		"sideall" : "SELF"
 	},
-	"LightBoardsSlab" : {
-		"categories" : ["decorative","ulfric","wood"],
-		"customData" : {"useHeightMap":true,"useNormalMap":true},
-		"fullblockType" : "LightBoardsSlab",
-		"icon" : "LightBoardsSlab.png",
-		"maxStackSize" : 600,
-		"npcLimit" : 0,
-		"onPlaceAudio" : "vanilla.woodPlace",
-		"onRemoveAudio" : "vanilla.woodDeleteLight",
-		"sideall" : "SELF"
-	},
-	"LightBoardsSlabbottom" : {
-		"colliders" : {"boxes":[{"max":[0.5,0,0.5],"min":[-0.5,-0.5,-0.5]}]},
-		"mesh" : "slabbottom.obj",
-		"parentType" : "LightBoardsSlab",
-		"sideall" : "LightBoardsSlab"
-	},
-	"LightBoardsSlabtop" : {
-		"colliders" : {"boxes":[{"max":[0.5,0.5,0.5],"min":[-0.5,0,-0.5]}]},
-		"mesh" : "slabtop.obj",
-		"parentType" : "LightBoardsSlab",
-		"sideall" : "LightBoardsSlab"
-	},
 	"LightPaneling" : {
 		"categories" : ["decorative","ulfric","wood"],
 		"icon" : "LightPaneling.png",
@@ -1782,29 +609,6 @@
 		"onPlaceAudio" : "vanilla.woodPlace",
 		"onRemoveAudio" : "vanilla.woodDeleteLight",
 		"sideall" : "SELF"
-	},
-	"LightPanelingSlab" : {
-		"categories" : ["decorative","ulfric","wood"],
-		"customData" : {"useHeightMap":true,"useNormalMap":true},
-		"fullblockType" : "LightPanelingSlab",
-		"icon" : "LightPanelingSlab.png",
-		"maxStackSize" : 600,
-		"npcLimit" : 0,
-		"onPlaceAudio" : "vanilla.woodPlace",
-		"onRemoveAudio" : "vanilla.woodDeleteLight",
-		"sideall" : "SELF"
-	},
-	"LightPanelingSlabbottom" : {
-		"colliders" : {"boxes":[{"max":[0.5,0,0.5],"min":[-0.5,-0.5,-0.5]}]},
-		"mesh" : "slabbottom.obj",
-		"parentType" : "LightPanelingSlab",
-		"sideall" : "LightPanelingSlab"
-	},
-	"LightPanelingSlabtop" : {
-		"colliders" : {"boxes":[{"max":[0.5,0.5,0.5],"min":[-0.5,0,-0.5]}]},
-		"mesh" : "slabtop.obj",
-		"parentType" : "LightPanelingSlab",
-		"sideall" : "LightPanelingSlab"
 	},
 	"LogTaigaHorz" : {
 		"categories" : ["decorative","ulfric","wood"],
@@ -1915,29 +719,6 @@
 		"onRemoveAudio" : "vanilla.woodDeleteLight",
 		"sideall" : "SELF"
 	},
-	"MahoganyBoardsSlab" : {
-		"categories" : ["decorative","ulfric","wood"],
-		"customData" : {"useHeightMap":true,"useNormalMap":true},
-		"fullblockType" : "MahoganyBoardsSlab",
-		"icon" : "MahoganyBoardsSlab.png",
-		"maxStackSize" : 600,
-		"npcLimit" : 0,
-		"onPlaceAudio" : "vanilla.woodPlace",
-		"onRemoveAudio" : "vanilla.woodDeleteLight",
-		"sideall" : "SELF"
-	},
-	"MahoganyBoardsSlabbottom" : {
-		"colliders" : {"boxes":[{"max":[0.5,0,0.5],"min":[-0.5,-0.5,-0.5]}]},
-		"mesh" : "slabbottom.obj",
-		"parentType" : "MahoganyBoardsSlab",
-		"sideall" : "MahoganyBoardsSlab"
-	},
-	"MahoganyBoardsSlabtop" : {
-		"colliders" : {"boxes":[{"max":[0.5,0.5,0.5],"min":[-0.5,0,-0.5]}]},
-		"mesh" : "slabtop.obj",
-		"parentType" : "MahoganyBoardsSlab",
-		"sideall" : "MahoganyBoardsSlab"
-	},
 	"MapleSiding" : {
 		"categories" : ["decorative","ulfric","wood"],
 		"destructionTime" : 600,
@@ -1946,29 +727,6 @@
 		"onPlaceAudio" : "vanilla.woodPlace",
 		"onRemoveAudio" : "vanilla.woodDeleteLight",
 		"sideall" : "SELF"
-	},
-	"MapleSidingSlab" : {
-		"categories" : ["decorative","ulfric","wood"],
-		"customData" : {"useHeightMap":true,"useNormalMap":true},
-		"fullblockType" : "MapleSidingSlab",
-		"icon" : "MapleSidingSlab.png",
-		"maxStackSize" : 600,
-		"npcLimit" : 0,
-		"onPlaceAudio" : "vanilla.woodPlace",
-		"onRemoveAudio" : "vanilla.woodDeleteLight",
-		"sideall" : "SELF"
-	},
-	"MapleSidingSlabbottom" : {
-		"colliders" : {"boxes":[{"max":[0.5,0,0.5],"min":[-0.5,-0.5,-0.5]}]},
-		"mesh" : "slabbottom.obj",
-		"parentType" : "MapleSidingSlab",
-		"sideall" : "MapleSidingSlab"
-	},
-	"MapleSidingSlabtop" : {
-		"colliders" : {"boxes":[{"max":[0.5,0.5,0.5],"min":[-0.5,0,-0.5]}]},
-		"mesh" : "slabtop.obj",
-		"parentType" : "MapleSidingSlab",
-		"sideall" : "MapleSidingSlab"
 	},
 	"Marble" : {
 		"categories" : ["decorative","ulfric","stone"],
@@ -1988,29 +746,6 @@
 		"onRemoveAudio" : "vanilla.stoneDelete",
 		"sideall" : "SELF"
 	},
-	"MarbleBlackSlab" : {
-		"categories" : ["decorative","ulfric","stone"],
-		"customData" : {"useHeightMap":true,"useNormalMap":true},
-		"fullblockType" : "MarbleBlackSlab",
-		"icon" : "MarbleBlackSlab.png",
-		"maxStackSize" : 600,
-		"npcLimit" : 0,
-		"onPlaceAudio" : "vanilla.stonePlace",
-		"onRemoveAudio" : "vanilla.stoneDelete",
-		"sideall" : "SELF"
-	},
-	"MarbleBlackSlabbottom" : {
-		"colliders" : {"boxes":[{"max":[0.5,0,0.5],"min":[-0.5,-0.5,-0.5]}]},
-		"mesh" : "slabbottom.obj",
-		"parentType" : "MarbleBlackSlab",
-		"sideall" : "MarbleBlackSlab"
-	},
-	"MarbleBlackSlabtop" : {
-		"colliders" : {"boxes":[{"max":[0.5,0.5,0.5],"min":[-0.5,0,-0.5]}]},
-		"mesh" : "slabtop.obj",
-		"parentType" : "MarbleBlackSlab",
-		"sideall" : "MarbleBlackSlab"
-	},
 	"MarbleBlood" : {
 		"categories" : ["decorative","ulfric","stone"],
 		"destructionTime" : 600,
@@ -2019,29 +754,6 @@
 		"onPlaceAudio" : "vanilla.stonePlace",
 		"onRemoveAudio" : "vanilla.stoneDelete",
 		"sideall" : "SELF"
-	},
-	"MarbleBloodSlab" : {
-		"categories" : ["decorative","ulfric","stone"],
-		"customData" : {"useHeightMap":true,"useNormalMap":true},
-		"fullblockType" : "MarbleBloodSlab",
-		"icon" : "MarbleBloodSlab.png",
-		"maxStackSize" : 600,
-		"npcLimit" : 0,
-		"onPlaceAudio" : "vanilla.stonePlace",
-		"onRemoveAudio" : "vanilla.stoneDelete",
-		"sideall" : "SELF"
-	},
-	"MarbleBloodSlabbottom" : {
-		"colliders" : {"boxes":[{"max":[0.5,0,0.5],"min":[-0.5,-0.5,-0.5]}]},
-		"mesh" : "slabbottom.obj",
-		"parentType" : "MarbleBloodSlab",
-		"sideall" : "MarbleBloodSlab"
-	},
-	"MarbleBloodSlabtop" : {
-		"colliders" : {"boxes":[{"max":[0.5,0.5,0.5],"min":[-0.5,0,-0.5]}]},
-		"mesh" : "slabtop.obj",
-		"parentType" : "MarbleBloodSlab",
-		"sideall" : "MarbleBloodSlab"
 	},
 	"MarbleBlue" : {
 		"categories" : ["decorative","ulfric","stone"],
@@ -2061,52 +773,6 @@
 		"onRemoveAudio" : "vanilla.stoneDelete",
 		"sideall" : "SELF"
 	},
-	"MarbleBlueCrackSlab" : {
-		"categories" : ["decorative","ulfric","stone"],
-		"customData" : {"useHeightMap":true,"useNormalMap":true},
-		"fullblockType" : "MarbleBlueCrackSlab",
-		"icon" : "MarbleBlueCrackSlab.png",
-		"maxStackSize" : 600,
-		"npcLimit" : 0,
-		"onPlaceAudio" : "vanilla.stonePlace",
-		"onRemoveAudio" : "vanilla.stoneDelete",
-		"sideall" : "SELF"
-	},
-	"MarbleBlueCrackSlabbottom" : {
-		"colliders" : {"boxes":[{"max":[0.5,0,0.5],"min":[-0.5,-0.5,-0.5]}]},
-		"mesh" : "slabbottom.obj",
-		"parentType" : "MarbleBlueCrackSlab",
-		"sideall" : "MarbleBlueCrackSlab"
-	},
-	"MarbleBlueCrackSlabtop" : {
-		"colliders" : {"boxes":[{"max":[0.5,0.5,0.5],"min":[-0.5,0,-0.5]}]},
-		"mesh" : "slabtop.obj",
-		"parentType" : "MarbleBlueCrackSlab",
-		"sideall" : "MarbleBlueCrackSlab"
-	},
-	"MarbleBlueSlab" : {
-		"categories" : ["decorative","ulfric","stone"],
-		"customData" : {"useHeightMap":true,"useNormalMap":true},
-		"fullblockType" : "MarbleBlueSlab",
-		"icon" : "MarbleBlueSlab.png",
-		"maxStackSize" : 600,
-		"npcLimit" : 0,
-		"onPlaceAudio" : "vanilla.stonePlace",
-		"onRemoveAudio" : "vanilla.stoneDelete",
-		"sideall" : "SELF"
-	},
-	"MarbleBlueSlabbottom" : {
-		"colliders" : {"boxes":[{"max":[0.5,0,0.5],"min":[-0.5,-0.5,-0.5]}]},
-		"mesh" : "slabbottom.obj",
-		"parentType" : "MarbleBlueSlab",
-		"sideall" : "MarbleBlueSlab"
-	},
-	"MarbleBlueSlabtop" : {
-		"colliders" : {"boxes":[{"max":[0.5,0.5,0.5],"min":[-0.5,0,-0.5]}]},
-		"mesh" : "slabtop.obj",
-		"parentType" : "MarbleBlueSlab",
-		"sideall" : "MarbleBlueSlab"
-	},
 	"MarbleBrightPurple" : {
 		"categories" : ["decorative","ulfric","stone"],
 		"destructionTime" : 600,
@@ -2115,29 +781,6 @@
 		"onPlaceAudio" : "vanilla.stonePlace",
 		"onRemoveAudio" : "vanilla.stoneDelete",
 		"sideall" : "SELF"
-	},
-	"MarbleBrightPurpleSlab" : {
-		"categories" : ["decorative","ulfric","stone"],
-		"customData" : {"useHeightMap":true,"useNormalMap":true},
-		"fullblockType" : "MarbleBrightPurpleSlab",
-		"icon" : "MarbleBrightPurpleSlab.png",
-		"maxStackSize" : 600,
-		"npcLimit" : 0,
-		"onPlaceAudio" : "vanilla.stonePlace",
-		"onRemoveAudio" : "vanilla.stoneDelete",
-		"sideall" : "SELF"
-	},
-	"MarbleBrightPurpleSlabbottom" : {
-		"colliders" : {"boxes":[{"max":[0.5,0,0.5],"min":[-0.5,-0.5,-0.5]}]},
-		"mesh" : "slabbottom.obj",
-		"parentType" : "MarbleBrightPurpleSlab",
-		"sideall" : "MarbleBrightPurpleSlab"
-	},
-	"MarbleBrightPurpleSlabtop" : {
-		"colliders" : {"boxes":[{"max":[0.5,0.5,0.5],"min":[-0.5,0,-0.5]}]},
-		"mesh" : "slabtop.obj",
-		"parentType" : "MarbleBrightPurpleSlab",
-		"sideall" : "MarbleBrightPurpleSlab"
 	},
 	"MarbleBrownSwirl" : {
 		"categories" : ["decorative","ulfric","stone"],
@@ -2148,29 +791,6 @@
 		"onRemoveAudio" : "vanilla.stoneDelete",
 		"sideall" : "SELF"
 	},
-	"MarbleBrownSwirlSlab" : {
-		"categories" : ["decorative","ulfric","stone"],
-		"customData" : {"useHeightMap":true,"useNormalMap":true},
-		"fullblockType" : "MarbleBrownSwirlSlab",
-		"icon" : "MarbleBrownSwirlSlab.png",
-		"maxStackSize" : 600,
-		"npcLimit" : 0,
-		"onPlaceAudio" : "vanilla.stonePlace",
-		"onRemoveAudio" : "vanilla.stoneDelete",
-		"sideall" : "SELF"
-	},
-	"MarbleBrownSwirlSlabbottom" : {
-		"colliders" : {"boxes":[{"max":[0.5,0,0.5],"min":[-0.5,-0.5,-0.5]}]},
-		"mesh" : "slabbottom.obj",
-		"parentType" : "MarbleBrownSwirlSlab",
-		"sideall" : "MarbleBrownSwirlSlab"
-	},
-	"MarbleBrownSwirlSlabtop" : {
-		"colliders" : {"boxes":[{"max":[0.5,0.5,0.5],"min":[-0.5,0,-0.5]}]},
-		"mesh" : "slabtop.obj",
-		"parentType" : "MarbleBrownSwirlSlab",
-		"sideall" : "MarbleBrownSwirlSlab"
-	},
 	"MarbleButterscotchFeldspar" : {
 		"categories" : ["decorative","ulfric","stone"],
 		"destructionTime" : 600,
@@ -2179,29 +799,6 @@
 		"onPlaceAudio" : "vanilla.stonePlace",
 		"onRemoveAudio" : "vanilla.stoneDelete",
 		"sideall" : "SELF"
-	},
-	"MarbleButterscotchFeldsparSlab" : {
-		"categories" : ["decorative","ulfric","stone"],
-		"customData" : {"useHeightMap":true,"useNormalMap":true},
-		"fullblockType" : "MarbleButterscotchFeldsparSlab",
-		"icon" : "MarbleButterscotchFeldsparSlab.png",
-		"maxStackSize" : 600,
-		"npcLimit" : 0,
-		"onPlaceAudio" : "vanilla.stonePlace",
-		"onRemoveAudio" : "vanilla.stoneDelete",
-		"sideall" : "SELF"
-	},
-	"MarbleButterscotchFeldsparSlabbottom" : {
-		"colliders" : {"boxes":[{"max":[0.5,0,0.5],"min":[-0.5,-0.5,-0.5]}]},
-		"mesh" : "slabbottom.obj",
-		"parentType" : "MarbleButterscotchFeldsparSlab",
-		"sideall" : "MarbleButterscotchFeldsparSlab"
-	},
-	"MarbleButterscotchFeldsparSlabtop" : {
-		"colliders" : {"boxes":[{"max":[0.5,0.5,0.5],"min":[-0.5,0,-0.5]}]},
-		"mesh" : "slabtop.obj",
-		"parentType" : "MarbleButterscotchFeldsparSlab",
-		"sideall" : "MarbleButterscotchFeldsparSlab"
 	},
 	"MarbleDarkGray" : {
 		"categories" : ["decorative","ulfric","stone"],
@@ -2212,29 +809,6 @@
 		"onRemoveAudio" : "vanilla.stoneDelete",
 		"sideall" : "SELF"
 	},
-	"MarbleDarkGraySlab" : {
-		"categories" : ["decorative","ulfric","stone"],
-		"customData" : {"useHeightMap":true,"useNormalMap":true},
-		"fullblockType" : "MarbleDarkGraySlab",
-		"icon" : "MarbleDarkGraySlab.png",
-		"maxStackSize" : 600,
-		"npcLimit" : 0,
-		"onPlaceAudio" : "vanilla.stonePlace",
-		"onRemoveAudio" : "vanilla.stoneDelete",
-		"sideall" : "SELF"
-	},
-	"MarbleDarkGraySlabbottom" : {
-		"colliders" : {"boxes":[{"max":[0.5,0,0.5],"min":[-0.5,-0.5,-0.5]}]},
-		"mesh" : "slabbottom.obj",
-		"parentType" : "MarbleDarkGraySlab",
-		"sideall" : "MarbleDarkGraySlab"
-	},
-	"MarbleDarkGraySlabtop" : {
-		"colliders" : {"boxes":[{"max":[0.5,0.5,0.5],"min":[-0.5,0,-0.5]}]},
-		"mesh" : "slabtop.obj",
-		"parentType" : "MarbleDarkGraySlab",
-		"sideall" : "MarbleDarkGraySlab"
-	},
 	"MarbleDarkGreen" : {
 		"categories" : ["decorative","ulfric","stone"],
 		"destructionTime" : 600,
@@ -2243,29 +817,6 @@
 		"onPlaceAudio" : "vanilla.stonePlace",
 		"onRemoveAudio" : "vanilla.stoneDelete",
 		"sideall" : "SELF"
-	},
-	"MarbleDarkGreenSlab" : {
-		"categories" : ["decorative","ulfric","stone"],
-		"customData" : {"useHeightMap":true,"useNormalMap":true},
-		"fullblockType" : "MarbleDarkGreenSlab",
-		"icon" : "MarbleDarkGreenSlab.png",
-		"maxStackSize" : 600,
-		"npcLimit" : 0,
-		"onPlaceAudio" : "vanilla.stonePlace",
-		"onRemoveAudio" : "vanilla.stoneDelete",
-		"sideall" : "SELF"
-	},
-	"MarbleDarkGreenSlabbottom" : {
-		"colliders" : {"boxes":[{"max":[0.5,0,0.5],"min":[-0.5,-0.5,-0.5]}]},
-		"mesh" : "slabbottom.obj",
-		"parentType" : "MarbleDarkGreenSlab",
-		"sideall" : "MarbleDarkGreenSlab"
-	},
-	"MarbleDarkGreenSlabtop" : {
-		"colliders" : {"boxes":[{"max":[0.5,0.5,0.5],"min":[-0.5,0,-0.5]}]},
-		"mesh" : "slabtop.obj",
-		"parentType" : "MarbleDarkGreenSlab",
-		"sideall" : "MarbleDarkGreenSlab"
 	},
 	"MarbleEgyptian" : {
 		"categories" : ["decorative","ulfric","stone"],
@@ -2276,29 +827,6 @@
 		"onRemoveAudio" : "vanilla.stoneDelete",
 		"sideall" : "SELF"
 	},
-	"MarbleEgyptianSlab" : {
-		"categories" : ["decorative","ulfric","stone"],
-		"customData" : {"useHeightMap":true,"useNormalMap":true},
-		"fullblockType" : "MarbleEgyptianSlab",
-		"icon" : "MarbleEgyptianSlab.png",
-		"maxStackSize" : 600,
-		"npcLimit" : 0,
-		"onPlaceAudio" : "vanilla.stonePlace",
-		"onRemoveAudio" : "vanilla.stoneDelete",
-		"sideall" : "SELF"
-	},
-	"MarbleEgyptianSlabbottom" : {
-		"colliders" : {"boxes":[{"max":[0.5,0,0.5],"min":[-0.5,-0.5,-0.5]}]},
-		"mesh" : "slabbottom.obj",
-		"parentType" : "MarbleEgyptianSlab",
-		"sideall" : "MarbleEgyptianSlab"
-	},
-	"MarbleEgyptianSlabtop" : {
-		"colliders" : {"boxes":[{"max":[0.5,0.5,0.5],"min":[-0.5,0,-0.5]}]},
-		"mesh" : "slabtop.obj",
-		"parentType" : "MarbleEgyptianSlab",
-		"sideall" : "MarbleEgyptianSlab"
-	},
 	"MarbleEmerald" : {
 		"categories" : ["decorative","ulfric","stone"],
 		"destructionTime" : 600,
@@ -2307,29 +835,6 @@
 		"onPlaceAudio" : "vanilla.stonePlace",
 		"onRemoveAudio" : "vanilla.stoneDelete",
 		"sideall" : "SELF"
-	},
-	"MarbleEmeraldSlab" : {
-		"categories" : ["decorative","ulfric","stone"],
-		"customData" : {"useHeightMap":true,"useNormalMap":true},
-		"fullblockType" : "MarbleEmeraldSlab",
-		"icon" : "MarbleEmeraldSlab.png",
-		"maxStackSize" : 600,
-		"npcLimit" : 0,
-		"onPlaceAudio" : "vanilla.stonePlace",
-		"onRemoveAudio" : "vanilla.stoneDelete",
-		"sideall" : "SELF"
-	},
-	"MarbleEmeraldSlabbottom" : {
-		"colliders" : {"boxes":[{"max":[0.5,0,0.5],"min":[-0.5,-0.5,-0.5]}]},
-		"mesh" : "slabbottom.obj",
-		"parentType" : "MarbleEmeraldSlab",
-		"sideall" : "MarbleEmeraldSlab"
-	},
-	"MarbleEmeraldSlabtop" : {
-		"colliders" : {"boxes":[{"max":[0.5,0.5,0.5],"min":[-0.5,0,-0.5]}]},
-		"mesh" : "slabtop.obj",
-		"parentType" : "MarbleEmeraldSlab",
-		"sideall" : "MarbleEmeraldSlab"
 	},
 	"MarbleGlassyMarine" : {
 		"categories" : ["decorative","ulfric","stone"],
@@ -2340,29 +845,6 @@
 		"onRemoveAudio" : "vanilla.stoneDelete",
 		"sideall" : "SELF"
 	},
-	"MarbleGlassyMarineSlab" : {
-		"categories" : ["decorative","ulfric","stone"],
-		"customData" : {"useHeightMap":true,"useNormalMap":true},
-		"fullblockType" : "MarbleGlassyMarineSlab",
-		"icon" : "MarbleGlassyMarineSlab.png",
-		"maxStackSize" : 600,
-		"npcLimit" : 0,
-		"onPlaceAudio" : "vanilla.stonePlace",
-		"onRemoveAudio" : "vanilla.stoneDelete",
-		"sideall" : "SELF"
-	},
-	"MarbleGlassyMarineSlabbottom" : {
-		"colliders" : {"boxes":[{"max":[0.5,0,0.5],"min":[-0.5,-0.5,-0.5]}]},
-		"mesh" : "slabbottom.obj",
-		"parentType" : "MarbleGlassyMarineSlab",
-		"sideall" : "MarbleGlassyMarineSlab"
-	},
-	"MarbleGlassyMarineSlabtop" : {
-		"colliders" : {"boxes":[{"max":[0.5,0.5,0.5],"min":[-0.5,0,-0.5]}]},
-		"mesh" : "slabtop.obj",
-		"parentType" : "MarbleGlassyMarineSlab",
-		"sideall" : "MarbleGlassyMarineSlab"
-	},
 	"MarbleGlassyOrange" : {
 		"categories" : ["decorative","ulfric","stone"],
 		"destructionTime" : 600,
@@ -2371,29 +853,6 @@
 		"onPlaceAudio" : "vanilla.stonePlace",
 		"onRemoveAudio" : "vanilla.stoneDelete",
 		"sideall" : "SELF"
-	},
-	"MarbleGlassyOrangeSlab" : {
-		"categories" : ["decorative","ulfric","stone"],
-		"customData" : {"useHeightMap":true,"useNormalMap":true},
-		"fullblockType" : "MarbleGlassyOrangeSlab",
-		"icon" : "MarbleGlassyOrangeSlab.png",
-		"maxStackSize" : 600,
-		"npcLimit" : 0,
-		"onPlaceAudio" : "vanilla.stonePlace",
-		"onRemoveAudio" : "vanilla.stoneDelete",
-		"sideall" : "SELF"
-	},
-	"MarbleGlassyOrangeSlabbottom" : {
-		"colliders" : {"boxes":[{"max":[0.5,0,0.5],"min":[-0.5,-0.5,-0.5]}]},
-		"mesh" : "slabbottom.obj",
-		"parentType" : "MarbleGlassyOrangeSlab",
-		"sideall" : "MarbleGlassyOrangeSlab"
-	},
-	"MarbleGlassyOrangeSlabtop" : {
-		"colliders" : {"boxes":[{"max":[0.5,0.5,0.5],"min":[-0.5,0,-0.5]}]},
-		"mesh" : "slabtop.obj",
-		"parentType" : "MarbleGlassyOrangeSlab",
-		"sideall" : "MarbleGlassyOrangeSlab"
 	},
 	"MarbleGlassyPink" : {
 		"categories" : ["decorative","ulfric","stone"],
@@ -2404,29 +863,6 @@
 		"onRemoveAudio" : "vanilla.stoneDelete",
 		"sideall" : "SELF"
 	},
-	"MarbleGlassyPinkSlab" : {
-		"categories" : ["decorative","ulfric","stone"],
-		"customData" : {"useHeightMap":true,"useNormalMap":true},
-		"fullblockType" : "MarbleGlassyPinkSlab",
-		"icon" : "MarbleGlassyPinkSlab.png",
-		"maxStackSize" : 600,
-		"npcLimit" : 0,
-		"onPlaceAudio" : "vanilla.stonePlace",
-		"onRemoveAudio" : "vanilla.stoneDelete",
-		"sideall" : "SELF"
-	},
-	"MarbleGlassyPinkSlabbottom" : {
-		"colliders" : {"boxes":[{"max":[0.5,0,0.5],"min":[-0.5,-0.5,-0.5]}]},
-		"mesh" : "slabbottom.obj",
-		"parentType" : "MarbleGlassyPinkSlab",
-		"sideall" : "MarbleGlassyPinkSlab"
-	},
-	"MarbleGlassyPinkSlabtop" : {
-		"colliders" : {"boxes":[{"max":[0.5,0.5,0.5],"min":[-0.5,0,-0.5]}]},
-		"mesh" : "slabtop.obj",
-		"parentType" : "MarbleGlassyPinkSlab",
-		"sideall" : "MarbleGlassyPinkSlab"
-	},
 	"MarbleGlassyRed" : {
 		"categories" : ["decorative","ulfric","stone"],
 		"destructionTime" : 600,
@@ -2435,29 +871,6 @@
 		"onPlaceAudio" : "vanilla.stonePlace",
 		"onRemoveAudio" : "vanilla.stoneDelete",
 		"sideall" : "SELF"
-	},
-	"MarbleGlassyRedSlab" : {
-		"categories" : ["decorative","ulfric","stone"],
-		"customData" : {"useHeightMap":true,"useNormalMap":true},
-		"fullblockType" : "MarbleGlassyRedSlab",
-		"icon" : "MarbleGlassyRedSlab.png",
-		"maxStackSize" : 600,
-		"npcLimit" : 0,
-		"onPlaceAudio" : "vanilla.stonePlace",
-		"onRemoveAudio" : "vanilla.stoneDelete",
-		"sideall" : "SELF"
-	},
-	"MarbleGlassyRedSlabbottom" : {
-		"colliders" : {"boxes":[{"max":[0.5,0,0.5],"min":[-0.5,-0.5,-0.5]}]},
-		"mesh" : "slabbottom.obj",
-		"parentType" : "MarbleGlassyRedSlab",
-		"sideall" : "MarbleGlassyRedSlab"
-	},
-	"MarbleGlassyRedSlabtop" : {
-		"colliders" : {"boxes":[{"max":[0.5,0.5,0.5],"min":[-0.5,0,-0.5]}]},
-		"mesh" : "slabtop.obj",
-		"parentType" : "MarbleGlassyRedSlab",
-		"sideall" : "MarbleGlassyRedSlab"
 	},
 	"MarbleGray" : {
 		"categories" : ["decorative","ulfric","stone"],
@@ -2468,29 +881,6 @@
 		"onRemoveAudio" : "vanilla.stoneDelete",
 		"sideall" : "SELF"
 	},
-	"MarbleGraySlab" : {
-		"categories" : ["decorative","ulfric","stone"],
-		"customData" : {"useHeightMap":true,"useNormalMap":true},
-		"fullblockType" : "MarbleGraySlab",
-		"icon" : "MarbleGraySlab.png",
-		"maxStackSize" : 600,
-		"npcLimit" : 0,
-		"onPlaceAudio" : "vanilla.stonePlace",
-		"onRemoveAudio" : "vanilla.stoneDelete",
-		"sideall" : "SELF"
-	},
-	"MarbleGraySlabbottom" : {
-		"colliders" : {"boxes":[{"max":[0.5,0,0.5],"min":[-0.5,-0.5,-0.5]}]},
-		"mesh" : "slabbottom.obj",
-		"parentType" : "MarbleGraySlab",
-		"sideall" : "MarbleGraySlab"
-	},
-	"MarbleGraySlabtop" : {
-		"colliders" : {"boxes":[{"max":[0.5,0.5,0.5],"min":[-0.5,0,-0.5]}]},
-		"mesh" : "slabtop.obj",
-		"parentType" : "MarbleGraySlab",
-		"sideall" : "MarbleGraySlab"
-	},
 	"MarbleGreen" : {
 		"categories" : ["decorative","ulfric","stone"],
 		"destructionTime" : 600,
@@ -2499,29 +889,6 @@
 		"onPlaceAudio" : "vanilla.stonePlace",
 		"onRemoveAudio" : "vanilla.stoneDelete",
 		"sideall" : "SELF"
-	},
-	"MarbleGreenSlab" : {
-		"categories" : ["decorative","ulfric","stone"],
-		"customData" : {"useHeightMap":true,"useNormalMap":true},
-		"fullblockType" : "MarbleGreenSlab",
-		"icon" : "MarbleGreenSlab.png",
-		"maxStackSize" : 600,
-		"npcLimit" : 0,
-		"onPlaceAudio" : "vanilla.stonePlace",
-		"onRemoveAudio" : "vanilla.stoneDelete",
-		"sideall" : "SELF"
-	},
-	"MarbleGreenSlabbottom" : {
-		"colliders" : {"boxes":[{"max":[0.5,0,0.5],"min":[-0.5,-0.5,-0.5]}]},
-		"mesh" : "slabbottom.obj",
-		"parentType" : "MarbleGreenSlab",
-		"sideall" : "MarbleGreenSlab"
-	},
-	"MarbleGreenSlabtop" : {
-		"colliders" : {"boxes":[{"max":[0.5,0.5,0.5],"min":[-0.5,0,-0.5]}]},
-		"mesh" : "slabtop.obj",
-		"parentType" : "MarbleGreenSlab",
-		"sideall" : "MarbleGreenSlab"
 	},
 	"MarbleLight" : {
 		"categories" : ["decorative","ulfric","stone"],
@@ -2541,52 +908,6 @@
 		"onRemoveAudio" : "vanilla.stoneDelete",
 		"sideall" : "SELF"
 	},
-	"MarbleLightGreenSlab" : {
-		"categories" : ["decorative","ulfric","stone"],
-		"customData" : {"useHeightMap":true,"useNormalMap":true},
-		"fullblockType" : "MarbleLightGreenSlab",
-		"icon" : "MarbleLightGreenSlab.png",
-		"maxStackSize" : 600,
-		"npcLimit" : 0,
-		"onPlaceAudio" : "vanilla.stonePlace",
-		"onRemoveAudio" : "vanilla.stoneDelete",
-		"sideall" : "SELF"
-	},
-	"MarbleLightGreenSlabbottom" : {
-		"colliders" : {"boxes":[{"max":[0.5,0,0.5],"min":[-0.5,-0.5,-0.5]}]},
-		"mesh" : "slabbottom.obj",
-		"parentType" : "MarbleLightGreenSlab",
-		"sideall" : "MarbleLightGreenSlab"
-	},
-	"MarbleLightGreenSlabtop" : {
-		"colliders" : {"boxes":[{"max":[0.5,0.5,0.5],"min":[-0.5,0,-0.5]}]},
-		"mesh" : "slabtop.obj",
-		"parentType" : "MarbleLightGreenSlab",
-		"sideall" : "MarbleLightGreenSlab"
-	},
-	"MarbleLightSlab" : {
-		"categories" : ["decorative","ulfric","stone"],
-		"customData" : {"useHeightMap":true,"useNormalMap":true},
-		"fullblockType" : "MarbleLightSlab",
-		"icon" : "MarbleLightSlab.png",
-		"maxStackSize" : 600,
-		"npcLimit" : 0,
-		"onPlaceAudio" : "vanilla.stonePlace",
-		"onRemoveAudio" : "vanilla.stoneDelete",
-		"sideall" : "SELF"
-	},
-	"MarbleLightSlabbottom" : {
-		"colliders" : {"boxes":[{"max":[0.5,0,0.5],"min":[-0.5,-0.5,-0.5]}]},
-		"mesh" : "slabbottom.obj",
-		"parentType" : "MarbleLightSlab",
-		"sideall" : "MarbleLightSlab"
-	},
-	"MarbleLightSlabtop" : {
-		"colliders" : {"boxes":[{"max":[0.5,0.5,0.5],"min":[-0.5,0,-0.5]}]},
-		"mesh" : "slabtop.obj",
-		"parentType" : "MarbleLightSlab",
-		"sideall" : "MarbleLightSlab"
-	},
 	"MarbleOnixPina" : {
 		"categories" : ["decorative","ulfric","stone"],
 		"destructionTime" : 600,
@@ -2596,29 +917,6 @@
 		"onRemoveAudio" : "vanilla.stoneDelete",
 		"sideall" : "SELF"
 	},
-	"MarbleOnixPinaSlab" : {
-		"categories" : ["decorative","ulfric","stone"],
-		"customData" : {"useHeightMap":true,"useNormalMap":true},
-		"fullblockType" : "MarbleOnixPinaSlab",
-		"icon" : "MarbleOnixPinaSlab.png",
-		"maxStackSize" : 600,
-		"npcLimit" : 0,
-		"onPlaceAudio" : "vanilla.stonePlace",
-		"onRemoveAudio" : "vanilla.stoneDelete",
-		"sideall" : "SELF"
-	},
-	"MarbleOnixPinaSlabbottom" : {
-		"colliders" : {"boxes":[{"max":[0.5,0,0.5],"min":[-0.5,-0.5,-0.5]}]},
-		"mesh" : "slabbottom.obj",
-		"parentType" : "MarbleOnixPinaSlab",
-		"sideall" : "MarbleOnixPinaSlab"
-	},
-	"MarbleOnixPinaSlabtop" : {
-		"colliders" : {"boxes":[{"max":[0.5,0.5,0.5],"min":[-0.5,0,-0.5]}]},
-		"mesh" : "slabtop.obj",
-		"parentType" : "MarbleOnixPinaSlab",
-		"sideall" : "MarbleOnixPinaSlab"
-	},
 	"MarblePurple" : {
 		"categories" : ["decorative","ulfric","stone"],
 		"destructionTime" : 600,
@@ -2627,29 +925,6 @@
 		"onPlaceAudio" : "vanilla.stonePlace",
 		"onRemoveAudio" : "vanilla.stoneDelete",
 		"sideall" : "SELF"
-	},
-	"MarblePurpleSlab" : {
-		"categories" : ["decorative","ulfric","stone"],
-		"customData" : {"useHeightMap":true,"useNormalMap":true},
-		"fullblockType" : "MarblePurpleSlab",
-		"icon" : "MarblePurpleSlab.png",
-		"maxStackSize" : 600,
-		"npcLimit" : 0,
-		"onPlaceAudio" : "vanilla.stonePlace",
-		"onRemoveAudio" : "vanilla.stoneDelete",
-		"sideall" : "SELF"
-	},
-	"MarblePurpleSlabbottom" : {
-		"colliders" : {"boxes":[{"max":[0.5,0,0.5],"min":[-0.5,-0.5,-0.5]}]},
-		"mesh" : "slabbottom.obj",
-		"parentType" : "MarblePurpleSlab",
-		"sideall" : "MarblePurpleSlab"
-	},
-	"MarblePurpleSlabtop" : {
-		"colliders" : {"boxes":[{"max":[0.5,0.5,0.5],"min":[-0.5,0,-0.5]}]},
-		"mesh" : "slabtop.obj",
-		"parentType" : "MarblePurpleSlab",
-		"sideall" : "MarblePurpleSlab"
 	},
 	"MarbleRough" : {
 		"categories" : ["decorative","ulfric","stone"],
@@ -2669,52 +944,6 @@
 		"onRemoveAudio" : "vanilla.stoneDelete",
 		"sideall" : "SELF"
 	},
-	"MarbleRoughPinkSlab" : {
-		"categories" : ["decorative","ulfric","stone"],
-		"customData" : {"useHeightMap":true,"useNormalMap":true},
-		"fullblockType" : "MarbleRoughPinkSlab",
-		"icon" : "MarbleRoughPinkSlab.png",
-		"maxStackSize" : 600,
-		"npcLimit" : 0,
-		"onPlaceAudio" : "vanilla.stonePlace",
-		"onRemoveAudio" : "vanilla.stoneDelete",
-		"sideall" : "SELF"
-	},
-	"MarbleRoughPinkSlabbottom" : {
-		"colliders" : {"boxes":[{"max":[0.5,0,0.5],"min":[-0.5,-0.5,-0.5]}]},
-		"mesh" : "slabbottom.obj",
-		"parentType" : "MarbleRoughPinkSlab",
-		"sideall" : "MarbleRoughPinkSlab"
-	},
-	"MarbleRoughPinkSlabtop" : {
-		"colliders" : {"boxes":[{"max":[0.5,0.5,0.5],"min":[-0.5,0,-0.5]}]},
-		"mesh" : "slabtop.obj",
-		"parentType" : "MarbleRoughPinkSlab",
-		"sideall" : "MarbleRoughPinkSlab"
-	},
-	"MarbleRoughSlab" : {
-		"categories" : ["decorative","ulfric","stone"],
-		"customData" : {"useHeightMap":true,"useNormalMap":true},
-		"fullblockType" : "MarbleRoughSlab",
-		"icon" : "MarbleRoughSlab.png",
-		"maxStackSize" : 600,
-		"npcLimit" : 0,
-		"onPlaceAudio" : "vanilla.stonePlace",
-		"onRemoveAudio" : "vanilla.stoneDelete",
-		"sideall" : "SELF"
-	},
-	"MarbleRoughSlabbottom" : {
-		"colliders" : {"boxes":[{"max":[0.5,0,0.5],"min":[-0.5,-0.5,-0.5]}]},
-		"mesh" : "slabbottom.obj",
-		"parentType" : "MarbleRoughSlab",
-		"sideall" : "MarbleRoughSlab"
-	},
-	"MarbleRoughSlabtop" : {
-		"colliders" : {"boxes":[{"max":[0.5,0.5,0.5],"min":[-0.5,0,-0.5]}]},
-		"mesh" : "slabtop.obj",
-		"parentType" : "MarbleRoughSlab",
-		"sideall" : "MarbleRoughSlab"
-	},
 	"MarbleSeaGreen" : {
 		"categories" : ["decorative","ulfric","stone"],
 		"destructionTime" : 600,
@@ -2723,52 +952,6 @@
 		"onPlaceAudio" : "vanilla.stonePlace",
 		"onRemoveAudio" : "vanilla.stoneDelete",
 		"sideall" : "SELF"
-	},
-	"MarbleSeaGreenSlab" : {
-		"categories" : ["decorative","ulfric","stone"],
-		"customData" : {"useHeightMap":true,"useNormalMap":true},
-		"fullblockType" : "MarbleSeaGreenSlab",
-		"icon" : "MarbleSeaGreenSlab.png",
-		"maxStackSize" : 600,
-		"npcLimit" : 0,
-		"onPlaceAudio" : "vanilla.stonePlace",
-		"onRemoveAudio" : "vanilla.stoneDelete",
-		"sideall" : "SELF"
-	},
-	"MarbleSeaGreenSlabbottom" : {
-		"colliders" : {"boxes":[{"max":[0.5,0,0.5],"min":[-0.5,-0.5,-0.5]}]},
-		"mesh" : "slabbottom.obj",
-		"parentType" : "MarbleSeaGreenSlab",
-		"sideall" : "MarbleSeaGreenSlab"
-	},
-	"MarbleSeaGreenSlabtop" : {
-		"colliders" : {"boxes":[{"max":[0.5,0.5,0.5],"min":[-0.5,0,-0.5]}]},
-		"mesh" : "slabtop.obj",
-		"parentType" : "MarbleSeaGreenSlab",
-		"sideall" : "MarbleSeaGreenSlab"
-	},
-	"MarbleSlab" : {
-		"categories" : ["decorative","ulfric","stone"],
-		"customData" : {"useHeightMap":true,"useNormalMap":true},
-		"fullblockType" : "MarbleSlab",
-		"icon" : "MarbleSlab.png",
-		"maxStackSize" : 600,
-		"npcLimit" : 0,
-		"onPlaceAudio" : "vanilla.stonePlace",
-		"onRemoveAudio" : "vanilla.stoneDelete",
-		"sideall" : "SELF"
-	},
-	"MarbleSlabbottom" : {
-		"colliders" : {"boxes":[{"max":[0.5,0,0.5],"min":[-0.5,-0.5,-0.5]}]},
-		"mesh" : "slabbottom.obj",
-		"parentType" : "MarbleSlab",
-		"sideall" : "MarbleSlab"
-	},
-	"MarbleSlabtop" : {
-		"colliders" : {"boxes":[{"max":[0.5,0.5,0.5],"min":[-0.5,0,-0.5]}]},
-		"mesh" : "slabtop.obj",
-		"parentType" : "MarbleSlab",
-		"sideall" : "MarbleSlab"
 	},
 	"MarbleSmashedGray" : {
 		"categories" : ["decorative","ulfric","stone"],
@@ -2779,29 +962,6 @@
 		"onRemoveAudio" : "vanilla.stoneDelete",
 		"sideall" : "SELF"
 	},
-	"MarbleSmashedGraySlab" : {
-		"categories" : ["decorative","ulfric","stone"],
-		"customData" : {"useHeightMap":true,"useNormalMap":true},
-		"fullblockType" : "MarbleSmashedGraySlab",
-		"icon" : "MarbleSmashedGraySlab.png",
-		"maxStackSize" : 600,
-		"npcLimit" : 0,
-		"onPlaceAudio" : "vanilla.stonePlace",
-		"onRemoveAudio" : "vanilla.stoneDelete",
-		"sideall" : "SELF"
-	},
-	"MarbleSmashedGraySlabbottom" : {
-		"colliders" : {"boxes":[{"max":[0.5,0,0.5],"min":[-0.5,-0.5,-0.5]}]},
-		"mesh" : "slabbottom.obj",
-		"parentType" : "MarbleSmashedGraySlab",
-		"sideall" : "MarbleSmashedGraySlab"
-	},
-	"MarbleSmashedGraySlabtop" : {
-		"colliders" : {"boxes":[{"max":[0.5,0.5,0.5],"min":[-0.5,0,-0.5]}]},
-		"mesh" : "slabtop.obj",
-		"parentType" : "MarbleSmashedGraySlab",
-		"sideall" : "MarbleSmashedGraySlab"
-	},
 	"MarbleTepeacaGris" : {
 		"categories" : ["decorative","ulfric","stone"],
 		"destructionTime" : 600,
@@ -2810,29 +970,6 @@
 		"onPlaceAudio" : "vanilla.stonePlace",
 		"onRemoveAudio" : "vanilla.stoneDelete",
 		"sideall" : "SELF"
-	},
-	"MarbleTepeacaGrisSlab" : {
-		"categories" : ["decorative","ulfric","stone"],
-		"customData" : {"useHeightMap":true,"useNormalMap":true},
-		"fullblockType" : "MarbleTepeacaGrisSlab",
-		"icon" : "MarbleTepeacaGrisSlab.png",
-		"maxStackSize" : 600,
-		"npcLimit" : 0,
-		"onPlaceAudio" : "vanilla.stonePlace",
-		"onRemoveAudio" : "vanilla.stoneDelete",
-		"sideall" : "SELF"
-	},
-	"MarbleTepeacaGrisSlabbottom" : {
-		"colliders" : {"boxes":[{"max":[0.5,0,0.5],"min":[-0.5,-0.5,-0.5]}]},
-		"mesh" : "slabbottom.obj",
-		"parentType" : "MarbleTepeacaGrisSlab",
-		"sideall" : "MarbleTepeacaGrisSlab"
-	},
-	"MarbleTepeacaGrisSlabtop" : {
-		"colliders" : {"boxes":[{"max":[0.5,0.5,0.5],"min":[-0.5,0,-0.5]}]},
-		"mesh" : "slabtop.obj",
-		"parentType" : "MarbleTepeacaGrisSlab",
-		"sideall" : "MarbleTepeacaGrisSlab"
 	},
 	"MarbleTile1" : {
 		"categories" : ["decorative","ulfric","stone"],
@@ -2843,29 +980,6 @@
 		"onRemoveAudio" : "vanilla.stoneDelete",
 		"sideall" : "SELF"
 	},
-	"MarbleTile1Slab" : {
-		"categories" : ["decorative","ulfric","stone"],
-		"customData" : {"useHeightMap":true,"useNormalMap":true},
-		"fullblockType" : "MarbleTile1Slab",
-		"icon" : "MarbleTile1Slab.png",
-		"maxStackSize" : 600,
-		"npcLimit" : 0,
-		"onPlaceAudio" : "vanilla.stonePlace",
-		"onRemoveAudio" : "vanilla.stoneDelete",
-		"sideall" : "SELF"
-	},
-	"MarbleTile1Slabbottom" : {
-		"colliders" : {"boxes":[{"max":[0.5,0,0.5],"min":[-0.5,-0.5,-0.5]}]},
-		"mesh" : "slabbottom.obj",
-		"parentType" : "MarbleTile1Slab",
-		"sideall" : "MarbleTile1Slab"
-	},
-	"MarbleTile1Slabtop" : {
-		"colliders" : {"boxes":[{"max":[0.5,0.5,0.5],"min":[-0.5,0,-0.5]}]},
-		"mesh" : "slabtop.obj",
-		"parentType" : "MarbleTile1Slab",
-		"sideall" : "MarbleTile1Slab"
-	},
 	"MarbleTiles" : {
 		"categories" : ["decorative","ulfric","stone"],
 		"destructionTime" : 600,
@@ -2874,29 +988,6 @@
 		"onPlaceAudio" : "vanilla.stonePlace",
 		"onRemoveAudio" : "vanilla.stoneDelete",
 		"sideall" : "SELF"
-	},
-	"MarbleTilesSlab" : {
-		"categories" : ["decorative","ulfric","stone"],
-		"customData" : {"useHeightMap":true,"useNormalMap":true},
-		"fullblockType" : "MarbleTilesSlab",
-		"icon" : "MarbleTilesSlab.png",
-		"maxStackSize" : 600,
-		"npcLimit" : 0,
-		"onPlaceAudio" : "vanilla.stonePlace",
-		"onRemoveAudio" : "vanilla.stoneDelete",
-		"sideall" : "SELF"
-	},
-	"MarbleTilesSlabbottom" : {
-		"colliders" : {"boxes":[{"max":[0.5,0,0.5],"min":[-0.5,-0.5,-0.5]}]},
-		"mesh" : "slabbottom.obj",
-		"parentType" : "MarbleTilesSlab",
-		"sideall" : "MarbleTilesSlab"
-	},
-	"MarbleTilesSlabtop" : {
-		"colliders" : {"boxes":[{"max":[0.5,0.5,0.5],"min":[-0.5,0,-0.5]}]},
-		"mesh" : "slabtop.obj",
-		"parentType" : "MarbleTilesSlab",
-		"sideall" : "MarbleTilesSlab"
 	},
 	"MetalReenforcedDarkWood" : {
 		"categories" : ["decorative","ulfric","wood"],
@@ -2914,29 +1005,6 @@
 		"onRemoveAudio" : "vanilla.woodDeleteLight",
 		"sideall" : "SELF"
 	},
-	"NewShinglesSlab" : {
-		"categories" : ["decorative","ulfric","wood"],
-		"customData" : {"useHeightMap":true,"useNormalMap":true},
-		"fullblockType" : "NewShinglesSlab",
-		"icon" : "NewShinglesSlab.png",
-		"maxStackSize" : 600,
-		"npcLimit" : 0,
-		"onPlaceAudio" : "vanilla.woodPlace",
-		"onRemoveAudio" : "vanilla.woodDeleteLight",
-		"sideall" : "SELF"
-	},
-	"NewShinglesSlabbottom" : {
-		"colliders" : {"boxes":[{"max":[0.5,0,0.5],"min":[-0.5,-0.5,-0.5]}]},
-		"mesh" : "slabbottom.obj",
-		"parentType" : "NewShinglesSlab",
-		"sideall" : "NewShinglesSlab"
-	},
-	"NewShinglesSlabtop" : {
-		"colliders" : {"boxes":[{"max":[0.5,0.5,0.5],"min":[-0.5,0,-0.5]}]},
-		"mesh" : "slabtop.obj",
-		"parentType" : "NewShinglesSlab",
-		"sideall" : "NewShinglesSlab"
-	},
 	"OldShingles" : {
 		"categories" : ["decorative","ulfric","wood"],
 		"icon" : "OldShingles.png",
@@ -2944,29 +1012,6 @@
 		"onPlaceAudio" : "vanilla.woodPlace",
 		"onRemoveAudio" : "vanilla.woodDeleteLight",
 		"sideall" : "SELF"
-	},
-	"OldShinglesSlab" : {
-		"categories" : ["decorative","ulfric","wood"],
-		"customData" : {"useHeightMap":true,"useNormalMap":true},
-		"fullblockType" : "OldShinglesSlab",
-		"icon" : "OldShinglesSlab.png",
-		"maxStackSize" : 600,
-		"npcLimit" : 0,
-		"onPlaceAudio" : "vanilla.woodPlace",
-		"onRemoveAudio" : "vanilla.woodDeleteLight",
-		"sideall" : "SELF"
-	},
-	"OldShinglesSlabbottom" : {
-		"colliders" : {"boxes":[{"max":[0.5,0,0.5],"min":[-0.5,-0.5,-0.5]}]},
-		"mesh" : "slabbottom.obj",
-		"parentType" : "OldShinglesSlab",
-		"sideall" : "OldShinglesSlab"
-	},
-	"OldShinglesSlabtop" : {
-		"colliders" : {"boxes":[{"max":[0.5,0.5,0.5],"min":[-0.5,0,-0.5]}]},
-		"mesh" : "slabtop.obj",
-		"parentType" : "OldShinglesSlab",
-		"sideall" : "OldShinglesSlab"
 	},
 	"OldWeatheredBoards" : {
 		"categories" : ["decorative","ulfric","wood"],
@@ -2976,29 +1021,6 @@
 		"onRemoveAudio" : "vanilla.woodDeleteLight",
 		"sideall" : "SELF"
 	},
-	"OldWeatheredBoardsSlab" : {
-		"categories" : ["decorative","ulfric","wood"],
-		"customData" : {"useHeightMap":true,"useNormalMap":true},
-		"fullblockType" : "OldWeatheredBoardsSlab",
-		"icon" : "OldWeatheredBoardsSlab.png",
-		"maxStackSize" : 600,
-		"npcLimit" : 0,
-		"onPlaceAudio" : "vanilla.woodPlace",
-		"onRemoveAudio" : "vanilla.woodDeleteLight",
-		"sideall" : "SELF"
-	},
-	"OldWeatheredBoardsSlabbottom" : {
-		"colliders" : {"boxes":[{"max":[0.5,0,0.5],"min":[-0.5,-0.5,-0.5]}]},
-		"mesh" : "slabbottom.obj",
-		"parentType" : "OldWeatheredBoardsSlab",
-		"sideall" : "OldWeatheredBoardsSlab"
-	},
-	"OldWeatheredBoardsSlabtop" : {
-		"colliders" : {"boxes":[{"max":[0.5,0.5,0.5],"min":[-0.5,0,-0.5]}]},
-		"mesh" : "slabtop.obj",
-		"parentType" : "OldWeatheredBoardsSlab",
-		"sideall" : "OldWeatheredBoardsSlab"
-	},
 	"OrangeMarble" : {
 		"categories" : ["decorative","ulfric","stone"],
 		"destructionTime" : 600,
@@ -3007,29 +1029,6 @@
 		"onPlaceAudio" : "vanilla.stonePlace",
 		"onRemoveAudio" : "vanilla.stoneDelete",
 		"sideall" : "SELF"
-	},
-	"OrangeMarbleSlab" : {
-		"categories" : ["decorative","ulfric","stone"],
-		"customData" : {"useHeightMap":true,"useNormalMap":true},
-		"fullblockType" : "OrangeMarbleSlab",
-		"icon" : "OrangeMarbleSlab.png",
-		"maxStackSize" : 600,
-		"npcLimit" : 0,
-		"onPlaceAudio" : "vanilla.stonePlace",
-		"onRemoveAudio" : "vanilla.stoneDelete",
-		"sideall" : "SELF"
-	},
-	"OrangeMarbleSlabbottom" : {
-		"colliders" : {"boxes":[{"max":[0.5,0,0.5],"min":[-0.5,-0.5,-0.5]}]},
-		"mesh" : "slabbottom.obj",
-		"parentType" : "OrangeMarbleSlab",
-		"sideall" : "OrangeMarbleSlab"
-	},
-	"OrangeMarbleSlabtop" : {
-		"colliders" : {"boxes":[{"max":[0.5,0.5,0.5],"min":[-0.5,0,-0.5]}]},
-		"mesh" : "slabtop.obj",
-		"parentType" : "OrangeMarbleSlab",
-		"sideall" : "OrangeMarbleSlab"
 	},
 	"OvergrownFence" : {
 		"icon" : "OvergrownFence.png",
@@ -3064,29 +1063,6 @@
 		"onRemoveAudio" : "vanilla.stoneDelete",
 		"sideall" : "SELF"
 	},
-	"PurpleSlateSlab" : {
-		"categories" : ["decorative","ulfric","stone"],
-		"customData" : {"useHeightMap":true,"useNormalMap":true},
-		"fullblockType" : "PurpleSlateSlab",
-		"icon" : "PurpleSlateSlab.png",
-		"maxStackSize" : 600,
-		"npcLimit" : 0,
-		"onPlaceAudio" : "vanilla.stonePlace",
-		"onRemoveAudio" : "vanilla.stoneDelete",
-		"sideall" : "SELF"
-	},
-	"PurpleSlateSlabbottom" : {
-		"colliders" : {"boxes":[{"max":[0.5,0,0.5],"min":[-0.5,-0.5,-0.5]}]},
-		"mesh" : "slabbottom.obj",
-		"parentType" : "PurpleSlateSlab",
-		"sideall" : "PurpleSlateSlab"
-	},
-	"PurpleSlateSlabtop" : {
-		"colliders" : {"boxes":[{"max":[0.5,0.5,0.5],"min":[-0.5,0,-0.5]}]},
-		"mesh" : "slabtop.obj",
-		"parentType" : "PurpleSlateSlab",
-		"sideall" : "PurpleSlateSlab"
-	},
 	"rawMarble" : {
 		"categories" : ["ingredient","raw"],
 		"icon" : "rawMarble.png",
@@ -3101,29 +1077,6 @@
 		"onRemoveAudio" : "vanilla.stoneDelete",
 		"sideall" : "SELF"
 	},
-	"RockWallSlab" : {
-		"categories" : ["decorative","ulfric","stone"],
-		"customData" : {"useHeightMap":true,"useNormalMap":true},
-		"fullblockType" : "RockWallSlab",
-		"icon" : "RockWallSlab.png",
-		"maxStackSize" : 600,
-		"npcLimit" : 0,
-		"onPlaceAudio" : "vanilla.stonePlace",
-		"onRemoveAudio" : "vanilla.stoneDelete",
-		"sideall" : "SELF"
-	},
-	"RockWallSlabbottom" : {
-		"colliders" : {"boxes":[{"max":[0.5,0,0.5],"min":[-0.5,-0.5,-0.5]}]},
-		"mesh" : "slabbottom.obj",
-		"parentType" : "RockWallSlab",
-		"sideall" : "RockWallSlab"
-	},
-	"RockWallSlabtop" : {
-		"colliders" : {"boxes":[{"max":[0.5,0.5,0.5],"min":[-0.5,0,-0.5]}]},
-		"mesh" : "slabtop.obj",
-		"parentType" : "RockWallSlab",
-		"sideall" : "RockWallSlab"
-	},
 	"RoughBrownStone" : {
 		"categories" : ["decorative","ulfric","stone"],
 		"destructionTime" : 600,
@@ -3133,29 +1086,6 @@
 		"onRemoveAudio" : "vanilla.stoneDelete",
 		"sideall" : "SELF"
 	},
-	"RoughBrownStoneSlab" : {
-		"categories" : ["decorative","ulfric","stone"],
-		"customData" : {"useHeightMap":true,"useNormalMap":true},
-		"fullblockType" : "RoughBrownStoneSlab",
-		"icon" : "RoughBrownStoneSlab.png",
-		"maxStackSize" : 600,
-		"npcLimit" : 0,
-		"onPlaceAudio" : "vanilla.stonePlace",
-		"onRemoveAudio" : "vanilla.stoneDelete",
-		"sideall" : "SELF"
-	},
-	"RoughBrownStoneSlabbottom" : {
-		"colliders" : {"boxes":[{"max":[0.5,0,0.5],"min":[-0.5,-0.5,-0.5]}]},
-		"mesh" : "slabbottom.obj",
-		"parentType" : "RoughBrownStoneSlab",
-		"sideall" : "RoughBrownStoneSlab"
-	},
-	"RoughBrownStoneSlabtop" : {
-		"colliders" : {"boxes":[{"max":[0.5,0.5,0.5],"min":[-0.5,0,-0.5]}]},
-		"mesh" : "slabtop.obj",
-		"parentType" : "RoughBrownStoneSlab",
-		"sideall" : "RoughBrownStoneSlab"
-	},
 	"ScratchedLightBoards" : {
 		"categories" : ["decorative","ulfric","wood"],
 		"icon" : "ScratchedLightBoards.png",
@@ -3163,29 +1093,6 @@
 		"onPlaceAudio" : "vanilla.woodPlace",
 		"onRemoveAudio" : "vanilla.woodDeleteLight",
 		"sideall" : "SELF"
-	},
-	"ScratchedLightBoardsSlab" : {
-		"categories" : ["decorative","ulfric","wood"],
-		"customData" : {"useHeightMap":true,"useNormalMap":true},
-		"fullblockType" : "ScratchedLightBoardsSlab",
-		"icon" : "ScratchedLightBoardsSlab.png",
-		"maxStackSize" : 600,
-		"npcLimit" : 0,
-		"onPlaceAudio" : "vanilla.woodPlace",
-		"onRemoveAudio" : "vanilla.woodDeleteLight",
-		"sideall" : "SELF"
-	},
-	"ScratchedLightBoardsSlabbottom" : {
-		"colliders" : {"boxes":[{"max":[0.5,0,0.5],"min":[-0.5,-0.5,-0.5]}]},
-		"mesh" : "slabbottom.obj",
-		"parentType" : "ScratchedLightBoardsSlab",
-		"sideall" : "ScratchedLightBoardsSlab"
-	},
-	"ScratchedLightBoardsSlabtop" : {
-		"colliders" : {"boxes":[{"max":[0.5,0.5,0.5],"min":[-0.5,0,-0.5]}]},
-		"mesh" : "slabtop.obj",
-		"parentType" : "ScratchedLightBoardsSlab",
-		"sideall" : "ScratchedLightBoardsSlab"
 	},
 	"ShrubCover" : {
 		"icon" : "ShrubCover.png",
@@ -3212,29 +1119,6 @@
 		"onRemoveAudio" : "vanilla.stoneDelete",
 		"sideall" : "SELF"
 	},
-	"StoneBlockRoughWallSlab" : {
-		"categories" : ["decorative","ulfric","stone"],
-		"customData" : {"useHeightMap":true,"useNormalMap":true},
-		"fullblockType" : "StoneBlockRoughWallSlab",
-		"icon" : "StoneBlockRoughWallSlab.png",
-		"maxStackSize" : 600,
-		"npcLimit" : 0,
-		"onPlaceAudio" : "vanilla.stonePlace",
-		"onRemoveAudio" : "vanilla.stoneDelete",
-		"sideall" : "SELF"
-	},
-	"StoneBlockRoughWallSlabbottom" : {
-		"colliders" : {"boxes":[{"max":[0.5,0,0.5],"min":[-0.5,-0.5,-0.5]}]},
-		"mesh" : "slabbottom.obj",
-		"parentType" : "StoneBlockRoughWallSlab",
-		"sideall" : "StoneBlockRoughWallSlab"
-	},
-	"StoneBlockRoughWallSlabtop" : {
-		"colliders" : {"boxes":[{"max":[0.5,0.5,0.5],"min":[-0.5,0,-0.5]}]},
-		"mesh" : "slabtop.obj",
-		"parentType" : "StoneBlockRoughWallSlab",
-		"sideall" : "StoneBlockRoughWallSlab"
-	},
 	"StoneBlocksWoodEdged" : {
 		"categories" : ["decorative","ulfric","stone"],
 		"destructionTime" : 600,
@@ -3243,52 +1127,6 @@
 		"onPlaceAudio" : "vanilla.stonePlace",
 		"onRemoveAudio" : "vanilla.stoneDelete",
 		"sideall" : "SELF"
-	},
-	"StoneBlocksWoodEdgedSlab" : {
-		"categories" : ["decorative","ulfric","stone"],
-		"customData" : {"useHeightMap":true,"useNormalMap":true},
-		"fullblockType" : "StoneBlocksWoodEdgedSlab",
-		"icon" : "StoneBlocksWoodEdgedSlab.png",
-		"maxStackSize" : 600,
-		"npcLimit" : 0,
-		"onPlaceAudio" : "vanilla.stonePlace",
-		"onRemoveAudio" : "vanilla.stoneDelete",
-		"sideall" : "SELF"
-	},
-	"StoneBlocksWoodEdgedSlabbottom" : {
-		"colliders" : {"boxes":[{"max":[0.5,0,0.5],"min":[-0.5,-0.5,-0.5]}]},
-		"mesh" : "slabbottom.obj",
-		"parentType" : "StoneBlocksWoodEdgedSlab",
-		"sideall" : "StoneBlocksWoodEdgedSlab"
-	},
-	"StoneBlocksWoodEdgedSlabtop" : {
-		"colliders" : {"boxes":[{"max":[0.5,0.5,0.5],"min":[-0.5,0,-0.5]}]},
-		"mesh" : "slabtop.obj",
-		"parentType" : "StoneBlocksWoodEdgedSlab",
-		"sideall" : "StoneBlocksWoodEdgedSlab"
-	},
-	"StoneBricksSlab" : {
-		"categories" : ["decorative","ulfric","stone"],
-		"customData" : {"useHeightMap":true,"useNormalMap":true},
-		"fullblockType" : "vanilla.stoneBricks",
-		"icon" : "StoneBricksSlab.png",
-		"maxStackSize" : 600,
-		"npcLimit" : 0,
-		"onPlaceAudio" : "vanilla.stonePlace",
-		"onRemoveAudio" : "vanilla.stoneDelete",
-		"sideall" : "SELF"
-	},
-	"StoneBricksSlabbottom" : {
-		"colliders" : {"boxes":[{"max":[0.5,0,0.5],"min":[-0.5,-0.5,-0.5]}]},
-		"mesh" : "slabbottom.obj",
-		"parentType" : "StoneBricksSlab",
-		"sideall" : "StoneBricksSlab"
-	},
-	"StoneBricksSlabtop" : {
-		"colliders" : {"boxes":[{"max":[0.5,0.5,0.5],"min":[-0.5,0,-0.5]}]},
-		"mesh" : "slabtop.obj",
-		"parentType" : "StoneBricksSlab",
-		"sideall" : "StoneBricksSlab"
 	},
 	"StoneBrickWall" : {
 		"categories" : ["decorative","ulfric","stone"],
@@ -3299,29 +1137,6 @@
 		"onRemoveAudio" : "vanilla.stoneDelete",
 		"sideall" : "SELF"
 	},
-	"StoneBrickWallSlab" : {
-		"categories" : ["decorative","ulfric","stone"],
-		"customData" : {"useHeightMap":true,"useNormalMap":true},
-		"fullblockType" : "StoneBrickWallSlab",
-		"icon" : "StoneBrickWallSlab.png",
-		"maxStackSize" : 600,
-		"npcLimit" : 0,
-		"onPlaceAudio" : "vanilla.stonePlace",
-		"onRemoveAudio" : "vanilla.stoneDelete",
-		"sideall" : "SELF"
-	},
-	"StoneBrickWallSlabbottom" : {
-		"colliders" : {"boxes":[{"max":[0.5,0,0.5],"min":[-0.5,-0.5,-0.5]}]},
-		"mesh" : "slabbottom.obj",
-		"parentType" : "StoneBrickWallSlab",
-		"sideall" : "StoneBrickWallSlab"
-	},
-	"StoneBrickWallSlabtop" : {
-		"colliders" : {"boxes":[{"max":[0.5,0.5,0.5],"min":[-0.5,0,-0.5]}]},
-		"mesh" : "slabtop.obj",
-		"parentType" : "StoneBrickWallSlab",
-		"sideall" : "StoneBrickWallSlab"
-	},
 	"StoneMidnight" : {
 		"categories" : ["decorative","ulfric","stone"],
 		"destructionTime" : 600,
@@ -3330,29 +1145,6 @@
 		"onPlaceAudio" : "vanilla.stonePlace",
 		"onRemoveAudio" : "vanilla.stoneDelete",
 		"sideall" : "SELF"
-	},
-	"StoneMidnightSlab" : {
-		"categories" : ["decorative","ulfric","stone"],
-		"customData" : {"useHeightMap":true,"useNormalMap":true},
-		"fullblockType" : "StoneMidnightSlab",
-		"icon" : "StoneMidnightSlab.png",
-		"maxStackSize" : 600,
-		"npcLimit" : 0,
-		"onPlaceAudio" : "vanilla.stonePlace",
-		"onRemoveAudio" : "vanilla.stoneDelete",
-		"sideall" : "SELF"
-	},
-	"StoneMidnightSlabbottom" : {
-		"colliders" : {"boxes":[{"max":[0.5,0,0.5],"min":[-0.5,-0.5,-0.5]}]},
-		"mesh" : "slabbottom.obj",
-		"parentType" : "StoneMidnightSlab",
-		"sideall" : "StoneMidnightSlab"
-	},
-	"StoneMidnightSlabtop" : {
-		"colliders" : {"boxes":[{"max":[0.5,0.5,0.5],"min":[-0.5,0,-0.5]}]},
-		"mesh" : "slabtop.obj",
-		"parentType" : "StoneMidnightSlab",
-		"sideall" : "StoneMidnightSlab"
 	},
 	"StonePath" : {
 		"categories" : ["decorative","ulfric","stone"],
@@ -3363,29 +1155,6 @@
 		"onRemoveAudio" : "vanilla.stoneDelete",
 		"sideall" : "SELF"
 	},
-	"StonePathSlab" : {
-		"categories" : ["decorative","ulfric","stone"],
-		"customData" : {"useHeightMap":true,"useNormalMap":true},
-		"fullblockType" : "StonePathSlab",
-		"icon" : "StonePathSlab.png",
-		"maxStackSize" : 600,
-		"npcLimit" : 0,
-		"onPlaceAudio" : "vanilla.stonePlace",
-		"onRemoveAudio" : "vanilla.stoneDelete",
-		"sideall" : "SELF"
-	},
-	"StonePathSlabbottom" : {
-		"colliders" : {"boxes":[{"max":[0.5,0,0.5],"min":[-0.5,-0.5,-0.5]}]},
-		"mesh" : "slabbottom.obj",
-		"parentType" : "StonePathSlab",
-		"sideall" : "StonePathSlab"
-	},
-	"StonePathSlabtop" : {
-		"colliders" : {"boxes":[{"max":[0.5,0.5,0.5],"min":[-0.5,0,-0.5]}]},
-		"mesh" : "slabtop.obj",
-		"parentType" : "StonePathSlab",
-		"sideall" : "StonePathSlab"
-	},
 	"StoneWall1" : {
 		"categories" : ["decorative","ulfric","stone"],
 		"destructionTime" : 600,
@@ -3394,29 +1163,6 @@
 		"onPlaceAudio" : "vanilla.stonePlace",
 		"onRemoveAudio" : "vanilla.stoneDelete",
 		"sideall" : "SELF"
-	},
-	"StoneWall1Slab" : {
-		"categories" : ["decorative","ulfric","stone"],
-		"customData" : {"useHeightMap":true,"useNormalMap":true},
-		"fullblockType" : "StoneWall1Slab",
-		"icon" : "StoneWall1Slab.png",
-		"maxStackSize" : 600,
-		"npcLimit" : 0,
-		"onPlaceAudio" : "vanilla.stonePlace",
-		"onRemoveAudio" : "vanilla.stoneDelete",
-		"sideall" : "SELF"
-	},
-	"StoneWall1Slabbottom" : {
-		"colliders" : {"boxes":[{"max":[0.5,0,0.5],"min":[-0.5,-0.5,-0.5]}]},
-		"mesh" : "slabbottom.obj",
-		"parentType" : "StoneWall1Slab",
-		"sideall" : "StoneWall1Slab"
-	},
-	"StoneWall1Slabtop" : {
-		"colliders" : {"boxes":[{"max":[0.5,0.5,0.5],"min":[-0.5,0,-0.5]}]},
-		"mesh" : "slabtop.obj",
-		"parentType" : "StoneWall1Slab",
-		"sideall" : "StoneWall1Slab"
 	},
 	"StoneWall2" : {
 		"categories" : ["decorative","ulfric","stone"],
@@ -3427,29 +1173,6 @@
 		"onRemoveAudio" : "vanilla.stoneDelete",
 		"sideall" : "SELF"
 	},
-	"StoneWall2Slab" : {
-		"categories" : ["decorative","ulfric","stone"],
-		"customData" : {"useHeightMap":true,"useNormalMap":true},
-		"fullblockType" : "StoneWall2Slab",
-		"icon" : "StoneWall2Slab.png",
-		"maxStackSize" : 600,
-		"npcLimit" : 0,
-		"onPlaceAudio" : "vanilla.stonePlace",
-		"onRemoveAudio" : "vanilla.stoneDelete",
-		"sideall" : "SELF"
-	},
-	"StoneWall2Slabbottom" : {
-		"colliders" : {"boxes":[{"max":[0.5,0,0.5],"min":[-0.5,-0.5,-0.5]}]},
-		"mesh" : "slabbottom.obj",
-		"parentType" : "StoneWall2Slab",
-		"sideall" : "StoneWall2Slab"
-	},
-	"StoneWall2Slabtop" : {
-		"colliders" : {"boxes":[{"max":[0.5,0.5,0.5],"min":[-0.5,0,-0.5]}]},
-		"mesh" : "slabtop.obj",
-		"parentType" : "StoneWall2Slab",
-		"sideall" : "StoneWall2Slab"
-	},
 	"StoneWall3" : {
 		"categories" : ["decorative","ulfric","stone"],
 		"destructionTime" : 600,
@@ -3458,29 +1181,6 @@
 		"onPlaceAudio" : "vanilla.stonePlace",
 		"onRemoveAudio" : "vanilla.stoneDelete",
 		"sideall" : "SELF"
-	},
-	"StoneWall3Slab" : {
-		"categories" : ["decorative","ulfric","stone"],
-		"customData" : {"useHeightMap":true,"useNormalMap":true},
-		"fullblockType" : "StoneWall3Slab",
-		"icon" : "StoneWall3Slab.png",
-		"maxStackSize" : 600,
-		"npcLimit" : 0,
-		"onPlaceAudio" : "vanilla.stonePlace",
-		"onRemoveAudio" : "vanilla.stoneDelete",
-		"sideall" : "SELF"
-	},
-	"StoneWall3Slabbottom" : {
-		"colliders" : {"boxes":[{"max":[0.5,0,0.5],"min":[-0.5,-0.5,-0.5]}]},
-		"mesh" : "slabbottom.obj",
-		"parentType" : "StoneWall3Slab",
-		"sideall" : "StoneWall3Slab"
-	},
-	"StoneWall3Slabtop" : {
-		"colliders" : {"boxes":[{"max":[0.5,0.5,0.5],"min":[-0.5,0,-0.5]}]},
-		"mesh" : "slabtop.obj",
-		"parentType" : "StoneWall3Slab",
-		"sideall" : "StoneWall3Slab"
 	},
 	"StoneWall4" : {
 		"categories" : ["decorative","ulfric","stone"],
@@ -3491,29 +1191,6 @@
 		"onRemoveAudio" : "vanilla.stoneDelete",
 		"sideall" : "SELF"
 	},
-	"StoneWall4Slab" : {
-		"categories" : ["decorative","ulfric","stone"],
-		"customData" : {"useHeightMap":true,"useNormalMap":true},
-		"fullblockType" : "StoneWall4Slab",
-		"icon" : "StoneWall4Slab.png",
-		"maxStackSize" : 600,
-		"npcLimit" : 0,
-		"onPlaceAudio" : "vanilla.stonePlace",
-		"onRemoveAudio" : "vanilla.stoneDelete",
-		"sideall" : "SELF"
-	},
-	"StoneWall4Slabbottom" : {
-		"colliders" : {"boxes":[{"max":[0.5,0,0.5],"min":[-0.5,-0.5,-0.5]}]},
-		"mesh" : "slabbottom.obj",
-		"parentType" : "StoneWall4Slab",
-		"sideall" : "StoneWall4Slab"
-	},
-	"StoneWall4Slabtop" : {
-		"colliders" : {"boxes":[{"max":[0.5,0.5,0.5],"min":[-0.5,0,-0.5]}]},
-		"mesh" : "slabtop.obj",
-		"parentType" : "StoneWall4Slab",
-		"sideall" : "StoneWall4Slab"
-	},
 	"StoneWall5" : {
 		"categories" : ["decorative","ulfric","stone"],
 		"destructionTime" : 600,
@@ -3522,29 +1199,6 @@
 		"onPlaceAudio" : "vanilla.stonePlace",
 		"onRemoveAudio" : "vanilla.stoneDelete",
 		"sideall" : "SELF"
-	},
-	"StoneWall5Slab" : {
-		"categories" : ["decorative","ulfric","stone"],
-		"customData" : {"useHeightMap":true,"useNormalMap":true},
-		"fullblockType" : "StoneWall5Slab",
-		"icon" : "StoneWall5Slab.png",
-		"maxStackSize" : 600,
-		"npcLimit" : 0,
-		"onPlaceAudio" : "vanilla.stonePlace",
-		"onRemoveAudio" : "vanilla.stoneDelete",
-		"sideall" : "SELF"
-	},
-	"StoneWall5Slabbottom" : {
-		"colliders" : {"boxes":[{"max":[0.5,0,0.5],"min":[-0.5,-0.5,-0.5]}]},
-		"mesh" : "slabbottom.obj",
-		"parentType" : "StoneWall5Slab",
-		"sideall" : "StoneWall5Slab"
-	},
-	"StoneWall5Slabtop" : {
-		"colliders" : {"boxes":[{"max":[0.5,0.5,0.5],"min":[-0.5,0,-0.5]}]},
-		"mesh" : "slabtop.obj",
-		"parentType" : "StoneWall5Slab",
-		"sideall" : "StoneWall5Slab"
 	},
 	"StoneWall6" : {
 		"categories" : ["decorative","ulfric","stone"],
@@ -3555,29 +1209,6 @@
 		"onRemoveAudio" : "vanilla.stoneDelete",
 		"sideall" : "SELF"
 	},
-	"StoneWall6Slab" : {
-		"categories" : ["decorative","ulfric","stone"],
-		"customData" : {"useHeightMap":true,"useNormalMap":true},
-		"fullblockType" : "StoneWall6Slab",
-		"icon" : "StoneWall6Slab.png",
-		"maxStackSize" : 600,
-		"npcLimit" : 0,
-		"onPlaceAudio" : "vanilla.stonePlace",
-		"onRemoveAudio" : "vanilla.stoneDelete",
-		"sideall" : "SELF"
-	},
-	"StoneWall6Slabbottom" : {
-		"colliders" : {"boxes":[{"max":[0.5,0,0.5],"min":[-0.5,-0.5,-0.5]}]},
-		"mesh" : "slabbottom.obj",
-		"parentType" : "StoneWall6Slab",
-		"sideall" : "StoneWall6Slab"
-	},
-	"StoneWall6Slabtop" : {
-		"colliders" : {"boxes":[{"max":[0.5,0.5,0.5],"min":[-0.5,0,-0.5]}]},
-		"mesh" : "slabtop.obj",
-		"parentType" : "StoneWall6Slab",
-		"sideall" : "StoneWall6Slab"
-	},
 	"TanRoughStone" : {
 		"categories" : ["decorative","ulfric","stone"],
 		"destructionTime" : 600,
@@ -3586,29 +1217,6 @@
 		"onPlaceAudio" : "vanilla.stonePlace",
 		"onRemoveAudio" : "vanilla.stoneDelete",
 		"sideall" : "SELF"
-	},
-	"TanRoughStoneSlab" : {
-		"categories" : ["decorative","ulfric","stone"],
-		"customData" : {"useHeightMap":true,"useNormalMap":true},
-		"fullblockType" : "TanRoughStoneSlab",
-		"icon" : "TanRoughStoneSlab.png",
-		"maxStackSize" : 600,
-		"npcLimit" : 0,
-		"onPlaceAudio" : "vanilla.stonePlace",
-		"onRemoveAudio" : "vanilla.stoneDelete",
-		"sideall" : "SELF"
-	},
-	"TanRoughStoneSlabbottom" : {
-		"colliders" : {"boxes":[{"max":[0.5,0,0.5],"min":[-0.5,-0.5,-0.5]}]},
-		"mesh" : "slabbottom.obj",
-		"parentType" : "TanRoughStoneSlab",
-		"sideall" : "TanRoughStoneSlab"
-	},
-	"TanRoughStoneSlabtop" : {
-		"colliders" : {"boxes":[{"max":[0.5,0.5,0.5],"min":[-0.5,0,-0.5]}]},
-		"mesh" : "slabtop.obj",
-		"parentType" : "TanRoughStoneSlab",
-		"sideall" : "TanRoughStoneSlab"
 	},
 	"WaterBucket" : {
 		"categories" : ["ingredient","raw"],
@@ -3681,28 +1289,5 @@
 		"onPlaceAudio" : "vanilla.woodPlace",
 		"onRemoveAudio" : "vanilla.woodDeleteLight",
 		"sideall" : "SELF"
-	},
-	"WoodSidingSlab" : {
-		"categories" : ["decorative","ulfric","wood"],
-		"customData" : {"useHeightMap":true,"useNormalMap":true},
-		"fullblockType" : "WoodSidingSlab",
-		"icon" : "WoodSidingSlab.png",
-		"maxStackSize" : 600,
-		"npcLimit" : 0,
-		"onPlaceAudio" : "vanilla.woodPlace",
-		"onRemoveAudio" : "vanilla.woodDeleteLight",
-		"sideall" : "SELF"
-	},
-	"WoodSidingSlabbottom" : {
-		"colliders" : {"boxes":[{"max":[0.5,0,0.5],"min":[-0.5,-0.5,-0.5]}]},
-		"mesh" : "slabbottom.obj",
-		"parentType" : "WoodSidingSlab",
-		"sideall" : "WoodSidingSlab"
-	},
-	"WoodSidingSlabtop" : {
-		"colliders" : {"boxes":[{"max":[0.5,0.5,0.5],"min":[-0.5,0,-0.5]}]},
-		"mesh" : "slabtop.obj",
-		"parentType" : "WoodSidingSlab",
-		"sideall" : "WoodSidingSlab"
 	}
 }

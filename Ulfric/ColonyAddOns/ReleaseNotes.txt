@@ -1,3 +1,14 @@
+Release Notes: 0.0.2.3
+Updated - Changed AppleForest job to AppleFarmer so when collecting apples the tree is not harvested
+Added - Add Taiga sapling so players can grow them
+Updated - Taiga leaves now drop Taiga Saplings instead of Temperate
+Fixed - /lineupset job name bug
+Removed - /roster jobs as it is redundant with /roster all
+Added - Cherries and Cherry Pie
+Added - Cherry Farmer and Cherry Basket to create the job area
+Added - Added logic to allow items, recipes, icons, textures and meshes in seperate subdirectories to allow for removal of content by removal of subdirectories
+Added - Added Cherries as a drop from a CherryBloom
+
 Release Notes: 0.0.2.2
 Added - Added Rally function to Herald
 Added - Added Militia job to support Rally of Herald
@@ -47,7 +58,19 @@ add chat command /stats enable/disable - set configuration to true or false
 add chat command /allowplayermining - toggles configuration to allow users to mine mineable block
 add Perserver Job to make food crates
 Update UpdateTypes to support multiple config directory and add support for onRemove
-Add new UpdateTypes for vanilla.leavestaiga 
-			"onRemove" : [
-			{"amount":1,"chance":0.6,"type":"vanilla.leavestaiga"},
-			{"amount":1,"chance":0.1,"type":"TaigaSapling"},
+Add Quality of Life
+-.10 for each colonist killed
+-.07 for each job not manned
+-.05 for each colonist not employed
+
+As long as there is enough of the items for all of the colonists add monifier
++.02 per day for apple pie
++.01 per day for apple cider
++.02 per day for cherry pie
++.02 per day fancy clothes
++.01 per day 
++.02 per day 
+
+For crafting jobs job.CraftingCooldown - QOL
+For Guard jobs job.guardsettings.cooldownSearchingTarget - QOL
+For farmers/Forester job.

@@ -209,6 +209,8 @@ namespace Ulfric.ColonyAddOns.AreaJobs
 							if (!AreaJobTracker.RegisterAreaJob(job)) {
 								job.OnRemove();
 							}
+                            AreaJobTracker.RemoveJob(job);
+
 						}
 					} catch (System.Exception e) {
 						Log.WriteException("Exception loading legacy area job data", e);

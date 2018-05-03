@@ -10,7 +10,7 @@
      "normal": "neutral",
      "emissive": "neutral",
      "height": "neutral"
-  },
+    },
 	"AppleBasket" : {
 		 "albedo" : "AppleBasket",
 		 "emissive" : "neutral",
@@ -25,6 +25,12 @@
 	},
 	"Basket" : {
 		 "albedo" : "Basket",
+		 "emissive" : "neutral",
+		 "height" : "neutral",
+		 "normal" : "neutral"
+	},
+	"CherryBasket" : {
+		 "albedo" : "CherryBasket",
 		 "emissive" : "neutral",
 		 "height" : "neutral",
 		 "normal" : "neutral"

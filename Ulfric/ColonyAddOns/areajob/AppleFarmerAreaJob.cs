@@ -14,7 +14,7 @@ namespace Ulfric.ColonyAddOns.AreaJobs
     [AreaJobDefinitionAutoLoader]
     public class AppleFarmerDefinition : AreaJobDefinitionDefault<AppleFarmerDefinition>
     {
-        static NPCTypeStandardSettings MilitiaNPCSettings = new NPCTypeStandardSettings()
+        static NPCTypeStandardSettings AppleFarmerNPCSettings = new NPCTypeStandardSettings()
         {
             type = NPCTypeID.GetNextID(),
             keyName = GameLoader.NAMESPACE + ".AreaJobs.AppleFarmer",
@@ -47,7 +47,7 @@ namespace Ulfric.ColonyAddOns.AreaJobs
 
             identifier = id;
             fileName = name;
-            NPCType.AddSettings(MilitiaNPCSettings);
+            NPCType.AddSettings(AppleFarmerNPCSettings);
             npcType = Server.NPCs.NPCType.GetByKeyNameOrDefault(npctype);
             areaType = Shared.EAreaType.BerryFarm;
         }
@@ -372,18 +372,7 @@ namespace Ulfric.ColonyAddOns.AreaJobs
                 }
                 else
                 {
-
-                    var job = new DefaultFarmerAreaJob<AppleFarmerDefinition>(userData.RequestedByPlayer, nwcorner, secorner);
-                    if (!AreaJobTracker.RegisterAreaJob(job))
-                    {
-                        job.OnRemove();
-                    }
-                    job.Definition.CreateAreaJob(userData.RequestedByPlayer, nwcorner, secorner);
-                    Logger.Log("Currently assigned NPC {0}", job.NPC == null ? 0 : job.NPC.ID);
-                    Logger.Log("Job Type {0}", job.GetType() == null ? "" : job.GetType().ToString());
-                    Logger.Log("Max {0}    Min {1}", job.Maximum, job.Minimum);
-                    Logger.Log("AppleFarmer {0}", job.NPCType.ToString());
-
+                    AreaJobTracker.CreateNewAreaJob("Ulfric.ColonyAddOns.AreaJobs.AppleFarm", userData.RequestedByPlayer, nwcorner, secorner);
 
                     ThreadManager.InvokeOnMainThread(delegate ()
                     {

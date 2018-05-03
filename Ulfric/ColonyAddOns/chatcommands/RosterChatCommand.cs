@@ -39,6 +39,7 @@ namespace Ulfric.ColonyAddOns
                 Chat.Send(causedBy, "Command didn't match, use /roster <jobname>");
                 return true;
             }
+
             string typename = m.Groups["jobname"].Value;
             if (typename.StartsWith("'"))
             {
@@ -53,23 +54,8 @@ namespace Ulfric.ColonyAddOns
                 }
             }
             Colony colony = Colony.Get(causedBy);
-
-            foreach (NPCBase follower in colony.Followers)
-            {
-                string npc = follower.Job.NPCType.ToString();
-                if (roster.ContainsKey(npc))
-                {
-                    roster[npc]++;
-                }
-                else
-                {
-                    if (follower.Job.NeedsNPC)
-                        roster.Add(npc, 0);
-                    else
-                        roster.Add(npc, 1);
-                }
-            }
-
+            roster = GetRoster(causedBy, colony);
+            
             if (typename.Equals("all"))
             {
                 Chat.Send(causedBy, "Roster:",ChatColor.white);
@@ -89,18 +75,6 @@ namespace Ulfric.ColonyAddOns
                 }
                 Chat.Send(causedBy, "Jobs : {0}", ChatColor.white, results);
             }
-            else if (typename.Equals("jobs"))
-            {
-                string results = "";
-                foreach(KeyValuePair<string,int> job in roster)
-                {
-                    if (results.Equals(""))
-                        results = job.Key;
-                    else
-                        results += ", " + job.Key;
-                }
-                Chat.Send(causedBy, "Available Jobs : {0}", ChatColor.white, results);
-            }
             else if (roster.ContainsKey(typename))
             {
                 roster.TryGetValue(typename, out int value);
@@ -112,6 +86,56 @@ namespace Ulfric.ColonyAddOns
             }
 
             return true;
+        }
+
+        //GetRoster gets all open and manned jobs
+        private SortedDictionary<string, int> GetRoster(Players.Player player, Colony colony)
+        {
+            SortedDictionary<string, int> roster = new SortedDictionary<string, int>();
+
+            JobTracker.JobFinder jf = (JobTracker.JobFinder)JobTracker.GetOrCreateJobFinder(player);
+            List<IJob> oj = jf.openJobs;
+            foreach (IJob j in oj)
+            {
+                if (roster.ContainsKey(j.NPCType.ToString()))
+                {
+                    roster[j.NPCType.ToString()]++;
+                }
+                else
+                {
+                    roster.Add(j.NPCType.ToString(), 0);
+                }
+            }
+            foreach (NPCBase follower in colony.Followers)
+            {
+                if (follower.Job != null)
+                {
+                    string npc = follower.Job.NPCType.ToString();
+                    if (roster.ContainsKey(npc))
+                    {
+                        roster[npc]++;
+                    }
+                    else
+                    {
+                        if (follower.Job.NeedsNPC)
+                            roster.Add(npc, 0);
+                        else
+                            roster.Add(npc, 1);
+                    }
+                }
+                else
+                {
+                    if (roster.ContainsKey("Laborer"))
+                    {
+                        roster["Laborer"]++;
+                    }
+                    else
+                    {
+                        roster.Add("Laborer", 1);
+                    }
+                }
+            }
+            return roster;
         }
     }
 }
