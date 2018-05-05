@@ -267,32 +267,34 @@ namespace Ulfric.ColonyAddOns.GrowableBlocks
 
             Logger.Log("{0} TryAdvanceStage",filename);
 			Vector3Int pos = block.Position;
-            if (currentStageIndex == 0 && pos.IsValid) {
-				for (int i = 0; i < logs.Count; i++) {
-					ushort currentType;
-					if (World.TryGetTypeAt(pos + logs[i], out currentType)) {
-						if (currentType == 0 || currentType == saplingIndex) {
-							if (!ServerManager.TryChangeBlock(pos + logs[i], logIndex)) {
-								return false; // not loaded
-							}
-						}
-					} else {
-						return false; // not loaded
-					}
-				}
-				for (int i = 0; i < leaves.Count; i++) {
-					ushort currentType;
-					if (World.TryGetTypeAt(pos + leaves[i], out currentType)) {
-						if (currentType == 0) {
-							if (!ServerManager.TryChangeBlock(pos + leaves[i], leavesIndex)) {
-								return false; // not loaded
-							}
-						}
-					} else {
-						return false; // not loaded
-					}
-				}
-			}
+            TreeTypes.GrowTreeOfType(TreeTypes.ETreeType.Taiga, pos);
+
+   //         if (currentStageIndex == 0 && pos.IsValid) {
+			//	for (int i = 0; i < logs.Count; i++) {
+			//		ushort currentType;
+			//		if (World.TryGetTypeAt(pos + logs[i], out currentType)) {
+			//			if (currentType == 0 || currentType == saplingIndex) {
+			//				if (!ServerManager.TryChangeBlock(pos + logs[i], logIndex)) {
+			//					return false; // not loaded
+			//				}
+			//			}
+			//		} else {
+			//			return false; // not loaded
+			//		}
+			//	}
+			//	for (int i = 0; i < leaves.Count; i++) {
+			//		ushort currentType;
+			//		if (World.TryGetTypeAt(pos + leaves[i], out currentType)) {
+			//			if (currentType == 0) {
+			//				if (!ServerManager.TryChangeBlock(pos + leaves[i], leavesIndex)) {
+			//					return false; // not loaded
+			//				}
+			//			}
+			//		} else {
+			//			return false; // not loaded
+			//		}
+			//	}
+			//}
 			// succesfully grew, or invalid stage index. Either case, done.
 			block.SetInvalid();
 			return true;

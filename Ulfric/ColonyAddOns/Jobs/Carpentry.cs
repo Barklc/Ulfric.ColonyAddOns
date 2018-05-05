@@ -72,10 +72,5 @@ namespace Ulfric.ColonyAddOns.Jobs
             base.OnRecipeCrafted();
             ServerManager.SendAudio(this.position.Vector, "crafting");
         }
-
-        protected override string GetRecipeLocation()
-        {
-            return GameLoader.ConfigFolder + "/" + "Carpenter.json";
-        }
     }
 }

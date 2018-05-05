@@ -10,5 +10,76 @@
         "categories": [
           "decorative",
           "wood"]
+    },
+    "ChickenCoopAdult": {
+        "icon": "ChickenCoop.png",
+        "onPlaceAudio": "vanilla.woodPlace",
+        "onRemoveAudio": "vanilla.woodDeleteLight",
+        "maxStackSize": 600,
+        "categories": [
+          "decorative",
+          "wood"],
+        "sideall":  "ChickenCoop",
+        "isRotatable" : true,   
+        "rotatablex+" : "ChickenCoopAdultx+",
+        "rotatablex-" : "ChickenCoopAdultx-",
+        "rotatablez+" : "ChickenCoopAdultz+",
+        "rotatablez-" : "ChickenCoopAdultz-"   
+    },
+    "ChickenCoopAdultx+" : {
+        "parentType" : "ChickenCoopAdult",
+        "sideall" : "ChickenCoop",
+        "sidex+":  "ChickenCoopAdult"
+    },
+    "ChickenCoopAdultx-" : {
+        "parentType" : "ChickenCoopAdult",
+        "sideall" : "ChickenCoop"
+        "sidex-":  "ChickenCoopAdult"
+    },
+    "ChickenCoopAdultz+" : {
+        "parentType" : "ChickenCoopAdult",
+        "sideall" : "ChickenCoop"
+        "sidez+":  "ChickenCoopAdult"
+    },
+    "ChickenCoopAdultz-" : {
+        "parentType" : "ChickenCoopAdult",
+        "sideall" : "ChickenCoop"
+        "sidez-":  "ChickenCoopAdult"
+    },
+    "ChickenCoopChick": {
+        "icon": "ChickenCoop.png",
+        "onPlaceAudio": "vanilla.woodPlace",
+        "onRemoveAudio": "vanilla.woodDeleteLight",
+        "maxStackSize": 600,
+        "categories": [
+          "decorative",
+          "wood"],
+        "sideall":  "ChickenCoop",
+        "isRotatable" : true,   
+        "rotatablex+" : "ChickenCoopChickx+",
+        "rotatablex-" : "ChickenCoopChickx-",
+        "rotatablez+" : "ChickenCoopChickz+",
+        "rotatablez-" : "ChickenCoopChickz-"
+    },
+    "ChickenCoopChickx+" : {
+        "parentType" : "ChickenCoopChick",
+        "sideall" : "ChickenCoop",
+        "sidex+":  "ChickenCoopChick"
+    },
+    "ChickenCoopChickx-" : {
+        "parentType" : "ChickenCoopChick",
+        "sideall" : "ChickenCoop"
+        "sidex-":  "ChickenCoopChick"
+    },
+    "ChickenCoopChickz+" : {
+        "parentType" : "ChickenCoopChick",
+        "sideall" : "ChickenCoop"
+        "sidez+":  "ChickenCoopChick"
+    },
+    "ChickenCoopChickz-" : {
+        "parentType" : "ChickenCoopChick",
+        "sideall" : "ChickenCoop"
+        "sidez-":  "ChickenCoopChick"
     }
+    
 }

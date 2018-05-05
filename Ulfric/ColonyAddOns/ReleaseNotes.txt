@@ -74,3 +74,17 @@ As long as there is enough of the items for all of the colonists add monifier
 For crafting jobs job.CraftingCooldown - QOL
 For Guard jobs job.guardsettings.cooldownSearchingTarget - QOL
 For farmers/Forester job.
+
+Chicken Farmer
+
+       Chicken Coop block creates chicken farmer.  This block needs to be 5 chicken pens around it. Opposite sides
+        with three across the top
+       4 Wheat is feed to the chickens for each pen ever 24hr period
+       2 Eggs are retrieved twice a day her chicken pen in the coop.  Eggs are only produced when chicken is mature.
+       If chicken is mature or old and coop is destroyed, chicken meat is recieved(20 Nutition value)
+       Chicken coop has three stages, chick, mature, old (images to show this on the front)
+
+
+Juicer 
+      Press (workbench)
+      Apple Cider and Berry Juice

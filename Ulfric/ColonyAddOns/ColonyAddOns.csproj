@@ -81,6 +81,7 @@
     <Compile Include="misc\HelperFunctions.cs" />
     <Compile Include="Jobs\Job.cs" />
     <Compile Include="Jobs\Militia.cs" />
+    <Compile Include="misc\TreeTypes.cs" />
     <Compile Include="npc\Disease.cs" />
     <Compile Include="npc\Hydration.cs" />
     <Compile Include="misc\Stats.cs" />
@@ -727,7 +728,7 @@
     <None Include="configs\types.json" />
     <None Include="configs\UpdateTextures.json" />
     <None Include="configs\UpdateTypes.json" />
-    <None Include="localization\en-US\translation.json" />
+    <None Include="localization\en-US\en-US.json" />
     <None Include="meshes\Growables\AppleBarrel.mtl" />
     <None Include="meshes\Growables\AppleBarrel.obj" />
     <None Include="meshes\Growables\AppleBarrelx+.obj" />
@@ -743,6 +744,7 @@
     <None Include="meshes\Testing\Flagx-.obj" />
     <None Include="meshes\Testing\Flagz+.obj" />
     <None Include="meshes\Testing\Flagz-.obj" />
+    <None Include="modinfo.json" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>

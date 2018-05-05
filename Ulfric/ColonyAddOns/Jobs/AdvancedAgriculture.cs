@@ -73,10 +73,6 @@ namespace Ulfric.ColonyAddOns.Jobs
             ServerManager.SendAudio(this.position.Vector, "crafting");
         }
 
-        protected override string GetRecipeLocation()
-        {
-            return GameLoader.ConfigFolder + "/" + "AdvancedAgriculture.json";
-        }
-    }
+       }
 }
 

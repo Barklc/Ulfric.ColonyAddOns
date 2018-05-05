@@ -4,5 +4,25 @@
         "normal": "neutral",
         "emissive": "neutral",
         "height": "neutral"
+    },
+    "ChickenCoopAdult": {
+        "albedo": "ChickenCoopAdult",
+        "normal": "neutral",
+        "emissive": "neutral",
+        "height": "neutral"
+    },
+    "ChickenCoopChick": {
+        "albedo": "ChickenCoopChick",
+        "normal": "neutral",
+        "emissive": "neutral",
+        "height": "neutral"
+
+    },
+    "ChickenCoop" : {
+        "albedo": "ChickenCoop",
+        "normal": "neutral",
+        "emissive": "neutral",
+        "height": "neutral"
+
     }
 }
