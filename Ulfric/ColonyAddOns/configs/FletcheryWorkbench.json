@@ -1,26 +1,26 @@
 [{
-    "name": "bronzearrow",
+    "name": "BronzeArrow",
     "results": [{
-        "type": "vanilla.bronzearrow",
+        "type": "bronzearrow",
         "amount": 5
     }],
     "requires": [{
-        "type": "vanilla.bronzeingot"
+        "type": "bronzeingot"
     }, {
-        "type": "vanilla.planks"
+        "type": "planks"
     }],
     "defaultLimit": 60,
     "defaultPriority": 100
 }, {
-    "name": "crossbowbolt",
+    "name": "CrossbowBolt",
     "results": [{
-        "type": "vanilla.crossbowbolt",
+        "type": "crossbowbolt",
         "amount": 5
     }],
     "requires": [{
-        "type": "vanilla.ironwrought"
+        "type": "ironwrought"
     }, {
-        "type": "vanilla.ironrivet",
+        "type": "ironrivet",
         "amount": 5
     }],
     "defaultLimit": 10,

@@ -1,129 +1,129 @@
 ﻿{
-	"Crate1" : {
+	"Ulfric.ColonyAddOns.Blocks.Crate1" : {
 		"categories" : ["essential","decorative"],
-		"icon" : "Crate1.png",
+		"icon" : "./../../icons/Crates/Crate1.png",
+		"isCrate" : true,
+		"maxStackSize" : 600,
+		"onPlaceAudio" : "woodPlace",
+		"onRemoveAudio" : "woodDeleteLight",
+		"sideall" : "SELF"
+	},
+	"Ulfric.ColonyAddOns.Blocks.Crate2" : {
+		"categories" : ["essential","decorative"],
+		"icon" : "./../../icons/Crates/Crate2.png",
+		"isCrate" : true,
+		"maxStackSize" : 600,
+		"onPlaceAudio" : "woodPlace",
+		"onRemoveAudio" : "woodDeleteLight",
+		"sideall" : "SELF"
+	},
+	"Ulfric.ColonyAddOns.Blocks.Crate3" : {
+		"categories" : ["essential","decorative"],
+		"icon" : "./../../icons/Crates/Crate3.png",
+		"isCrate" : true,
+		"maxStackSize" : 600,
+		"onPlaceAudio" : "woodPlace",
+		"onRemoveAudio" : "woodDeleteLight",
+		"sideall" : "SELF"
+	},
+	"Ulfric.ColonyAddOns.Blocks.Crate4" : {
+		"categories" : ["essential","decorative"],
+		"icon" : "./../../icons/Crates/Crate4.png",
+		"isCrate" : true,
+		"maxStackSize" : 600,
+		"onPlaceAudio" : "woodPlace",
+		"onRemoveAudio" : "woodDeleteLight",
+		"sideall" : "SELF"
+	},
+	"Ulfric.ColonyAddOns.Blocks.CrateDarkWood" : {
+		"categories" : ["essential","decorative"],
+		"icon" : "./../../icons/Crates/CrateDarkWood.png",
+		"isCrate" : true,
+		"maxStackSize" : 600,
+		"onPlaceAudio" : "woodPlace",
+		"onRemoveAudio" : "woodDeleteLight",
+		"sideall" : "SELF"
+	},
+	"Ulfric.ColonyAddOns.Blocks.CrateMetalBlack" : {
+		"categories" : ["essential","decorative"],
+		"icon" : "./../../icons/Crates/CrateMetalBlack.png",
 		"isCrate" : true,
 		"maxStackSize" : 600,
 		"onPlaceAudio" : "vanilla.woodPlace",
 		"onRemoveAudio" : "vanilla.woodDeleteLight",
 		"sideall" : "SELF"
 	},
-	"Crate2" : {
+	"Ulfric.ColonyAddOns.Blocks.CrateMetalReenforcedDarkWood" : {
 		"categories" : ["essential","decorative"],
-		"icon" : "Crate2.png",
+		"icon" : "./../../icons/Crates/CrateMetalReenforcedDarkWood.png",
 		"isCrate" : true,
 		"maxStackSize" : 600,
-		"onPlaceAudio" : "vanilla.woodPlace",
-		"onRemoveAudio" : "vanilla.woodDeleteLight",
+		"onPlaceAudio" : "woodPlace",
+		"onRemoveAudio" : "woodDeleteLight",
 		"sideall" : "SELF"
 	},
-	"Crate3" : {
+	"Ulfric.ColonyAddOns.Blocks.CrateBerry" : {
 		"categories" : ["essential","decorative"],
-		"icon" : "Crate3.png",
-		"isCrate" : true,
+		"icon" : "./../../icons/Crates/CrateBerry.png",
 		"maxStackSize" : 600,
-		"onPlaceAudio" : "vanilla.woodPlace",
-		"onRemoveAudio" : "vanilla.woodDeleteLight",
+		"onPlaceAudio" : "woodPlace",
+		"onRemoveAudio" : "woodDeleteLight",
 		"sideall" : "SELF"
 	},
-	"Crate4" : {
+	"Ulfric.ColonyAddOns.Blocks.CrateBread" : {
 		"categories" : ["essential","decorative"],
-		"icon" : "Crate4.png",
-		"isCrate" : true,
+		"icon" : "./../../icons/Crates/CrateBread.png",
 		"maxStackSize" : 600,
-		"onPlaceAudio" : "vanilla.woodPlace",
-		"onRemoveAudio" : "vanilla.woodDeleteLight",
+		"onPlaceAudio" : "woodPlace",
+		"onRemoveAudio" : "woodDeleteLight",
 		"sideall" : "SELF"
 	},
-	"CrateDarkWood" : {
+	"Ulfric.ColonyAddOns.Blocks.CrateSlingBullet" : {
 		"categories" : ["essential","decorative"],
-		"icon" : "CrateDarkWood.png",
-		"isCrate" : true,
+		"icon" : "./../../icons/Crates/CrateSlingBullet.png",
 		"maxStackSize" : 600,
-		"onPlaceAudio" : "vanilla.woodPlace",
-		"onRemoveAudio" : "vanilla.woodDeleteLight",
+		"onPlaceAudio" : "woodPlace",
+		"onRemoveAudio" : "woodDeleteLight",
 		"sideall" : "SELF"
 	},
-	"CrateMetalBlack" : {
+	"Ulfric.ColonyAddOns.Blocks.CrateArrow" : {
 		"categories" : ["essential","decorative"],
-		"icon" : "CrateMetalBlack.png",
-		"isCrate" : true,
+		"icon" : "./../../icons/Crates/CrateArrow.png",
 		"maxStackSize" : 600,
-		"onPlaceAudio" : "vanilla.woodPlace",
-		"onRemoveAudio" : "vanilla.woodDeleteLight",
+		"onPlaceAudio" : "woodPlace",
+		"onRemoveAudio" : "woodDeleteLight",
 		"sideall" : "SELF"
 	},
-	"CrateMetalReenforcedDarkWood" : {
+	"Ulfric.ColonyAddOns.Blocks.CrateBolts" : {
 		"categories" : ["essential","decorative"],
-		"icon" : "CrateMetalReenforcedDarkWood.png",
-		"isCrate" : true,
+		"icon" : "./../../icons/Crates/CrateBolts.png",
 		"maxStackSize" : 600,
-		"onPlaceAudio" : "vanilla.woodPlace",
-		"onRemoveAudio" : "vanilla.woodDeleteLight",
+		"onPlaceAudio" : "woodPlace",
+		"onRemoveAudio" : "woodDeleteLight",
 		"sideall" : "SELF"
 	},
-	"CrateBerry" : {
+	"Ulfric.ColonyAddOns.Blocks.CrateGunpowder" : {
 		"categories" : ["essential","decorative"],
-		"icon" : "CrateBerry.png",
+		"icon" : "./../../icons/Crates/CrateGunpowder.png",
 		"maxStackSize" : 600,
-		"onPlaceAudio" : "vanilla.woodPlace",
-		"onRemoveAudio" : "vanilla.woodDeleteLight",
+		"onPlaceAudio" : "woodPlace",
+		"onRemoveAudio" : "woodDeleteLight",
 		"sideall" : "SELF"
 	},
-	"CrateBread" : {
+	"Ulfric.ColonyAddOns.Blocks.CrateLeadBullet" : {
 		"categories" : ["essential","decorative"],
-		"icon" : "CrateBread.png",
+		"icon" : "./../../icons/Crates/CrateLeadBullet.png",
 		"maxStackSize" : 600,
-		"onPlaceAudio" : "vanilla.woodPlace",
-		"onRemoveAudio" : "vanilla.woodDeleteLight",
+		"onPlaceAudio" : "woodPlace",
+		"onRemoveAudio" : "woodDeleteLight",
 		"sideall" : "SELF"
 	},
-	"CrateSlingBullet" : {
+	"Ulfric.ColonyAddOns.Blocks.CrateFlour" : {
 		"categories" : ["essential","decorative"],
-		"icon" : "CrateSlingBullet.png",
+		"icon" : "./../../icons/Crates/CrateFlour.png",
 		"maxStackSize" : 600,
-		"onPlaceAudio" : "vanilla.woodPlace",
-		"onRemoveAudio" : "vanilla.woodDeleteLight",
-		"sideall" : "SELF"
-	},
-	"CrateArrow" : {
-		"categories" : ["essential","decorative"],
-		"icon" : "CrateArrow.png",
-		"maxStackSize" : 600,
-		"onPlaceAudio" : "vanilla.woodPlace",
-		"onRemoveAudio" : "vanilla.woodDeleteLight",
-		"sideall" : "SELF"
-	},
-	"CrateBolts" : {
-		"categories" : ["essential","decorative"],
-		"icon" : "CrateBolts.png",
-		"maxStackSize" : 600,
-		"onPlaceAudio" : "vanilla.woodPlace",
-		"onRemoveAudio" : "vanilla.woodDeleteLight",
-		"sideall" : "SELF"
-	},
-	"CrateGunpowder" : {
-		"categories" : ["essential","decorative"],
-		"icon" : "CrateGunpowder.png",
-		"maxStackSize" : 600,
-		"onPlaceAudio" : "vanilla.woodPlace",
-		"onRemoveAudio" : "vanilla.woodDeleteLight",
-		"sideall" : "SELF"
-	},
-	"CrateLeadBullet" : {
-		"categories" : ["essential","decorative"],
-		"icon" : "CrateLeadBullet.png",
-		"maxStackSize" : 600,
-		"onPlaceAudio" : "vanilla.woodPlace",
-		"onRemoveAudio" : "vanilla.woodDeleteLight",
-		"sideall" : "SELF"
-	},
-	"CrateFlour" : {
-		"categories" : ["essential","decorative"],
-		"icon" : "CrateFlour.png",
-		"maxStackSize" : 600,
-		"onPlaceAudio" : "vanilla.woodPlace",
-		"onRemoveAudio" : "vanilla.woodDeleteLight",
+		"onPlaceAudio" : "woodPlace",
+		"onRemoveAudio" : "woodDeleteLight",
 		"sideall" : "SELF"
 	}
 }

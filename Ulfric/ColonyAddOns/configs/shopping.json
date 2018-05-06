@@ -1,11 +1,11 @@
 [{
-    "name": "Basket",
+    "name": "Ulfric.ColonyAddOns.Blocks.Basket",
     "results": [{
-        "type": "Basket",
+        "type": "Ulfric.ColonyAddOns.Blocks.Basket",
         "amount": 1
     }],
     "requires": [{
-        "type": "vanilla.goldcoin",
+        "type": "goldcoin",
         "amount": 2
     }],
     "defaultLimit": 0,

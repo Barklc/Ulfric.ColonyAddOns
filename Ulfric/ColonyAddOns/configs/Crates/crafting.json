@@ -1,44 +1,44 @@
 ﻿[{
-    "name": "CrateBread",
+    "name": "Ulfric.ColonyAddOns.Blocks.CrateBread",
     "results": [{
-        "type": "CrateBread",
+        "type": "Ulfric.ColonyAddOns.Blocks.CrateBread",
         "amount": 1
     }],
     "requires": [{
-        "type": "vanilla.crate",
+        "type": "crate",
         "amount": 1
     }, {
-        "type": "vanilla.bread",
+        "type": "bread",
         "amount": 100
     }],
     "defaultLimit": 0,
     "defaultPriority": -100
 }, {
-    "name": "CrateBerry",
+    "name": "Ulfric.ColonyAddOns.Blocks.CrateBerry",
     "results": [{
-        "type": "CrateBerry",
+        "type": "Ulfric.ColonyAddOns.Blocks.CrateBerry",
         "amount": 1
     }],
     "requires": [{
-        "type": "vanilla.crate",
+        "type": "crate",
         "amount": 1
     }, {
-	    "type": "vanilla.berry",
+	    "type": "berry",
         "amount": 600
     }],
     "defaultLimit": 0,
     "defaultPriority": -100
 }, {
-    "name": "CrateFlour",
+    "name": "Ulfric.ColonyAddOns.Blocks.CrateFlour",
     "results": [{
-        "type": "CrateFlour",
+        "type": "Ulfric.ColonyAddOns.Blocks.CrateFlour",
         "amount": 1
     }],
     "requires": [{
-        "type": "vanilla.crate",
+        "type": "crate",
         "amount": 1
     }, {
-	    "type": "vanilla.flour",
+	    "type": "flour",
         "amount": 600
     }],
     "defaultLimit": 0,

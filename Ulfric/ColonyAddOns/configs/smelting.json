@@ -1,11 +1,11 @@
 [{
-    "name": "Magma",
+    "name": "Ulfric.ColonyAddOns.Blocks.Magma",
     "results": [{
-        "type": "Magma",
+        "type": "Ulfric.ColonyAddOns.Blocks.Magma",
         "amount": 1
     }],
     "requires": [{
-        "type": "vanilla.stoneblock",
+        "type": "stoneblock",
         "amount": 2
     }],
     "defaultLimit": 0,

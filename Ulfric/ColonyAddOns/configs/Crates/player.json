@@ -1,95 +1,95 @@
 ﻿[{
-    "name": "Bread",
+    "name": "Ulfric.ColonyAddOns.Blocks.Bread",
     "results": [{
-        "type": "vanilla.bread",
+        "type": "bread",
         "amount": 100
     }],
     "requires": [{
-        "type": "CrateBread",
+        "type": "Ulfric.ColonyAddOns.Blocks.CrateBread",
         "amount": 1
     }],
     "defaultLimit": 0,
     "defaultPriority": -100
 }, {
-    "name": "Berry",
+    "name": "Ulfric.ColonyAddOns.Blocks.Berry",
     "results": [{
-        "type": "vanilla.berry",
+        "type": "berry",
         "amount": 600
     }],
     "requires": [{
-        "type": "CrateBerry",
+        "type": "Ulfric.ColonyAddOns.Blocks.CrateBerry",
         "amount": 1
     }],
     "defaultLimit": 0,
     "defaultPriority": -100
 }, {
-    "name": "SlingBullets",
+    "name": "Ulfric.ColonyAddOns.Blocks.SlingBullets",
     "results": [{
-        "type": "vanilla.slingbullet",
+        "type": "slingbullet",
         "amount": 50
     }],
     "requires": [{
-        "type": "CrateSlingBullet",
+        "type": "Ulfric.ColonyAddOns.Blocks.CrateSlingBullet",
         "amount": 1
     }],
     "defaultLimit": 0,
     "defaultPriority": -100
 }, {
-    "name": "Arrow",
+    "name": "Ulfric.ColonyAddOns.Blocks.Arrow",
     "results": [{
-        "type": "vanilla.bronzearrow",
+        "type": "bronzearrow",
         "amount": 50
     }],
     "requires": [{
-        "type": "CrateArrow",
+        "type": "Ulfric.ColonyAddOns.Blocks.CrateArrow",
         "amount": 1
     }],
     "defaultLimit": 0,
     "defaultPriority": -100
 }, {
-    "name": "Bolts",
+    "name": "Ulfric.ColonyAddOns.Blocks.Bolts",
     "results": [{
-        "type": "vanilla.crossbowbolt",
+        "type": "crossbowbolt",
         "amount": 50
     }],
     "requires": [{
-        "type": "CrateBolts",
+        "type": "Ulfric.ColonyAddOns.Blocks.CrateBolts",
         "amount": 1
     }],
     "defaultLimit": 0,
     "defaultPriority": -100
 }, {
-    "name": "Gunpowder Pouch",
+    "name": "Ulfric.ColonyAddOns.Blocks.GunpowderPouch",
     "results": [{
-        "type": "vanilla.gunpowderpouch",
+        "type": "gunpowderpouch",
         "amount": 50
     }],
     "requires": [{
-        "type": "CrateGunpowder",
+        "type": "Ulfric.ColonyAddOns.Blocks.CrateGunpowder",
         "amount": 1
     }],
     "defaultLimit": 0,
     "defaultPriority": -100
 }, {
-    "name": "Lead Bullet",
+    "name": "Ulfric.ColonyAddOns.Blocks.LeadBullet",
     "results": [{
-        "type": "vanilla.leadbullet",
+        "type": "leadbullet",
         "amount": 50
     }],
     "requires": [{
-        "type": "CrateLeadBullet",
+        "type": "Ulfric.ColonyAddOns.Blocks.CrateLeadBullet",
         "amount": 1
     }],
     "defaultLimit": 0,
     "defaultPriority": -100
 }, {
-    "name": "Flour",
+    "name": "Ulfric.ColonyAddOns.Blocks.Flour",
     "results": [{
-        "type": "vanilla.flour",
+        "type": "flour",
         "amount": 100
     }],
     "requires": [{
-        "type": "CrateFlour",
+        "type": "Ulfric.ColonyAddOns.Blocks.CrateFlour",
         "amount": 1
     }],
     "defaultLimit": 0,

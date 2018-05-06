@@ -1,21 +1,162 @@
 ﻿[
     {
     "name": "Ulfric.ColonyAddOns",
-    "version": "0.0.2.3",
+    "version": "0.0.2.5",
     "dllpath": "ColonyAddOns.dll",
     "enabled": true,
     "compatibleversions": [
-        "0.6.0.0",
-        "0.6.0.1",
-        "0.6.0.2",
-        "0.6.0.3",
-        "0.6.0.4",
-		"0.6.1.0"
+       	"0.6.1.0",
+       	"0.6.1.1",
+       	"0.6.1.2"
         ],
+	  "overrideAlbedoFolder": "./Textures/albedo/",
+    "overrideEmissiveFolder": "./Textures/emissive/",
+    "overrideNormalFolder": "./Textures/height/",
+    "overrideHeightFolder": "./Textures/normal/",
+    "overrideMeshesFolder": "./Meshes/",
+    "overrideIconFolder": "./icons/",
+    "overrideAudioFolder": "./Audio/",
     "jsonFiles": [
-	    {
+        {
+            "fileType": "addOrOverrideTextureMappingEntries",
+            "relativePath": "configs/texturemapping.json"
+        },
+        {
+            "fileType": "addNewTypes",
+            "relativePath": "configs/types.json"
+        },
+        {  
             "fileType": "addOrOverrideLocalization",
             "relativePath": "localization/en-US/en-US.json"
-        }]
+        },
+        {
+            "fileType": "addOrReplaceNPCRecipes",
+            "relativePath": "configs/AdvancedAgricultureWorkbench.json",
+            "npcType": "Ulfric.ColonyAddOns.AdvancedAgriculture",
+            "limitsUIMapping": [
+               "Ulfric.ColonyAddOns.Blocks.AdvancedAgricultureWorkbench"
+        ]
+        },
+        {
+            "fileType": "addOrReplaceNPCRecipes",
+            "relativePath": "configs/AdvancedStoneMasonryWorkbench.json",
+            "npcType": "Ulfric.ColonyAddOns.AdvancedStoneMason",
+            "limitsUIMapping": [
+               "Ulfric.ColonyAddOns.Blocks.AdvancedStoneMasonryWorkbench"
+        ]
+        },
+		{
+            "fileType": "addOrReplaceNPCRecipes",
+            "relativePath": "configs/CarpentryWorkbench.json",
+            "npcType": "Ulfric.ColonyAddOns.Carpenter",
+            "limitsUIMapping": [
+               "Ulfric.ColonyAddOns.Blocks.CarpentryWorkbench"
+        ]
+        },
+		{
+            "fileType": "addOrReplaceNPCRecipes",
+            "relativePath": "configs/FletcheryWorkbench.json",
+            "npcType": "Ulfric.ColonyAddOns.Fletcher",
+            "limitsUIMapping": [
+               "Ulfric.ColonyAddOns.Blocks.FletcheryWorkbench"
+        ]
+        },
+		{
+            "fileType": "addOrReplaceNPCRecipes",
+            "relativePath": "configs/crafting.json",
+             "npcType": "pipliz.crafter"
+        },
+        {
+            "fileType": "addOrReplaceNPCRecipes",
+            "relativePath": "configs/shopping.json",
+            "npcType": "pipliz.merchant"
+        },
+		{
+            "fileType": "addOrReplaceNPCRecipes",
+            "relativePath": "configs/smelting.json",
+            "npcType": "pipliz.smelter"
+		},
+        {
+            "fileType": "addOrReplaceNPCRecipes",
+            "relativePath": "configs/stonemasonry.json",
+            "npcType": "pipliz.stonemason"
+        },
+		{
+	        "fileType" : "addOrReplacePlayerRecipes",
+			"relativePath" : "configs/player.json"
+		},
+		{
+			"fileType": "addOrReplaceNPCRecipes",
+            "relativePath": "configs/Crates/CarpentryWorkbench.json",
+            "npcType": "Ulfric.ColonyAddOns.Carpenter"
+		},
+		{
+			"fileType": "addOrReplaceNPCRecipes",
+            "relativePath": "configs/Crates/crafting.json",
+             "npcType": "pipliz.crafter"
+		},
+		{
+	        "fileType" : "addOrReplacePlayerRecipes",
+			"relativePath" : "configs/Crates/Player.json"
+		},
+        {
+            "fileType": "addOrReplaceNPCRecipes",
+            "relativePath": "configs/Crates/shopping.json",
+            "npcType": "pipliz.merchant"
+        },
+		{
+            "fileType": "addOrOverrideTextureMappingEntries",
+            "relativePath": "configs/Crates/texturemapping.json"
+        },
+        {
+            "fileType": "addNewTypes",
+            "relativePath": "configs/Crates/types.json"
+        },
+        {
+            "fileType": "addOrReplaceNPCRecipes",
+            "relativePath": "configs/Crates/shopping.json",
+            "npcType": "pipliz.merchant"
+        },
+        {
+            "fileType": "addOrReplaceNPCRecipes",
+            "relativePath": "configs/Growables/baking.json",
+            "npcType": "pipliz.baker"
+        },
+        {
+            "fileType": "addOrReplaceNPCRecipes",
+            "relativePath": "configs/Growables/shopping.json",
+            "npcType": "pipliz.merchant"
+        },
+		{
+            "fileType": "addOrOverrideTextureMappingEntries",
+            "relativePath": "configs/Growables/texturemapping.json"
+        },
+        {
+            "fileType": "addNewTypes",
+            "relativePath": "configs/Growables/types.json"
+        },
+        {
+            "fileType": "addNewTypes",
+            "relativePath": "configs/Militia/types.json"
+        },
+        {
+            "fileType": "addOrReplaceNPCRecipes",
+            "relativePath": "configs/Slabs/AdvancedStoneMasonryWorkbench.json",
+            "npcType": "Ulfric.ColonyAddOns.AdvancedStoneMason"
+		},
+		{
+			"fileType": "addOrReplaceNPCRecipes",
+            "relativePath": "configs/Slabs/CarpentryWorkbench.json",
+            "npcType": "Ulfric.ColonyAddOns.Carpenter"
+		},
+		{
+            "fileType": "addOrOverrideTextureMappingEntries",
+            "relativePath": "configs/Slabs/texturemapping.json"
+        },
+        {
+            "fileType": "addNewTypes",
+            "relativePath": "configs/Slabs/types.json"
+        }
+		]
 	}
 ]

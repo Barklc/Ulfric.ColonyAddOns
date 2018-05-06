@@ -1,5 +1,5 @@
 ﻿{
-	"AppleSapling" : {
+	"Ulfric.ColonyAddOns.Blocks.AppleSapling" : {
 		"categories" : [
 			"food",
 			"seed"
@@ -11,107 +11,107 @@
 		"customData" : {
 			"colors" : ["#ff0000->#542909","#00ff00->#e36363"]
 		},
-		"icon" : "AppleSapling.png",
+		"icon" : "./../../icons/Growables/AppleSapling.png",
 		"isSolid" : false,
-		"mesh" : "vanilla.sapling.ply",
+		"mesh" : "./../../../../../meshes/sapling.ply",
 		"needsBase" : true,
-		"onPlaceAudio" : "vanilla.woodPlace",
-		"onRemoveAudio" : "vanilla.grassDelete",
-		"sideall" : "vanilla.neutral"
+		"onPlaceAudio" : "woodPlace",
+		"onRemoveAudio" : "grassDelete",
+		"sideall" : "neutral"
 	},
-	"LeavesApples" : {
+	"Ulfric.ColonyAddOns.Blocks.LeavesApples" : {
 		"categories" : [
 			"decorative"
 		],
-		"icon" : "LeavesApples.png",
+		"icon" : "./../../icons/Growables/LeavesApples.png",
 		"onRemove" : [
-			{"amount":1,"chance":0.6,"type":"vanilla.leavestemperate"},
-			{"amount":1,"chance":0.1,"type":"AppleSapling"},
-			{"amount":1,"chance":0.3,"type":"Apple"}
+			{"amount":1,"chance":0.6,"type":"leavestemperate"},
+			{"amount":1,"chance":0.1,"type":"Ulfric.ColonyAddOns.Blocks.AppleSapling"},
+			{"amount":1,"chance":0.3,"type":"Ulfric.ColonyAddOns.Blocks.Apple"}
 		],
-		"parentType" : "vanilla.leaves",
+		"parentType" : "leaves",
 		"sideall" : "SELF"
 	},
-	"Apple" : {
+	"Ulfric.ColonyAddOns.Blocks.Apple" : {
 		"categories" : [
 			"food"
 		],
-		"icon" : "Apple.png",
+		"icon" : "./../../icons/Growables/Apple.png",
 		"isPlaceable" : false,
 		"maxStackSize" : 600,
 		"nutritionalValue" : 1
 	},
-	"ApplePie" : {
+	"Ulfric.ColonyAddOns.Blocks.ApplePie" : {
 		"categories" : [
 			"food"
 		],
-		"icon" : "ApplePie.png",
+		"icon" : "./../../icons/Growables/ApplePie.png",
 		"isPlaceable" : false,
 		"maxStackSize" : 600,
 		"nutritionalValue" : 5
 	},
-	"AppleCider" : {
+	"Ulfric.ColonyAddOns.Blocks.AppleCider" : {
 		"categories" : [
 			"food"
 		],
 		"customData" : {"hydrationvalue":10},
-		"icon" : "AppleCider.png",
+		"icon" : "./../../icons/Growables/AppleCider.png",
 		"isPlaceable" : false,
 		"maxStackSize" : 600,
 	},
-	"AppleBarrel": {
-        "icon": "AppleBarrel.png",
-        "onPlaceAudio": "vanilla.woodPlace",
-        "onRemoveAudio": "vanilla.woodDeleteLight",
+	"Ulfric.ColonyAddOns.Blocks.AppleBarrel": {
+        "icon": "./../../icons/Growables/AppleBarrel.png",
+        "onPlaceAudio": "woodPlace",
+        "onRemoveAudio": "woodDeleteLight",
         "sideall": "SELF",
         "npcLimit": 0,
         "maxStackSize": 600,
         "isRotatable": true,
-        "rotatablex+": "AppleBarrelx+",
-        "rotatablex-": "AppleBarrelx-",
-        "rotatablez+": "AppleBarrelz+",
-        "rotatablez-": "AppleBarrelz-",
+        "rotatablex+": "Ulfric.ColonyAddOns.Blocks.AppleBarrelx+",
+        "rotatablex-": "Ulfric.ColonyAddOns.Blocks.AppleBarrelx-",
+        "rotatablez+": "Ulfric.ColonyAddOns.Blocks.AppleBarrelz+",
+        "rotatablez-": "Ulfric.ColonyAddOns.Blocks.AppleBarrelz-",
         "categories": [
           "decorative",
           "wood"
     ]
     },
-    "AppleBarrelx+": {
-        "parentType": "AppleBarrel",
-        "mesh": "AppleBarrelx+.obj"
+    "Ulfric.ColonyAddOns.Blocks.AppleBarrelx+": {
+        "parentType": "Ulfric.ColonyAddOns.Blocks.AppleBarrel",
+        "mesh": "./../../meshes/Growables/AppleBarrelx+.obj"
     },
-    "AppleBarrelx-": {
-        "parentType": "AppleBarrel",
-        "mesh": "AppleBarrelx-.obj"
+    "Ulfric.ColonyAddOns.Blocks.AppleBarrelx-": {
+        "parentType": "Ulfric.ColonyAddOns.Blocks.AppleBarrel",
+        "mesh": "./../../meshes/Growables/AppleBarrelx-.obj"
     },
-    "AppleBarrelz+": {
-        "parentType": "AppleBarrel",
-        "mesh": "AppleBarrelz+.obj"
+    "Ulfric.ColonyAddOns.Blocks.AppleBarrelz+": {
+        "parentType": "Ulfric.ColonyAddOns.Blocks.AppleBarrel",
+        "mesh": "./../../meshes/Growables/AppleBarrelz+.obj"
     },
-    "AppleBarrelz-": {
-       "parentType": "AppleBarrel",
-       "mesh": "AppleBarrelz-.obj"
+    "Ulfric.ColonyAddOns.Blocks.AppleBarrelz-": {
+       "parentType": "Ulfric.ColonyAddOns.Blocks.AppleBarrel",
+       "mesh": "./../../meshes/Growables/AppleBarrelz-.obj"
     },
-	"AppleBasket" : {
+	"Ulfric.ColonyAddOns.Blocks.AppleBasket" : {
 		"categories" : ["decorative","ulfric","wood"],
-		"icon" : "AppleBasket.png",
+		"icon" : "./../../icons/Growables/AppleBasket.png",
 		"isCrate": true,
 		"maxStackSize" : 600,
-		"onPlaceAudio" : "vanilla.woodPlace",
-		"onRemoveAudio" : "vanilla.woodDeleteLight",
+		"onPlaceAudio" : "woodPlace",
+		"onRemoveAudio" : "woodDeleteLight",
 		"sideall" : "SELF",
-		"sidey+" : "BasketTop"
+		"sidey+" : "Ulfric.ColonyAddOns.Blocks.BasketTop"
 	},
-	"Basket" : {
+	"Ulfric.ColonyAddOns.Blocks.Basket" : {
 		"categories" : ["decorative","ulfric","wood"],
-		"icon" : "Basket.png",
+		"icon" : "./../../icons/Growables/Basket.png",
 		"maxStackSize" : 600,
-		"onPlaceAudio" : "vanilla.woodPlace",
-		"onRemoveAudio" : "vanilla.woodDeleteLight",
+		"onPlaceAudio" : "woodPlace",
+		"onRemoveAudio" : "woodDeleteLight",
 		"sideall" : "SELF",
-		"sidey+" : "BasketTop"
+		"sidey+" : "Ulfric.ColonyAddOns.Blocks.BasketTop"
 	},
-		"TaigaSapling" : {
+	"Ulfric.ColonyAddOns.Blocks.TaigaSapling" : {
 		"categories" : [
 			"food",
 			"seed"
@@ -123,38 +123,38 @@
 		"customData" : {
 			"colors" : ["#ff0000->#542909","#00ff00->#e36363"]
 		},
-		"icon" : "TaigaSapling.png",
+		"icon" : "./../../icons/Growables/TaigaSapling.png",
 		"isSolid" : false,
-		"mesh" : "vanilla.sapling.ply",
+		"mesh" : "./../../../../../meshes/sapling.ply",
 		"needsBase" : true,
-		"onPlaceAudio" : "vanilla.woodPlace",
-		"onRemoveAudio" : "vanilla.grassDelete",
-		"sideall" : "vanilla.neutral"
+		"onPlaceAudio" : "woodPlace",
+		"onRemoveAudio" : "grassDelete",
+		"sideall" : "neutral"
 	},
-	"CherryBasket" : {
+	"Ulfric.ColonyAddOns.Blocks.CherryBasket" : {
 		"categories" : ["decorative","ulfric","wood"],
-		"icon" : "CherryBasket.png",
+		"icon" : "./../../icons/Growables/CherryBasket.png",
 		"isCrate": true,
 		"maxStackSize" : 600,
-		"onPlaceAudio" : "vanilla.woodPlace",
-		"onRemoveAudio" : "vanilla.woodDeleteLight",
+		"onPlaceAudio" : "woodPlace",
+		"onRemoveAudio" : "woodDeleteLight",
 		"sideall" : "SELF",
-		"sidey+" : "BasketTop"
+		"sidey+" : "Ulfric.ColonyAddOns.Blocks.BasketTop"
 	},
-	"Cherry" : {
+	"Ulfric.ColonyAddOns.Blocks.Cherry" : {
 		"categories" : [
 			"food"
 		],
-		"icon" : "Cherry.png",
+		"icon" : "./../../icons/Growables/Cherry.png",
 		"isPlaceable" : false,
 		"maxStackSize" : 600,
 		"nutritionalValue" : 1
 	},
-	"CherryPie" : {
+	"Ulfric.ColonyAddOns.Blocks.CherryPie" : {
 		"categories" : [
 			"food"
 		],
-		"icon" : "CherryPie.png",
+		"icon" : "./../../icons/Growables/CherryPie.png",
 		"isPlaceable" : false,
 		"maxStackSize" : 600,
 		"nutritionalValue" : 5

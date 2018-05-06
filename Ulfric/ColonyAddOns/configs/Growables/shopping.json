@@ -1,23 +1,23 @@
 [{
-    "name": "AppleBasket",
+    "name": "Ulfric.ColonyAddOns.Blocks.AppleBasket",
     "results": [{
-        "type": "AppleBasket",
+        "type": "Ulfric.ColonyAddOns.Blocks.AppleBasket",
         "amount": 1
     }],
     "requires": [{
-        "type": "vanilla.goldcoin",
+        "type": "goldcoin",
         "amount": 100
     }],
     "defaultLimit": 0,
     "defaultPriority": -100
 	}, {
-    "name": "AppleSapling",
+    "name": "Ulfric.ColonyAddOns.Blocks.AppleSapling",
     "results": [{
-        "type": "AppleSapling",
+        "type": "Ulfric.ColonyAddOns.Blocks.AppleSapling",
         "amount": 1
     }],
     "requires": [{
-        "type": "vanilla.goldcoin",
+        "type": "goldcoin",
         "amount": 100
     }],
     "defaultLimit": 0,

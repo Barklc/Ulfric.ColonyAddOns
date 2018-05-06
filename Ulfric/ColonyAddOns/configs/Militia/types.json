@@ -1,5 +1,5 @@
 {
-	"MilitiaJob" : {
+	"Ulfric.ColonyAddOns.Blocks.MilitiaJob" : {
 		"blockPathing" : false,
 		"colliders" : {"boxes":[{"max":[-0.5,-0.5,-0.5],"min":[-0.5,-0.5,-0.5]}],"collidePlayer":false,"collideSelection":true},
 		"customData" : {"colors":["#ff0000->#a00dc7"],"renderOnlyIfSelected":"Ulfric.ColonyAddOns.Blocks.MilitiaStand","warnRemoval":true},
@@ -11,18 +11,18 @@
 		"isSolid" : false,
 		"itemIndex" : 267,
 		"maxStackSize" : 50,
-		"mesh" : "vanilla.outlinedblock.ply",
+		"mesh" : "./../../../../../meshes/outlinedblock.ply",
 		"needBase" : true,
 		"nutritionalValue" : 0,
 		"onRemoveAudio" : "woodDeleteLight",
-		"rotatedX-" : "MilitiaJobx-",
-		"rotatedX+" : "MilitiaJobx+",
-		"rotatedZ-" : "MilitiaJobz-",
-		"rotatedZ+" : "MilitiaJobz+",
+		"rotatedX-" : "Ulfric.ColonyAddOns.Blocks.MilitiaJobx-",
+		"rotatedX+" : "Ulfric.ColonyAddOns.Blocks.MilitiaJobx+",
+		"rotatedZ-" : "Ulfric.ColonyAddOns.Blocks.MilitiaJobz-",
+		"rotatedZ+" : "Ulfric.ColonyAddOns.Blocks.MilitiaJobz+",
 		"sideAll" : "outlinedblock",
 
 	},
-	"MilitiaJobx-" : {
+	"Ulfric.ColonyAddOns.Blocks.MilitiaJobx-" : {
 		"blockPathing" : false,
 		"colliders" : {"boxes":[{"max":[-0.5,-0.5,-0.5],"min":[-0.5,-0.5,-0.5]}],"collidePlayer":false,"collideSelection":true},
 		"customData" : {"colors":["#ff0000->#a00dc7"],"renderOnlyIfSelected":"Ulfric.ColonyAddOns.Blocks.MilitiaStand","warnRemoval":true},
@@ -34,15 +34,15 @@
 		"isSolid" : false,
 		"itemIndex" : 268,
 		"maxStackSize" : 50,
-		"mesh" : "vanilla.outlinedblock.ply",
+		"mesh" : "./../../../../../meshes/outlinedblock.ply",
 		"needBase" : true,
 		"nutritionalValue" : 0,
 		"onRemoveAudio" : "woodDeleteLight",
-		"parentType" : "MilitiaJob",
+		"parentType" : "Ulfric.ColonyAddOns.Blocks.MilitiaJob",
 		"sideAll" : "outlinedblock",
 
 	},
-	"MilitiaJobx+" : {
+	"Ulfric.ColonyAddOns.Blocks.MilitiaJobx+" : {
 		"blockPathing" : false,
 		"colliders" : {"boxes":[{"max":[-0.5,-0.5,-0.5],"min":[-0.5,-0.5,-0.5]}],"collidePlayer":false,"collideSelection":true},
 		"customData" : {"colors":["#ff0000->#a00dc7"],"renderOnlyIfSelected":"Ulfric.ColonyAddOns.Blocks.MilitiaStand","warnRemoval":true},
@@ -54,14 +54,14 @@
 		"isSolid" : false,
 		"itemIndex" : 266,
 		"maxStackSize" : 50,
-		"mesh" : "vanilla.outlinedblock.ply",
+		"mesh" : "./../../../../../meshes/outlinedblock.ply",
 		"needBase" : true,
 		"nutritionalValue" : 0,
 		"onRemoveAudio" : "woodDeleteLight",
-		"parentType" : "MilitiaJob",
+		"parentType" : "Ulfric.ColonyAddOns.Blocks.MilitiaJob",
 		"sideAll" : "outlinedblock",
 	},
-	"MilitiaJobz-" : {
+	"Ulfric.ColonyAddOns.Blocks.MilitiaJobz-" : {
 		"blockPathing" : false,
 		"colliders" : {"boxes":[{"max":[-0.5,-0.5,-0.5],"min":[-0.5,-0.5,-0.5]}],"collidePlayer":false,"collideSelection":true},
 		"customData" : {"colors":["#ff0000->#a00dc7"],"renderOnlyIfSelected":"Ulfric.ColonyAddOns.Blocks.MilitiaStand","warnRemoval":true},
@@ -73,14 +73,14 @@
 		"isSolid" : false,
 		"itemIndex" : 270,
 		"maxStackSize" : 50,
-		"mesh" : "vanilla.outlinedblock.ply",
+		"mesh" : "./../../../../../meshes/outlinedblock.ply",
 		"needBase" : true,
 		"nutritionalValue" : 0,
 		"onRemoveAudio" : "woodDeleteLight",
-		"parentType" : "MilitiaJob",
+		"parentType" : "Ulfric.ColonyAddOns.Blocks.MilitiaJob",
 		"sideAll" : "outlinedblock",
 	},
-	"MilitiaJobz+" : {
+	"Ulfric.ColonyAddOns.Blocks.MilitiaJobz+" : {
 		"blockPathing" : false,
 		"colliders" : {"boxes":[{"max":[-0.5,-0.5,-0.5],"min":[-0.5,-0.5,-0.5]}],"collidePlayer":false,"collideSelection":true},
 		"customData" : {"colors":["#ff0000->##a00dc7"],"renderOnlyIfSelected":"Ulfric.ColonyAddOns.Blocks.MilitiaStand","warnRemoval":true},
@@ -92,11 +92,11 @@
 		"isSolid" : false,
 		"itemIndex" : 269,
 		"maxStackSize" : 50,
-		"mesh" : "vanilla.outlinedblock.ply",
+		"mesh" : "./../../../../../meshes/outlinedblock.ply",
 		"needBase" : true,
 		"nutritionalValue" : 0,
 		"onRemoveAudio" : "woodDeleteLight",
-		"parentType" : "MilitiaJob",
+		"parentType" : "Ulfric.ColonyAddOns.Blocks.MilitiaJob",
 		"sideAll" : "outlinedblock",
 	 }
 }

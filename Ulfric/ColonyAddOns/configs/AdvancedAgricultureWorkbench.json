@@ -1,80 +1,80 @@
 [{
-    "name": "WoodPile",
+    "name": "Ulfric.ColonyAddOns.Blocks.WoodPile",
     "results": [{
-        "type": "WoodPile",
+        "type": "Ulfric.ColonyAddOns.Blocks.WoodPile",
         "amount": 2
     }],
     "requires": [{
-        "type": "vanilla.planks",
+        "type": "planks",
         "amount": 2
     }],
     "defaultLimit": 0,
     "defaultPriority": -100
 }, {
-    "name": "ShrubCover",
+    "name": "Ulfric.ColonyAddOns.Blocks.ShrubCover",
     "results": [{
-        "type": "ShrubCover",
+        "type": "Ulfric.ColonyAddOns.Blocks.ShrubCover",
         "amount": 1
     }],
     "requires": [{
-        "type": "vanilla.leavestaiga",
+        "type": "leavestaiga",
         "amount": 2
     }],
     "defaultLimit": 0,
     "defaultPriority": -100
 }, {
-    "name": "OvergrownFence",
+    "name": "Ulfric.ColonyAddOns.Blocks.OvergrownFence",
     "results": [{
-        "type": "OvergrownFence",
+        "type": "Ulfric.ColonyAddOns.Blocks.OvergrownFence",
         "amount": 2
     }],
     "requires": [{
-        "type": "vanilla.planks",
+        "type": "planks",
         "amount": 1
     }, {
-        "type": "vanilla.leavestemperate",
+        "type": "leavestemperate",
         "amount": 2
     }],
     "defaultLimit": 0,
     "defaultPriority": -100
 }, {
-    "name": "Hedge",
+    "name": "Ulfric.ColonyAddOns.Blocks.Hedge",
     "results": [{
-        "type": "Hedge",
+        "type": "Ulfric.ColonyAddOns.Blocks.Hedge",
         "amount": 1
     }],
     "requires": [{
-        "type": "vanilla.leavestemperate",
+        "type": "leavestemperate",
         "amount": 2
     }],
     "defaultLimit": 0,
     "defaultPriority": -100
 }, {
-    "name": "BambooWall",
+    "name": "Ulfric.ColonyAddOns.Blocks.BambooWall",
     "results": [{
-        "type": "BambooWall",
+        "type": "Ulfric.ColonyAddOns.Blocks.BambooWall",
         "amount": 1
     }],
     "requires": [{
-        "type": "vanilla.planks",
+        "type": "planks",
         "amount": 1
     }],
     "defaultLimit": 0,
     "defaultPriority": -100
 }, {
-    "name": "FineSoil",
+    "name": "Ulfric.ColonyAddOns.Blocks.FineSoil",
     "results": [{
-        "type": "FineSoil",
+        "type": "Ulfric.ColonyAddOns.Blocks.FineSoil",
         "amount": 2
     }],
     "requires": [{
-        "type": "vanilla.dirt",
+        "type": "dirt",
         "amount": 5
     }, {
-        "type": "vanilla.straw",
+        "type": "straw",
         "amount": 5
     }, {
-        "type": "vanilla.leavestemperate",
+        "type": "leavestemperate",
         "amount": 5
     }],
     "defaultLimit": 0,

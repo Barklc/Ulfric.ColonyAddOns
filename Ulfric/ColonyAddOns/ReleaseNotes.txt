@@ -1,3 +1,13 @@
+Release Notes: 0.0.2.5
+Updated - Updated support for 0.6.1.2
+Fixed - Issue with recipes not showing up on workbenches.
+
+
+Release Notes: 0.0.2.4
+Added - Added support for 0.6.1.0
+Added - Added player planted trees have a chance to grow into any of the tree variations in the structure folder
+
+
 Release Notes: 0.0.2.3
 Updated - Changed AppleForest job to AppleFarmer so when collecting apples the tree is not harvested
 Added - Add Taiga sapling so players can grow them

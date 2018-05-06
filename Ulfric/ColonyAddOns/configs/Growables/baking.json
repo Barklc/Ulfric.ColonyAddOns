@@ -1,19 +1,19 @@
 ﻿[
 	{
-	"name" : "ApplePie",
-	"results":[{"type":"ApplePie","amount":1}],
-	"requires":[{"type":"vanilla.flour","amount":2},
-				{"type":"vanilla.firewood"},
-				{"type":"Apple","amount":2},
-				{"type":"WaterBucket","amount":1}],
+	"name" : "Ulfric.ColonyAddOns.Blocks.ApplePie",
+	"results":[{"type":"Ulfric.ColonyAddOns.Blocks.ApplePie","amount":1}],
+	"requires":[{"type":"flour","amount":2},
+				{"type":"firewood"},
+				{"type":"Ulfric.ColonyAddOns.Blocks.Apple","amount":2},
+				{"type":"Ulfric.ColonyAddOns.Blocks.WaterBucket","amount":1}],
 	"defaultLimit" : 5,
 	"defaultPriority" : 100
 	},
 	{
-	"name" : "AppleCider",
-	"results":[{"type":"AppleCider","amount":2}],
-	"requires":[{"type":"Apple","amount":4},
-				{"type":"WaterBucket","amount":1}],
+	"name" : "Ulfric.ColonyAddOns.Blocks.AppleCider",
+	"results":[{"type":"Ulfric.ColonyAddOns.Blocks.AppleCider","amount":2}],
+	"requires":[{"type":"Ulfric.ColonyAddOns.Blocks.Apple","amount":4},
+				{"type":"Ulfric.ColonyAddOns.Blocks.WaterBucket","amount":1}],
 	"defaultLimit" : 5,
 	"defaultPriority" : 100
 	}

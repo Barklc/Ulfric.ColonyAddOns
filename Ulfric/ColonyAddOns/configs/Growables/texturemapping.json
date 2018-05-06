@@ -1,38 +1,31 @@
 ﻿{
-	"LeavesApples" : {
-		"albedo" : "LeavesApples",
-		"emissive" : "neutral",
-		"height" : "neutral",
-		"normal" : "neutral"
-	},
-	"AppleBarrel": {
-     "albedo": "AppleBarrel",
-     "normal": "neutral",
-     "emissive": "neutral",
-     "height": "neutral"
+    "_settings": {
+        "defaultAlbedo": "gamedata/textures/materials/blocks/albedo/neutral.png",
+        "defaultEmissive": "gamedata/textures/materials/blocks/emissiveMaskAlpha/neutral.png",
+        "defaultHeight": "gamedata/textures/materials/blocks/heightSmoothnessSpecularity/neutral.png",
+        "defaultNormal": "gamedata/textures/materials/blocks/normal/neutral.png",
+        "fileExtension": ".png",
+        "folderAlbedo": "./../../Textures/albedo/Growables/",
+        "folderEmissive": "./../../Textures/emissive/Growables/",
+        "folderHeight": "./../../Textures/height/Growables/",
+        "folderNormal": "./../../Textures/normal/Growables/"
     },
-	"AppleBasket" : {
-		 "albedo" : "AppleBasket",
-		 "emissive" : "neutral",
-		 "height" : "neutral",
-		 "normal" : "neutral"
+	"Ulfric.ColonyAddOns.Blocks.LeavesApples" : {
+		"albedo" : "LeavesApples"
 	},
-	"BasketTop" : {
-		 "albedo" : "BasketTop",
-		 "emissive" : "neutral",
-		 "height" : "neutral",
-		 "normal" : "neutral"
+	"Ulfric.ColonyAddOns.Blocks.AppleBarrel": {
+     "albedo": "AppleBarrel"
+    },
+	"Ulfric.ColonyAddOns.Blocks.AppleBasket" : {
+		 "albedo" : "AppleBasket"
 	},
-	"Basket" : {
-		 "albedo" : "Basket",
-		 "emissive" : "neutral",
-		 "height" : "neutral",
-		 "normal" : "neutral"
+	"Ulfric.ColonyAddOns.Blocks.BasketTop" : {
+		 "albedo" : "BasketTop"
 	},
-	"CherryBasket" : {
-		 "albedo" : "CherryBasket",
-		 "emissive" : "neutral",
-		 "height" : "neutral",
-		 "normal" : "neutral"
+	"Ulfric.ColonyAddOns.Blocks.Basket" : {
+		 "albedo" : "Basket"
+	},
+	"Ulfric.ColonyAddOns.Blocks.CherryBasket" : {
+		 "albedo" : "CherryBasket"
 	}
 }

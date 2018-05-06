@@ -1,92 +1,58 @@
 ﻿{
-	"Crate1" : {
-		"albedo" : "Crate1",
-		"emissive" : "neutral",
-		"height" : "neutral",
-	    "normal" : "neutral"
+    "_settings": {
+        "defaultAlbedo": "gamedata/textures/materials/blocks/albedo/neutral.png",
+        "defaultEmissive": "gamedata/textures/materials/blocks/emissiveMaskAlpha/neutral.png",
+        "defaultHeight": "gamedata/textures/materials/blocks/heightSmoothnessSpecularity/neutral.png",
+        "defaultNormal": "gamedata/textures/materials/blocks/normal/neutral.png",
+        "fileExtension": ".png",
+        "folderAlbedo": "./../../Textures/albedo/Crates/",
+        "folderEmissive": "./../../Textures/emissive/Crates/",
+        "folderHeight": "./../../Textures/height/Crates/",
+        "folderNormal": "./../../Textures/normal/Crates/"
+    },
+	"Ulfric.ColonyAddOns.Blocks.Crate1" : {
+		"albedo" : "Crate1"
 	},
-	"Crate2" : {
-		"albedo" : "Crate2",
-		"emissive" : "neutral",
-		"height" : "neutral",
-		"normal" : "neutral"
+	"Ulfric.ColonyAddOns.Blocks.Crate2" : {
+		"albedo" : "Crate2"
 	},
-	"Crate3" : {
-		"albedo" : "Crate3",
-		"emissive" : "neutral",
-		"height" : "neutral",
-		"normal" : "neutral"
+	"Ulfric.ColonyAddOns.Blocks.Crate3" : {
+		"albedo" : "Crate3"
 	},
-	"Crate4" : {
-		"albedo" : "Crate4",
-		"emissive" : "neutral",
-		"height" : "neutral",
-		"normal" : "neutral"
+	"Ulfric.ColonyAddOns.Blocks.Crate4" : {
+		"albedo" : "Crate4"
 	},
-	"CrateDarkWood" : {
-		"albedo" : "CrateDarkWood",
-		"emissive" : "neutral",
-		"height" : "neutral",
-		"normal" : "neutral"
+	"Ulfric.ColonyAddOns.Blocks.CrateDarkWood" : {
+		"albedo" : "CrateDarkWood"
 	},
-	"CrateMetalBlack" : {
-		"albedo" : "CrateMetalBlack",
-		"emissive" : "neutral",
-		"height" : "neutral",
-		"normal" : "neutral"
+	"Ulfric.ColonyAddOns.Blocks.CrateMetalBlack" : {
+		"albedo" : "CrateMetalBlack"
 	},
-	"CrateMetalReenforcedDarkWood" : {
-		"albedo" : "CrateMetalReenforcedDarkWood",
-		"emissive" : "neutral",
-		"height" : "neutral",
-		"normal" : "neutral"
+	"Ulfric.ColonyAddOns.Blocks.CrateMetalReenforcedDarkWood" : {
+		"albedo" : "CrateMetalReenforcedDarkWood"
 	},
-	"CrateBerry" : {
-		"albedo" : "CrateBerry",
-		"emissive" : "neutral",
-		"height" : "neutral",
-		"normal" : "neutral"
+	"Ulfric.ColonyAddOns.Blocks.CrateBerry" : {
+		"albedo" : "CrateBerry"
 	},
-	"CrateBread" : {
-		"albedo" : "CrateBread",
-		"emissive" : "neutral",
-		"height" : "neutral",
-		"normal" : "neutral"
+	"Ulfric.ColonyAddOns.Blocks.CrateBread" : {
+		"albedo" : "CrateBread"
 	},
-	"CrateSlingBullet" : {
-		"albedo" : "CrateSlingBullet",
-		"emissive" : "neutral",
-		"height" : "neutral",
-		"normal" : "neutral"
+	"Ulfric.ColonyAddOns.Blocks.CrateSlingBullet" : {
+		"albedo" : "CrateSlingBullet"
 	},
-	"CrateArrow" : {
-		"albedo" : "CrateArrow",
-		"emissive" : "neutral",
-		"height" : "neutral",
-		"normal" : "neutral"
+	"Ulfric.ColonyAddOns.Blocks.CrateArrow" : {
+		"albedo" : "CrateArrow"
 	},
-	"CrateBolts" : {
-		"albedo" : "CrateBolts",
-		"emissive" : "neutral",
-		"height" : "neutral",
-		"normal" : "neutral"
+	"Ulfric.ColonyAddOns.Blocks.CrateBolts" : {
+		"albedo" : "CrateBolts"
 	},
-	"CrateGunpowder" : {
-		"albedo" : "CrateGunpowder",
-		"emissive" : "neutral",
-		"height" : "neutral",
-		"normal" : "neutral"
+	"Ulfric.ColonyAddOns.Blocks.CrateGunpowder" : {
+		"albedo" : "CrateGunpowder"
 	},
-	"CrateLeadBullet" : {
-		"albedo" : "CrateLeadBullet",
-		"emissive" : "neutral",
-		"height" : "neutral",
-		"normal" : "neutral"
+	"Ulfric.ColonyAddOns.Blocks.CrateLeadBullet" : {
+		"albedo" : "CrateLeadBullet"
 	},
-	"CrateFlour" : {
-		"albedo" : "CrateFlour",
-		"emissive" : "neutral",
-		"height" : "neutral",
-		"normal" : "neutral"
+	"Ulfric.ColonyAddOns.Blocks.CrateFlour" : {
+		"albedo" : "CrateFlour"
 	}
 }

@@ -1,117 +1,117 @@
 [{
-    "name": "WaterBucket",
+    "name": "Ulfric.ColonyAddOns.Blocks.WaterBucket",
     "results": [{
-        "type": "WaterBucket",
+        "type": "Ulfric.ColonyAddOns.Blocks.WaterBucket",
         "amount": 1
     }],
     "requires": [{
-        "type": "vanilla.snow",
+        "type": "snow",
         "amount": 1
     }],
     "defaultLimit": 0,
     "defaultPriority": -100
 }, {
-    "name": "CarpentryWorkbench",
+    "name": "Ulfric.ColonyAddOns.Blocks.CarpentryWorkbench",
     "results": [{
-        "type": "CarpentryWorkbench",
+        "type": "Ulfric.ColonyAddOns.Blocks.CarpentryWorkbench",
         "amount": 1
     }],
     "requires": [{
-        "type": "vanilla.planks",
+        "type": "planks",
         "amount": 1
     }, {
-        "type": "vanilla.coppertools",
+        "type": "coppertools",
         "amount": 2
     }, {
-        "type": "vanilla.coppernails",
+        "type": "coppernails",
         "amount": 5
     }],
     "isOptional": true,
     "defaultLimit": 1,
     "defaultPriority": -100
 }, {
-    "name": "AdvancedStoneMasonryWorkbench",
+    "name": "Ulfric.ColonyAddOns.Blocks.AdvancedStoneMasonryWorkbench",
     "results": [{
-        "type": "AdvancedStoneMasonryWorkbench",
+        "type": "Ulfric.ColonyAddOns.Blocks.AdvancedStoneMasonryWorkbench",
         "amount": 1
     }],
     "requires": [{
-        "type": "vanilla.stonebricks",
+        "type": "stonebricks",
         "amount": 1
     }, {
-        "type": "vanilla.coppertools",
+        "type": "coppertools",
         "amount": 2
     }, {
-        "type": "vanilla.coppernails",
+        "type": "coppernails",
         "amount": 5
     }],
     "isOptional": true,
     "defaultLimit": 1,
     "defaultPriority": -100
 }, {
-    "name": "FletcheryWorkbench",
+    "name": "Ulfric.ColonyAddOns.Blocks.FletcheryWorkbench",
     "results": [{
-        "type": "FletcheryWorkbench",
+        "type": "Ulfric.ColonyAddOns.Blocks.FletcheryWorkbench",
         "amount": 1
     }],
     "requires": [{
-        "type": "vanilla.planks",
+        "type": "planks",
         "amount": 1
     }, {
-        "type": "vanilla.bow",
+        "type": "bow",
         "amount": 2
     }, {
-        "type": "vanilla.coppertools",
+        "type": "coppertools",
         "amount": 5
     }],
     "isOptional": true,
     "defaultLimit": 1,
     "defaultPriority": -100
 }, {
-    "name": "HeraldStand",
+    "name": "Ulfric.ColonyAddOns.Blocks.HeraldStand",
     "results": [{
-        "type": "HeraldStand",
+        "type": "Ulfric.ColonyAddOns.Blocks.HeraldStand",
         "amount": 1
     }],
     "requires": [{
-        "type": "vanilla.bronzeingot",
+        "type": "bronzeingot",
         "amount": 2
     }, {
-        "type": "vanilla.coppertools",
+        "type": "coppertools",
         "amount": 5
     }],
     "isOptional": true,
     "defaultLimit": 1,
     "defaultPriority": -100
 }, {
-    "name": "BrownPlaster",
+    "name": "Ulfric.ColonyAddOns.Blocks.BrownPlaster",
     "results": [{
-        "type": "BrownPlaster",
+        "type": "Ulfric.ColonyAddOns.Blocks.BrownPlaster",
         "amount": 2
     }],
     "requires": [{
-        "type": "vanilla.planks",
+        "type": "planks",
         "amount": 1
     }, {
-        "type": "vanilla.gypsum",
+        "type": "gypsum",
         "amount": 1
     }],
     "defaultPriority": -100,
     "defaultLimit": 1
 },{
-    "name": "AdvancedAgricultureWorkbench",
+    "name": "Ulfric.ColonyAddOns.Blocks.AdvancedAgricultureWorkbench",
     "results": [{
-        "type": "AdvancedAgricultureWorkbench",
+        "type": "Ulfric.ColonyAddOns.Blocks.AdvancedAgricultureWorkbench",
         "amount": 1
     }],
     "requires": [{
-        "type": "vanilla.planks",
+        "type": "planks",
         "amount": 1
     }, {
-        "type": "vanilla.coppertools",
+        "type": "coppertools",
         "amount": 2
     }, {
-        "type": "vanilla.coppernails",
+        "type": "coppernails",
         "amount": 5
     }],
     "isOptional": true,
@@ -120,11 +120,11 @@
 }, {
 		"name" : "StoneBrick",
 		"results" : [{
-		    "type":"vanilla.stonebricks",
+		    "type":"stonebricks",
 		    "amount":5
 		}],
 		"requires" : [{
-		    "type":"vanilla.darkstone",
+		    "type":"darkstone",
 		    "amount":5
 		}],
 		"defaultLimit" : 0

@@ -1,812 +1,421 @@
-{
-	"AdvancedAgricultureWorkbenchSides" : {
+{  
+    "_settings": {
+        "defaultAlbedo": "gamedata/textures/materials/blocks/albedo/neutral.png",
+        "defaultEmissive": "gamedata/textures/materials/blocks/emissiveMaskAlpha/neutral.png",
+        "defaultHeight": "gamedata/textures/materials/blocks/heightSmoothnessSpecularity/neutral.png",
+        "defaultNormal": "gamedata/textures/materials/blocks/normal/neutral.png",
+        "fileExtension": ".png",
+        "folderAlbedo": "./../Textures/albedo/",
+        "folderEmissive": "./../Textures/emissive/",
+        "folderHeight": "./../Textures/height/",
+        "folderNormal": "./../Textures/normal/"
+    },
+	"Ulfric.ColonyAddOns.Blocks.AdvancedAgricultureWorkbenchSides" : {
 		"albedo" : "AdvancedAgricultureWorkbenchSides",
-		"emissive" : "neutral",
-		"height" : "neutral",
 		"normal" : "AdvancedAgricultureWorkbench"
 	},
-	"AdvancedAgricultureWorkbenchTop" : {
+	"Ulfric.ColonyAddOns.Blocks.AdvancedAgricultureWorkbenchTop" : {
 		"albedo" : "AdvancedAgricultureWorkbenchTop",
-		"emissive" : "neutral",
-		"height" : "neutral",
 		"normal" : "AdvancedAgricultureWorkbench"
 	},
-	"AdvancedStoneMasonryWorkbench" : {
+	"Ulfric.ColonyAddOns.Blocks.AdvancedStoneMasonryWorkbench" : {
 		"albedo" : "AdvancedStoneMasonryWorkbench",
-		"emissive" : "neutral",
-		"height" : "neutral",
 		"normal" : "AdvancedStoneMasonryWorkbench"
 	},
-	"AshySandstone" : {
-		"albedo" : "AshySandstone",
-		"emissive" : "neutral",
-		"height" : "neutral",
-		"normal" : "neutral"
+	"Ulfric.ColonyAddOns.Blocks.AshySandstone" : {
+		"albedo" : "AshySandstone"
 	},
-	"BambooWall" : {
-		"albedo" : "BambooWall",
-		"emissive" : "neutral",
-		"height" : "neutral",
-		"normal" : "neutral"
+	"Ulfric.ColonyAddOns.Blocks.BambooWall" : {
+		"albedo" : "BambooWall"
 	},
-	"Basket" : {
-		"albedo" : "Basket",
-		"emissive" : "neutral",
-		"height" : "neutral",
-		"normal" : "neutral"
+	"Ulfric.ColonyAddOns.Blocks.BirchLogFence" : {
+		"albedo" : "BirchLogs"
 	},
-	"BirchLogFence" : {
-		"albedo" : "BirchLogs",
-		"emissive" : "neutral",
-		"height" : "neutral",
-		"normal" : "neutral"
+	"Ulfric.ColonyAddOns.Blocks.BirchLogsHorz" : {
+		"albedo" : "BirchLogsHorz"
 	},
-	"BirchLogsHorz" : {
-		"albedo" : "BirchLogsHorz",
-		"emissive" : "neutral",
-		"height" : "neutral",
-		"normal" : "neutral"
+	"Ulfric.ColonyAddOns.Blocks.BirchLogsVert" : {
+		"albedo" : "BirchLogs"
 	},
-	"BirchLogsVert" : {
-		"albedo" : "BirchLogs",
-		"emissive" : "neutral",
-		"height" : "neutral",
-		"normal" : "neutral"
+	"Ulfric.ColonyAddOns.Blocks.BlackDirtGrungyMetal" : {
+		"albedo" : "BlackDirtGrungyMetal"
 	},
-	"BlackDirtGrungyMetal" : {
-		"albedo" : "BlackDirtGrungyMetal",
-		"emissive" : "neutral",
-		"height" : "neutral",
-		"normal" : "neutral"
+	"Ulfric.ColonyAddOns.Blocks.BlackRottenWood" : {
+		"albedo" : "BlackRottenWood"
 	},
-	"BlackRottenWood" : {
-		"albedo" : "BlackRottenWood",
-		"emissive" : "neutral",
-		"height" : "neutral",
-		"normal" : "neutral"
+	"Ulfric.ColonyAddOns.Blocks.BrickAlternatingMud" : {
+		"albedo" : "BrickAlternatingMud"
 	},
-	"BrickAlternatingMud" : {
-		"albedo" : "BrickAlternatingMud",
-		"emissive" : "neutral",
-		"height" : "neutral",
-		"normal" : "neutral"
+	"Ulfric.ColonyAddOns.Blocks.BrickBlackRough" : {
+		"albedo" : "BrickBlackRough"
 	},
-	"BrickBlackRough" : {
-		"albedo" : "BrickBlackRough",
-		"emissive" : "neutral",
-		"height" : "neutral",
-		"normal" : "neutral"
+	"Ulfric.ColonyAddOns.Blocks.BrickBurlywood" : {
+		"albedo" : "BrickBurlywood"
 	},
-	"BrickBurlywood" : {
-		"albedo" : "BrickBurlywood",
-		"emissive" : "neutral",
-		"height" : "neutral",
-		"normal" : "neutral"
+	"Ulfric.ColonyAddOns.Blocks.BrickGreenChipped" : {
+		"albedo" : "BrickGreenChipped"
 	},
-	"BrickGreenChipped" : {
-		"albedo" : "BrickGreenChipped",
-		"emissive" : "neutral",
-		"height" : "neutral",
-		"normal" : "neutral"
+	"Ulfric.ColonyAddOns.Blocks.BrickLight" : {
+		"albedo" : "BrickLight"
 	},
-	"BrickLight" : {
-		"albedo" : "BrickLight",
-		"emissive" : "neutral",
-		"height" : "neutral",
-		"normal" : "neutral"
+	"Ulfric.ColonyAddOns.Blocks.BrickRedBasketweave" : {
+		"albedo" : "BrickRedBasketweave"
 	},
-	"BrickRedBasketweave" : {
-		"albedo" : "BrickRedBasketweave",
-		"emissive" : "neutral",
-		"height" : "neutral",
-		"normal" : "neutral"
+	"Ulfric.ColonyAddOns.Blocks.BricksBubbly" : {
+		"albedo" : "BricksBubbly"
 	},
-	"BricksBubbly" : {
-		"albedo" : "BricksBubbly",
-		"emissive" : "neutral",
-		"height" : "neutral",
-		"normal" : "neutral"
+	"Ulfric.ColonyAddOns.Blocks.Brickwhite" : {
+		"albedo" : "Brickwhite"
 	},
-	"Brickwhite" : {
-		"albedo" : "Brickwhite",
-		"emissive" : "neutral",
-		"height" : "neutral",
-		"normal" : "neutral"
+	"Ulfric.ColonyAddOns.Blocks.BrickWhite" : {
+		"albedo" : "BrickWhite"
 	},
-	"BrickWhite" : {
-		"albedo" : "BrickWhite",
-		"emissive" : "neutral",
-		"height" : "neutral",
-		"normal" : "neutral"
+	"Ulfric.ColonyAddOns.Blocks.BrickworkWornBrown" : {
+		"albedo" : "BrickworkWornBrown"
 	},
-	"BrickworkWornBrown" : {
-		"albedo" : "BrickworkWornBrown",
-		"emissive" : "neutral",
-		"height" : "neutral",
-		"normal" : "neutral"
+	"Ulfric.ColonyAddOns.Blocks.BrownishGreenWoodPanel" : {
+		"albedo" : "BrownishGreenWoodPanel"
 	},
-	"BrownishGreenWoodPanel" : {
-		"albedo" : "BrownishGreenWoodPanel",
-		"emissive" : "neutral",
-		"height" : "neutral",
-		"normal" : "neutral"
+	"Ulfric.ColonyAddOns.Blocks.BrownPlaster" : {
+		"albedo" : "BrownPlaster"
 	},
-	"BrownPlaster" : {
-		"albedo" : "BrownPlaster",
-		"emissive" : "neutral",
-		"height" : "neutral",
-		"normal" : "neutral"
-	},
-	"CarpentryWorkbench" : {
+	"Ulfric.ColonyAddOns.Blocks.CarpentryWorkbench" : {
 		"albedo" : "CarpentryWorkbench",
-		"emissive" : "neutral",
-		"height" : "neutral",
 		"normal" : "CarpentryWorkbench"
 	},
-	"CementLargeBlockWall" : {
-		"albedo" : "CementLargeBlockWall",
-		"emissive" : "neutral",
-		"height" : "neutral",
-		"normal" : "neutral"
+	"Ulfric.ColonyAddOns.Blocks.CementLargeBlockWall" : {
+		"albedo" : "CementLargeBlockWall"
 	},
-	"ChiseledBlackStone" : {
-		"albedo" : "ChiseledBlackStone",
-		"emissive" : "neutral",
-		"height" : "neutral",
-		"normal" : "neutral"
+	"Ulfric.ColonyAddOns.Blocks.ChiseledBlackStone" : {
+		"albedo" : "ChiseledBlackStone"
 	},
-	"CobbleStoneWall" : {
-		"albedo" : "CobbleStoneWall",
-		"emissive" : "neutral",
-		"height" : "neutral",
-		"normal" : "neutral"
+	"Ulfric.ColonyAddOns.Blocks.CobbleStoneWall" : {
+		"albedo" : "CobbleStoneWall"
 	},
-	"ConcreteBrickTiles" : {
-		"albedo" : "ConcreteBrickTiles",
-		"emissive" : "neutral",
-		"height" : "neutral",
-		"normal" : "neutral"
+	"Ulfric.ColonyAddOns.Blocks.ConcreteBrickTiles" : {
+		"albedo" : "ConcreteBrickTiles"
 	},
-	"CorrodedTechnoTiles" : {
-		"albedo" : "CorrodedTechnoTiles",
-		"emissive" : "neutral",
-		"height" : "neutral",
-		"normal" : "neutral"
+	"Ulfric.ColonyAddOns.Blocks.CorrodedTechnoTiles" : {
+		"albedo" : "CorrodedTechnoTiles"
 	},
-	"DarkWoodFrameTopAndBottom" : {
-		"albedo" : "DarkWoodFrameTopAndBottom",
-		"emissive" : "neutral",
-		"height" : "neutral",
-		"normal" : "neutral"
+	"Ulfric.ColonyAddOns.Blocks.DarkWoodFrameTopAndBottom" : {
+		"albedo" : "DarkWoodFrameTopAndBottom"
 	},
-	"DarkWoodStrapped" : {
-		"albedo" : "DarkWoodStrapped",
-		"emissive" : "neutral",
-		"height" : "neutral",
-		"normal" : "neutral"
+	"Ulfric.ColonyAddOns.Blocks.DarkWoodStrapped" : {
+		"albedo" : "DarkWoodStrapped"
 	},
-	"DirtyLargeBlocksWall" : {
-		"albedo" : "DirtyLargeBlocksWall",
-		"emissive" : "neutral",
-		"height" : "neutral",
-		"normal" : "neutral"
+	"Ulfric.ColonyAddOns.Blocks.DirtyLargeBlocksWall" : {
+		"albedo" : "DirtyLargeBlocksWall"
 	},
-	"DustyGreyStone" : {
-		"albedo" : "DustyGreyStone",
-		"emissive" : "neutral",
-		"height" : "neutral",
-		"normal" : "neutral"
+	"Ulfric.ColonyAddOns.Blocks.DustyGreyStone" : {
+		"albedo" : "DustyGreyStone"
 	},
-	"FancyChiseledBlackStone" : {
-		"albedo" : "FancyChiseledBlackStone",
-		"emissive" : "neutral",
-		"height" : "neutral",
-		"normal" : "neutral"
+	"Ulfric.ColonyAddOns.Blocks.FancyChiseledBlackStone" : {
+		"albedo" : "FancyChiseledBlackStone"
 	},
-	"FancyCobblestoneWall" : {
-		"albedo" : "FancyCobblestoneWall",
-		"emissive" : "neutral",
-		"height" : "neutral",
-		"normal" : "neutral"
+	"Ulfric.ColonyAddOns.Blocks.FancyCobblestoneWall" : {
+		"albedo" : "FancyCobblestoneWall"
 	},
-	"FancyGreyBrick" : {
-		"albedo" : "FancyGreyBrick",
-		"emissive" : "neutral",
-		"height" : "neutral",
-		"normal" : "neutral"
+	"Ulfric.ColonyAddOns.Blocks.FancyGreyBrick" : {
+		"albedo" : "FancyGreyBrick"
 	},
-	"FancyPavingSlabs" : {
-		"albedo" : "FancyPavingSlabs",
-		"emissive" : "neutral",
-		"height" : "neutral",
-		"normal" : "neutral"
+	"Ulfric.ColonyAddOns.Blocks.FancyPavingSlabs" : {
+		"albedo" : "FancyPavingSlabs"
 	},
-	"FineSoil" : {
-		"albedo" : "FineSoil",
-		"emissive" : "neutral",
-		"height" : "neutral",
-		"normal" : "neutral"
+	"Ulfric.ColonyAddOns.Blocks.FineSoil" : {
+		"albedo" : "FineSoil"
 	},
-	"FletcheryWorkbench" : {
+	"Ulfric.ColonyAddOns.Blocks.FletcheryWorkbench" : {
 		"albedo" : "FletcheryWorkbench",
-		"emissive" : "neutral",
-		"height" : "neutral",
 		"normal" : "FletcheryWorkbench"
 	},
-	"FloorBeigeWood" : {
-		"albedo" : "FloorBeigeWood",
-		"emissive" : "neutral",
-		"height" : "neutral",
-		"normal" : "neutral"
+	"Ulfric.ColonyAddOns.Blocks.FloorBeigeWood" : {
+		"albedo" : "FloorBeigeWood"
 	},
-	"FloorBlueStainedBasketweave" : {
-		"albedo" : "FloorBlueStainedBasketweave",
-		"emissive" : "neutral",
-		"height" : "neutral",
-		"normal" : "neutral"
+	"Ulfric.ColonyAddOns.Blocks.FloorBlueStainedBasketweave" : {
+		"albedo" : "FloorBlueStainedBasketweave"
 	},
-	"FloorChippedBricks" : {
-		"albedo" : "FloorChippedBricks",
-		"emissive" : "neutral",
-		"height" : "neutral",
-		"normal" : "neutral"
+	"Ulfric.ColonyAddOns.Blocks.FloorChippedBricks" : {
+		"albedo" : "FloorChippedBricks"
 	},
-	"FloorConcrete" : {
-		"albedo" : "FloorConcrete",
-		"emissive" : "neutral",
-		"height" : "neutral",
-		"normal" : "neutral"
+	"Ulfric.ColonyAddOns.Blocks.FloorConcrete" : {
+		"albedo" : "FloorConcrete"
 	},
-	"FloorDarkHardwood" : {
-		"albedo" : "FloorDarkHardwood",
-		"emissive" : "neutral",
-		"height" : "neutral",
-		"normal" : "neutral"
+	"Ulfric.ColonyAddOns.Blocks.FloorDarkHardwood" : {
+		"albedo" : "FloorDarkHardwood"
 	},
-	"FloorDarkHerringbone" : {
-		"albedo" : "FloorDarkHerringbone",
-		"emissive" : "neutral",
-		"height" : "neutral",
-		"normal" : "neutral"
+	"Ulfric.ColonyAddOns.Blocks.FloorDarkHerringbone" : {
+		"albedo" : "FloorDarkHerringbone"
 	},
-	"FloorDarkWood" : {
-		"albedo" : "FloorDarkWood",
-		"emissive" : "neutral",
-		"height" : "neutral",
-		"normal" : "neutral"
+	"Ulfric.ColonyAddOns.Blocks.FloorDarkWood" : {
+		"albedo" : "FloorDarkWood"
 	},
-	"FloorFadedBasketweave" : {
-		"albedo" : "FloorFadedBasketweave",
-		"emissive" : "neutral",
-		"height" : "neutral",
-		"normal" : "neutral"
+	"Ulfric.ColonyAddOns.Blocks.FloorFadedBasketweave" : {
+		"albedo" : "FloorFadedBasketweave"
 	},
-	"FloorGougedBasketweave" : {
-		"albedo" : "FloorGougedBasketweave",
-		"emissive" : "neutral",
-		"height" : "neutral",
-		"normal" : "neutral"
+	"Ulfric.ColonyAddOns.Blocks.FloorGougedBasketweave" : {
+		"albedo" : "FloorGougedBasketweave"
 	},
-	"FloorGrittyLongBoards" : {
-		"albedo" : "FloorGrittyLongBoards",
-		"emissive" : "neutral",
-		"height" : "neutral",
-		"normal" : "neutral"
+	"Ulfric.ColonyAddOns.Blocks.FloorGrittyLongBoards" : {
+		"albedo" : "FloorGrittyLongBoards"
 	},
-	"FloorLightBasketweave" : {
-		"albedo" : "FloorLightBasketweave",
-		"emissive" : "neutral",
-		"height" : "neutral",
-		"normal" : "neutral"
+	"Ulfric.ColonyAddOns.Blocks.FloorLightBasketweave" : {
+		"albedo" : "FloorLightBasketweave"
 	},
-	"FloorPinkBasketweave" : {
-		"albedo" : "FloorPinkBasketweave",
-		"emissive" : "neutral",
-		"height" : "neutral",
-		"normal" : "neutral"
+	"Ulfric.ColonyAddOns.Blocks.FloorPinkBasketweave" : {
+		"albedo" : "FloorPinkBasketweave"
 	},
-	"FloorTile" : {
-		"albedo" : "FloorTile",
-		"emissive" : "neutral",
-		"height" : "neutral",
-		"normal" : "neutral"
+	"Ulfric.ColonyAddOns.Blocks.FloorTile" : {
+		"albedo" : "FloorTile"
 	},
-	"FloorTrinsicHouse" : {
-		"albedo" : "FloorTrinsicHouse",
-		"emissive" : "neutral",
-		"height" : "neutral",
-		"normal" : "neutral"
+	"Ulfric.ColonyAddOns.Blocks.FloorTrinsicHouse" : {
+		"albedo" : "FloorTrinsicHouse"
 	},
-	"FloorTrinsicStone" : {
-		"albedo" : "FloorTrinsicStone",
-		"emissive" : "neutral",
-		"height" : "neutral",
-		"normal" : "neutral"
+	"Ulfric.ColonyAddOns.Blocks.FloorTrinsicStone" : {
+		"albedo" : "FloorTrinsicStone"
 	},
-	"FloorWoodParquet" : {
-		"albedo" : "FloorWoodParquet",
-		"emissive" : "neutral",
-		"height" : "neutral",
-		"normal" : "neutral"
+	"Ulfric.ColonyAddOns.Blocks.FloorWoodParquet" : {
+		"albedo" : "FloorWoodParquet"
 	},
-	"FloorWrinkledBasketweave" : {
-		"albedo" : "FloorWrinkledBasketweave",
-		"emissive" : "neutral",
-		"height" : "neutral",
-		"normal" : "neutral"
+	"Ulfric.ColonyAddOns.Blocks.FloorWrinkledBasketweave" : {
+		"albedo" : "FloorWrinkledBasketweave"
 	},
-	"GraniteTechno" : {
-		"albedo" : "GraniteTechno",
-		"emissive" : "neutral",
-		"height" : "neutral",
-		"normal" : "neutral"
+	"Ulfric.ColonyAddOns.Blocks.GraniteTechno" : {
+		"albedo" : "GraniteTechno"
 	},
-	"GraniteWall" : {
-		"albedo" : "GraniteWall",
-		"emissive" : "neutral",
-		"height" : "neutral",
-		"normal" : "neutral"
+	"Ulfric.ColonyAddOns.Blocks.GraniteWall" : {
+		"albedo" : "GraniteWall"
 	},
-	"Gravel" : {
-		"albedo" : "Gravel",
-		"emissive" : "neutral",
-		"height" : "neutral",
-		"normal" : "neutral"
+	"Ulfric.ColonyAddOns.Blocks.Gravel" : {
+		"albedo" : "Gravel"
 	},
-	"Gravel2" : {
-		"albedo" : "Gravel2",
-		"emissive" : "neutral",
-		"height" : "neutral",
-		"normal" : "neutral"
+	"Ulfric.ColonyAddOns.Blocks.Gravel2" : {
+		"albedo" : "Gravel2"
 	},
-	"Gravel3" : {
-		"albedo" : "Gravel3",
-		"emissive" : "neutral",
-		"height" : "neutral",
-		"normal" : "neutral"
+	"Ulfric.ColonyAddOns.Blocks.Gravel3" : {
+		"albedo" : "Gravel3"
 	},
-	"Gravel4" : {
-		"albedo" : "Gravel4",
-		"emissive" : "neutral",
-		"height" : "neutral",
-		"normal" : "neutral"
+	"Ulfric.ColonyAddOns.Blocks.Gravel4" : {
+		"albedo" : "Gravel4"
 	},
-	"GreenGraniteWalkway" : {
-		"albedo" : "GreenGraniteWalkway",
-		"emissive" : "neutral",
-		"height" : "neutral",
-		"normal" : "neutral"
+	"Ulfric.ColonyAddOns.Blocks.GreenGraniteWalkway" : {
+		"albedo" : "GreenGraniteWalkway"
 	},
-	"GreenSiding" : {
-		"albedo" : "GreenSiding",
-		"emissive" : "neutral",
-		"height" : "neutral",
-		"normal" : "neutral"
+	"Ulfric.ColonyAddOns.Blocks.GreenSiding" : {
+		"albedo" : "GreenSiding"
 	},
-	"GreyStone" : {
-		"albedo" : "GreyStone",
-		"emissive" : "neutral",
-		"height" : "neutral",
-		"normal" : "neutral"
+	"Ulfric.ColonyAddOns.Blocks.GreyStone" : {
+		"albedo" : "GreyStone"
 	},
-	"GreyStoneConcreteWall" : {
-		"albedo" : "GreyStoneConcreteWall",
-		"emissive" : "neutral",
-		"height" : "neutral",
-		"normal" : "neutral"
+	"Ulfric.ColonyAddOns.Blocks.GreyStoneConcreteWall" : {
+		"albedo" : "GreyStoneConcreteWall"
 	},
-	"GreyWoodFrameTopAndBottom" : {
-		"albedo" : "GreyWoodFrameTopAndBottom",
-		"emissive" : "neutral",
-		"height" : "neutral",
-		"normal" : "neutral"
+	"Ulfric.ColonyAddOns.Blocks.GreyWoodFrameTopAndBottom" : {
+		"albedo" : "GreyWoodFrameTopAndBottom"
 	},
-	"GreyWoodPanelWithPins" : {
-		"albedo" : "GreyWoodPanelWithPins",
-		"emissive" : "neutral",
-		"height" : "neutral",
-		"normal" : "neutral"
+	"Ulfric.ColonyAddOns.Blocks.GreyWoodPanelWithPins" : {
+		"albedo" : "GreyWoodPanelWithPins"
 	},
-	"HardenedLava" : {
-		"albedo" : "HardenedLava",
-		"emissive" : "neutral",
-		"height" : "neutral",
-		"normal" : "neutral"
+	"Ulfric.ColonyAddOns.Blocks.HardenedLava" : {
+		"albedo" : "HardenedLava"
 	},
-	"Hedge" : {
-		"albedo" : "Hedge",
-		"emissive" : "neutral",
-		"height" : "neutral",
-		"normal" : "neutral"
+	"Ulfric.ColonyAddOns.Blocks.Hedge" : {
+		"albedo" : "Hedge"
 	},
-	"HeraldStand" : {
+	"Ulfric.ColonyAddOns.Blocks.HeraldStand" : {
 		"albedo" : "HeraldStand",
-		"emissive" : "neutral",
-		"height" : "neutral",
 		"normal" : "HeraldStand"
 	},
-	"infiniteMarble" : {
-		"albedo" : "oreMarble",
-		"emissive" : "neutral",
-		"height" : "neutral",
-		"normal" : "neutral"
+	"Ulfric.ColonyAddOns.Blocks.infiniteMarble" : {
+		"albedo" : "oreMarble"
 	},
-	"infiniteWaterSource" : {
-		"albedo" : "oreWaterSource",
-		"emissive" : "neutral",
-		"height" : "neutral",
-		"normal" : "neutral"
+	"Ulfric.ColonyAddOns.Blocks.infiniteWaterSource" : {
+		"albedo" : "oreWaterSource"
 	},
-	"LightBoards" : {
-		"albedo" : "LightBoards",
-		"emissive" : "neutral",
-		"height" : "neutral",
-		"normal" : "neutral"
+	"Ulfric.ColonyAddOns.Blocks.LightBoards" : {
+		"albedo" : "LightBoards"
 	},
-	"LightPaneling" : {
-		"albedo" : "LightPaneling",
-		"emissive" : "neutral",
-		"height" : "neutral",
-		"normal" : "neutral"
+	"Ulfric.ColonyAddOns.Blocks.LightPaneling" : {
+		"albedo" : "LightPaneling"
 	},
-	"LogTaigaHorz" : {
-		"albedo" : "LogTaigaHorz",
-		"emissive" : "neutral",
-		"height" : "neutral",
-		"normal" : "neutral"
+	"Ulfric.ColonyAddOns.Blocks.LogTaigaHorz" : {
+		"albedo" : "LogTaigaHorz"
 	},
-	"LogTemperateHorz" : {
-		"albedo" : "LogTemperateHorz",
-		"emissive" : "neutral",
-		"height" : "neutral",
-		"normal" : "neutral"
+	"Ulfric.ColonyAddOns.Blocks.LogTemperateHorz" : {
+		"albedo" : "LogTemperateHorz"
 	},
-	"MahoganyBoards" : {
-		"albedo" : "MahoganyBoards",
-		"emissive" : "neutral",
-		"height" : "neutral",
-		"normal" : "neutral"
+	"Ulfric.ColonyAddOns.Blocks.MahoganyBoards" : {
+		"albedo" : "MahoganyBoards"
 	},
-	"MapleSiding" : {
-		"albedo" : "MapleSiding",
-		"emissive" : "neutral",
-		"height" : "neutral",
-		"normal" : "neutral"
+	"Ulfric.ColonyAddOns.Blocks.MapleSiding" : {
+		"albedo" : "MapleSiding"
 	},
-	"Marble" : {
-		"albedo" : "Marble",
-		"emissive" : "neutral",
-		"height" : "neutral",
-		"normal" : "neutral"
+	"Ulfric.ColonyAddOns.Blocks.Marble" : {
+		"albedo" : "Marble"
 	},
-	"MarbleBlack" : {
-		"albedo" : "MarbleBlack",
-		"emissive" : "neutral",
-		"height" : "neutral",
-		"normal" : "neutral"
+	"Ulfric.ColonyAddOns.Blocks.MarbleBlack" : {
+		"albedo" : "MarbleBlack"
 	},
-	"MarbleBlood" : {
-		"albedo" : "MarbleBlood",
-		"emissive" : "neutral",
-		"height" : "neutral",
-		"normal" : "neutral"
+	"Ulfric.ColonyAddOns.Blocks.MarbleBlood" : {
+		"albedo" : "MarbleBlood"
 	},
-	"MarbleBlue" : {
-		"albedo" : "MarbleBlue",
-		"emissive" : "neutral",
-		"height" : "neutral",
-		"normal" : "neutral"
+	"Ulfric.ColonyAddOns.Blocks.MarbleBlue" : {
+		"albedo" : "MarbleBlue"
 	},
-	"MarbleBlueCrack" : {
-		"albedo" : "MarbleBlueCrack",
-		"emissive" : "neutral",
-		"height" : "neutral",
-		"normal" : "neutral"
+	"Ulfric.ColonyAddOns.Blocks.MarbleBlueCrack" : {
+		"albedo" : "MarbleBlueCrack"
 	},
-	"MarbleBrightPurple" : {
-		"albedo" : "MarbleBrightPurple",
-		"emissive" : "neutral",
-		"height" : "neutral",
-		"normal" : "neutral"
+	"Ulfric.ColonyAddOns.Blocks.MarbleBrightPurple" : {
+		"albedo" : "MarbleBrightPurple"
 	},
-	"MarbleBrownSwirl" : {
-		"albedo" : "MarbleBrownSwirl",
-		"emissive" : "neutral",
-		"height" : "neutral",
-		"normal" : "neutral"
+	"Ulfric.ColonyAddOns.Blocks.MarbleBrownSwirl" : {
+		"albedo" : "MarbleBrownSwirl"
 	},
-	"MarbleButterscotchFeldspar" : {
-		"albedo" : "MarbleButterscotchFeldspar",
-		"emissive" : "neutral",
-		"height" : "neutral",
-		"normal" : "neutral"
+	"Ulfric.ColonyAddOns.Blocks.MarbleButterscotchFeldspar" : {
+		"albedo" : "MarbleButterscotchFeldspar"
 	},
-	"MarbleDarkGray" : {
-		"albedo" : "MarbleDarkGray",
-		"emissive" : "neutral",
-		"height" : "neutral",
-		"normal" : "neutral"
+	"Ulfric.ColonyAddOns.Blocks.MarbleDarkGray" : {
+		"albedo" : "MarbleDarkGray"
 	},
-	"MarbleDarkGreen" : {
-		"albedo" : "MarbleDarkGreen",
-		"emissive" : "neutral",
-		"height" : "neutral",
-		"normal" : "neutral"
+	"Ulfric.ColonyAddOns.Blocks.MarbleDarkGreen" : {
+		"albedo" : "MarbleDarkGreen"
 	},
-	"MarbleEgyptian" : {
-		"albedo" : "MarbleEgyptian",
-		"emissive" : "neutral",
-		"height" : "neutral",
-		"normal" : "neutral"
+	"Ulfric.ColonyAddOns.Blocks.MarbleEgyptian" : {
+		"albedo" : "MarbleEgyptian"
 	},
-	"MarbleEmerald" : {
-		"albedo" : "MarbleEmerald",
-		"emissive" : "neutral",
-		"height" : "neutral",
-		"normal" : "neutral"
+	"Ulfric.ColonyAddOns.Blocks.MarbleEmerald" : {
+		"albedo" : "MarbleEmerald"
 	},
-	"MarbleGlassyMarine" : {
-		"albedo" : "MarbleGlassyMarine",
-		"emissive" : "neutral",
-		"height" : "neutral",
-		"normal" : "neutral"
+	"Ulfric.ColonyAddOns.Blocks.MarbleGlassyMarine" : {
+		"albedo" : "MarbleGlassyMarine"
 	},
-	"MarbleGlassyOrange" : {
-		"albedo" : "MarbleGlassyOrange",
-		"emissive" : "neutral",
-		"height" : "neutral",
-		"normal" : "neutral"
+	"Ulfric.ColonyAddOns.Blocks.MarbleGlassyOrange" : {
+		"albedo" : "MarbleGlassyOrange"
 	},
-	"MarbleGlassyPink" : {
-		"albedo" : "MarbleGlassyPink",
-		"emissive" : "neutral",
-		"height" : "neutral",
-		"normal" : "neutral"
+	"Ulfric.ColonyAddOns.Blocks.MarbleGlassyPink" : {
+		"albedo" : "MarbleGlassyPink"
 	},
-	"MarbleGlassyRed" : {
-		"albedo" : "MarbleGlassyRed",
-		"emissive" : "neutral",
-		"height" : "neutral",
-		"normal" : "neutral"
+	"Ulfric.ColonyAddOns.Blocks.MarbleGlassyRed" : {
+		"albedo" : "MarbleGlassyRed"
 	},
-	"MarbleGray" : {
-		"albedo" : "MarbleGray",
-		"emissive" : "neutral",
-		"height" : "neutral",
-		"normal" : "neutral"
+	"Ulfric.ColonyAddOns.Blocks.MarbleGray" : {
+		"albedo" : "MarbleGray"
 	},
-	"MarbleGreen" : {
-		"albedo" : "MarbleGreen",
-		"emissive" : "neutral",
-		"height" : "neutral",
-		"normal" : "neutral"
+	"Ulfric.ColonyAddOns.Blocks.MarbleGreen" : {
+		"albedo" : "MarbleGreen"
 	},
-	"MarbleLight" : {
-		"albedo" : "MarbleLight",
-		"emissive" : "neutral",
-		"height" : "neutral",
-		"normal" : "neutral"
+	"Ulfric.ColonyAddOns.Blocks.MarbleLight" : {
+		"albedo" : "MarbleLight"
 	},
-	"MarbleLightGreen" : {
-		"albedo" : "MarbleLightGreen",
-		"emissive" : "neutral",
-		"height" : "neutral",
-		"normal" : "neutral"
+	"Ulfric.ColonyAddOns.Blocks.MarbleLightGreen" : {
+		"albedo" : "MarbleLightGreen"
 	},
-	"MarbleOnixPina" : {
-		"albedo" : "MarbleOnixPina",
-		"emissive" : "neutral",
-		"height" : "neutral",
-		"normal" : "neutral"
+	"Ulfric.ColonyAddOns.Blocks.MarbleOnixPina" : {
+		"albedo" : "MarbleOnixPina"
 	},
-	"MarblePurple" : {
-		"albedo" : "MarblePurple",
-		"emissive" : "neutral",
-		"height" : "neutral",
-		"normal" : "neutral"
+	"Ulfric.ColonyAddOns.Blocks.MarblePurple" : {
+		"albedo" : "MarblePurple"
 	},
-	"MarbleRough" : {
-		"albedo" : "MarbleRough",
-		"emissive" : "neutral",
-		"height" : "neutral",
-		"normal" : "neutral"
+	"Ulfric.ColonyAddOns.Blocks.MarbleRough" : {
+		"albedo" : "MarbleRough"
 	},
-	"MarbleRoughPink" : {
-		"albedo" : "MarbleRoughPink",
-		"emissive" : "neutral",
-		"height" : "neutral",
-		"normal" : "neutral"
+	"Ulfric.ColonyAddOns.Blocks.MarbleRoughPink" : {
+		"albedo" : "MarbleRoughPink"
 	},
-	"MarbleSeaGreen" : {
-		"albedo" : "MarbleSeaGreen",
-		"emissive" : "neutral",
-		"height" : "neutral",
-		"normal" : "neutral"
+	"Ulfric.ColonyAddOns.Blocks.MarbleSeaGreen" : {
+		"albedo" : "MarbleSeaGreen"
 	},
-	"MarbleSmashedGray" : {
-		"albedo" : "MarbleSmashedGray",
-		"emissive" : "neutral",
-		"height" : "neutral",
-		"normal" : "neutral"
+	"Ulfric.ColonyAddOns.Blocks.MarbleSmashedGray" : {
+		"albedo" : "MarbleSmashedGray"
 	},
-	"MarbleTepeacaGris" : {
-		"albedo" : "MarbleTepeacaGris",
-		"emissive" : "neutral",
-		"height" : "neutral",
-		"normal" : "neutral"
+	"Ulfric.ColonyAddOns.Blocks.MarbleTepeacaGris" : {
+		"albedo" : "MarbleTepeacaGris"
 	},
-	"MarbleTile1" : {
-		"albedo" : "MarbleTile1",
-		"emissive" : "neutral",
-		"height" : "neutral",
-		"normal" : "neutral"
+	"Ulfric.ColonyAddOns.Blocks.MarbleTile1" : {
+		"albedo" : "MarbleTile1"
 	},
-	"MarbleTiles" : {
-		"albedo" : "MarbleTiles",
-		"emissive" : "neutral",
-		"height" : "neutral",
-		"normal" : "neutral"
+	"Ulfric.ColonyAddOns.Blocks.MarbleTiles" : {
+		"albedo" : "MarbleTiles"
 	},
-	"MetalReenforcedDarkWood" : {
-		"albedo" : "MetalReenforcedDarkWood",
-		"emissive" : "neutral",
-		"height" : "neutral",
-		"normal" : "neutral"
+	"Ulfric.ColonyAddOns.Blocks.MetalReenforcedDarkWood" : {
+		"albedo" : "MetalReenforcedDarkWood"
 	},
-	"NewShingles" : {
-		"albedo" : "NewShingles",
-		"emissive" : "neutral",
-		"height" : "neutral",
-		"normal" : "neutral"
+	"Ulfric.ColonyAddOns.Blocks.NewShingles" : {
+		"albedo" : "NewShingles"
 	},
-	"OldShingles" : {
-		"albedo" : "OldShingles",
-		"emissive" : "neutral",
-		"height" : "neutral",
-		"normal" : "neutral"
+	"Ulfric.ColonyAddOns.Blocks.OldShingles" : {
+		"albedo" : "OldShingles"
 	},
-	"OldWeatheredBoards" : {
-		"albedo" : "OldWeatheredBoards",
-		"emissive" : "neutral",
-		"height" : "neutral",
-		"normal" : "neutral"
+	"Ulfric.ColonyAddOns.Blocks.OldWeatheredBoards" : {
+		"albedo" : "OldWeatheredBoards"
 	},
-	"OrangeMarble" : {
-		"albedo" : "OrangeMarble",
-		"emissive" : "neutral",
-		"height" : "neutral",
-		"normal" : "neutral"
+	"Ulfric.ColonyAddOns.Blocks.OrangeMarble" : {
+		"albedo" : "OrangeMarble"
 	},
-	"OvergrownFence" : {
-		"albedo" : "OvergrownFence",
-		"emissive" : "neutral",
-		"height" : "neutral",
-		"normal" : "neutral"
+	"Ulfric.ColonyAddOns.Blocks.OvergrownFence" : {
+		"albedo" : "OvergrownFence"
 	},
-	"PurpleSlate" : {
-		"albedo" : "PurpleSlate",
-		"emissive" : "neutral",
-		"height" : "neutral",
-		"normal" : "neutral"
+	"Ulfric.ColonyAddOns.Blocks.PurpleSlate" : {
+		"albedo" : "PurpleSlate"
 	},
-	"RockWall" : {
-		"albedo" : "RockWall",
-		"emissive" : "neutral",
-		"height" : "neutral",
-		"normal" : "neutral"
+	"Ulfric.ColonyAddOns.Blocks.RockWall" : {
+		"albedo" : "RockWall"
 	},
-	"RoughBrownStone" : {
-		"albedo" : "RoughBrownStone",
-		"emissive" : "neutral",
-		"height" : "neutral",
-		"normal" : "neutral"
+	"Ulfric.ColonyAddOns.Blocks.RoughBrownStone" : {
+		"albedo" : "RoughBrownStone"
 	},
-	"ScratchedLightBoards" : {
-		"albedo" : "ScratchedLightBoards",
-		"emissive" : "neutral",
-		"height" : "neutral",
-		"normal" : "neutral"
+	"Ulfric.ColonyAddOns.Blocks.ScratchedLightBoards" : {
+		"albedo" : "ScratchedLightBoards"
 	},
-	"ShrubCover" : {
-		"albedo" : "ShrubCover",
-		"emissive" : "neutral",
-		"height" : "neutral",
-		"normal" : "neutral"
+	"Ulfric.ColonyAddOns.Blocks.ShrubCover" : {
+		"albedo" : "ShrubCover"
 	},
-	"StoneBlockDarkWall" : {
-		"albedo" : "StoneBlockDarkWall",
-		"emissive" : "neutral",
-		"height" : "neutral",
-		"normal" : "neutral"
+	"Ulfric.ColonyAddOns.Blocks.StoneBlockDarkWall" : {
+		"albedo" : "StoneBlockDarkWall"
 	},
-	"StoneBlockRoughWall" : {
-		"albedo" : "StoneBlockRoughWall",
-		"emissive" : "neutral",
-		"height" : "neutral",
-		"normal" : "neutral"
+	"Ulfric.ColonyAddOns.Blocks.StoneBlockRoughWall" : {
+		"albedo" : "StoneBlockRoughWall"
 	},
-	"StoneBlocksWoodEdged" : {
-		"albedo" : "StoneBlocksWoodEdged",
-		"emissive" : "neutral",
-		"height" : "neutral",
-		"normal" : "neutral"
+	"Ulfric.ColonyAddOns.Blocks.StoneBlocksWoodEdged" : {
+		"albedo" : "StoneBlocksWoodEdged"
 	},
-	"StoneBrickWall" : {
-		"albedo" : "StoneBrickWall",
-		"emissive" : "neutral",
-		"height" : "neutral",
-		"normal" : "neutral"
+	"Ulfric.ColonyAddOns.Blocks.StoneBrickWall" : {
+		"albedo" : "StoneBrickWall"
 	},
-	"StoneMidnight" : {
-		"albedo" : "StoneMidnight",
-		"emissive" : "neutral",
-		"height" : "neutral",
-		"normal" : "neutral"
+	"Ulfric.ColonyAddOns.Blocks.StoneMidnight" : {
+		"albedo" : "StoneMidnight"
 	},
-	"StonePath" : {
-		"albedo" : "StonePath",
-		"emissive" : "neutral",
-		"height" : "neutral",
-		"normal" : "neutral"
+	"Ulfric.ColonyAddOns.Blocks.StonePath" : {
+		"albedo" : "StonePath"
 	},
-	"StoneWall1" : {
-		"albedo" : "StoneWall1",
-		"emissive" : "neutral",
-		"height" : "neutral",
-		"normal" : "neutral"
+	"Ulfric.ColonyAddOns.Blocks.StoneWall1" : {
+		"albedo" : "StoneWall1"
 	},
-	"StoneWall2" : {
-		"albedo" : "StoneWall2",
-		"emissive" : "neutral",
-		"height" : "neutral",
-		"normal" : "neutral"
+	"Ulfric.ColonyAddOns.Blocks.StoneWall2" : {
+		"albedo" : "StoneWall2"
 	},
-	"StoneWall3" : {
-		"albedo" : "StoneWall3",
-		"emissive" : "neutral",
-		"height" : "neutral",
-		"normal" : "neutral"
+	"Ulfric.ColonyAddOns.Blocks.StoneWall3" : {
+		"albedo" : "StoneWall3"
 	},
-	"StoneWall4" : {
-		"albedo" : "StoneWall4",
-		"emissive" : "neutral",
-		"height" : "neutral",
-		"normal" : "neutral"
+	"Ulfric.ColonyAddOns.Blocks.StoneWall4" : {
+		"albedo" : "StoneWall4"
 	},
-	"StoneWall5" : {
-		"albedo" : "StoneWall5",
-		"emissive" : "neutral",
-		"height" : "neutral",
-		"normal" : "neutral"
+	"Ulfric.ColonyAddOns.Blocks.StoneWall5" : {
+		"albedo" : "StoneWall5"
 	},
-	"StoneWall6" : {
-		"albedo" : "StoneWall6",
-		"emissive" : "neutral",
-		"height" : "neutral",
-		"normal" : "neutral"
+	"Ulfric.ColonyAddOns.Blocks.StoneWall6" : {
+		"albedo" : "StoneWall6"
 	},
-	"TanRoughStone" : {
-		"albedo" : "TanRoughStone",
-		"emissive" : "neutral",
-		"height" : "neutral",
-		"normal" : "neutral"
+	"Ulfric.ColonyAddOns.Blocks.TanRoughStone" : {
+		"albedo" : "TanRoughStone"
 	},
-	"WoodLogEnds" : {
-		"albedo" : "WoodLogEnds",
-		"emissive" : "neutral",
-		"height" : "neutral",
-		"normal" : "neutral"
+	"Ulfric.ColonyAddOns.Blocks.WoodLogEnds" : {
+		"albedo" : "WoodLogEnds"
 	},
-	"WoodPile" : {
-		"albedo" : "BirchLogs",
-		"emissive" : "neutral",
-		"height" : "neutral",
-		"normal" : "neutral"
+	"Ulfric.ColonyAddOns.Blocks.WoodPile" : {
+		"albedo" : "BirchLogs"
 	},
-	"WoodSiding" : {
-		"albedo" : "WoodSiding",
-		"emissive" : "neutral",
-		"height" : "neutral",
-		"normal" : "neutral"
+	"Ulfric.ColonyAddOns.Blocks.WoodSiding" : {
+		"albedo" : "WoodSiding"
 	}
 }

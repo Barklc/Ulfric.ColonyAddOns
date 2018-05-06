@@ -43,6 +43,10 @@
       <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Steam\SteamApps\common\Colony Survival\gamedata\mods\Pipliz\BaseGame\BaseGame.dll</HintPath>
       <Private>False</Private>
     </Reference>
+    <Reference Include="colonyserverwrapperdll">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Steam\SteamApps\common\Colony Survival\gamedata\mods\Pipliz\colonyserverwrapper\colonyserverwrapperdll.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -51,6 +55,10 @@
     <Reference Include="System.Xml" />
     <Reference Include="UnityEngine">
       <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Steam\SteamApps\common\Colony Survival\colonyserver_Data\Managed\UnityEngine.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.Networking">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Steam\SteamApps\common\Colony Survival\colonyserver_Data\Managed\UnityEngine.Networking.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="UnityEngine.UI">
@@ -694,8 +702,6 @@
     <None Include="audio\Reveille.ogg" />
     <None Include="audio\Taps.ogg" />
     <None Include="configs\AdvancedStoneMasonryWorkbench.json" />
-    <None Include="configs\AdvancedStoneMasonry.json" />
-    <None Include="configs\AdvancedAgriculture.json" />
     <None Include="configs\AdvancedAgricultureWorkbench.json" />
     <None Include="configs\Crates\CarpentryWorkbench.json" />
     <None Include="configs\Crates\crafting.json" />
@@ -704,8 +710,6 @@
     <None Include="configs\Crates\texturemapping.json" />
     <None Include="configs\Crates\types.json" />
     <None Include="configs\FletcheryWorkbench.json" />
-    <None Include="configs\Fletchery.json" />
-    <None Include="configs\Carpenter.json" />
     <None Include="configs\CarpentryWorkbench.json" />
     <None Include="configs\Growables\baking.json" />
     <None Include="configs\Growables\shopping.json" />
@@ -752,7 +756,7 @@
 mkdir Ulfric\ColonyAddOns
 copy *.* Ulfric\ColonyAddOns /y
 del *.* /q
-copy ..\..\..\modinfo.json  Ulfric/y
+copy ..\..\..\modinfo.json  Ulfric\ColonyAddOns /y
 cd Ulfric\ColonyAddOns
 mkdir icons
 xcopy ..\..\..\..\icons\*.* icons /e /y

@@ -1,89 +1,89 @@
 ﻿[{
-    "name": "CrateDarkWood",
+    "name": "Ulfric.ColonyAddOns.Blocks.CrateDarkWood",
     "results": [{
-        "type": "CrateDarkWood",
+        "type": "Ulfric.ColonyAddOns.Blocks.CrateDarkWood",
         "amount": 1
     }],
     "requires": [{
-        "type": "vanilla.planks",
+        "type": "planks",
         "amount": 1
     }, {
-        "type": "vanilla.coppernails",
+        "type": "coppernails",
         "amount": 4
     }],
     "defaultLimit": 0,
     "defaultPriority": -100
 }, {
-    "name": "CrateMetalReenforcedDarkWood",
+    "name": "Ulfric.ColonyAddOns.Blocks.CrateMetalReenforcedDarkWood",
     "results": [{
-        "type": "CrateMetalReenforcedDarkWood",
+        "type": "Ulfric.ColonyAddOns.Blocks.CrateMetalReenforcedDarkWood",
         "amount": 1
     }],
     "requires": [{
-        "type": "vanilla.planks",
+        "type": "planks",
         "amount": 1
     }, {
-        "type": "vanilla.coppernails",
+        "type": "coppernails",
         "amount": 4
     }],
     "defaultLimit": 0,
     "defaultPriority": -100
 }, {
-    "name": "Crate1",
+    "name": "Ulfric.ColonyAddOns.Blocks.Crate1",
     "results": [{
-        "type": "Crate1",
+        "type": "Ulfric.ColonyAddOns.Blocks.Crate1",
         "amount": 1
     }],
     "requires": [{
-        "type": "vanilla.planks",
+        "type": "planks",
         "amount": 1
     }, {
-        "type": "vanilla.coppernails",
+        "type": "coppernails",
         "amount": 4
     }],
     "defaultLimit": 0,
     "defaultPriority": -100
 }, {
-    "name": "Crate2",
+    "name": "Ulfric.ColonyAddOns.Blocks.Crate2",
     "results": [{
-        "type": "Crate2",
+        "type": "Ulfric.ColonyAddOns.Blocks.Crate2",
         "amount": 1
     }],
     "requires": [{
-        "type": "vanilla.planks",
+        "type": "planks",
         "amount": 1
     }, {
-        "type": "vanilla.coppernails",
+        "type": "coppernails",
         "amount": 4
     }],
     "defaultLimit": 0,
     "defaultPriority": -100
 }, {
-    "name": "Crate3",
+    "name": "Ulfric.ColonyAddOns.Blocks.Crate3",
     "results": [{
-        "type": "Crate3",
+        "type": "Ulfric.ColonyAddOns.Blocks.Crate3",
         "amount": 1
     }],
     "requires": [{
-        "type": "vanilla.planks",
+        "type": "planks",
         "amount": 1
     }, {
-        "type": "vanilla.coppernails",
+        "type": "coppernails",
         "amount": 4
     }],
     "defaultLimit": 0,
     "defaultPriority": -100
 }, {
-    "name": "Crate4",
+    "name": "Ulfric.ColonyAddOns.Blocks.Crate4",
     "results": [{
-        "type": "Crate4",
+        "type": "Ulfric.ColonyAddOns.Blocks.Crate4",
         "amount": 1
     }],
     "requires": [{
-        "type": "vanilla.planks",
+        "type": "planks",
         "amount": 1
     }, {
-        "type": "vanilla.coppernails",
+        "type": "coppernails",
         "amount": 4
     }],
     "defaultLimit": 0,

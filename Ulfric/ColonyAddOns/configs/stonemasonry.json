@@ -1,11 +1,11 @@
 [{
-    "name": "Gravel",
+    "name": "Ulfric.ColonyAddOns.Blocks.Gravel",
     "results": [{
-        "type": "Gravel",
+        "type": "Ulfric.ColonyAddOns.Blocks.Gravel",
         "amount": 1
     }],
     "requires": [{
-        "type": "vanilla.stonebricks",
+        "type": "stonebricks",
         "amount": 1
     }],
     "defaultLimit": 0,

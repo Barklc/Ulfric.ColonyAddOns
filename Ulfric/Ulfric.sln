@@ -5,11 +5,7 @@ VisualStudioVersion = 15.0.27428.2005
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{43EFC9BB-419F-496B-AC06-E256DE3C1C88}"
 	ProjectSection(SolutionItems) = preProject
-		APIProvider.dll = APIProvider.dll
-		Assembly-CSharp.dll = Assembly-CSharp.dll
 		Release Notes.txt = Release Notes.txt
-		UnityEngine.dll = UnityEngine.dll
-		UnityEngine.UI.dll = UnityEngine.UI.dll
 	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ColonyAddOns", "ColonyAddOns\ColonyAddOns.csproj", "{B0D971D6-F06A-4F61-8BF7-1985E5DE1DF5}"

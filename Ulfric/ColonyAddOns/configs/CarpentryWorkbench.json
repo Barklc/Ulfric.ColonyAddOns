@@ -1,378 +1,378 @@
 [{
-    "name": "FloorBeigeWood",
+    "name": "Ulfric.ColonyAddOns.Blocks.FloorBeigeWood",
     "results": [{
-        "type": "FloorBeigeWood",
+        "type": "Ulfric.ColonyAddOns.Blocks.FloorBeigeWood",
         "amount": 1
     }],
     "requires": [{
-        "type": "vanilla.planks",
+        "type": "planks",
         "amount": 1
     }],
     "defaultLimit": 0,
     "defaultPriority": -100
 }, {
-    "name": "ScratchedLightBoards",
+    "name": "Ulfric.ColonyAddOns.Blocks.ScratchedLightBoards",
     "results": [{
-        "type": "ScratchedLightBoards",
+        "type": "Ulfric.ColonyAddOns.Blocks.ScratchedLightBoards",
         "amount": 1
     }],
     "requires": [{
-        "type": "vanilla.planks",
+        "type": "planks",
         "amount": 1
     }],
     "defaultLimit": 0,
     "defaultPriority": -100
 
 }, {
-    "name": "NewShingles",
+    "name": "Ulfric.ColonyAddOns.Blocks.NewShingles",
     "results": [{
-        "type": "NewShingles",
+        "type": "Ulfric.ColonyAddOns.Blocks.NewShingles",
         "amount": 1
     }],
     "requires": [{
-        "type": "vanilla.planks",
+        "type": "planks",
         "amount": 1
     }],
     "defaultLimit": 0,
     "defaultPriority": -100
 }, {
-    "name": "OldShingles",
+    "name": "Ulfric.ColonyAddOns.Blocks.OldShingles",
     "results": [{
-        "type": "OldShingles",
+        "type": "Ulfric.ColonyAddOns.Blocks.OldShingles",
         "amount": 1
     }],
     "requires": [{
-        "type": "vanilla.planks",
+        "type": "planks",
         "amount": 1
     }],
     "defaultLimit": 0,
     "defaultPriority": -100
 }, {
-    "name": "OldWeatheredBoards",
+    "name": "Ulfric.ColonyAddOns.Blocks.OldWeatheredBoards",
     "results": [{
-        "type": "OldWeatheredBoards",
+        "type": "Ulfric.ColonyAddOns.Blocks.OldWeatheredBoards",
         "amount": 1
     }],
     "requires": [{
-        "type": "vanilla.planks",
+        "type": "planks",
         "amount": 1
     }],
     "defaultLimit": 0,
     "defaultPriority": -100
 }, {
-    "name": "FloorDarkHerringbone",
+    "name": "Ulfric.ColonyAddOns.Blocks.FloorDarkHerringbone",
     "results": [{
-        "type": "FloorDarkHerringbone",
+        "type": "Ulfric.ColonyAddOns.Blocks.FloorDarkHerringbone",
         "amount": 1
     }],
     "requires": [{
-        "type": "vanilla.planks",
+        "type": "planks",
         "amount": 2
     }],
     "defaultLimit": 0,
     "defaultPriority": -100
 }, {
-    "name": "GreenSiding",
+    "name": "Ulfric.ColonyAddOns.Blocks.GreenSiding",
     "results": [{
-        "type": "GreenSiding",
+        "type": "Ulfric.ColonyAddOns.Blocks.GreenSiding",
         "amount": 1
     }],
     "requires": [{
-        "type": "vanilla.planks",
+        "type": "planks",
         "amount": 2
     }],
     "defaultLimit": 0,
     "defaultPriority": -100
 }, {
-    "name": "GreyWoodFrameTopAndBottom",
+    "name": "Ulfric.ColonyAddOns.Blocks.GreyWoodFrameTopAndBottom",
     "results": [{
-        "type": "GreyWoodFrameTopAndBottom",
+        "type": "Ulfric.ColonyAddOns.Blocks.GreyWoodFrameTopAndBottom",
         "amount": 1
     }],
     "requires": [{
-        "type": "vanilla.planks",
+        "type": "planks",
         "amount": 2
     }],
     "defaultLimit": 0,
     "defaultPriority": -100
 }, {
-    "name": "LightBoards",
+    "name": "Ulfric.ColonyAddOns.Blocks.LightBoards",
     "results": [{
-        "type": "LightBoards",
+        "type": "Ulfric.ColonyAddOns.Blocks.LightBoards",
         "amount": 1
     }],
     "requires": [{
-        "type": "vanilla.planks",
+        "type": "planks",
         "amount": 2
     }],
     "defaultLimit": 0,
     "defaultPriority": -100
 }, {
-    "name": "MahoganyBoards",
+    "name": "Ulfric.ColonyAddOns.Blocks.MahoganyBoards",
     "results": [{
-        "type": "MahoganyBoards",
+        "type": "Ulfric.ColonyAddOns.Blocks.MahoganyBoards",
         "amount": 1
     }],
     "requires": [{
-        "type": "vanilla.planks",
+        "type": "planks",
         "amount": 2
     }],
     "defaultLimit": 0,
     "defaultPriority": -100
 }, {
-    "name": "MapleSiding",
+    "name": "Ulfric.ColonyAddOns.Blocks.MapleSiding",
     "results": [{
-        "type": "MapleSiding",
+        "type": "Ulfric.ColonyAddOns.Blocks.MapleSiding",
         "amount": 1
     }],
     "requires": [{
-        "type": "vanilla.planks",
+        "type": "planks",
         "amount": 2
     }],
     "defaultLimit": 0,
     "defaultPriority": -100
 }, {
-    "name": "FloorFadedBasketweave",
+    "name": "Ulfric.ColonyAddOns.Blocks.FloorFadedBasketweave",
     "results": [{
-        "type": "FloorFadedBasketweave",
+        "type": "Ulfric.ColonyAddOns.Blocks.FloorFadedBasketweave",
         "amount": 1
     }],
     "requires": [{
-        "type": "vanilla.planks",
+        "type": "planks",
         "amount": 2
     }],
     "defaultLimit": 0,
     "defaultPriority": -100
 }, {
-    "name": "FloorGougedBasketweave",
+    "name": "Ulfric.ColonyAddOns.Blocks.FloorGougedBasketweave",
     "results": [{
-        "type": "FloorGougedBasketweave",
+        "type": "Ulfric.ColonyAddOns.Blocks.FloorGougedBasketweave",
         "amount": 1
     }],
     "requires": [{
-        "type": "vanilla.planks",
+        "type": "planks",
         "amount": 2
     }],
     "defaultLimit": 0,
     "defaultPriority": -100
 }, {
-    "name": "FloorGrittyLongBoards",
+    "name": "Ulfric.ColonyAddOns.Blocks.FloorGrittyLongBoards",
     "results": [{
-        "type": "FloorGrittyLongBoards",
+        "type": "Ulfric.ColonyAddOns.Blocks.FloorGrittyLongBoards",
         "amount": 1
     }],
     "requires": [{
-        "type": "vanilla.planks",
+        "type": "planks",
         "amount": 2
     }],
     "defaultLimit": 0,
     "defaultPriority": -100
 }, {
-    "name": "FloorLightBasketweave",
+    "name": "Ulfric.ColonyAddOns.Blocks.FloorLightBasketweave",
     "results": [{
-        "type": "FloorLightBasketweave",
+        "type": "Ulfric.ColonyAddOns.Blocks.FloorLightBasketweave",
         "amount": 1
     }],
     "requires": [{
-        "type": "vanilla.planks",
+        "type": "planks",
         "amount": 2
     }],
     "defaultLimit": 0,
     "defaultPriority": -100
 }, {
-    "name": "FloorPinkBasketweave",
+    "name": "Ulfric.ColonyAddOns.Blocks.FloorPinkBasketweave",
     "results": [{
-        "type": "FloorPinkBasketweave",
+        "type": "Ulfric.ColonyAddOns.Blocks.FloorPinkBasketweave",
         "amount": 1
     }],
     "requires": [{
-        "type": "vanilla.planks",
+        "type": "planks",
         "amount": 2
     }],
     "defaultLimit": 0,
     "defaultPriority": -100
 }, {
-    "name": "FloorWrinkledBasketweave",
+    "name": "Ulfric.ColonyAddOns.Blocks.FloorWrinkledBasketweave",
     "results": [{
-        "type": "FloorWrinkledBasketweave",
+        "type": "Ulfric.ColonyAddOns.Blocks.FloorWrinkledBasketweave",
         "amount": 1
     }],
     "requires": [{
-        "type": "vanilla.planks",
+        "type": "planks",
         "amount": 2
     }],
     "defaultLimit": 0,
     "defaultPriority": -100
 }, {
-    "name": "FloorDarkWood",
+    "name": "Ulfric.ColonyAddOns.Blocks.FloorDarkWood",
     "results": [{
-        "type": "FloorDarkWood",
+        "type": "Ulfric.ColonyAddOns.Blocks.FloorDarkWood",
         "amount": 1
     }],
     "requires": [{
-        "type": "vanilla.planks",
+        "type": "planks",
         "amount": 2
     }],
     "defaultLimit": 0,
     "defaultPriority": -100
 }, {
-    "name": "FloorTile",
+    "name": "Ulfric.ColonyAddOns.Blocks.FloorTile",
     "results": [{
-        "type": "FloorTile",
+        "type": "Ulfric.ColonyAddOns.Blocks.FloorTile",
         "amount": 1
     }],
     "requires": [{
-        "type": "vanilla.planks",
+        "type": "planks",
         "amount": 1
     }],
     "defaultPriority": -100,
     "defaultLimit": 0
 }, {
-    "name": "FloorDarkHardwood",
+    "name": "Ulfric.ColonyAddOns.Blocks.FloorDarkHardwood",
     "results": [{
-        "type": "FloorDarkHardwood",
+        "type": "Ulfric.ColonyAddOns.Blocks.FloorDarkHardwood",
         "amount": 2
     }],
     "requires": [{
-        "type": "vanilla.coatedplanks",
+        "type": "coatedplanks",
         "amount": 1
     }, {
-        "type": "vanilla.planks",
+        "type": "planks",
         "amount": 1
     }],
     "defaultLimit": 0,
     "defaultPriority": -100
 }, {
-    "name": "FloorTrinsichouse",
+    "name": "Ulfric.ColonyAddOns.Blocks.FloorTrinsichouse",
     "results": [{
-        "type": "FloorTrinsicHouse",
+        "type": "Ulfric.ColonyAddOns.Blocks.FloorTrinsicHouse",
         "amount": 1
     }],
     "requires": [{
-        "type": "vanilla.blackplanks",
+        "type": "blackplanks",
         "amount": 1
     }],
     "defaultLimit": 0,
     "defaultPriority": -100
 }, {
-    "name": "FloorWoodParquet",
+    "name": "Ulfric.ColonyAddOns.Blocks.FloorWoodParquet",
     "results": [{
-        "type": "FloorWoodParquet",
+        "type": "Ulfric.ColonyAddOns.Blocks.FloorWoodParquet",
         "amount": 1
     }],
     "requires": [{
-        "type": "vanilla.planks",
+        "type": "planks",
         "amount": 1
     }],
     "defaultLimit": 0,
     "defaultPriority": -100
 }, {
-    "name": "LightPaneling",
+    "name": "Ulfric.ColonyAddOns.Blocks.LightPaneling",
     "results": [{
-        "type": "LightPaneling",
+        "type": "Ulfric.ColonyAddOns.Blocks.LightPaneling",
         "amount": 1
     }],
     "requires": [{
-        "type": "vanilla.planks",
+        "type": "planks",
         "amount": 1
     }],
     "defaultLimit": 0,
     "defaultPriority": -100
 }, {
-    "name": "coatedplanks",
+    "name": "CoatedPlanks",
     "results": [{
-        "type": "vanilla.coatedplanks",
+        "type": "coatedplanks",
         "amount": 3
     }],
     "requires": [{
-        "type": "vanilla.linseedoil",
+        "type": "linseedoil",
         "amount": 3
     }, {
-        "type": "vanilla.planks",
+        "type": "planks",
         "amount": 3
     }],
     "defaultLimit": 3,
     "defaultPriority": -100
 }, {
-    "name": "DarkWoodFrameTopAndBottom",
+    "name": "Ulfric.ColonyAddOns.Blocks.DarkWoodFrameTopAndBottom",
     "results": [{
-        "type": "DarkWoodFrameTopAndBottom",
+        "type": "Ulfric.ColonyAddOns.Blocks.DarkWoodFrameTopAndBottom",
         "amount": 1
     }],
     "requires": [{
-        "type": "vanilla.planks",
+        "type": "planks",
         "amount": 1
     }],
     "defaultPriority": -100,
     "defaultLimit": 0
 }, {
-    "name": "GreyWoodPanelWithPins",
+    "name": "Ulfric.ColonyAddOns.Blocks.GreyWoodPanelWithPins",
     "results": [{
-        "type": "GreyWoodPanelWithPins",
+        "type": "Ulfric.ColonyAddOns.Blocks.GreyWoodPanelWithPins",
         "amount": 1
     }],
     "requires": [{
-        "type": "vanilla.planks",
+        "type": "planks",
         "amount": 1
     }],
     "defaultPriority": -100,
     "defaultLimit": 0
 }, {
-    "name": "DarkWoodStrapped",
+    "name": "Ulfric.ColonyAddOns.Blocks.DarkWoodStrapped",
     "results": [{
-        "type": "DarkWoodStrapped",
+        "type": "Ulfric.ColonyAddOns.Blocks.DarkWoodStrapped",
         "amount": 1
     }],
     "requires": [{
-        "type": "vanilla.planks",
+        "type": "planks",
         "amount": 1
     }],
     "defaultPriority": -100,
     "defaultLimit": 0
 }, {
-    "name": "MetalReenforcedDarkWood",
+    "name": "Ulfric.ColonyAddOns.Blocks.MetalReenforcedDarkWood",
     "results": [{
-        "type": "MetalReenforcedDarkWood",
+        "type": "Ulfric.ColonyAddOns.Blocks.MetalReenforcedDarkWood",
         "amount": 1
     }],
     "requires": [{
-        "type": "vanilla.planks",
+        "type": "planks",
         "amount": 1
     }],
     "defaultPriority": -100,
     "defaultLimit": 0
 }, {
-    "name": "BlackDirtGrungyMetal",
+    "name": "Ulfric.ColonyAddOns.Blocks.BlackDirtGrungyMetal",
     "results": [{
-        "type": "BlackDirtGrungyMetal",
+        "type": "Ulfric.ColonyAddOns.Blocks.BlackDirtGrungyMetal",
         "amount": 1
     }],
     "requires": [{
-        "type": "vanilla.planks",
+        "type": "planks",
         "amount": 1
     }],
     "defaultPriority": -100,
     "defaultLimit": 0
 }, {
-    "name": "BlackRottenWood",
+    "name": "Ulfric.ColonyAddOns.Blocks.BlackRottenWood",
     "results": [{
-        "type": "BlackRottenWood",
+        "type": "Ulfric.ColonyAddOns.Blocks.BlackRottenWood",
         "amount": 1
     }],
     "requires": [{
-        "type": "vanilla.planks",
+        "type": "planks",
         "amount": 1
     }],
     "defaultPriority": -100,
     "defaultLimit": 0
 }, {
-    "name": "BrownishGreenWoodPanel",
+    "name": "Ulfric.ColonyAddOns.Blocks.BrownishGreenWoodPanel",
     "results": [{
-        "type": "BrownishGreenWoodPanel",
+        "type": "Ulfric.ColonyAddOns.Blocks.BrownishGreenWoodPanel",
         "amount": 1
     }],
     "requires": [{
-        "type": "vanilla.planks",
+        "type": "planks",
         "amount": 1
     }],
     "defaultPriority": -100,

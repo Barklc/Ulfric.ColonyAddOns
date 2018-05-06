@@ -1,12 +1,12 @@
 ﻿[{
-    "name": "CrateMetalBlack",
+    "name": "Ulfric.ColonyAddOns.Blocks.CrateMetalBlack",
     "results": [{
-        "type": "CrateMetalBlack",
+        "type": "Ulfric.ColonyAddOns.Blocks.CrateMetalBlack",
         "amount": 1
     }],
     "requires": [{
-        "type": "vanilla.goldcoin",
-        "amount": 2
+        "type": "goldcoin",
+        "amount": 100
     }],
     "defaultLimit": 0,
     "defaultPriority": -100,

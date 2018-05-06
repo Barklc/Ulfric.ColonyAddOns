@@ -1,958 +1,958 @@
 [{
-    "name": "StoneBlockDarkWall",
+    "name": "Ulfric.ColonyAddOns.Blocks.StoneBlockDarkWall",
     "results": [{
-        "type": "StoneBlockDarkWall",
+        "type": "Ulfric.ColonyAddOns.Blocks.StoneBlockDarkWall",
         "amount": 1
     }],
     "requires": [{
-        "type": "vanilla.stonebricks",
+        "type": "stonebricks",
         "amount": 1
     }, {
-        "type": "vanilla.charcoal",
+        "type": "charcoal",
         "amount": 1
     }],
     "defaultLimit": 0,
     "defaultPriority": -100
 }, {
-    "name": "StoneBlockRoughWall",
+    "name": "Ulfric.ColonyAddOns.Blocks.StoneBlockRoughWall",
     "results": [{
-        "type": "StoneBlockRoughWall",
+        "type": "Ulfric.ColonyAddOns.Blocks.StoneBlockRoughWall",
         "amount": 1
     }],
     "requires": [{
-        "type": "vanilla.stonebricks",
+        "type": "stonebricks",
         "amount": 2
     }],
     "defaultLimit": 0,
     "defaultPriority": -100
 }, {
-    "name": "StoneBlocksWoodEdged",
+    "name": "Ulfric.ColonyAddOns.Blocks.StoneBlocksWoodEdged",
     "results": [{
-        "type": "StoneBlocksWoodEdged",
+        "type": "Ulfric.ColonyAddOns.Blocks.StoneBlocksWoodEdged",
         "amount": 1
     }],
     "requires": [{
-        "type": "vanilla.stonebricks",
+        "type": "stonebricks",
         "amount": 1
     }, {
-        "type": "vanilla.planks",
+        "type": "planks",
         "amount": 1
     }],
     "defaultLimit": 0,
     "defaultPriority": -100
 }, {
-    "name": "StoneBrickWall",
+    "name": "Ulfric.ColonyAddOns.Blocks.StoneBrickWall",
     "results": [{
-        "type": "StoneBrickWall",
+        "type": "Ulfric.ColonyAddOns.Blocks.StoneBrickWall",
         "amount": 1
     }],
     "requires": [{
-        "type": "vanilla.stonebricks",
+        "type": "stonebricks",
         "amount": 2
     }],
     "defaultLimit": 0,
     "defaultPriority": -100
 }, {
-    "name": "StoneMidnight",
+    "name": "Ulfric.ColonyAddOns.Blocks.StoneMidnight",
     "results": [{
-        "type": "StoneMidnight",
+        "type": "Ulfric.ColonyAddOns.Blocks.StoneMidnight",
         "amount": 1
     }],
     "requires": [{
-        "type": "vanilla.stonebricks",
+        "type": "stonebricks",
         "amount": 1
     }, {
-        "type": "vanilla.planks",
+        "type": "planks",
         "amount": 1
     }],
     "defaultLimit": 0,
     "defaultPriority": -100
 }, {
-    "name": "StonePath",
+    "name": "Ulfric.ColonyAddOns.Blocks.StonePath",
     "results": [{
-        "type": "StonePath",
+        "type": "Ulfric.ColonyAddOns.Blocks.StonePath",
         "amount": 1
     }],
     "requires": [{
-        "type": "vanilla.stonebricks",
+        "type": "stonebricks",
         "amount": 2
     }],
     "defaultLimit": 0,
     "defaultPriority": -100
 }, {
-    "name": "StoneWall1",
+    "name": "Ulfric.ColonyAddOns.Blocks.StoneWall1",
     "results": [{
-        "type": "StoneWall1",
+        "type": "Ulfric.ColonyAddOns.Blocks.StoneWall1",
         "amount": 1
     }],
     "requires": [{
-        "type": "vanilla.stonebricks",
+        "type": "stonebricks",
         "amount": 2
     }],
     "defaultLimit": 0,
     "defaultPriority": -100
 }, {
-    "name": "StoneWall2",
+    "name": "Ulfric.ColonyAddOns.Blocks.StoneWall2",
     "results": [{
-        "type": "StoneWall2",
+        "type": "Ulfric.ColonyAddOns.Blocks.StoneWall2",
         "amount": 1
     }],
     "requires": [{
-        "type": "vanilla.stonebricks",
+        "type": "stonebricks",
         "amount": 2
     }],
     "defaultLimit": 0,
     "defaultPriority": -100
 }, {
-    "name": "StoneWall3",
+    "name": "Ulfric.ColonyAddOns.Blocks.StoneWall3",
     "results": [{
-        "type": "StoneWall3",
+        "type": "Ulfric.ColonyAddOns.Blocks.StoneWall3",
         "amount": 1
     }],
     "requires": [{
-        "type": "vanilla.stonebricks",
+        "type": "stonebricks",
         "amount": 2
     }],
     "defaultLimit": 0,
     "defaultPriority": -100
 }, {
-    "name": "StoneWall4",
+    "name": "Ulfric.ColonyAddOns.Blocks.StoneWall4",
     "results": [{
-        "type": "StoneWall4",
+        "type": "Ulfric.ColonyAddOns.Blocks.StoneWall4",
         "amount": 1
     }],
     "requires": [{
-        "type": "vanilla.stonebricks",
+        "type": "stonebricks",
         "amount": 2
     }],
     "defaultLimit": 0,
     "defaultPriority": -100
 }, {
-    "name": "StoneWall5",
+    "name": "Ulfric.ColonyAddOns.Blocks.StoneWall5",
     "results": [{
-        "type": "StoneWall5",
+        "type": "Ulfric.ColonyAddOns.Blocks.StoneWall5",
         "amount": 1
     }],
     "requires": [{
-        "type": "vanilla.stonebricks",
+        "type": "stonebricks",
         "amount": 2
     }],
     "defaultLimit": 0,
     "defaultPriority": -100
 }, {
-    "name": "StoneWall6",
+    "name": "Ulfric.ColonyAddOns.Blocks.StoneWall6",
     "results": [{
-        "type": "StoneWall6",
+        "type": "Ulfric.ColonyAddOns.Blocks.StoneWall6",
         "amount": 1
     }],
     "requires": [{
-        "type": "vanilla.stonebricks",
+        "type": "stonebricks",
         "amount": 2
     }],
     "defaultLimit": 0,
     "defaultPriority": -100
 }, {
-    "name": "GraniteTechno",
+    "name": "Ulfric.ColonyAddOns.Blocks.GraniteTechno",
     "results": [{
-        "type": "GraniteTechno",
+        "type": "Ulfric.ColonyAddOns.Blocks.GraniteTechno",
         "amount": 1
     }],
     "requires": [{
-        "type": "vanilla.stonebricks",
+        "type": "stonebricks",
         "amount": 2
     }],
     "defaultLimit": 0,
     "defaultPriority": -100
 }, {
-    "name": "GraniteWall",
+    "name": "Ulfric.ColonyAddOns.Blocks.GraniteWall",
     "results": [{
-        "type": "GraniteWall",
+        "type": "Ulfric.ColonyAddOns.Blocks.GraniteWall",
         "amount": 1
     }],
     "requires": [{
-        "type": "vanilla.stonebricks",
+        "type": "stonebricks",
         "amount": 2
     }],
     "defaultLimit": 0,
     "defaultPriority": -100
 }, {
-    "name": "Gravel2",
+    "name": "Ulfric.ColonyAddOns.Blocks.Gravel2",
     "results": [{
-        "type": "Gravel2",
+        "type": "Ulfric.ColonyAddOns.Blocks.Gravel2",
         "amount": 1
     }],
     "requires": [{
-        "type": "vanilla.stonebricks",
+        "type": "stonebricks",
         "amount": 1
     }],
     "defaultLimit": 0,
     "defaultPriority": -100
 }, {
-    "name": "Gravel3",
+    "name": "Ulfric.ColonyAddOns.Blocks.Gravel3",
     "results": [{
-        "type": "Gravel3",
+        "type": "Ulfric.ColonyAddOns.Blocks.Gravel3",
         "amount": 1
     }],
     "requires": [{
-        "type": "vanilla.stonebricks",
+        "type": "stonebricks",
         "amount": 1
     }],
     "defaultLimit": 0,
     "defaultPriority": -100
 }, {
-    "name": "Gravel4",
+    "name": "Ulfric.ColonyAddOns.Blocks.Gravel4",
     "results": [{
-        "type": "Gravel4",
+        "type": "Ulfric.ColonyAddOns.Blocks.Gravel4",
         "amount": 1
     }],
     "requires": [{
-        "type": "vanilla.stonebricks",
+        "type": "stonebricks",
         "amount": 1
     }],
     "defaultLimit": 0,
     "defaultPriority": -100
 }, {
-    "name": "GreenGraniteWalkway",
+    "name": "Ulfric.ColonyAddOns.Blocks.GreenGraniteWalkway",
     "results": [{
-        "type": "GreenGraniteWalkway",
+        "type": "Ulfric.ColonyAddOns.Blocks.GreenGraniteWalkway",
         "amount": 1
     }],
     "requires": [{
-        "type": "vanilla.stonebricks",
+        "type": "stonebricks",
         "amount": 1
     }],
     "defaultLimit": 0,
     "defaultPriority": -100
 }, {
-    "name": "CobbleStoneWall",
+    "name": "Ulfric.ColonyAddOns.Blocks.CobbleStoneWall",
     "results": [{
-        "type": "CobbleStoneWall",
+        "type": "Ulfric.ColonyAddOns.Blocks.CobbleStoneWall",
         "amount": 1
     }],
     "requires": [{
-        "type": "vanilla.stonebricks",
+        "type": "stonebricks",
         "amount": 1
     }],
     "defaultPriority": -100,
     "defaultLimit": 0
 }, {
-    "name": "RockWall",
+    "name": "Ulfric.ColonyAddOns.Blocks.RockWall",
     "results": [{
-        "type": "RockWall",
+        "type": "Ulfric.ColonyAddOns.Blocks.RockWall",
         "amount": 1
     }],
     "requires": [{
-        "type": "vanilla.stonebricks",
+        "type": "stonebricks",
         "amount": 1
     }],
     "defaultPriority": -100,
     "defaultLimit": 0
 }, {
-    "name": "FancyCobblestoneWall",
+    "name": "Ulfric.ColonyAddOns.Blocks.FancyCobblestoneWall",
     "results": [{
-        "type": "FancyCobblestoneWall",
+        "type": "Ulfric.ColonyAddOns.Blocks.FancyCobblestoneWall",
         "amount": 1
     }],
     "requires": [{
-        "type": "vanilla.stonebricks",
+        "type": "stonebricks",
         "amount": 1
     }],
     "defaultPriority": -100,
     "defaultLimit": 0
 }, {
-    "name": "BrickAlternatingMud",
+    "name": "Ulfric.ColonyAddOns.Blocks.BrickAlternatingMud",
     "results": [{
-        "type": "BrickAlternatingMud",
+        "type": "Ulfric.ColonyAddOns.Blocks.BrickAlternatingMud",
         "amount": 1
     }],
     "requires": [{
-        "type": "vanilla.dirt",
+        "type": "dirt",
         "amount": 1
     }, {
-        "type": "WaterBucket",
+        "type": "Ulfric.ColonyAddOns.Blocks.WaterBucket",
         "amount": 1
     }],
     "defaultLimit": 0,
     "defaultPriority": -100
 }, {
-    "name": "BrickBlackRough",
+    "name": "Ulfric.ColonyAddOns.Blocks.BrickBlackRough",
     "results": [{
-        "type": "BrickBlackRough",
+        "type": "Ulfric.ColonyAddOns.Blocks.BrickBlackRough",
         "amount": 1
     }],
     "requires": [{
-        "type": "vanilla.bricks",
+        "type": "bricks",
         "amount": 1
     }, {
-        "type": "WaterBucket",
+        "type": "Ulfric.ColonyAddOns.Blocks.WaterBucket",
         "amount": 1
     }],
     "defaultLimit": 0,
     "defaultPriority": -100
 }, {
-    "name": "BrickBurlywood",
+    "name": "Ulfric.ColonyAddOns.Blocks.BrickBurlywood",
     "results": [{
-        "type": "BrickBurlywood",
+        "type": "Ulfric.ColonyAddOns.Blocks.BrickBurlywood",
         "amount": 1
     }],
     "requires": [{
-        "type": "vanilla.bricks",
+        "type": "bricks",
         "amount": 1
     }],
     "defaultLimit": 0,
     "defaultPriority": -100
 }, {
-    "name": "BrickGreenChipped",
+    "name": "Ulfric.ColonyAddOns.Blocks.BrickGreenChipped",
     "results": [{
-        "type": "BrickGreenChipped",
+        "type": "Ulfric.ColonyAddOns.Blocks.BrickGreenChipped",
         "amount": 1
     }],
     "requires": [{
-        "type": "vanilla.bricks",
+        "type": "bricks",
         "amount": 1
     }],
     "defaultLimit": 0,
     "defaultPriority": -100
 }, {
-    "name": "BrickLight",
+    "name": "Ulfric.ColonyAddOns.Blocks.BrickLight",
     "results": [{
-        "type": "BrickLight",
+        "type": "Ulfric.ColonyAddOns.Blocks.BrickLight",
         "amount": 1
     }],
     "requires": [{
-        "type": "vanilla.bricks",
+        "type": "bricks",
         "amount": 1
     }],
     "defaultLimit": 0,
     "defaultPriority": -100
 }, {
-    "name": "BrickRedBasketweave",
+    "name": "Ulfric.ColonyAddOns.Blocks.BrickRedBasketweave",
     "results": [{
-        "type": "BrickRedBasketweave",
+        "type": "Ulfric.ColonyAddOns.Blocks.BrickRedBasketweave",
         "amount": 1
     }],
     "requires": [{
-        "type": "vanilla.bricks",
+        "type": "bricks",
         "amount": 1
     }],
     "defaultLimit": 0,
     "defaultPriority": -100
 }, {
-    "name": "BrickworkWornBrown",
+    "name": "Ulfric.ColonyAddOns.Blocks.BrickworkWornBrown",
     "results": [{
-        "type": "BrickworkWornBrown",
+        "type": "Ulfric.ColonyAddOns.Blocks.BrickworkWornBrown",
         "amount": 1
     }],
     "requires": [{
-        "type": "vanilla.bricks",
+        "type": "bricks",
         "amount": 1
     }],
     "defaultPriority": -100,
     "defaultLimit": 0
 }, {
-    "name": "BricksBubbly",
+    "name": "Ulfric.ColonyAddOns.Blocks.BricksBubbly",
     "results": [{
-        "type": "BricksBubbly",
+        "type": "Ulfric.ColonyAddOns.Blocks.BricksBubbly",
         "amount": 1
     }],
     "requires": [{
-        "type": "vanilla.bricks",
+        "type": "bricks",
         "amount": 2
     }],
     "defaultLimit": 0,
     "defaultPriority": -100
 }, {
-    "name": "CementLargeBlockWall",
+    "name": "Ulfric.ColonyAddOns.Blocks.CementLargeBlockWall",
     "results": [{
-        "type": "CementLargeBlockWall",
+        "type": "Ulfric.ColonyAddOns.Blocks.CementLargeBlockWall",
         "amount": 1
     }],
     "requires": [{
-        "type": "vanilla.stonebricks",
+        "type": "stonebricks",
         "amount": 2
     }],
     "defaultLimit": 0,
     "defaultPriority": -100
 }, {
-    "name": "CorrodedTechnoTiles",
+    "name": "Ulfric.ColonyAddOns.Blocks.CorrodedTechnoTiles",
     "results": [{
-        "type": "CorrodedTechnoTiles",
+        "type": "Ulfric.ColonyAddOns.Blocks.CorrodedTechnoTiles",
         "amount": 1
     }],
     "requires": [{
-        "type": "vanilla.stonebricks",
+        "type": "stonebricks",
         "amount": 2
     }],
     "defaultLimit": 0,
     "defaultPriority": -100
 }, {
-    "name": "FloorBlueStainedBasketweave",
+    "name": "Ulfric.ColonyAddOns.Blocks.FloorBlueStainedBasketweave",
     "results": [{
-        "type": "FloorBlueStainedBasketweave",
+        "type": "Ulfric.ColonyAddOns.Blocks.FloorBlueStainedBasketweave",
         "amount": 1
     }],
     "requires": [{
-        "type": "vanilla.bricks",
+        "type": "bricks",
         "amount": 2
     }],
     "defaultLimit": 0,
     "defaultPriority": -100
 }, {
-    "name": "FloorChippedBricks",
+    "name": "Ulfric.ColonyAddOns.Blocks.FloorChippedBricks",
     "results": [{
-        "type": "FloorChippedBricks",
+        "type": "Ulfric.ColonyAddOns.Blocks.FloorChippedBricks",
         "amount": 1
     }],
     "requires": [{
-        "type": "vanilla.bricks",
+        "type": "bricks",
         "amount": 2
     }],
     "defaultLimit": 0,
     "defaultPriority": -100
 }, {
-    "name": "FloorConcrete",
+    "name": "Ulfric.ColonyAddOns.Blocks.FloorConcrete",
     "results": [{
-        "type": "FloorConcrete",
+        "type": "Ulfric.ColonyAddOns.Blocks.FloorConcrete",
         "amount": 1
     }],
     "requires": [{
-        "type": "vanilla.stonebricks",
+        "type": "stonebricks",
         "amount": 2
     }],
     "defaultLimit": 0,
     "defaultPriority": -100
 }, {
-    "name": "AshySandstone",
+    "name": "Ulfric.ColonyAddOns.Blocks.AshySandstone",
     "results": [{
-        "type": "AshySandstone",
+        "type": "Ulfric.ColonyAddOns.Blocks.AshySandstone",
         "amount": 1
     }],
     "requires": [{
-        "type": "vanilla.stonebricks",
+        "type": "stonebricks",
         "amount": 1
     }, {
-        "type": "vanilla.sand",
+        "type": "sand",
         "amount": 1
     }],
     "defaultLimit": 0,
     "defaultPriority": -100
 }, {
-    "name": "HardenedLava",
+    "name": "Ulfric.ColonyAddOns.Blocks.HardenedLava",
     "results": [{
-        "type": "HardenedLava",
+        "type": "Ulfric.ColonyAddOns.Blocks.HardenedLava",
         "amount": 1
     }],
     "requires": [{
-        "type": "Magma",
+        "type": "Ulfric.ColonyAddOns.Blocks.Magma",
         "amount": 1
     }, {
-        "type": "WaterBucket",
+        "type": "Ulfric.ColonyAddOns.Blocks.WaterBucket",
         "amount": 1
     }],
     "defaultLimit": 0,
     "defaultPriority": -100
 }, {
-    "name": "MarbleTiles",
+    "name": "Ulfric.ColonyAddOns.Blocks.MarbleTiles",
     "results": [{
-        "type": "MarbleTiles",
+        "type": "Ulfric.ColonyAddOns.Blocks.MarbleTiles",
         "amount": 1
     }],
     "requires": [{
-        "type": "vanilla.stonebricks",
+        "type": "stonebricks",
         "amount": 1
     }],
     "defaultLimit": 0,
     "defaultPriority": -100
 }, {
-    "name": "FloorTrinsicStone",
+    "name": "Ulfric.ColonyAddOns.Blocks.FloorTrinsicStone",
     "results": [{
-        "type": "FloorTrinsicStone",
+        "type": "Ulfric.ColonyAddOns.Blocks.FloorTrinsicStone",
         "amount": 1
     }],
     "requires": [{
-        "type": "vanilla.stonebricks",
+        "type": "stonebricks",
         "amount": 1
     }],
     "defaultLimit": 0,
     "defaultPriority": -100
 }, {
-    "name": "Marble",
+    "name": "Ulfric.ColonyAddOns.Blocks.Marble",
     "results": [{
-        "type": "Marble",
+        "type": "Ulfric.ColonyAddOns.Blocks.Marble",
         "amount": 1
     }],
     "requires": [{
-        "type": "rawMarble",
+        "type": "Ulfric.ColonyAddOns.Blocks.rawMarble",
         "amount": 1
     }],
     "defaultLimit": 0,
     "defaultPriority": -100
 }, {
-    "name": "ChiseledBlackStone",
+    "name": "Ulfric.ColonyAddOns.Blocks.ChiseledBlackStone",
     "results": [{
-        "type": "ChiseledBlackStone",
+        "type": "Ulfric.ColonyAddOns.Blocks.ChiseledBlackStone",
         "amount": 1
     }],
     "requires": [{
-        "type": "vanilla.stonebricks",
+        "type": "stonebricks",
         "amount": 1
     }],
     "defaultPriority": -100,
     "defaultLimit": 0
 }, {
-    "name": "ConcreteBrickTiles",
+    "name": "Ulfric.ColonyAddOns.Blocks.ConcreteBrickTiles",
     "results": [{
-        "type": "ConcreteBrickTiles",
+        "type": "Ulfric.ColonyAddOns.Blocks.ConcreteBrickTiles",
         "amount": 1
     }],
     "requires": [{
-        "type": "vanilla.stonebricks",
+        "type": "stonebricks",
         "amount": 1
     }],
     "defaultPriority": -100,
     "defaultLimit": 0
 }, {
-    "name": "DirtyLargeBlocksWall",
+    "name": "Ulfric.ColonyAddOns.Blocks.DirtyLargeBlocksWall",
     "results": [{
-        "type": "DirtyLargeBlocksWall",
+        "type": "Ulfric.ColonyAddOns.Blocks.DirtyLargeBlocksWall",
         "amount": 1
     }],
     "requires": [{
-        "type": "vanilla.stonebricks",
+        "type": "stonebricks",
         "amount": 1
     }],
     "defaultPriority": -100,
     "isOptional": true,
     "defaultLimit": 0
 }, {
-    "name": "DustyGreyStone",
+    "name": "Ulfric.ColonyAddOns.Blocks.DustyGreyStone",
     "results": [{
-        "type": "DustyGreyStone",
+        "type": "Ulfric.ColonyAddOns.Blocks.DustyGreyStone",
         "amount": 1
     }],
     "requires": [{
-        "type": "vanilla.stonebricks",
+        "type": "stonebricks",
         "amount": 1
     }],
     "defaultPriority": -100,
     "defaultLimit": 0
 }, {
-    "name": "FancyChiseledBlackStone",
+    "name": "Ulfric.ColonyAddOns.Blocks.FancyChiseledBlackStone",
     "results": [{
-        "type": "FancyChiseledBlackStone",
+        "type": "Ulfric.ColonyAddOns.Blocks.FancyChiseledBlackStone",
         "amount": 1
     }],
     "requires": [{
-        "type": "vanilla.stonebricks",
+        "type": "stonebricks",
         "amount": 1
     }],
     "defaultPriority": -100,
     "defaultLimit": 0
 }, {
-    "name": "FancyGreyBrick",
+    "name": "Ulfric.ColonyAddOns.Blocks.FancyGreyBrick",
     "results": [{
-        "type": "FancyGreyBrick",
+        "type": "Ulfric.ColonyAddOns.Blocks.FancyGreyBrick",
         "amount": 1
     }],
     "requires": [{
-        "type": "vanilla.bricks",
+        "type": "bricks",
         "amount": 1
     }],
     "defaultPriority": -100,
     "defaultLimit": 0
 }, {
-    "name": "GreyStone",
+    "name": "Ulfric.ColonyAddOns.Blocks.GreyStone",
     "results": [{
-        "type": "GreyStone",
+        "type": "Ulfric.ColonyAddOns.Blocks.GreyStone",
         "amount": 1
     }],
     "requires": [{
-        "type": "vanilla.stonebricks",
+        "type": "stonebricks",
         "amount": 1
     }],
     "defaultPriority": -100,
     "defaultLimit": 0
 }, {
-    "name": "GreyStoneConcreteWall",
+    "name": "Ulfric.ColonyAddOns.Blocks.GreyStoneConcreteWall",
     "results": [{
-        "type": "GreyStoneConcreteWall",
+        "type": "Ulfric.ColonyAddOns.Blocks.GreyStoneConcreteWall",
         "amount": 1
     }],
     "requires": [{
-        "type": "vanilla.stonebricks",
+        "type": "stonebricks",
         "amount": 1
     }],
     "defaultPriority": -100,
     "defaultLimit": 0
 }, {
-    "name": "OrangeMarble",
+    "name": "Ulfric.ColonyAddOns.Blocks.OrangeMarble",
     "results": [{
-        "type": "OrangeMarble",
+        "type": "Ulfric.ColonyAddOns.Blocks.OrangeMarble",
         "amount": 1
     }],
     "requires": [{
-        "type": "rawMarble",
+        "type": "Ulfric.ColonyAddOns.Blocks.rawMarble",
         "amount": 1
     }],
     "defaultPriority": -100,
     "defaultLimit": 0
 }, {
-    "name": "RoughBrownStone",
+    "name": "Ulfric.ColonyAddOns.Blocks.RoughBrownStone",
     "results": [{
-        "type": "RoughBrownStone",
+        "type": "Ulfric.ColonyAddOns.Blocks.RoughBrownStone",
         "amount": 1
     }],
     "requires": [{
-        "type": "vanilla.stonebricks",
+        "type": "stonebricks",
         "amount": 1
     }],
     "defaultPriority": -100,
     "defaultLimit": 0
 }, {
-    "name": "TanRoughStone",
+    "name": "Ulfric.ColonyAddOns.Blocks.TanRoughStone",
     "results": [{
-        "type": "TanRoughStone",
+        "type": "Ulfric.ColonyAddOns.Blocks.TanRoughStone",
         "amount": 1
     }],
     "requires": [{
-        "type": "vanilla.stonebricks",
+        "type": "stonebricks",
         "amount": 1
     }],
     "defaultPriority": -100,
     "defaultLimit": 0
 }, {
-    "name": "MarbleBlack",
+    "name": "Ulfric.ColonyAddOns.Blocks.MarbleBlack",
     "results": [{
-        "type": "MarbleBlack",
+        "type": "Ulfric.ColonyAddOns.Blocks.MarbleBlack",
         "amount": 1
     }],
     "requires": [{
-        "type": "rawMarble",
+        "type": "Ulfric.ColonyAddOns.Blocks.rawMarble",
         "amount": 2
     }],
     "defaultLimit": 0,
     "defaultPriority": -100
 }, {
-    "name": "MarbleBlood",
+    "name": "Ulfric.ColonyAddOns.Blocks.MarbleBlood",
     "results": [{
-        "type": "MarbleBlood",
+        "type": "Ulfric.ColonyAddOns.Blocks.MarbleBlood",
         "amount": 1
     }],
     "requires": [{
-        "type": "rawMarble",
+        "type": "Ulfric.ColonyAddOns.Blocks.rawMarble",
         "amount": 2
     }],
     "defaultLimit": 0,
     "defaultPriority": -100
 }, {
-    "name": "MarbleBlue",
+    "name": "Ulfric.ColonyAddOns.Blocks.MarbleBlue",
     "results": [{
-        "type": "MarbleBlue",
+        "type": "Ulfric.ColonyAddOns.Blocks.MarbleBlue",
         "amount": 1
     }],
     "requires": [{
-        "type": "rawMarble",
+        "type": "Ulfric.ColonyAddOns.Blocks.rawMarble",
         "amount": 2
     }],
     "defaultLimit": 0,
     "defaultPriority": -100,
     "isOptional": true
 }, {
-    "name": "MarbleBlueCrack",
+    "name": "Ulfric.ColonyAddOns.Blocks.MarbleBlueCrack",
     "results": [{
-        "type": "MarbleBlueCrack",
+        "type": "Ulfric.ColonyAddOns.Blocks.MarbleBlueCrack",
         "amount": 1
     }],
     "requires": [{
-        "type": "rawMarble",
+        "type": "Ulfric.ColonyAddOns.Blocks.rawMarble",
         "amount": 2
     }],
     "defaultLimit": 0,
     "defaultPriority": -100
 }, {
-    "name": "MarbleBrightPurple",
+    "name": "Ulfric.ColonyAddOns.Blocks.MarbleBrightPurple",
     "results": [{
-        "type": "MarbleBrightPurple",
+        "type": "Ulfric.ColonyAddOns.Blocks.MarbleBrightPurple",
         "amount": 1
     }],
     "requires": [{
-        "type": "rawMarble",
+        "type": "Ulfric.ColonyAddOns.Blocks.rawMarble",
         "amount": 2
     }],
     "defaultLimit": 0,
     "defaultPriority": -100
 }, {
-    "name": "MarbleBrownSwirl",
+    "name": "Ulfric.ColonyAddOns.Blocks.MarbleBrownSwirl",
     "results": [{
-        "type": "MarbleBrownSwirl",
+        "type": "Ulfric.ColonyAddOns.Blocks.MarbleBrownSwirl",
         "amount": 1
     }],
     "requires": [{
-        "type": "rawMarble",
+        "type": "Ulfric.ColonyAddOns.Blocks.rawMarble",
         "amount": 2
     }],
     "defaultLimit": 0,
     "defaultPriority": -100
 }, {
-    "name": "MarbleButterscotchFeldspar",
+    "name": "Ulfric.ColonyAddOns.Blocks.MarbleButterscotchFeldspar",
     "results": [{
-        "type": "MarbleButterscotchFeldspar",
+        "type": "Ulfric.ColonyAddOns.Blocks.MarbleButterscotchFeldspar",
         "amount": 1
     }],
     "requires": [{
-        "type": "rawMarble",
+        "type": "Ulfric.ColonyAddOns.Blocks.rawMarble",
         "amount": 2
     }],
     "defaultLimit": 0,
     "defaultPriority": -100
 }, {
-    "name": "MarbleDarkGray",
+    "name": "Ulfric.ColonyAddOns.Blocks.MarbleDarkGray",
     "results": [{
-        "type": "MarbleDarkGray",
+        "type": "Ulfric.ColonyAddOns.Blocks.MarbleDarkGray",
         "amount": 1
     }],
     "requires": [{
-        "type": "rawMarble",
+        "type": "Ulfric.ColonyAddOns.Blocks.rawMarble",
         "amount": 2
     }],
     "defaultLimit": 0,
     "defaultPriority": -100
 }, {
-    "name": "MarbleDarkGreen",
+    "name": "Ulfric.ColonyAddOns.Blocks.MarbleDarkGreen",
     "results": [{
-        "type": "MarbleDarkGreen",
+        "type": "Ulfric.ColonyAddOns.Blocks.MarbleDarkGreen",
         "amount": 1
     }],
     "requires": [{
-        "type": "rawMarble",
+        "type": "Ulfric.ColonyAddOns.Blocks.rawMarble",
         "amount": 2
     }],
     "defaultLimit": 0,
     "defaultPriority": -100
 }, {
-    "name": "MarbleEgyptian",
+    "name": "Ulfric.ColonyAddOns.Blocks.MarbleEgyptian",
     "results": [{
-        "type": "MarbleEgyptian",
+        "type": "Ulfric.ColonyAddOns.Blocks.MarbleEgyptian",
         "amount": 1
     }],
     "requires": [{
-        "type": "rawMarble",
+        "type": "Ulfric.ColonyAddOns.Blocks.rawMarble",
         "amount": 2
     }],
     "defaultLimit": 0,
     "defaultPriority": -100
 }, {
-    "name": "MarbleEmerald",
+    "name": "Ulfric.ColonyAddOns.Blocks.MarbleEmerald",
     "results": [{
-        "type": "MarbleEmerald",
+        "type": "Ulfric.ColonyAddOns.Blocks.MarbleEmerald",
         "amount": 1
     }],
     "requires": [{
-        "type": "rawMarble",
+        "type": "Ulfric.ColonyAddOns.Blocks.rawMarble",
         "amount": 2
     }],
     "defaultLimit": 0,
     "defaultPriority": -100
 }, {
-    "name": "MarbleGlassyMarine",
+    "name": "Ulfric.ColonyAddOns.Blocks.MarbleGlassyMarine",
     "results": [{
-        "type": "MarbleGlassyMarine",
+        "type": "Ulfric.ColonyAddOns.Blocks.MarbleGlassyMarine",
         "amount": 1
     }],
     "requires": [{
-        "type": "rawMarble",
+        "type": "Ulfric.ColonyAddOns.Blocks.rawMarble",
         "amount": 2
     }],
     "defaultLimit": 0,
     "defaultPriority": -100
 }, {
-    "name": "MarbleGlassyOrange",
+    "name": "Ulfric.ColonyAddOns.Blocks.MarbleGlassyOrange",
     "results": [{
-        "type": "MarbleGlassyOrange",
+        "type": "Ulfric.ColonyAddOns.Blocks.MarbleGlassyOrange",
         "amount": 1
     }],
     "requires": [{
-        "type": "rawMarble",
+        "type": "Ulfric.ColonyAddOns.Blocks.rawMarble",
         "amount": 2
     }],
     "defaultLimit": 0,
     "defaultPriority": -100
 }, {
-    "name": "MarbleGlassyPink",
+    "name": "Ulfric.ColonyAddOns.Blocks.MarbleGlassyPink",
     "results": [{
-        "type": "MarbleGlassyPink",
+        "type": "Ulfric.ColonyAddOns.Blocks.MarbleGlassyPink",
         "amount": 1
     }],
     "requires": [{
-        "type": "rawMarble",
+        "type": "Ulfric.ColonyAddOns.Blocks.rawMarble",
         "amount": 2
     }],
     "defaultLimit": 0,
     "defaultPriority": -100
 }, {
-    "name": "MarbleGlassyRed",
+    "name": "Ulfric.ColonyAddOns.Blocks.MarbleGlassyRed",
     "results": [{
-        "type": "MarbleGlassyRed",
+        "type": "Ulfric.ColonyAddOns.Blocks.MarbleGlassyRed",
         "amount": 1
     }],
     "requires": [{
-        "type": "rawMarble",
+        "type": "Ulfric.ColonyAddOns.Blocks.rawMarble",
         "amount": 2
     }],
     "defaultLimit": 0,
     "defaultPriority": -100
 }, {
-    "name": "MarbleGray",
+    "name": "Ulfric.ColonyAddOns.Blocks.MarbleGray",
     "results": [{
-        "type": "MarbleGray",
+        "type": "Ulfric.ColonyAddOns.Blocks.MarbleGray",
         "amount": 1
     }],
     "requires": [{
-        "type": "rawMarble",
+        "type": "Ulfric.ColonyAddOns.Blocks.rawMarble",
         "amount": 2
     }],
     "defaultLimit": 0,
     "defaultPriority": -100
 }, {
-    "name": "MarbleGreen",
+    "name": "Ulfric.ColonyAddOns.Blocks.MarbleGreen",
     "results": [{
-        "type": "MarbleGreen",
+        "type": "Ulfric.ColonyAddOns.Blocks.MarbleGreen",
         "amount": 1
     }],
     "requires": [{
-        "type": "rawMarble",
+        "type": "Ulfric.ColonyAddOns.Blocks.rawMarble",
         "amount": 2
     }],
     "defaultLimit": 0,
     "defaultPriority": -100
 }, {
-    "name": "MarbleLight",
+    "name": "Ulfric.ColonyAddOns.Blocks.MarbleLight",
     "results": [{
-        "type": "MarbleLight",
+        "type": "Ulfric.ColonyAddOns.Blocks.MarbleLight",
         "amount": 1
     }],
     "requires": [{
-        "type": "rawMarble",
+        "type": "Ulfric.ColonyAddOns.Blocks.rawMarble",
         "amount": 2
     }],
     "defaultLimit": 0,
     "defaultPriority": -100
 }, {
-    "name": "MarbleLightGreen",
+    "name": "Ulfric.ColonyAddOns.Blocks.MarbleLightGreen",
     "results": [{
-        "type": "MarbleLightGreen",
+        "type": "Ulfric.ColonyAddOns.Blocks.MarbleLightGreen",
         "amount": 1
     }],
     "requires": [{
-        "type": "rawMarble",
+        "type": "Ulfric.ColonyAddOns.Blocks.rawMarble",
         "amount": 2
     }],
     "defaultLimit": 0,
     "defaultPriority": -100
 }, {
-    "name": "MarbleOnixPina",
+    "name": "Ulfric.ColonyAddOns.Blocks.MarbleOnixPina",
     "results": [{
-        "type": "MarbleOnixPina",
+        "type": "Ulfric.ColonyAddOns.Blocks.MarbleOnixPina",
         "amount": 1
     }],
     "requires": [{
-        "type": "rawMarble",
+        "type": "Ulfric.ColonyAddOns.Blocks.rawMarble",
         "amount": 2
     }],
     "defaultLimit": 0,
     "defaultPriority": -100
 }, {
-    "name": "MarblePurple",
+    "name": "Ulfric.ColonyAddOns.Blocks.MarblePurple",
     "results": [{
-        "type": "MarblePurple",
+        "type": "Ulfric.ColonyAddOns.Blocks.MarblePurple",
         "amount": 1
     }],
     "requires": [{
-        "type": "rawMarble",
+        "type": "Ulfric.ColonyAddOns.Blocks.rawMarble",
         "amount": 2
     }],
     "defaultLimit": 0,
     "defaultPriority": -100
 }, {
-    "name": "MarbleRough",
+    "name": "Ulfric.ColonyAddOns.Blocks.MarbleRough",
     "results": [{
-        "type": "MarbleRough",
+        "type": "Ulfric.ColonyAddOns.Blocks.MarbleRough",
         "amount": 1
     }],
     "requires": [{
-        "type": "rawMarble",
+        "type": "Ulfric.ColonyAddOns.Blocks.rawMarble",
         "amount": 2
     }],
     "defaultLimit": 0,
     "defaultPriority": -100
 }, {
-    "name": "MarbleRoughPink",
+    "name": "Ulfric.ColonyAddOns.Blocks.MarbleRoughPink",
     "results": [{
-        "type": "MarbleRoughPink",
+        "type": "Ulfric.ColonyAddOns.Blocks.MarbleRoughPink",
         "amount": 1
     }],
     "requires": [{
-        "type": "rawMarble",
+        "type": "Ulfric.ColonyAddOns.Blocks.rawMarble",
         "amount": 2
     }],
     "defaultLimit": 0,
     "defaultPriority": -100
 }, {
-    "name": "MarbleSeaGreen",
+    "name": "Ulfric.ColonyAddOns.Blocks.MarbleSeaGreen",
     "results": [{
-        "type": "MarbleSeaGreen",
+        "type": "Ulfric.ColonyAddOns.Blocks.MarbleSeaGreen",
         "amount": 1
     }],
     "requires": [{
-        "type": "rawMarble",
+        "type": "Ulfric.ColonyAddOns.Blocks.rawMarble",
         "amount": 2
     }],
     "defaultLimit": 0,
     "defaultPriority": -100
 }, {
-    "name": "MarbleSmashedGray",
+    "name": "Ulfric.ColonyAddOns.Blocks.MarbleSmashedGray",
     "results": [{
-        "type": "MarbleSmashedGray",
+        "type": "Ulfric.ColonyAddOns.Blocks.MarbleSmashedGray",
         "amount": 1
     }],
     "requires": [{
-        "type": "rawMarble",
+        "type": "Ulfric.ColonyAddOns.Blocks.rawMarble",
         "amount": 2
     }],
     "defaultLimit": 0,
     "defaultPriority": -100
 }, {
-    "name": "MarbleTepeacaGris",
+    "name": "Ulfric.ColonyAddOns.Blocks.MarbleTepeacaGris",
     "results": [{
-        "type": "MarbleTepeacaGris",
+        "type": "Ulfric.ColonyAddOns.Blocks.MarbleTepeacaGris",
         "amount": 1
     }],
     "requires": [{
-        "type": "rawMarble",
+        "type": "Ulfric.ColonyAddOns.Blocks.rawMarble",
         "amount": 2
     }],
     "defaultLimit": 0,
     "defaultPriority": -100
 }, {
-    "name": "MarbleTile1",
+    "name": "Ulfric.ColonyAddOns.Blocks.MarbleTile1",
     "results": [{
-        "type": "MarbleTile1",
+        "type": "Ulfric.ColonyAddOns.Blocks.MarbleTile1",
         "amount": 1
     }],
     "requires": [{
-        "type": "rawMarble",
+        "type": "Ulfric.ColonyAddOns.Blocks.rawMarble",
         "amount": 2
     }],
     "defaultLimit": 0,
     "defaultPriority": -100
 }, {
-    "name": "PurpleSlate",
+    "name": "Ulfric.ColonyAddOns.Blocks.PurpleSlate",
     "results": [{
-        "type": "PurpleSlate",
+        "type": "Ulfric.ColonyAddOns.Blocks.PurpleSlate",
         "amount": 1
     }],
     "requires": [{
-        "type": "vanilla.stonebricks",
+        "type": "stonebricks",
         "amount": 1
     }],
     "defaultLimit": 0,
